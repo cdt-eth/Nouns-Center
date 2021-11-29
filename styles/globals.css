@@ -4,7 +4,37 @@
 @tailwind components;
 @font-face {
   font-family: "CalSans";
-  src: local("CalSans"), url("/fonts/CalSans.woff2") format("ttf");
+  src: local("CalSans"), url("/fonts/CalSans.woff2") format("woff2");
+}
+@font-face {
+  font-family: "PTRootUI";
+  src: url("/fonts/PTRootUI/PT-Root-UI_Light.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PTRootUI";
+  src: url("/fonts/PTRootUI/PT-Root-UI_Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PTRootUI";
+  src: url("/fonts/PTRootUI/PT-Root-UI_Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PTRootUI";
+  src: url("/fonts/PTRootUI/PT-Root-UI_Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PTRootUI";
+  src: url("/fonts/PTRootUI/PT-Root-UI_VF.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 @tailwind utilities;
 

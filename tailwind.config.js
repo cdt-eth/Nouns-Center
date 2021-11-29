@@ -1,3 +1,5 @@
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
@@ -5,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        ...fontFamily,
         cal: ["CalSans"],
+        root: ["PTRootUI"],
+        sans: ["PTRootUI", "Roboto", "ui-sans-serif", "system-ui"],
       },
       colors: {
         "nouns-bg-grey": "#F2F2F2",
