@@ -1,0 +1,296 @@
+[
+  {
+    "title": "Abstract Nouns",
+    "description": "101 hand-drawn 1/1 Nouns.",
+    "creator": ["abstractnouns_"],
+    "url": "https://opensea.io/collection/abstract-nouns",
+    "image": "abstract.png"
+  },
+  {
+    "title": "AI Noun",
+    "description": "Unique 1/1 AI generated abstract nouns. One noun added every single day.",
+    "creator": ["abstractnounz"],
+    "url": "https://opensea.io/collection/ai-noun",
+    "image": "ainouns.png"
+  },
+  {
+    "title": "AltNouns",
+    "description": "Alternative Nouns generated from every auctioned Noun.",
+    "creator": ["onchainco"],
+    "url": "https://opensea.io/collection/altnouns",
+    "image": "atlnouns.svg"
+  },
+  {
+    "title": "Animated Nouns",
+    "description": "Nouns that have come to life.",
+    "creator": ["nouns_com"],
+    "url": "https://opensea.io/collection/animated-nouns",
+    "image": "animatednouns.gif"
+  },
+  {
+    "title": "Baby Nouns",
+    "description": "Tiny versions of Nouns.",
+    "creator": [""],
+    "url": "https://opensea.io/collection/babynouns",
+    "image": "babynouns.png"
+  },
+  {
+    "title": "Bitstrays",
+    "description": "Pure on-chain avatars. Forked the Nouns front-end & NFT contract.",
+    "creator": ["bitstrays"],
+    "url": "https://bitstrays.wtf/",
+    "image": "bitstrays.png"
+  },
+  {
+    "title": "Blitnoun",
+    "description": "Nouns glasses on Blitmap pieces.",
+    "creator": ["blitnoun"],
+    "url": "https://opensea.io/collection/blitnoun",
+    "image": "blitnouns.png"
+  },
+  {
+    "title": "BlockBirds",
+    "description": "Cute, fun and sometimes edgy, pixel art baby birds.",
+    "creator": ["BlockBirdsNFT"],
+    "url": "https://opensea.io/collection/blockbirds?search[sortAscending]=true&search[sortBy]=PRICE&search[stringTraits][0][name]=Collab&search[stringTraits][0][values][0]=Nouns",
+    "image": "blockbirds.gif"
+  },
+  {
+    "title": "Bored Ape Nouns",
+    "description": "Bored Apes with Nouns glasses.",
+    "creator": ["apenouns"],
+    "url": "https://opensea.io/collection/banyc",
+    "image": "boredapenouns.png"
+  },
+  {
+    "title": "Deep Dream Nouns",
+    "description": "Nouns re-imagine using an deep dream AI generator.",
+    "creator": ["deepdreamnouns"],
+    "url": "https://opensea.io/collection/deepdreamnouns",
+    "image": "deepdream.jpeg"
+  },
+  {
+    "title": "Fast Food Nouns",
+    "description": "Nouns that can select and wear an ever-expanding set of on-chain wearables.",
+    "creator": ["fast_food_dao", "jakeywan"],
+    "url": "https://opensea.io/collection/fast-food-nouns",
+    "image": "fastfood.svg"
+  },
+  {
+    "title": "Fine Art Nouns",
+    "description": "Noun heads on pieces of fine art.",
+    "creator": ["FineArtNouns"],
+    "url": "https://opensea.io/collection/fineartnoun-collection",
+    "image": "fineart.jpeg"
+  },
+  {
+    "title": "Footy Nouns",
+    "description": "Nouns that like football.",
+    "creator": ["footynouns"],
+    "url": "https://www.footynouns.wtf/",
+    "image": "footynouns.svg"
+  },
+  {
+    "title": "GANoadz",
+    "description": "Fusing Noadz and NFT art.",
+    "creator": ["stas_kulesh"],
+    "url": "https://opensea.io/collection/ganoadz",
+    "image": "ganoadz.jpeg"
+  },
+  {
+    "title": "Glitched PokeNouns",
+    "description": "Nouns-style Pokemon with a glitchy twist.",
+    "creator": [""],
+    "url": "https://opensea.io/collection/glitched-pokenouns",
+    "image": "glitchedpoke.gif"
+  },
+  {
+    "title": "Improper Nouns",
+    "description": "Hand-drawn Nouns of various styles.",
+    "creator": [""],
+    "url": "https://opensea.io/collection/impropernouns",
+    "image": "improper.jpeg"
+  },
+  {
+    "title": "Irregular Nouns",
+    "description": "Stop-motion Nouns.",
+    "creator": ["Goldypix"],
+    "url": "https://opensea.io/collection/irregular-nouns",
+    "image": "irregular.gif"
+  },
+  {
+    "title": "Lil Nouns",
+    "description": "A lil Noun, of a Noun, every day, forever.",
+    "creator": ["0xsvg"],
+    "url": "https://lilnouns.wtf/",
+    "image": "lilnouns.svg"
+  },
+  {
+    "title": "Neural Nouns",
+    "description": "Neural network portraits of Nouns.",
+    "creator": ["davecurry"],
+    "url": "https://opensea.io/collection/neural-nouns",
+    "image": "neuralnouns.png"
+  },
+  {
+    "title": "Noadz",
+    "description": "Nouns + Toadz.",
+    "creator": ["thenoadz"],
+    "url": "https://opensea.io/collection/noadz",
+    "image": "noadz.gif"
+  },
+  {
+    "title": "Noun Gan Study",
+    "description": "Used a GAN to created these AI Nouns.",
+    "creator": ["vanarman"],
+    "url": "https://opensea.io/collection/noun-gan",
+    "image": "noungan.gif"
+  },
+  {
+    "title": "Noun Punks",
+    "description": "Nounified Cryptopunks.",
+    "creator": ["NounPunks"],
+    "url": "https://opensea.io/collection/nounpunks-eth",
+    "image": "nounpunks.png"
+  },
+  {
+    "title": "NounCats",
+    "description": "Cool Cats-style Nouns",
+    "creator": ["nouncats"],
+    "url": "",
+    "image": "nouncats.jpeg"
+  },
+  {
+    "title": "Noundles",
+    "description": "Doodles meets Nouns.",
+    "creator": ["noundles"],
+    "url": "https://opensea.io/collection/noundles/",
+    "image": "noundles.png"
+  },
+  {
+    "title": "Nounks",
+    "description": "CryptoPunks meets Nouns.",
+    "creator": ["NFT_Derivatives"],
+    "url": "https://opensea.io/collection/nounks",
+    "image": "nounks.png"
+  },
+  {
+    "title": "Nouns 3D",
+    "description": "3D Voxel Nouns.",
+    "creator": ["Nouns_3D"],
+    "url": "https://www.nouns3d.com/",
+    "image": "nouns3d.jpeg"
+  },
+  {
+    "title": "Nouns and BT21 Friends",
+    "description": "BT21 characters scrambled with Nouns.",
+    "creator": [""],
+    "url": "https://opensea.io/collection/nouns-and-bt21-friends",
+    "image": "bt21.jpeg"
+  },
+  {
+    "title": "Nouns Comics",
+    "description": "Comics using Nouns.",
+    "creator": ["notundeadoracle"],
+    "url": "https://opensea.io/collection/nouns-comic",
+    "image": "nounscomics.gif"
+  },
+  {
+    "title": "Nouns Revolution",
+    "description": "360 spinning Nouns split by layer.",
+    "creator": ["NFTrevolution"],
+    "url": "https://opensea.io/collection/nouns-revolution",
+    "image": "revolution.gif"
+  },
+  {
+    "title": "Nouns Upside Down",
+    "description": "Upside-down Nouns.",
+    "creator": [""],
+    "url": "https://opensea.io/collection/nouns-upside-down",
+    "image": "upsidedown.png"
+  },
+  {
+    "title": "Nouns Vox",
+    "description": "Nouns created with Voxel blocks.",
+    "creator": ["voxnouns", "TheZeeraffe", "justkidddinc", "syazwanamidun"],
+    "url": "https://opensea.io/collection/voxelnouns",
+    "image": "nounsvox.png"
+  },
+  {
+    "title": "Pixel Sorting Nouns",
+    "description": "Isolating the vertical & horizontal lines of pixels and then resorting their positions based on data.",
+    "creator": ["theNFTdude"],
+    "url": "https://opensea.io/collection/pixelsortnouns",
+    "image": "pixelsorting.gif"
+  },
+  {
+    "title": "PokeNouns",
+    "description": "Nouns-style Pokemon.",
+    "creator": ["pokenouns"],
+    "url": "https://opensea.io/collection/pokenouns",
+    "image": "pokenouns.png"
+  },
+  {
+    "title": "Proper Nouns",
+    "description": "Unique and specific Nouns.",
+    "creator": ["propernouns_nft"],
+    "url": "",
+    "image": "propernouns.jpeg"
+  },
+  {
+    "title": "Sidenoun",
+    "description": "Funky, cute, but mostly highly suspicious looking squads of four nouns released everyday, forever.",
+    "creator": ["sidenoun"],
+    "url": "https://sidenoun.com/",
+    "image": "sidenoun.png"
+  },
+  {
+    "title": "Snuon",
+    "description": "Flipped Nouns",
+    "creator": [""],
+    "url": "https://opensea.io/collection/snuon",
+    "image": "snuon.png"
+  },
+  {
+    "title": "Splat Nouns",
+    "description": "Splat (Nouns) is a collection of procedurally created fluid sims.",
+    "creator": ["splats_wtf", "sylo_tv"],
+    "url": "https://opensea.io/collection/splat-nouns",
+    "image": "splat.gif"
+  },
+  {
+    "title": "The Mouns",
+    "description": "Music + Nouns = Mouns.",
+    "creator": ["Evgeny_Teilor"],
+    "url": "https://opensea.io/collection/themouns",
+    "image": "mouns.png"
+  },
+  {
+    "title": "The Trapped Nouns",
+    "description": "A group of curious Rinkeby Nouns stole an experimental ultrasound wrapping machine and tried to cross to the Ethereum mainnet.",
+    "creator": ["__automagic"],
+    "url": "https://opensea.io/collection/the-trapped-nouns",
+    "image": "trapped.gif"
+  },
+  {
+    "title": "Verbs",
+    "description": "Nouns that have been verb'd.",
+    "creator": [""],
+    "url": "https://opensea.io/collection/verbs",
+    "image": "verbs.gif"
+  },
+  {
+    "title": "Wizard Nouns",
+    "description": "Free to claim NFT for Forgotten Runes Wizard's Cult holders.",
+    "creator": ["sweetbread_eth", "SorcererIlyas", "tv3636", "ToBeIsToBreathe"],
+    "url": "https://opensea.io/collection/wizardsnouns",
+    "image": "wizard.png"
+  },
+  {
+    "title": "XCOPY Nouns",
+    "description": "XCOPY-style Nouns",
+    "creator": ["xcopynouns"],
+    "url": "https://opensea.io/collection/xcopynouns",
+    "image": "xcopynouns.gif"
+  }
+]
