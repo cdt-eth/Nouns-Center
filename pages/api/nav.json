@@ -1,0 +1,136 @@
+{
+  "general": [
+    {
+      "title": "About",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "Auctions",
+      "image": "",
+      "url": "",
+      "external": true
+    },
+    {
+      "title": "",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "for Noun Owners",
+      "image": "",
+      "url": "",
+      "external": false
+    }
+  ],
+  "creatives": [
+    {
+      "title": "Brand Kit",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "Design Guidelines",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "Collor Palette",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "Nouns Assets",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "Funding",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "FAQ",
+      "image": "",
+      "url": "",
+      "external": false
+    }
+  ],
+  "devs": [
+    {
+      "title": "Github Monorepo",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "FAQ",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "Contribute",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "Design System",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "Nouns Protocol",
+      "image": "",
+      "url": "",
+      "external": false
+    }
+  ],
+  "projects": [
+    {
+      "url": "",
+      "external": false
+    }
+  ],
+  "community": [
+    {
+      "title": "Idea Garden",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "Proposals",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "Prop House",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "SubDAOs",
+      "image": "",
+      "url": "",
+      "external": false
+    },
+    {
+      "title": "Retro Funding",
+      "image": "",
+      "url": "",
+      "external": false
+    }
+  ]
+}
