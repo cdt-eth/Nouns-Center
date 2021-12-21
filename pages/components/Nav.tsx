@@ -2,10 +2,11 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 
 const navigation = [
-  //   { name: "Dashboard", current: true, href: "#" },
+  //   { name: "Dashboard", current: true, count: 3, href: "#" },
   {
     name: "for Creatives",
     current: false,
+    count: 2,
     children: [
       { name: "Assets", href: "#" },
       { name: "FAQ", href: "#" },
@@ -14,6 +15,7 @@ const navigation = [
   {
     name: "for Developers",
     current: false,
+    count: 4,
     children: [
       { name: "GitHub", href: "#" },
       { name: "Resources", href: "#" },
@@ -24,6 +26,7 @@ const navigation = [
   {
     name: "Projects",
     current: false,
+    count: 3,
     children: [
       { name: "Funded", href: "#" },
       { name: "Derivatives", href: "#" },
@@ -33,6 +36,7 @@ const navigation = [
   {
     name: "General",
     current: false,
+    count: 5,
     children: [
       { name: "Home", href: "#" },
       { name: "Podcasts", href: "#" },
@@ -44,6 +48,7 @@ const navigation = [
   {
     name: "Proposals",
     current: false,
+    count: 5,
     children: [
       { name: "Forums", href: "#" },
       { name: "Templates", href: "#" },
@@ -55,6 +60,7 @@ const navigation = [
   {
     name: "DAO",
     current: false,
+    count: 5,
     children: [
       { name: "History", href: "#" },
       { name: "Proposals", href: "#" },
@@ -66,6 +72,8 @@ const navigation = [
   {
     name: "Miscellaneous",
     current: false,
+    count: 3,
+
     children: [
       { name: "Backlog", href: "#" },
       { name: "Playground", href: "#" },
@@ -87,7 +95,7 @@ const Nav = () => {
 
       <div className="mt-5 flex-grow flex flex-col">
         <nav
-          className="flex-1 px-2 space-y-1 bg-nouns-bg-darkgrey"
+          className="flex-1 px-4 space-y-1 bg-nouns-bg-darkgrey"
           aria-label="Sidebar"
         >
           {/* No SubNav */}
@@ -124,8 +132,8 @@ const Nav = () => {
                       className={classNames(
                         item.current
                           ? "bg-gray-100 text-nouns-text-nav-header focus:outline-none"
-                          : "bg-nouns-bg-darkgrey text-nouns-text-nav-header hover:bg-nouns-bg-darkgrey hover:text-white",
-                        "group w-full flex items-center pl-2 pr-1 py-1 text-left text-sm font-medium rounded-md focus:outline-none "
+                          : "bg-nouns-bg-darkgrey text-nouns-text-nav-header hover:bg-black  hover:text-white",
+                        "group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none "
                       )}
                     >
                       {/* <item.icon
@@ -133,6 +141,20 @@ const Nav = () => {
                         aria-hidden="true"
                       /> */}
                       <span className="flex-1">{item.name}</span>
+
+                      {item.count ? (
+                        <span
+                          className={classNames(
+                            item.current
+                              ? "bg-nouns-bg-black"
+                              : "bg-nouns-bg-black text-white group-hover:bg-gray-200",
+                            "ml-3 inline-block py-0.5 px-2 text-xs font-medium rounded-full group-hover:text-black"
+                          )}
+                        >
+                          {item.count}
+                        </span>
+                      ) : null}
+
                       <svg
                         className={classNames(
                           open
@@ -149,13 +171,13 @@ const Nav = () => {
 
                     <Disclosure.Panel className="space-y-1">
                       {item.children.map((subItem) => (
-                        <div className="flex pl-3">
+                        <div className="flex ml-3 hover:bg-black rounded-md">
                           <img className="w-8" src="earth.png" alt="earth" />
                           <Disclosure.Button
                             key={subItem.name}
                             as="a"
                             href={subItem.href}
-                            className="focus:outline-none group w-full flex items-center pr-2 pl-1 py-1 text-base font-medium text-nouns-text-grey rounded-md hover:text-white hover:bg-nouns-bg-darkgrey"
+                            className="focus:outline-none group w-full flex items-center pr-2 pl-1 py-1 text-base font-medium text-nouns-text-grey  hover:text-white "
                           >
                             {subItem.name}
                           </Disclosure.Button>

@@ -21,7 +21,7 @@ const MobileMenu = ({ sidebarOpen, setSidebarOpen }) => {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <Dialog.Overlay className="fixed inset-0 bg-gray-600 bg-opacity-75" />
+          <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-90" />
         </Transition.Child>
         <Transition.Child
           as={Fragment}
