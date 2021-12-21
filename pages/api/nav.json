@@ -1,136 +1,181 @@
-{
-  "general": [
-    {
-      "title": "About",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "Auctions",
-      "image": "",
-      "url": "",
-      "external": true
-    },
-    {
-      "title": "",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "for Noun Owners",
-      "image": "",
-      "url": "",
-      "external": false
-    }
-  ],
-  "creatives": [
-    {
-      "title": "Brand Kit",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "Design Guidelines",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "Collor Palette",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "Nouns Assets",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "Funding",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "FAQ",
-      "image": "",
-      "url": "",
-      "external": false
-    }
-  ],
-  "devs": [
-    {
-      "title": "Github Monorepo",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "FAQ",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "Contribute",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "Design System",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "Nouns Protocol",
-      "image": "",
-      "url": "",
-      "external": false
-    }
-  ],
-  "projects": [
-    {
-      "url": "",
-      "external": false
-    }
-  ],
-  "community": [
-    {
-      "title": "Idea Garden",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "Proposals",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "Prop House",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "SubDAOs",
-      "image": "",
-      "url": "",
-      "external": false
-    },
-    {
-      "title": "Retro Funding",
-      "image": "",
-      "url": "",
-      "external": false
-    }
-  ]
-}
+[
+  {
+    "name": "for Creatives",
+    "current": false,
+    "children": [
+      {
+        "name": "Assets",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      },
+      { "name": "FAQ", "image": "earth.png", "link": "#", "external": false }
+    ]
+  },
+  {
+    "name": "for Developers",
+    "current": false,
+    "children": [
+      {
+        "name": "GitHub",
+        "image": "earth.png",
+        "link": "#",
+        "external": true
+      },
+      {
+        "name": "Resources",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      },
+      {
+        "name": "Issues",
+        "image": "earth.png",
+        "link": "#",
+        "external": true
+      },
+      { "name": "FAQ", "image": "earth.png", "link": "#", "external": false }
+    ]
+  },
+  {
+    "name": "Projects",
+    "current": false,
+    "children": [
+      {
+        "name": "Funded",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      },
+      {
+        "name": "Derivatives",
+        "image": "earth.png",
+        "link": "/projects",
+        "external": false
+      },
+      {
+        "name": "Submit Project",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      }
+    ]
+  },
+  {
+    "name": "General",
+    "current": false,
+    "children": [
+      {
+        "name": "Home",
+        "image": "earth.png",
+        "link": "https://nouns.wtf/",
+        "external": true
+      },
+      {
+        "name": "Podcasts",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      },
+      {
+        "name": "Statistics",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      },
+      { "name": "Media", "image": "earth.png", "link": "#", "external": false },
+      { "name": "News", "image": "earth.png", "link": "#", "external": false }
+    ]
+  },
+  {
+    "name": "Proposals",
+    "current": false,
+    "children": [
+      {
+        "name": "Forums",
+        "image": "earth.png",
+        "link": "#",
+        "external": true
+      },
+      {
+        "name": "Templates",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      },
+      {
+        "name": "Find a Sponsor",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      },
+      {
+        "name": "Retro Funding",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      },
+      {
+        "name": "Prop House",
+        "image": "earth.png",
+        "link": "#",
+        "external": true
+      }
+    ]
+  },
+  {
+    "name": "DAO",
+    "current": false,
+    "children": [
+      {
+        "name": "History",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      },
+      {
+        "name": "Proposals",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      },
+      {
+        "name": "for Nouners",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      },
+      {
+        "name": "Twitter",
+        "image": "earth.png",
+        "link": "#",
+        "external": true
+      },
+      {
+        "name": "Discord",
+        "image": "earth.png",
+        "link": "#",
+        "external": true
+      }
+    ]
+  },
+  {
+    "name": "Miscellaneous",
+    "current": false,
+    "children": [
+      {
+        "name": "Backlog",
+        "image": "earth.png",
+        "link": "#",
+        "external": true
+      },
+      {
+        "name": "Playground",
+        "image": "earth.png",
+        "link": "#",
+        "external": true
+      },
+      { "name": "Merch", "image": "earth.png", "link": "#", "external": false }
+    ]
+  }
+]

@@ -1,86 +1,6 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
-
-const navigation = [
-  //   { name: "Dashboard", current: true, count: 3, href: "#" },
-  {
-    name: "for Creatives",
-    current: false,
-    count: 2,
-    children: [
-      { name: "Assets", href: "#" },
-      { name: "FAQ", href: "#" },
-    ],
-  },
-  {
-    name: "for Developers",
-    current: false,
-    count: 4,
-    children: [
-      { name: "GitHub", href: "#" },
-      { name: "Resources", href: "#" },
-      { name: "Issues", href: "#" },
-      { name: "FAQ", href: "#" },
-    ],
-  },
-  {
-    name: "Projects",
-    current: false,
-    count: 3,
-    children: [
-      { name: "Funded", href: "#" },
-      { name: "Derivatives", href: "#" },
-      { name: "Submit Project", href: "#" },
-    ],
-  },
-  {
-    name: "General",
-    current: false,
-    count: 5,
-    children: [
-      { name: "Home", href: "#" },
-      { name: "Podcasts", href: "#" },
-      { name: "Statistics", href: "#" },
-      { name: "Media", href: "#" },
-      { name: "News", href: "#" },
-    ],
-  },
-  {
-    name: "Proposals",
-    current: false,
-    count: 5,
-    children: [
-      { name: "Forums", href: "#" },
-      { name: "Templates", href: "#" },
-      { name: "Find a Sponsor", href: "#" },
-      { name: "Retro Funding", href: "#" },
-      { name: "Prop House", href: "#" },
-    ],
-  },
-  {
-    name: "DAO",
-    current: false,
-    count: 5,
-    children: [
-      { name: "History", href: "#" },
-      { name: "Proposals", href: "#" },
-      { name: "for Nouners", href: "#" },
-      { name: "Twitter", href: "#" },
-      { name: "Discord", href: "#" },
-    ],
-  },
-  {
-    name: "Miscellaneous",
-    current: false,
-    count: 3,
-
-    children: [
-      { name: "Backlog", href: "#" },
-      { name: "Playground", href: "#" },
-      { name: "Merch", href: "#" },
-    ],
-  },
-];
+import nav from "../api/nav.json";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -99,7 +19,7 @@ const Nav = () => {
           aria-label="Sidebar"
         >
           {/* No SubNav */}
-          {navigation.map((item) =>
+          {nav.map((item) =>
             !item.children ? (
               <div key={item.name}>
                 <a
@@ -111,15 +31,6 @@ const Nav = () => {
                     "group w-full flex items-center pl-2 py-2 text-sm font-medium rounded-md"
                   )}
                 >
-                  {/* <item.icon
-                    className={classNames(
-                      item.current
-                        ? "bg-nouns-bg-darkgrey text-white"
-                        : "bg-nouns-bg-darkgrey text-nouns-text-grey group-hover:text-white",
-                      "mr-3 flex-shrink-0 h-6 w-6"
-                    )}
-                    aria-hidden="true"
-                  /> */}
                   {item.name}
                 </a>
               </div>
@@ -136,13 +47,9 @@ const Nav = () => {
                         "group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none "
                       )}
                     >
-                      {/* <item.icon
-                        className="mr-3 flex-shrink-0 h-6 wbase text-nouns-text-grey group-hover:text-white"
-                        aria-hidden="true"
-                      /> */}
                       <span className="flex-1">{item.name}</span>
 
-                      {item.count ? (
+                      {item.children.length ? (
                         <span
                           className={classNames(
                             item.current
@@ -151,7 +58,7 @@ const Nav = () => {
                             "ml-3 inline-block py-0.5 px-2 text-xs font-medium rounded-full group-hover:text-black"
                           )}
                         >
-                          {item.count}
+                          {item.children.length}
                         </span>
                       ) : null}
 
@@ -176,7 +83,8 @@ const Nav = () => {
                           <Disclosure.Button
                             key={subItem.name}
                             as="a"
-                            href={subItem.href}
+                            href={subItem.link}
+                            target={subItem.external ? "_blank" : "_self"}
                             className="focus:outline-none group w-full flex items-center pr-2 pl-1 py-1 text-base font-medium text-nouns-text-grey  hover:text-white "
                           >
                             {subItem.name}
