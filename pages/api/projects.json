@@ -7,7 +7,7 @@
     "image": "abstract.png"
   },
   {
-    "title": "AI Noun",
+    "title": "AI Nouns",
     "description": "Unique 1/1 AI generated abstract nouns. One noun added every single day.",
     "creator": ["abstractnounz"],
     "url": "https://opensea.io/collection/ai-noun",
@@ -61,6 +61,13 @@
     "creator": ["apenouns"],
     "url": "https://opensea.io/collection/banyc",
     "image": "boredapenouns.png"
+  },
+  {
+    "title": "Bunnies",
+    "description": "Bunnies multiply until they are everywhere. NFTs meet hyperinflationary tokenomics in this first-of-its-kind blockchain game.",
+    "creator": ["bunnieswtf"],
+    "url": "",
+    "image": "bunnies.jpeg"
   },
   {
     "title": "Deep Dream Nouns",
@@ -271,6 +278,13 @@
     "creator": ["__automagic"],
     "url": "https://opensea.io/collection/the-trapped-nouns",
     "image": "trapped.gif"
+  },
+  {
+    "title": "Touns",
+    "description": "Toadz + Nouns = Touns.",
+    "creator": ["tounswtf"],
+    "url": "https://opensea.io/collection/tounswtf",
+    "image": "touns.jpeg"
   },
   {
     "title": "Verbs",
