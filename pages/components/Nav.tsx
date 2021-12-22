@@ -1,6 +1,5 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
-import { v4 } from "uuid";
 import nav from "../api/nav.json";
 import Link from "next/link";
 
@@ -18,6 +17,7 @@ const Nav = () => {
             src="earth.png"
             alt="earth"
           />
+          <p className="text-nouns text-white text-3xl ml-1">Center</p>
         </div>
       </Link>
 
@@ -97,6 +97,7 @@ const Nav = () => {
                               alt="earth"
                             />
                           </Link>
+                          {/* <p className="text-nouns text-white">Center</p> */}
 
                           {subItem.external ? (
                             <Disclosure.Button
