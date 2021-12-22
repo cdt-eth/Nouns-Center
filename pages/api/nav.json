@@ -5,13 +5,13 @@
     "children": [
       {
         "name": "Assets",
-        "image": "earth.png",
+        "image": "assets.png",
         "link": "/assets",
         "external": false
       },
       {
         "name": "FAQ",
-        "image": "earth.png",
+        "image": "faq.png",
         "link": "/faq",
         "external": false
       }
@@ -23,25 +23,25 @@
     "children": [
       {
         "name": "GitHub",
-        "image": "earth.png",
+        "image": "github.png",
         "link": "https://github.com/nounsDAO/nouns-monorepo",
         "external": true
       },
       {
         "name": "Tools",
-        "image": "earth.png",
+        "image": "tools.png",
         "link": "/tools",
         "external": false
       },
       {
         "name": "Issues",
-        "image": "earth.png",
+        "image": "issues.png",
         "link": "https://github.com/nounsDAO/nouns-monorepo/issues",
         "external": true
       },
       {
         "name": "FAQ",
-        "image": "earth.png",
+        "image": "faq.png",
         "link": "https://github.com/christiandavidturner/TOADZTOOLZ/discussions",
         "external": false
       }

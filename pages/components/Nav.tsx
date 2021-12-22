@@ -84,16 +84,15 @@ const Nav = () => {
                       {item.children.map((subItem) => (
                         <div
                           key={item.name}
-                          className="flex ml-3 hover:bg-black rounded-md"
+                          className="flex ml-3 px-1 items-center hover:bg-black rounded-md"
                         >
                           <Link href="/">
                             <img
-                              className="w-10 cursor-pointer"
-                              src={subItem.image}
+                              className="w-6 h-6 cursor-pointer rounded-full"
+                              src={`/nav/${subItem.image}`}
                               alt="earth"
                             />
                           </Link>
-                          {/* <p className="text-nouns text-white">Center</p> */}
 
                           {subItem.external ? (
                             <Disclosure.Button
@@ -102,13 +101,13 @@ const Nav = () => {
                               href={subItem.link}
                               target="_blank"
                               rel="no-referrer"
-                              className="focus:outline-none group w-full flex items-center pr-2 pl-1 py-1 text-base font-medium text-nouns-text-grey  hover:text-white "
+                              className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-1 text-base font-medium text-nouns-text-grey  hover:text-white "
                             >
                               {subItem.name}
                             </Disclosure.Button>
                           ) : (
                             <Link href={subItem.link}>
-                              <a className="focus:outline-none group w-full flex items-center pr-2 pl-1 py-1 text-base font-medium text-nouns-text-grey  hover:text-white ">
+                              <a className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-1 text-base font-medium text-nouns-text-grey  hover:text-white ">
                                 {subItem.name}
                               </a>
                             </Link>
