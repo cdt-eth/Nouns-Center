@@ -6,7 +6,7 @@
       {
         "name": "Assets",
         "image": "earth.png",
-        "link": "/about",
+        "link": "/assets",
         "external": false
       },
       {
@@ -24,7 +24,7 @@
       {
         "name": "GitHub",
         "image": "earth.png",
-        "link": "",
+        "link": "https://github.com/nounsDAO/nouns-monorepo",
         "external": true
       },
       {
@@ -36,10 +36,15 @@
       {
         "name": "Issues",
         "image": "earth.png",
-        "link": "#",
+        "link": "https://github.com/nounsDAO/nouns-monorepo/issues",
         "external": true
       },
-      { "name": "FAQ", "image": "earth.png", "link": "#", "external": false }
+      {
+        "name": "FAQ",
+        "image": "earth.png",
+        "link": "https://github.com/christiandavidturner/TOADZTOOLZ/discussions",
+        "external": false
+      }
     ]
   },
   {

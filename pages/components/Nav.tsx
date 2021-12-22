@@ -1,6 +1,6 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
-import { uuid } from "uuidv4";
+import { v4 } from "uuid";
 import nav from "../api/nav.json";
 import Link from "next/link";
 
@@ -29,7 +29,7 @@ const Nav = () => {
           {/* No SubNav */}
           {nav.map((item) =>
             !item.children ? (
-              <div key={uuid()}>
+              <div key={item.name}>
                 <a
                   href="#"
                   className={classNames(
@@ -86,7 +86,10 @@ const Nav = () => {
 
                     <Disclosure.Panel className="space-y-1">
                       {item.children.map((subItem) => (
-                        <div className="flex ml-3 hover:bg-black rounded-md">
+                        <div
+                          key={item.name}
+                          className="flex ml-3 hover:bg-black rounded-md"
+                        >
                           <Link href="/">
                             <img
                               className="w-8 cursor-pointer"
@@ -97,7 +100,7 @@ const Nav = () => {
 
                           {subItem.external ? (
                             <Disclosure.Button
-                              key={subItem.name}
+                              key={item.name}
                               as="a"
                               href={subItem.link}
                               target="_blank"
