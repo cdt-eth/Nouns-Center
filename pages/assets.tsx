@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "./components/Header";
+import Title from "./components/Title";
 
 const Assets = () => {
   return (
     <div>
       <Header title="Assets | Nouns Center" />
-      <h1>Assets</h1>
+      <Title title="Assets" />
     </div>
   );
 };

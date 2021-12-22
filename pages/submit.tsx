@@ -2,13 +2,13 @@ import React from "react";
 import Header from "./components/Header";
 import Title from "./components/Title";
 
-const Nouners = () => {
+const Submit = () => {
   return (
     <div>
-      <Header title="Nouners | Nouns Center" />
-      <Title title="Nouners" />
+      <Header title="Submit | Nouns Center" />
+      <Title title="Submit" />
     </div>
   );
 };
 
-export default Nouners;
+export default Submit;

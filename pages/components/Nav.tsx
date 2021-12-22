@@ -11,12 +11,8 @@ const Nav = () => {
   return (
     <div className="flex flex-col flex-grow  pt-5 pb-4 bg-nouns-bg-darkgrey overflow-y-auto">
       <Link href="/">
-        <div className="flex items-center flex-shrink-0 px-4">
-          <img
-            className="h-14 w-auto cursor-pointer"
-            src="earth.png"
-            alt="earth"
-          />
+        <div className="flex sm:cursor-pointer items-center flex-shrink-0 px-4">
+          <img className="w-1/3 " src="earth.png" alt="earth" />
           <p className="text-nouns text-white text-3xl ml-1">Center</p>
         </div>
       </Link>

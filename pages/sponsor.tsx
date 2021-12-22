@@ -2,13 +2,13 @@ import React from "react";
 import Header from "./components/Header";
 import Title from "./components/Title";
 
-const Nouners = () => {
+const Sponsor = () => {
   return (
     <div>
-      <Header title="Nouners | Nouns Center" />
-      <Title title="Nouners" />
+      <Header title="Sponsor | Nouns Center" />
+      <Title title="Sponsor" />
     </div>
   );
 };
 
-export default Nouners;
+export default Sponsor;

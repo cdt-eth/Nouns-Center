@@ -12,7 +12,7 @@
       {
         "name": "FAQ",
         "image": "earth.png",
-        "link": "#",
+        "link": "/faq",
         "external": false
       }
     ]
@@ -28,9 +28,9 @@
         "external": true
       },
       {
-        "name": "Resources",
+        "name": "Tools",
         "image": "earth.png",
-        "link": "#",
+        "link": "/tools",
         "external": false
       },
       {
@@ -54,7 +54,7 @@
       {
         "name": "Funded",
         "image": "earth.png",
-        "link": "#",
+        "link": "/funded",
         "external": false
       },
       {
@@ -66,7 +66,7 @@
       {
         "name": "Submit Project",
         "image": "earth.png",
-        "link": "#",
+        "link": "/submit",
         "external": false
       }
     ]
@@ -76,7 +76,7 @@
     "current": false,
     "children": [
       {
-        "name": "Home",
+        "name": "Nouns.wtf",
         "image": "earth.png",
         "link": "https://nouns.wtf/",
         "external": true
@@ -84,17 +84,27 @@
       {
         "name": "Podcasts",
         "image": "earth.png",
-        "link": "#",
+        "link": "/podcasts",
         "external": false
       },
       {
-        "name": "Statistics",
+        "name": "Stats",
         "image": "earth.png",
-        "link": "#",
+        "link": "/stats",
         "external": false
       },
-      { "name": "Media", "image": "earth.png", "link": "#", "external": false },
-      { "name": "News", "image": "earth.png", "link": "#", "external": false }
+      {
+        "name": "Media",
+        "image": "earth.png",
+        "link": "/media",
+        "external": false
+      },
+      {
+        "name": "News",
+        "image": "earth.png",
+        "link": "/news",
+        "external": false
+      }
     ]
   },
   {
@@ -102,33 +112,33 @@
     "current": false,
     "children": [
       {
-        "name": "Forums",
+        "name": "Template",
         "image": "earth.png",
-        "link": "#",
-        "external": true
+        "link": "/template",
+        "external": false
       },
       {
-        "name": "Templates",
+        "name": "Get Feedback",
         "image": "earth.png",
-        "link": "#",
-        "external": false
+        "link": "https://discourse.nouns.wtf/",
+        "external": true
       },
       {
         "name": "Find a Sponsor",
         "image": "earth.png",
-        "link": "#",
+        "link": "/sponsor",
         "external": false
       },
       {
-        "name": "Retro Funding",
+        "name": "Funding",
         "image": "earth.png",
-        "link": "#",
+        "link": "/funding",
         "external": false
       },
       {
         "name": "Prop House",
         "image": "earth.png",
-        "link": "#",
+        "link": "https://prop.house/",
         "external": true
       }
     ]
@@ -140,13 +150,13 @@
       {
         "name": "History",
         "image": "earth.png",
-        "link": "#",
+        "link": "/history",
         "external": false
       },
       {
         "name": "Proposals",
         "image": "earth.png",
-        "link": "#",
+        "link": "https://nouns.wtf/vote",
         "external": false
       },
       {
@@ -158,13 +168,13 @@
       {
         "name": "Twitter",
         "image": "earth.png",
-        "link": "#",
+        "link": "https://twitter.com/nounsdao",
         "external": true
       },
       {
         "name": "Discord",
         "image": "earth.png",
-        "link": "#",
+        "link": "http://discord.gg/nouns",
         "external": true
       }
     ]
@@ -174,18 +184,17 @@
     "current": false,
     "children": [
       {
-        "name": "Backlog",
+        "name": "Create A Noun",
         "image": "earth.png",
-        "link": "#",
+        "link": "https://nouns.wtf/playground",
         "external": true
       },
       {
-        "name": "Playground",
+        "name": "Merch",
         "image": "earth.png",
-        "link": "#",
+        "link": "https://nounstown.shop/",
         "external": true
-      },
-      { "name": "Merch", "image": "earth.png", "link": "#", "external": false }
+      }
     ]
   }
 ]
