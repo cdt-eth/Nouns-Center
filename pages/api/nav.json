@@ -6,10 +6,15 @@
       {
         "name": "Assets",
         "image": "earth.png",
-        "link": "#",
+        "link": "/about",
         "external": false
       },
-      { "name": "FAQ", "image": "earth.png", "link": "#", "external": false }
+      {
+        "name": "FAQ",
+        "image": "earth.png",
+        "link": "#",
+        "external": false
+      }
     ]
   },
   {
@@ -19,7 +24,7 @@
       {
         "name": "GitHub",
         "image": "earth.png",
-        "link": "#",
+        "link": "",
         "external": true
       },
       {
@@ -142,7 +147,7 @@
       {
         "name": "for Nouners",
         "image": "earth.png",
-        "link": "#",
+        "link": "/nouners",
         "external": false
       },
       {

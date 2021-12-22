@@ -1,6 +1,8 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
+import { uuid } from "uuidv4";
 import nav from "../api/nav.json";
+import Link from "next/link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -9,9 +11,15 @@ function classNames(...classes) {
 const Nav = () => {
   return (
     <div className="flex flex-col flex-grow  pt-5 pb-4 bg-nouns-bg-darkgrey overflow-y-auto">
-      <div className="flex items-center flex-shrink-0 px-4">
-        <img className="h-14 w-auto" src="earth.png" alt="earth" />
-      </div>
+      <Link href="/">
+        <div className="flex items-center flex-shrink-0 px-4">
+          <img
+            className="h-14 w-auto cursor-pointer"
+            src="earth.png"
+            alt="earth"
+          />
+        </div>
+      </Link>
 
       <div className="mt-5 flex-grow flex flex-col">
         <nav
@@ -21,7 +29,7 @@ const Nav = () => {
           {/* No SubNav */}
           {nav.map((item) =>
             !item.children ? (
-              <div key={item.name}>
+              <div key={uuid()}>
                 <a
                   href="#"
                   className={classNames(
@@ -79,16 +87,32 @@ const Nav = () => {
                     <Disclosure.Panel className="space-y-1">
                       {item.children.map((subItem) => (
                         <div className="flex ml-3 hover:bg-black rounded-md">
-                          <img className="w-8" src="earth.png" alt="earth" />
-                          <Disclosure.Button
-                            key={subItem.name}
-                            as="a"
-                            href={subItem.link}
-                            target={subItem.external ? "_blank" : "_self"}
-                            className="focus:outline-none group w-full flex items-center pr-2 pl-1 py-1 text-base font-medium text-nouns-text-grey  hover:text-white "
-                          >
-                            {subItem.name}
-                          </Disclosure.Button>
+                          <Link href="/">
+                            <img
+                              className="w-8 cursor-pointer"
+                              src="earth.png"
+                              alt="earth"
+                            />
+                          </Link>
+
+                          {subItem.external ? (
+                            <Disclosure.Button
+                              key={subItem.name}
+                              as="a"
+                              href={subItem.link}
+                              target="_blank"
+                              rel="no-referrer"
+                              className="focus:outline-none group w-full flex items-center pr-2 pl-1 py-1 text-base font-medium text-nouns-text-grey  hover:text-white "
+                            >
+                              {subItem.name}
+                            </Disclosure.Button>
+                          ) : (
+                            <Link href={subItem.link}>
+                              <a className="focus:outline-none group w-full flex items-center pr-2 pl-1 py-1 text-base font-medium text-nouns-text-grey  hover:text-white ">
+                                {subItem.name}
+                              </a>
+                            </Link>
+                          )}
                         </div>
                       ))}
                     </Disclosure.Panel>
