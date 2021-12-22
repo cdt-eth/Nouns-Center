@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Script from "next/script";
+import Title from "./components/Title";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       </Script>
 
       <Header title="Nouns Center" />
+      <Title title="Home" />
     </>
   );
 }

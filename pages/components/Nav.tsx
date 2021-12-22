@@ -13,7 +13,7 @@ const Nav = () => {
       <Link href="/">
         <div className="flex sm:cursor-pointer items-center flex-shrink-0 px-4">
           <img className="w-1/3 " src="earth.png" alt="earth" />
-          <p className="text-nouns text-white text-3xl ml-1">Center</p>
+          <p className="text-nouns text-[#2C82F6] text-3xl">Center</p>
         </div>
       </Link>
 
@@ -88,8 +88,8 @@ const Nav = () => {
                         >
                           <Link href="/">
                             <img
-                              className="w-8 cursor-pointer"
-                              src="earth.png"
+                              className="w-10 cursor-pointer"
+                              src={subItem.image}
                               alt="earth"
                             />
                           </Link>
