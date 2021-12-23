@@ -1,6 +1,10 @@
 import React from "react";
 
-const Title = ({ title }) => {
+interface TitleProps {
+  title: string;
+}
+
+const Title = ({ title }: TitleProps) => {
   return <div className="text-4xl text-nouns pb-6 tracking-wide">{title}</div>;
 };
 
