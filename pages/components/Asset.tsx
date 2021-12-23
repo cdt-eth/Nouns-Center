@@ -9,7 +9,7 @@ interface AssetProps {
 
 const Asset = ({ title, image, file }: AssetProps) => {
   return (
-    <div className="flex items-center justify-center flex-col sm:w-1/3">
+    <div className="flex items-center justify-center flex-col sm:w-1/3 xs:mb-20">
       <p className="text-nouns text-lg text-center">{title}</p>
 
       <img className="mb-2" src={`/assets/${image}`} alt={image} />
