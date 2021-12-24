@@ -12,8 +12,8 @@ const Nav = () => {
     <div className="flex flex-col flex-grow  pt-5 pb-4 bg-nouns-bg-darkgrey overflow-y-auto">
       <Link href="/">
         <div className="flex sm:cursor-pointer items-center flex-shrink-0 px-4">
-          <img className="w-1/3 " src="earth.png" alt="earth" />
-          <p className="text-nouns text-[#2C82F6] text-3xl">Center</p>
+          <img className="w-1/6 mr-2" src="earth.gif" alt="earth" />
+          <p className="text-nouns text-[#2C82F6] text-2xl">Nouns Center</p>
         </div>
       </Link>
 
@@ -32,7 +32,7 @@ const Nav = () => {
                     item.current
                       ? "bg-nouns-bg-darkgrey text-white"
                       : "bg-nouns-bg-darkgrey text-nouns-text-grey hover:bg-nouns-bg-darkgrey hover:text-white",
-                    "group w-full flex items-center pl-2 py-2 text-sm font-medium rounded-md"
+                    "group w-full flex items-center pl-2 py-2 xs:text-text-lg sm:text-base font-medium rounded-md"
                   )}
                 >
                   {item.name}
@@ -48,7 +48,7 @@ const Nav = () => {
                         item.current
                           ? "bg-gray-100 text-nouns-text-nav-header focus:outline-none"
                           : "bg-nouns-bg-darkgrey text-nouns-text-nav-header hover:bg-black  hover:text-white",
-                        "group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none "
+                        "group w-full flex items-center pl-2 pr-1 py-2 text-left xs:text-text-lg sm:text-base font-medium rounded-md focus:outline-none "
                       )}
                     >
                       <span className="flex-1">{item.name}</span>
