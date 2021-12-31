@@ -4,7 +4,7 @@ interface DownloadButtonProps {
   text: string;
   file: string;
 }
-const DownloadButton = ({ text, file }) => {
+const DownloadButton = ({ text, file }: DownloadButtonProps) => {
   return (
     <a
       type="button"

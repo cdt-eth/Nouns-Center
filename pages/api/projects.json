@@ -63,6 +63,13 @@
     "image": "boredapenouns.png"
   },
   {
+    "title": "Bored Noun Gang",
+    "description": "Custom Noun avatars that are built different—some slightly and some very.",
+    "creator": ["borednoungang"],
+    "url": "https://opensea.io/collection/borednoungang",
+    "image": "borednoun.svg"
+  },
+  {
     "title": "Bunnies",
     "description": "Bunnies multiply until they are everywhere. NFTs meet hyperinflationary tokenomics in this first-of-its-kind blockchain game.",
     "creator": ["bunnieswtf"],
@@ -117,6 +124,13 @@
     "creator": [""],
     "url": "https://opensea.io/collection/impropernouns",
     "image": "improper.jpeg"
+  },
+  {
+    "title": "Internouns",
+    "description": "Internet + Nouns = Internouns",
+    "creator": ["internouns"],
+    "url": "https://opensea.io/collection/internoun",
+    "image": "internouns.jpeg"
   },
   {
     "title": "Irregular Nouns",
@@ -252,6 +266,13 @@
     "image": "sidenoun.png"
   },
   {
+    "title": "Skelenouns",
+    "description": "A series of skeleton characters from the Nouns.wtf project.",
+    "creator": [""],
+    "url": "https://opensea.io/collection/snuon",
+    "image": "skelenouns.png"
+  },
+  {
     "title": "Snuon",
     "description": "Flipped Nouns",
     "creator": [""],
@@ -261,8 +282,8 @@
   {
     "title": "Splat Nouns",
     "description": "Splat (Nouns) is a collection of procedurally created fluid sims.",
-    "creator": ["splats_wtf", "sylo_tv"],
-    "url": "https://opensea.io/collection/splat-nouns",
+    "creator": [""],
+    "url": "https://objkt.com/collection/KT1CKdxVH514ReLWWV6h4TgWfVsYqBvCyRXV",
     "image": "splat.gif"
   },
   {
