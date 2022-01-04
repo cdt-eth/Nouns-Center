@@ -16,7 +16,6 @@ const Nav = ({ setSidebarOpen }) => {
           onClick={() => setSidebarOpen(false)}
         >
           <img className="w-1/6 mr-2" src="earth.gif" alt="earth" />
-          {/* <p className="text-nouns text-[#2C82F6] text-2xl">Nouns Center</p> */}
         </div>
       </Link>
 
