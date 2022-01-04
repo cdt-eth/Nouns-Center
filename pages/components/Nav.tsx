@@ -7,13 +7,16 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Nav = () => {
+const Nav = ({ setSidebarOpen }) => {
   return (
     <div className="flex flex-col flex-grow  pt-5 pb-4 bg-nouns-bg-darkgrey overflow-y-auto">
       <Link href="/">
-        <div className="flex sm:cursor-pointer items-center flex-shrink-0 px-4">
+        <div
+          className="flex sm:cursor-pointer items-center flex-shrink-0 px-4"
+          onClick={() => setSidebarOpen(false)}
+        >
           <img className="w-1/6 mr-2" src="earth.gif" alt="earth" />
-          <p className="text-nouns text-[#2C82F6] text-2xl">Nouns Center</p>
+          {/* <p className="text-nouns text-[#2C82F6] text-2xl">Nouns Center</p> */}
         </div>
       </Link>
 
@@ -85,6 +88,7 @@ const Nav = () => {
                         <div
                           key={item.name}
                           className="flex ml-3 px-1 items-center hover:bg-black rounded-md"
+                          onClick={() => setSidebarOpen(false)}
                         >
                           <Link href="/">
                             <img

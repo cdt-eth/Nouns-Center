@@ -57,7 +57,7 @@ const Navigation = () => {
                 </div>
               </Transition.Child>
 
-              <Nav />
+              <Nav setSidebarOpen={setSidebarOpen} />
             </div>
           </Transition.Child>
 
@@ -70,7 +70,7 @@ const Navigation = () => {
       {/* Static sidebar for desktop */}
       <div className="xs:hidden  md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
         {/* Sidebar component, swap this element with another sidebar if you like */}
-        <Nav />
+        <Nav setSidebarOpen={setSidebarOpen} />
       </div>
 
       <div className="md:pl-64 flex flex-col flex-1">
