@@ -6,24 +6,24 @@ class Recources extends React.Component {
     return (
       <div id="offline-resources">
         <div id="offline-resources-1x">
-          <img id="1x-obstacle-large" src="/dino/large.png" />
-          <img id="1x-obstacle-small" src="/dino/small.png" />
-          <img id="1x-cloud" src="/dino/cloud.png" />
-          <img id="1x-text" src="/dino/text.png" />
-          <img id="1x-horizon" src="/dino/ground.png" />
-          <img id="1x-trex" src="/dino/final.png" />
+          <img id="1x-obstacle-large" src="/dino/1x/large.png" />
+          <img id="1x-obstacle-small" src="/dino/1x/small.png" />
+          <img id="1x-cloud" src="/dino/1x/cloud.png" />
+          <img id="1x-text" src="/dino/1x/text.png" />
+          <img id="1x-horizon" src="/dino/1x/ground.png" />
+          <img id="1x-trex" src="/dino/1x/dino.png" />
           <img
             id="1x-restart"
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAgCAQAAADQmBIFAAAAZklEQVR4Xu3WMQoAIAxDUe/Y+58jYwV1CwQJWQT5o/DAoaWjV2i/LRym/A5FjEsR41LPQchByEHwIVAEC4gZpghmSDP8egXpr/hQZaAKQFQe+pBOQAblDC336qrlPpSg0MEjInbWTLFFmwc8TpTAAAAAAElFTkSuQmCC"
           />
         </div>
         <div id="offline-resources-2x">
-          <img id="2x-obstacle-large" src="/dino/large.png" />
-          <img id="2x-obstacle-small" src="/dino/small.png" />
-          <img id="2x-cloud" src="/dino/cloud.png" />
-          <img id="2x-text" src="/dino/text.png" />
-          <img id="2x-horizon" src="/dino/ground.png" />
-          <img id="2x-trex" src="/dino/final.png" />
+          <img id="2x-obstacle-large" src="/dino/2x/large.png" />
+          <img id="2x-obstacle-small" src="/dino/2x/small.png" />
+          <img id="2x-cloud" src="/dino/2x/cloud.png" />
+          <img id="2x-text" src="/dino/2x/text.png" />
+          <img id="2x-horizon" src="/dino/2x/ground.png" />
+          <img id="2x-trex" src="/dino/2x/dino.png" />
           <img
             id="2x-restart"
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABAAgMAAADE0Nm5AAAACVBMVEX////39/dTU1OabbyfAAAAAXRSTlMAQObYZgAAAGNJREFUeF7d1CEOwDAMQ9GS3q/ExPcz8Sm3gYBWVRo0afvwSQl0ax1To22JntKWupfGjriSXiLViCXCmXBHCykJTxaYEeIQGcVrHYklcoX8YYpSUggzcpBTiv5JtQWorUltmS6s4ZKtz2GgjAAAAABJRU5ErkJggg=="
