@@ -196,6 +196,13 @@
     "image": "nounks.png"
   },
   {
+    "title": "Nounpacas",
+    "description": "Alpacadabraz + Nouns",
+    "creator": ["thenoadz"],
+    "url": "https://opensea.io/collection/noadz",
+    "image": "nounpacas.png"
+  },
+  {
     "title": "Nouns 3D",
     "description": "3D Voxel Nouns.",
     "creator": ["Nouns_3D"],
@@ -236,6 +243,13 @@
     "creator": ["voxnouns", "TheZeeraffe", "justkidddinc", "syazwanamidun"],
     "url": "https://opensea.io/collection/voxelnouns",
     "image": "nounsvox.png"
+  },
+  {
+    "title": "Phouns",
+    "description": "The only phlipped project that won't get DMCA'd.",
+    "creator": ["phounswtf"],
+    "url": "https://phouns.wtf/",
+    "image": "phouns.png"
   },
   {
     "title": "Pixel Sorting Nouns",
@@ -313,6 +327,13 @@
     "creator": [""],
     "url": "https://opensea.io/collection/verbs",
     "image": "verbs.gif"
+  },
+  {
+    "title": "Voadz",
+    "description": "VX Mode of Nouns",
+    "creator": ["thevoadz"],
+    "url": "https://opensea.io/collection/voadz",
+    "image": "voadz.jpeg"
   },
   {
     "title": "Wizard Nouns",
