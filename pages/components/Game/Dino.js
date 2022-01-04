@@ -3,7 +3,6 @@ import React from "react";
 import Resources from "./Resources.js";
 import DinoScript from "../../api/DinoScript.js";
 import DinoStyle from "../../api/DinoStyle";
-// import "../../../styles/Dino.css";
 import "./Dino.module.css";
 
 class ChromeDinoComponent extends React.Component {

@@ -8,7 +8,11 @@ const Custom404 = () => {
     <div>
       <Header title="404 | Nouns Center" />
       <Title title="404: Page Not Found" />
-      <Dino />
+      <span className="xs:hidden sm:block">
+        <Dino />
+      </span>
+      <img className="sm:hidden" src="/dino/error_b.png" alt="dino" />
+      {/* <img className="sm:hidden" src="/dino/error.jpg" alt="dino" /> */}
     </div>
   );
 };
