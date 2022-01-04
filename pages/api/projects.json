@@ -147,6 +147,13 @@
     "image": "lilnouns.svg"
   },
   {
+    "title": "Low Effort Nouns",
+    "description": "5635 digital characters on the Ethereum blockchain.",
+    "creator": ["LowEffortNouns"],
+    "url": "https://loweffortnouns.com/",
+    "image": "loweffornouns.png"
+  },
+  {
     "title": "Neural Nouns",
     "description": "Neural network portraits of Nouns.",
     "creator": ["davecurry"],
@@ -201,6 +208,13 @@
     "creator": ["thenoadz"],
     "url": "https://opensea.io/collection/noadz",
     "image": "nounpacas.png"
+  },
+  {
+    "title": "Nounzy",
+    "description": "Nouns + Artsy = Nounzy",
+    "creator": [""],
+    "url": "https://opensea.io/collection/nounzy",
+    "image": "nounzy.jpeg"
   },
   {
     "title": "Nouns 3D",
