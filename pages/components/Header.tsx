@@ -14,6 +14,11 @@ const Header = ({ title }: HeaderProps) => {
         href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
         rel="stylesheet"
       />
+      <link
+        type="text/css"
+        rel="stylesheet"
+        href="/pages/components/Game/Dino.module.css"
+      />
     </Head>
   );
 };
