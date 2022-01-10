@@ -154,6 +154,13 @@
     "image": "loweffornouns.png"
   },
   {
+    "title": "MetaNoun",
+    "description": "A meta-pixelated Noun.",
+    "creator": ["NounMeta"],
+    "url": "https://opensea.io/collection/metanoun",
+    "image": "metanoun.png"
+  },
+  {
     "title": "Neural Nouns",
     "description": "Neural network portraits of Nouns.",
     "creator": ["davecurry"],
@@ -285,6 +292,13 @@
     "creator": ["propernouns_nft"],
     "url": "",
     "image": "propernouns.jpeg"
+  },
+  {
+    "title": "Rouns",
+    "description": "Like Nouns, only round.",
+    "creator": ["rounswtf"],
+    "url": "https://opensea.io/collection/rouns-wtf",
+    "image": "rouns.jpeg"
   },
   {
     "title": "Sidenoun",
