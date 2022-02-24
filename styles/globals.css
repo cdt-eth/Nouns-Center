@@ -112,3 +112,7 @@ h6 {
 .notion-text:not(:first-child) {
   margin-top: 25px;
 }
+
+main {
+  max-width: 1250px;
+}

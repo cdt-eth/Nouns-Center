@@ -4,7 +4,7 @@ const XSmall = ({ project }) => {
   //   const { title, description, creator, url, image } = project;
 
   return project ? (
-    <div className="xs:max-h-48 sm:max-h-72">
+    <div className="xs:max-h-48 md:max-h-44 xs:h-28 sm:h-36">
       <a
         className="group block sm:cursor-pointer transition duration-200 h-full w-full aspect-w-10 aspect-h-10 rounded-xl bg-gray-100 focus-within:ring-2 relative focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden"
         href={project.url}

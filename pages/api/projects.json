@@ -185,6 +185,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Mural",
+    "description": "Nouns mural and cinematic video reel.",
+    "creator": ["sine_nomine_art", "anonartsoc"],
+    "url": "https://twitter.com/anonartsoc/status/1492900020881813505",
+    "image": "mural.png",
+    "category": ["propHouse"]
+  },
+  {
     "title": "Neural Nouns",
     "description": "Neural network portraits of Nouns.",
     "creator": ["davecurry"],
@@ -220,7 +228,7 @@
     "title": "NounCats",
     "description": "Cool Cats-style Nouns",
     "creator": ["nouncats"],
-    "url": "",
+    "url": "https://nouncats.com",
     "image": "nouncats.jpeg",
     "category": ["nfts"]
   },
@@ -231,6 +239,14 @@
     "url": "https://opensea.io/collection/noundles/",
     "image": "noundles.png",
     "category": ["nfts"]
+  },
+  {
+    "title": "Nounify",
+    "description": "Add Noun glasses to any image.",
+    "creator": ["12bnoun", "0xFloyd"],
+    "url": "https://nounify.wtf/",
+    "image": "nounify.gif",
+    "category": ["smallGrants", "misc"]
   },
   {
     "title": "Nounks",
@@ -289,6 +305,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Nouns Stats",
+    "description": "Rarity & governance stats.",
+    "creator": ["pbrianandj"],
+    "url": "https://nounsstats.wtf/",
+    "image": "nounsstats.jpeg",
+    "category": ["misc"]
+  },
+  {
     "title": "Nouns Upside Down",
     "description": "Upside-down Nouns.",
     "creator": [""],
@@ -319,6 +343,14 @@
     "url": "https://opensea.io/collection/pixelsortnouns",
     "image": "pixelsorting.gif",
     "category": ["nfts"]
+  },
+  {
+    "title": "Playing Cards",
+    "description": "Nounish poker cards.",
+    "creator": ["matyETH"],
+    "url": "https://opensea.io/collection/noun-cards-animal",
+    "image": "playingcards.jpeg",
+    "category": ["nfts", "propHouse"]
   },
   {
     "title": "PokeNouns",

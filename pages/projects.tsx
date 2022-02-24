@@ -7,6 +7,11 @@ import Title from "./components/Title";
 const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
 
+  // let shuffled = filteredProjects
+  //   .map((value) => ({ value, sort: Math.random() }))
+  //   .sort((a, b) => a.sort - b.sort)
+  //   .map(({ value }) => value);
+
   const categories = [
     { id: "all", title: "All" },
     { id: "nfts", title: "NFTs" },
@@ -24,7 +29,7 @@ const Projects = () => {
       filtered = projects;
     } else {
       filtered = projects.filter(
-        (p) => p.category && p.category.length > 1 && p.category.includes(curr)
+        (p) => p.category && p.category.includes(curr)
         // filtered = projects.filter((p) => p.category === curr);
       );
     }
@@ -39,7 +44,7 @@ const Projects = () => {
       <div className="mb-4">
         <div className="">
           <fieldset className="mt-2 text-white ">
-            <div className="xs:grid xs:grid-cols-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-10 sm:text-base sm:justify-center sm:mb-2">
+            <div className="xs:grid xs:grid-cols-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-10 sm:text-base sm:justify-end sm:mb-2">
               {categories.map((category) => (
                 <div
                   key={category.id}
