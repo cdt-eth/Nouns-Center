@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import projects from "./api/projects.json";
 import XSmall from "./components/Project/XSmall";
 import Title from "./components/Title";
-// import Filter from "./components/Project/Filter";
 
 const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -14,19 +13,18 @@ const Projects = () => {
     { id: "proposal", title: "Proposal" },
     { id: "propHouse", title: "Prop House" },
     { id: "smallGrants", title: "Small Grants" },
+    { id: "misc", title: "Misc" },
   ];
 
   const handleClick = (e) => {
     const curr = e.target.id;
     let filtered = [];
-    console.log("curr", curr);
 
     if (curr === "all") {
       filtered = projects;
     } else {
       filtered = projects.filter(
         (p) => p.category && p.category.length > 1 && p.category.includes(curr)
-
         // filtered = projects.filter((p) => p.category === curr);
       );
     }
@@ -38,18 +36,15 @@ const Projects = () => {
       <Header title="Projects | Nouns Center" />
       <Title title="Projects" />
 
-      {/* <Filter  /> */}
-
       <div className="mb-4">
         <div className="">
-          {/* <label className="text-base font-medium text-white">Categories</label>
-          <p className="text-sm leading-5 text-white">
-            Please click one to filter.
-          </p> */}
-          <fieldset className="mt-4 text-white">
-            <div className="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+          <fieldset className="mt-2 text-white ">
+            <div className="xs:grid xs:grid-cols-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-10 sm:text-base sm:justify-center sm:mb-2">
               {categories.map((category) => (
-                <div key={category.id} className="flex items-center">
+                <div
+                  key={category.id}
+                  className="flex items-center xs:mb-4 sm:mb-0"
+                >
                   <input
                     onClick={handleClick}
                     id={category.id}
@@ -60,7 +55,7 @@ const Projects = () => {
                   />
                   <label
                     htmlFor={category.id}
-                    className="ml-3 block text-sm font-medium"
+                    className="xs:ml-1.5 sm:ml-3 block text-sm font-medium"
                   >
                     {category.title}
                   </label>

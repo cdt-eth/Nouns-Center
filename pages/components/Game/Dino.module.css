@@ -31,7 +31,10 @@
 } */
 
 #main-frame-error {
-  margin: 0;
+  margin: 0 !important;
+}
+.interstitial-wrapper {
+  margin: 0 !important;
 }
 
 .hidden {
@@ -98,4 +101,11 @@
   .interstitial-wrapper {
     margin-top: 5%;
   }
+}
+
+#main-frame-error {
+  margin: 0 !important;
+}
+.interstitial-wrapper {
+  margin: 0 !important;
 }
