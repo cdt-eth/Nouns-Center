@@ -91,3 +91,24 @@ h6 {
 /*  */
 /*  */
 /*  */
+#main-frame-error {
+  margin: 0 !important;
+}
+.interstitial-wrapper {
+  margin: 0 !important;
+}
+
+.notion {
+  color: white !important;
+  caret-color: white !important;
+  margin: 20px 0px;
+}
+.notion-text {
+  font-size: 28px;
+  font-family: "Londrina Solid", sans-serif;
+  letter-spacing: 0.07rem;
+  text-decoration: underline;
+}
+.notion-text:not(:first-child) {
+  margin-top: 25px;
+}

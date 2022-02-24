@@ -50,26 +50,8 @@
   {
     "name": "Projects",
     "current": false,
-    "children": [
-      {
-        "name": "Funded",
-        "image": "earth.png",
-        "link": "/funded",
-        "external": false
-      },
-      {
-        "name": "Derivatives",
-        "image": "earth.png",
-        "link": "/projects",
-        "external": false
-      },
-      {
-        "name": "Submit Project",
-        "image": "earth.png",
-        "link": "/submit",
-        "external": false
-      }
-    ]
+
+    "link": "/projects"
   },
   {
     "name": "General",

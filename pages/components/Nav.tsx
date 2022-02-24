@@ -29,7 +29,7 @@ const Nav = ({ setSidebarOpen }) => {
             !item.children ? (
               <div key={item.name}>
                 <a
-                  href="#"
+                  href={item.link}
                   className={classNames(
                     item.current
                       ? "bg-nouns-bg-darkgrey text-white"
@@ -37,6 +37,7 @@ const Nav = ({ setSidebarOpen }) => {
                     "group w-full flex items-center pl-2 py-2 xs:text-text-lg sm:text-base font-medium rounded-md"
                   )}
                 >
+                  {}
                   {item.name}
                 </a>
               </div>

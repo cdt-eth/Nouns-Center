@@ -4,7 +4,8 @@
     "description": "101 hand-drawn 1/1 Nouns.",
     "creator": ["abstractnouns_"],
     "url": "https://opensea.io/collection/abstract-nouns",
-    "image": "abstract.png"
+    "image": "abstract.png",
+    "category": ["nfts", "propHouse"]
   },
   {
     "title": "AI Nouns",
@@ -80,6 +81,7 @@
     "title": "Deep Dream Nouns",
     "description": "Nouns re-imagine using an deep dream AI generator.",
     "creator": ["deepdreamnouns"],
+    "categories": ["monetized", "onchain"],
     "url": "https://opensea.io/collection/deepdreamnouns",
     "image": "deepdream.jpeg"
   },
