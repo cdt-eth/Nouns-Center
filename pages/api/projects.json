@@ -377,6 +377,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Newsletter",
+    "description": "Nouns newsletter.",
+    "creator": ["matyETH"],
+    "url": "https://nouns.substack.com/",
+    "image": "newsletter.png",
+    "category": ["misc"]
+  },
+  {
     "title": "Noadz",
     "description": "Nouns + Toadz.",
     "creator": ["thenoadz"],
@@ -585,6 +593,14 @@
     "category": ["nfts", "misc"]
   },
   {
+    "title": "Nouns Mug",
+    "description": "Nouns glasses coffee cups.",
+    "creator": ["DivineOpus9"],
+    "url": "https://twitter.com/DivineOpus9/status/1485691681387294721",
+    "image": "nounsmug.jpeg",
+    "category": ["propHouse"]
+  },
+  {
     "title": "Nouns Need Names",
     "description": "Giving names to the newborn Nouns.",
     "creator": ["NounsNeedNames", "nikitago_"],
@@ -724,6 +740,22 @@
     "category": ["nfts"]
   },
   {
+    "title": "Sailing",
+    "description": "Sail a Nouns Boat in Hong Kong Victoria Harbor.",
+    "creator": ["wanuda5"],
+    "url": "https://twitter.com/wanuda5/status/1485568535514726401",
+    "image": "sailing.jpeg",
+    "category": ["propHouse"]
+  },
+  {
+    "title": "Sculpture",
+    "description": "Aluminum sculpture of Nouns glasses.",
+    "creator": ["GMI_Studio"],
+    "url": "https://twitter.com/GMI_Studio/status/1483633218414858241",
+    "image": "sculpture.jpeg",
+    "category": ["propHouse"]
+  },
+  {
     "title": "Sidenoun",
     "description": "Funky, cute, but mostly highly suspicious looking squads of four nouns released everyday, forever.",
     "creator": ["sidenoun"],
@@ -842,6 +874,14 @@
     "url": "https://opensea.io/collection/voadz",
     "image": "voadz.jpeg",
     "category": ["nfts"]
+  },
+  {
+    "title": "Voadz Legos",
+    "description": "Voadz collectible legos.",
+    "creator": ["thevoadz"],
+    "url": "https://twitter.com/thevoadz/status/1483702016631525383",
+    "image": "voadz-legos.jpeg",
+    "category": ["propHouse"]
   },
   {
     "title": "Wizard Nouns",
