@@ -18,6 +18,8 @@ const Projects = () => {
     { id: "proposal", title: "Proposal" },
     { id: "propHouse", title: "Prop House" },
     { id: "smallGrants", title: "Small Grants" },
+    { id: "merch", title: "Merch" },
+    { id: "stats", title: "Stats" },
     { id: "misc", title: "Misc" },
   ];
 
@@ -44,7 +46,7 @@ const Projects = () => {
       <div className="mb-4">
         <div className="">
           <fieldset className="mt-2 text-white ">
-            <div className="xs:grid xs:grid-cols-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-10 sm:text-base sm:justify-end sm:mb-2">
+            <div className="xs:grid xs:grid-cols-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-10 sm:text-base sm:justify-center sm:mb-2">
               {categories.map((category) => (
                 <div
                   key={category.id}

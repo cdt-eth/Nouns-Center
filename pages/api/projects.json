@@ -1,11 +1,19 @@
 [
   {
+    "title": "1n World",
+    "description": "Streetwear x Art x Crypto. 100% of profits donated to charity.",
+    "creator": ["build1nworld"],
+    "url": "https://1n.world/",
+    "image": "1n.png",
+    "category": ["merch"]
+  },
+  {
     "title": "Abstract Nouns",
     "description": "101 hand-drawn 1/1 Nouns.",
     "creator": ["abstractnouns_"],
     "url": "https://opensea.io/collection/abstract-nouns",
     "image": "abstract.png",
-    "category": ["nfts"]
+    "category": ["nfts", "smallGrants"]
   },
   {
     "title": "AI Nouns",
@@ -13,7 +21,7 @@
     "creator": ["abstractnounz"],
     "url": "https://opensea.io/collection/ai-noun",
     "image": "ainouns.png",
-    "category": ["nfts"]
+    "category": ["nfts", "smallGrants"]
   },
   {
     "title": "AltNouns",
@@ -21,7 +29,7 @@
     "creator": ["onchainco"],
     "url": "https://opensea.io/collection/altnouns",
     "image": "altnouns.svg",
-    "category": ["nfts"]
+    "category": ["nfts", "smallGrants"]
   },
   {
     "title": "Animated Nouns",
@@ -105,6 +113,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Figma Plugin",
+    "description": "Generate up to 1,000 random Nouns in one click or insert any of the daily nouns, all in SVG.",
+    "creator": ["sn0wberry1"],
+    "url": "https://www.figma.com/community/plugin/1045020359359636829/Nouns",
+    "image": "figma.png",
+    "category": ["smallGrants", "misc"]
+  },
+  {
     "title": "Fine Art Nouns",
     "description": "Noun heads on pieces of fine art.",
     "creator": ["FineArtNouns"],
@@ -177,6 +193,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Matt Downey Shop",
+    "description": "Nouns merch shop.",
+    "creator": ["mattdowney"],
+    "url": "https://shop.mattdowney.co/",
+    "image": "mattdowney.jpeg",
+    "category": ["merch"]
+  },
+  {
     "title": "MetaNoun",
     "description": "A meta-pixelated Noun.",
     "creator": ["NounMeta"],
@@ -206,7 +230,7 @@
     "creator": ["thenoadz"],
     "url": "https://opensea.io/collection/noadz",
     "image": "noadz.gif",
-    "category": ["nfts"]
+    "category": ["nfts", "smallGrants"]
   },
   {
     "title": "Noun Gan Study",
@@ -254,7 +278,7 @@
     "creator": ["NFT_Derivatives"],
     "url": "https://opensea.io/collection/nounks",
     "image": "nounks.png",
-    "category": ["nfts"]
+    "category": ["nfts", "smallGrants"]
   },
   {
     "title": "Nounpacas",
@@ -263,6 +287,22 @@
     "url": "https://opensea.io/collection/noadz",
     "image": "nounpacas.png",
     "category": ["nfts"]
+  },
+  {
+    "title": "Nounspedia",
+    "description": "View all Noun heads by category.",
+    "creator": ["12bnoun"],
+    "url": "https://nouns.com/nounspedia",
+    "image": "nounspedia.jpg",
+    "category": ["nfts", "smallGrants"]
+  },
+  {
+    "title": "NounsTown Shop",
+    "description": "Shop for Nouns stickers, apparel, gear & more.",
+    "creator": ["nounstownshop"],
+    "url": "https://nounstown.shop",
+    "image": "nounstownshop.jpeg",
+    "category": ["smallGrants", "merch"]
   },
   {
     "title": "Nounzy",
@@ -310,7 +350,7 @@
     "creator": ["pbrianandj"],
     "url": "https://nounsstats.wtf/",
     "image": "nounsstats.jpeg",
-    "category": ["misc"]
+    "category": ["stats", "misc"]
   },
   {
     "title": "Nouns Upside Down",
@@ -326,7 +366,7 @@
     "creator": ["voxnouns", "TheZeeraffe", "justkidddinc", "syazwanamidun"],
     "url": "https://opensea.io/collection/voxelnouns",
     "image": "nounsvox.png",
-    "category": ["nfts"]
+    "category": ["nfts", "smallGrants"]
   },
   {
     "title": "Phouns",
@@ -382,7 +422,7 @@
     "creator": ["sidenoun"],
     "url": "https://sidenoun.com/",
     "image": "sidenoun.png",
-    "category": ["nfts"]
+    "category": ["nfts", "smallGrants"]
   },
   {
     "title": "Skelenouns",
@@ -406,7 +446,7 @@
     "creator": [""],
     "url": "https://objkt.com/collection/KT1CKdxVH514ReLWWV6h4TgWfVsYqBvCyRXV",
     "image": "splat.gif",
-    "category": ["nfts"]
+    "category": ["nfts", "smallGrants"]
   },
   {
     "title": "The Mouns",
@@ -439,6 +479,14 @@
     "url": "https://opensea.io/collection/verbs",
     "image": "verbs.gif",
     "category": ["nfts"]
+  },
+  {
+    "title": "Visualize Value",
+    "description": "Limited runs of high-quality Nounish products.",
+    "creator": ["jackbutcher", "visualizevalue"],
+    "url": "https://visualizevalue.com/collections/merch",
+    "image": "visualizevalue.jpeg",
+    "category": ["merch"]
   },
   {
     "title": "Voadz",
