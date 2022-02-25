@@ -129,6 +129,14 @@
     "category": ["misc", "smallGrants"]
   },
   {
+    "title": "Dune Analytics",
+    "description": "Auction statistics.",
+    "creator": ["3pa15"],
+    "url": "https://dune.xyz/aaaaaaaaaa/NounsDAO",
+    "image": "dune.png",
+    "category": ["stats"]
+  },
+  {
     "title": "Facebook AR Filter",
     "description": "AR filter for Facebook.",
     "creator": ["matyETH", "joelcares_"],
@@ -249,6 +257,14 @@
     "category": ["smallGrants"]
   },
   {
+    "title": "Masterpiece",
+    "description": "Ownership statistics.",
+    "creator": ["usemasterpiece"],
+    "url": "https://masterpiece.so/artwork/227187-nouns",
+    "image": "masterpiece.png",
+    "category": ["stats"]
+  },
+  {
     "title": "Matt Downey Shop",
     "description": "Nouns merch shop.",
     "creator": ["mattdowney"],
@@ -305,12 +321,28 @@
     "category": ["nfts", "smallGrants"]
   },
   {
+    "title": "Nounalytics",
+    "description": "Nouns auction data.",
+    "creator": ["carrot_init"],
+    "url": "https://observablehq.com/@gitblamecarrot/nounalytics",
+    "image": "nounalytics.png",
+    "category": ["stats"]
+  },
+  {
     "title": "Noun Gan Study",
     "description": "Used a GAN to created these AI Nouns.",
     "creator": ["vanarman"],
     "url": "https://opensea.io/collection/noun-gan",
     "image": "noungan.gif",
     "category": ["nfts"]
+  },
+  {
+    "title": "Noun O'Clock Bot",
+    "description": "Noun O'Clock bot posts a message in Discord to remind people to visit FOMONOUNS.wtf to help select the next Noun.",
+    "creator": ["joelcares_"],
+    "url": "https://nounoclock.wtf/",
+    "image": "nounoclock.png",
+    "category": ["misc"]
   },
   {
     "title": "Noun Punks",
@@ -385,6 +417,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Noun Stats",
+    "description": "Auction statistics.",
+    "creator": ["@nicolagreco"],
+    "url": "https://observablehq.com/@nicola/nounstats",
+    "image": "nounstats.png",
+    "category": ["stats"]
+  },
+  {
     "title": "Nouns 3D",
     "description": "3D Voxel Nouns.",
     "creator": ["Nouns_3D"],
@@ -422,7 +462,7 @@
     "creator": ["pbrianandj"],
     "url": "https://nounsstats.wtf/",
     "image": "nounsstats.jpeg",
-    "category": ["stats", "misc"]
+    "category": ["stats"]
   },
   {
     "title": "Nouns Upside Down",
