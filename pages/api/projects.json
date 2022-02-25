@@ -8,6 +8,14 @@
     "category": ["merch"]
   },
   {
+    "title": "3D Nouns",
+    "description": "Create your own 3D Noun.",
+    "creator": ["3dnouns", "CoralOrca", "0xFloyd"],
+    "url": "https://3dnouns.com/",
+    "image": "3dnouns.jpeg",
+    "category": ["proposal"]
+  },
+  {
     "title": "8-bit Mini Games",
     "description": "Five 8-bit Noun mini-games that will be playable NFTs with an on-chain leaderboard.",
     "creator": ["8bitnouns", "galaxystargraph"],
@@ -96,6 +104,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Brave Browser Takeover",
+    "description": "24-hour takeover of the Brave browser homepage with Nouns art on the first day of NFT NY.",
+    "creator": ["@Goldypix", "sn0wberry1", "0xJustAMoment"],
+    "url": "https://twitter.com/punk4156/status/1455186180698423297",
+    "image": "brave.jpeg",
+    "category": ["proposal"]
+  },
+  {
     "title": "Bunnies",
     "description": "Bunnies multiply until they are everywhere. NFTs meet hyperinflationary tokenomics in this first-of-its-kind blockchain game.",
     "creator": ["bunnieswtf"],
@@ -169,6 +185,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Fomo Nouns",
+    "description": "Pick the next Noun every day at Noun O'Clock as a community via voting.",
+    "creator": ["fomonouns", "_forager", "0xRayo"],
+    "url": "https://fomonouns.wtf/",
+    "image": "fomo.jpeg",
+    "category": ["proposal"]
+  },
+  {
     "title": "Footy Nouns",
     "description": "Nouns that like football.",
     "creator": ["footynouns"],
@@ -183,6 +207,14 @@
     "url": "https://opensea.io/collection/ganoadz",
     "image": "ganoadz.jpeg",
     "category": ["nfts"]
+  },
+  {
+    "title": "Glasses for Kids",
+    "description": "300 no-cost vision tests plus Fitz Frames memberships to kids in need.",
+    "creator": ["JoshuaFisher"],
+    "url": "https://nouns.wtf/vote/12",
+    "image": "perpetual.png",
+    "category": ["proposal"]
   },
   {
     "title": "Glitched PokeNouns",
@@ -417,9 +449,17 @@
     "category": ["nfts"]
   },
   {
+    "title": "Noun 69 Song",
+    "description": "Auction statistics.",
+    "creator": ["songadaymann"],
+    "url": "https://www.youtube.com/watch?v=KrUdKqpqvCc",
+    "image": "song.png",
+    "category": ["proposal"]
+  },
+  {
     "title": "Noun Stats",
     "description": "Auction statistics.",
-    "creator": ["@nicolagreco"],
+    "creator": ["nicolagreco"],
     "url": "https://observablehq.com/@nicola/nounstats",
     "image": "nounstats.png",
     "category": ["stats"]
@@ -441,12 +481,58 @@
     "category": ["nfts"]
   },
   {
+    "title": "Nouns App",
+    "description": "iOS & Apple Watch app. Create Nouns, Nouns watch face, and get notifications about Noun 'o Clock.",
+    "creator": ["robjama", ""],
+    "url": "https://nouns.wtf/vote/6",
+    "image": "iosapp.png",
+    "category": ["proposal"]
+  },
+  {
     "title": "Nouns Comics",
     "description": "Comics using Nouns.",
     "creator": ["notundeadoracle"],
     "url": "https://opensea.io/collection/nouns-comic",
-    "image": "nounscomics.gif",
+    "image": "comic.png",
     "category": ["nfts", "proposal"]
+  },
+  {
+    "title": "Nouns O'Clock Calendar",
+    "description": "Calendar of NounsDAO events, updated daily, with the next auction & with proposal voting timelines.",
+    "creator": ["verbs_team", "verb0xd", "danpeguine"],
+    "url": "https://verbs.notion.site/Nouns-Google-Calendar-c8314d548aed4aa1b841cb868b9ea0a8",
+    "image": "nounsoclock.png",
+    "category": ["proposal"]
+  },
+  {
+    "title": "Nouns Automations (Integromat & Zapier)",
+    "description": "Infrastructure that will enable anyone to work with Nouns DAO data.",
+    "creator": ["verbs_team", "verb0xd", "danpeguine"],
+    "url": "https://verbs.notion.site/Nouns-Automations-using-Integromat-Zapier-7f3af840dc1d4a04b1d728f978c785b0",
+    "image": "zapier.png",
+    "category": ["proposal"]
+  },
+  {
+    "title": "Nouns Party",
+    "description": "Contribute to a collective vault so that the community can win Nouns together.",
+    "creator": ["devloper_xyz", "0xFloyd", "bstsrvdbld", "hansklaus4711"],
+    "url": "https://nouns.party/",
+    "image": "nounsparty.png",
+    "category": ["proposal"]
+  },
+  {
+    "title": "Nouns POAP",
+    "description": "Top 5 non-winning unique bidders on every dailiy Nouns auction get a POAP to commemorate the auction.",
+    "creator": [
+      "nounspoap",
+      "davidzhorvath",
+      "cdt_eth",
+      "thebrkfstsndwch",
+      "0xDesigner"
+    ],
+    "url": "https://nounspoap.com/",
+    "image": "nounspoap.png",
+    "category": ["proposal"]
   },
   {
     "title": "Nouns Revolution",
@@ -463,6 +549,19 @@
     "url": "https://nounsstats.wtf/",
     "image": "nounsstats.jpeg",
     "category": ["stats"]
+  },
+  {
+    "title": "Nouns Stories",
+    "description": "Making stories about Nouns.",
+    "creator": [
+      "Goldypix",
+      "nouns_stories",
+      "MoniqueMulcahy",
+      "Jarrod__Prince"
+    ],
+    "url": "https://nouns.wtf/vote/20",
+    "image": "stories.jpg",
+    "category": ["proposal"]
   },
   {
     "title": "Nouns Upside Down",
