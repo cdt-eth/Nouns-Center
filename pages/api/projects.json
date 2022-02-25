@@ -201,6 +201,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Found Nouns",
+    "description": "10,000 on-chain lost nouns.",
+    "creator": ["foundnouns"],
+    "url": "https://opensea.io/collection/found-nouns",
+    "image": "foundnouns.png",
+    "category": ["nfts"]
+  },
+  {
     "title": "GANoadz",
     "description": "Fusing Noadz and NFT art.",
     "creator": ["stas_kulesh"],
