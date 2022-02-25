@@ -8,6 +8,14 @@
     "category": ["merch"]
   },
   {
+    "title": "8-bit Mini Games",
+    "description": "Five 8-bit Noun mini-games that will be playable NFTs with an on-chain leaderboard.",
+    "creator": ["8bitnouns", "galaxystargraph"],
+    "url": "https://discourse.nouns.wtf/t/small-grants-8bit-nouns-mini-games/679",
+    "image": "8bit.jpg",
+    "category": ["smallGrants", "misc"]
+  },
+  {
     "title": "Abstract Nouns",
     "description": "101 hand-drawn 1/1 Nouns.",
     "creator": ["abstractnouns_"],
@@ -96,6 +104,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Coloring Book",
+    "description": "View all Noun heads by category.",
+    "creator": ["nounsense_wtf", "messhup"],
+    "url": "https://nounsense.wtf/",
+    "image": "coloringbook.png",
+    "category": ["nfts", "smallGrants", "proposal"]
+  },
+  {
     "title": "Deep Dream Nouns",
     "description": "Nouns re-imagine using an deep dream AI generator.",
     "creator": ["deepdreamnouns"],
@@ -103,6 +119,22 @@
     "url": "https://opensea.io/collection/deepdreamnouns",
     "image": "deepdream.jpeg",
     "category": ["nfts"]
+  },
+  {
+    "title": "Discord Stickers",
+    "description": "Discord Noun stickers.",
+    "creator": ["matyETH"],
+    "url": "https://drive.google.com/drive/folders/14vlzqHtRSLaBCS78Z6psvkzi37UpwPjY",
+    "image": "discord.jpg",
+    "category": ["misc", "smallGrants"]
+  },
+  {
+    "title": "Facebook AR Filter",
+    "description": "AR filter for Facebook.",
+    "creator": ["matyETH", "joelcares_"],
+    "url": "https://www.facebook.com/fbcameraeffects/tryit/2050002801834821/",
+    "image": "ar-fb.png",
+    "category": ["smallGrants", "misc"]
   },
   {
     "title": "Fast Food Nouns",
@@ -161,12 +193,28 @@
     "category": ["nfts"]
   },
   {
+    "title": "Instagram AR Filter",
+    "description": "AR filter for Instagram.",
+    "creator": ["matyETH", "joelcares_"],
+    "url": "https://www.instagram.com/ar/2050002801834821/",
+    "image": "ar-ig.png",
+    "category": ["smallGrants", "misc"]
+  },
+  {
     "title": "Internouns",
     "description": "Internet + Nouns = Internouns",
     "creator": ["internouns"],
     "url": "https://opensea.io/collection/internoun",
     "image": "internouns.jpeg",
     "category": ["nfts"]
+  },
+  {
+    "title": "iOS Stickers",
+    "description": "iOS Noun stickers.",
+    "creator": ["thisismcgregor"],
+    "url": "https://apps.apple.com/us/app/nounish-stickers/id1606930723",
+    "image": "ios.jpg",
+    "category": ["misc", "smallGrants"]
   },
   {
     "title": "Irregular Nouns",
@@ -193,6 +241,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Luxury Sunglasses",
+    "description": "Bringing a luxury version of ⌐◨-◨ to life.",
+    "creator": ["SalvinoArmati", "SignoraArmati"],
+    "url": "https://twitter.com/SalvinoArmati",
+    "image": "salvino.jpeg",
+    "category": ["smallGrants"]
+  },
+  {
     "title": "Matt Downey Shop",
     "description": "Nouns merch shop.",
     "creator": ["mattdowney"],
@@ -217,6 +273,14 @@
     "category": ["propHouse"]
   },
   {
+    "title": "Nerman",
+    "description": "Nouns content tweeter.",
+    "creator": ["NounsTweeter", "joelcares_"],
+    "url": "https://twitter.com/NounsTweeter",
+    "image": "nerman.jpeg",
+    "category": ["smallGrants", "misc"]
+  },
+  {
     "title": "Neural Nouns",
     "description": "Neural network portraits of Nouns.",
     "creator": ["davecurry"],
@@ -230,6 +294,14 @@
     "creator": ["thenoadz"],
     "url": "https://opensea.io/collection/noadz",
     "image": "noadz.gif",
+    "category": ["nfts", "smallGrants"]
+  },
+  {
+    "title": "Noggles",
+    "description": "Landing page for AR filters.",
+    "creator": ["joelcares_"],
+    "url": "https://noggles.wtf/",
+    "image": "noggles.png",
     "category": ["nfts", "smallGrants"]
   },
   {
@@ -433,6 +505,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Snapchat AR Filter",
+    "description": "AR filter for Snapchat.",
+    "creator": ["coralorca"],
+    "url": "https://lens.snapchat.com/d1507087c8f5479f89a73464805f76cb",
+    "image": "ar-snap.png",
+    "category": ["smallGrants", "misc"]
+  },
+  {
     "title": "Snuon",
     "description": "Flipped Nouns",
     "creator": [""],
@@ -471,6 +551,14 @@
     "url": "https://opensea.io/collection/tounswtf",
     "image": "touns.png",
     "category": ["nfts"]
+  },
+  {
+    "title": "Twitter Bot",
+    "description": "Sharing Nouns art + sales + listings.",
+    "creator": ["nouns_bot", "andreitr"],
+    "url": "https://twitter.com/nouns_bot",
+    "image": "twitter.jpeg",
+    "category": ["smallGrants", "misc"]
   },
   {
     "title": "Verbs",
