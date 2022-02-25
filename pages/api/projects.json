@@ -513,6 +513,14 @@
     "category": ["proposal"]
   },
   {
+    "title": "Nouns Center",
+    "description": "Community site for Nouns.",
+    "creator": ["cdt_eth"],
+    "url": "https://nouns.center/",
+    "image": "nounscenter.gif",
+    "category": ["proposal"]
+  },
+  {
     "title": "Nouns Party",
     "description": "Contribute to a collective vault so that the community can win Nouns together.",
     "creator": ["devloper_xyz", "0xFloyd", "bstsrvdbld", "hansklaus4711"],
@@ -666,6 +674,14 @@
     "url": "https://objkt.com/collection/KT1CKdxVH514ReLWWV6h4TgWfVsYqBvCyRXV",
     "image": "splat.gif",
     "category": ["nfts", "smallGrants"]
+  },
+  {
+    "title": "Studio1",
+    "description": "From comics and games, to toys and movies, Nouns Studio1 helps your organization build with Nouns.",
+    "creator": ["davidzhorvath"],
+    "url": "https://www.studio1.wtf/",
+    "image": "studio1.png",
+    "category": ["proposal"]
   },
   {
     "title": "The Mouns",
