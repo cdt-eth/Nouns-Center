@@ -136,6 +136,14 @@
     "category": ["misc", "smallGrants"]
   },
   {
+    "title": "Crystal Ball",
+    "description": "UI for the Nounder's original Auction Crystal Ball.",
+    "creator": ["propernouns_nft"],
+    "url": "https://nouns-crystal-ball.netlify.app/",
+    "image": "crystalball.jpg",
+    "category": ["misc"]
+  },
+  {
     "title": "Deep Dream Nouns",
     "description": "Nouns re-imagine using an deep dream AI generator.",
     "creator": ["deepdreamnouns"],
@@ -441,6 +449,14 @@
     "category": ["smallGrants", "misc"]
   },
   {
+    "title": "Nounite",
+    "description": "A fantasy world inspired by Nouns.",
+    "creator": ["nounitexyz"],
+    "url": "https://mirror.xyz/nounite.eth",
+    "image": "nounite.jpeg",
+    "category": ["misc"]
+  },
+  {
     "title": "Nounks",
     "description": "CryptoPunks meets Nouns.",
     "creator": ["NFT_Derivatives"],
@@ -455,6 +471,14 @@
     "url": "https://opensea.io/collection/noadz",
     "image": "nounpacas.png",
     "category": ["nfts"]
+  },
+  {
+    "title": "Nounsmas",
+    "description": "An ultra-rare 1/1 PFP, brought to you by NounsDAO & Gitcoin.",
+    "creator": ["gitcoin", "nowonderer"],
+    "url": "https://nounsmas.wtf/",
+    "image": "nounsmas.png",
+    "category": ["nfts", "misc"]
   },
   {
     "title": "Nounspedia",
@@ -529,22 +553,6 @@
     "category": ["proposal"]
   },
   {
-    "title": "Nouns Comics",
-    "description": "Comics using Nouns.",
-    "creator": ["notundeadoracle"],
-    "url": "https://opensea.io/collection/nouns-comic",
-    "image": "comic.png",
-    "category": ["nfts", "proposal"]
-  },
-  {
-    "title": "Nouns O'Clock Calendar",
-    "description": "Calendar of NounsDAO events, updated daily, with the next auction & with proposal voting timelines.",
-    "creator": ["verbs_team", "verb0xd", "danpeguine"],
-    "url": "https://verbs.notion.site/Nouns-Google-Calendar-c8314d548aed4aa1b841cb868b9ea0a8",
-    "image": "nounsoclock.png",
-    "category": ["proposal"]
-  },
-  {
     "title": "Nouns Automations (Integromat & Zapier)",
     "description": "Infrastructure that will enable anyone to work with Nouns DAO data.",
     "creator": ["verbs_team", "verb0xd", "danpeguine"],
@@ -558,6 +566,38 @@
     "creator": ["cdt_eth"],
     "url": "https://nouns.center/",
     "image": "nounscenter.gif",
+    "category": ["proposal"]
+  },
+  {
+    "title": "Nouns Comics",
+    "description": "Comics using Nouns.",
+    "creator": ["notundeadoracle"],
+    "url": "https://opensea.io/collection/nouns-comic",
+    "image": "comic.png",
+    "category": ["nfts", "proposal"]
+  },
+  {
+    "title": "Nouns Jump",
+    "description": "3K nouns & toadz jumping beyond the endless skyline.",
+    "creator": ["nounsjump"],
+    "url": "https://nounsjump.wtf/",
+    "image": "nounsjump.png",
+    "category": ["nfts", "misc"]
+  },
+  {
+    "title": "Nouns Need Names",
+    "description": "Giving names to the newborn Nouns.",
+    "creator": ["NounsNeedNames", "nikitago_"],
+    "url": "https://nounsneednames.wtf/",
+    "image": "nounsneednames.png",
+    "category": ["misc"]
+  },
+  {
+    "title": "Nouns O'Clock Calendar",
+    "description": "Calendar of NounsDAO events, updated daily, with the next auction & with proposal voting timelines.",
+    "creator": ["verbs_team", "verb0xd", "danpeguine"],
+    "url": "https://verbs.notion.site/Nouns-Google-Calendar-c8314d548aed4aa1b841cb868b9ea0a8",
+    "image": "nounsoclock.png",
     "category": ["proposal"]
   },
   {
@@ -621,11 +661,19 @@
   },
   {
     "title": "Nouns Vox",
-    "description": "Nouns created with Voxel blocks.",
+    "description": "Nounish art collection.",
     "creator": ["voxnouns", "TheZeeraffe", "justkidddinc", "syazwanamidun"],
     "url": "https://opensea.io/collection/voxelnouns",
     "image": "nounsvox.png",
     "category": ["nfts", "smallGrants"]
+  },
+  {
+    "title": "OnCyber Gallery",
+    "description": "Nouns created with Voxel blocks.",
+    "creator": ["nounstownshop"],
+    "url": "https://oncyber.io/nounishcc0",
+    "image": "oncyber.jpeg",
+    "category": ["misc"]
   },
   {
     "title": "Phouns",
@@ -722,6 +770,14 @@
     "url": "https://www.studio1.wtf/",
     "image": "studio1.png",
     "category": ["proposal"]
+  },
+  {
+    "title": "Synthetic Nouns",
+    "description": "Pseudo-randomly generated Nouns using your Ethereum wallet address as the seed.",
+    "creator": ["12bnoun"],
+    "url": "https://synthetic-nouns.herokuapp.com/",
+    "image": "synthetic.jpeg",
+    "category": ["misc", "smallGrants"]
   },
   {
     "title": "The Mouns",
