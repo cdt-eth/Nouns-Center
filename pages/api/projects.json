@@ -281,6 +281,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Invisible Nouns",
+    "description": "Completely on-chain derivative of Nouns.",
+    "creator": ["SubNouns"],
+    "url": "https://invisiblenouns.wtf",
+    "image": "invisible.svg",
+    "category": ["nfts"]
+  },
+  {
     "title": "iOS Stickers",
     "description": "iOS Noun stickers.",
     "creator": ["thisismcgregor"],
@@ -433,8 +441,16 @@
     "category": ["nfts"]
   },
   {
+    "title": "Nounals",
+    "description": "Definition of a nounal: of, relating to, or of the nature, function, or quality of a noun.",
+    "creator": ["nounals_nft", "cryptokook4"],
+    "url": "https://opensea.io/collection/nounals",
+    "image": "nounals.jpeg",
+    "category": ["nfts"]
+  },
+  {
     "title": "NounCats",
-    "description": "Cool Cats-style Nouns",
+    "description": "Cool Cats-style Nouns.",
     "creator": ["nouncats"],
     "url": "https://nouncats.com",
     "image": "nouncats.jpeg",
