@@ -537,6 +537,14 @@
     "category": ["proposal"]
   },
   {
+    "title": "Noun Pics",
+    "description": "Get Noun image by ID or a tile of the Nouns owned by an Address or ENS Name.",
+    "creator": ["carrot_init"],
+    "url": "https://noun.pics/",
+    "image": "nounpics.png",
+    "category": ["misc"]
+  },
+  {
     "title": "Noun Poems",
     "description": "A month's worth of Nouns brought to life through taut, affective verse.",
     "creator": ["MargaretLabour"],
@@ -551,6 +559,14 @@
     "url": "https://observablehq.com/@nicola/nounstats",
     "image": "nounstats.png",
     "category": ["stats"]
+  },
+  {
+    "title": "Nounish Button",
+    "description": "Fork of Rainbow's button. Click it and Nouns glasses popup.",
+    "creator": ["0xsvg"],
+    "url": "https://github.com/lilnounsDAO/nounishButton",
+    "image": "nounishbutton.png",
+    "category": ["misc"]
   },
   {
     "title": "Nouns 3D",
