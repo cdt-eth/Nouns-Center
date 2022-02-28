@@ -257,6 +257,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Grinderz",
+    "description": "Gnars mini-game.",
+    "creator": ["skateordao", "artdothaus"],
+    "url": "https://gnars.fun/",
+    "image": "grinderz.png",
+    "category": ["misc"]
+  },
+  {
     "title": "Improper Nouns",
     "description": "Hand-drawn Nouns of various styles.",
     "creator": [""],
@@ -415,6 +423,14 @@
     "url": "https://observablehq.com/@gitblamecarrot/nounalytics",
     "image": "nounalytics.png",
     "category": ["stats"]
+  },
+  {
+    "title": "Noun Domains",
+    "description": " Whether you're hodling, buidling, or leanring about Nouns, you could use a .wtf domain for your project!",
+    "creator": ["NounsDomains"],
+    "url": "https://www.nouns.domains/",
+    "image": "noundomains.png",
+    "category": ["misc"]
   },
   {
     "title": "Noun Gan Study",
