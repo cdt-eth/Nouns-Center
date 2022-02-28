@@ -34,14 +34,15 @@ const Notes = ({ tableIds }) => {
   const [postData, setPostData] = useState(null);
 
   useEffect(() => {
-    tableIds.map((post, idx) => {
-      if (idx === 0) {
-        setCurrentPostId(post.id);
-        return { ...post, current: true };
-      } else {
-        return { ...post, current: false };
-      }
-    });
+    tableIds &&
+      tableIds.map((post, idx) => {
+        if (idx === 0) {
+          setCurrentPostId(post.id);
+          return { ...post, current: true };
+        } else {
+          return { ...post, current: false };
+        }
+      });
   }, []);
 
   useEffect(() => {
@@ -69,7 +70,6 @@ const Notes = ({ tableIds }) => {
           <div className="">
             <Menu.Button className="inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
               {currentId ? getWeekName(currentId) : "Week"}
-
               <ChevronDownIcon
                 className="-mr-1 ml-2 h-5 w-5"
                 aria-hidden="true"
@@ -89,22 +89,25 @@ const Notes = ({ tableIds }) => {
         >
           <Menu.Items className="origin-top-right absolute right-0 mt-2 w-28 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
             <div className="py-1">
-              {tableIds.map((id) => (
-                <Menu.Item>
-                  {({ active }) => (
-                    <option
-                      key={id.Name}
-                      onClick={() => setCurrentPostId(id.id)}
-                      className={classNames(
-                        active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
-                      {getWeekName(id)}
-                    </option>
-                  )}
-                </Menu.Item>
-              ))}
+              {tableIds &&
+                tableIds.map((id) => (
+                  <Menu.Item>
+                    {({ active }) => (
+                      <div
+                        key={id.Name}
+                        onClick={() => setCurrentPostId(id.id)}
+                        className={classNames(
+                          active
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-4 py-2 text-sm"
+                        )}
+                      >
+                        {getWeekName(id)}
+                      </div>
+                    )}
+                  </Menu.Item>
+                ))}
             </div>
           </Menu.Items>
         </Transition>
