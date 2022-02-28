@@ -36,10 +36,10 @@ const Talent = () => {
               <div className="flex-1 ">
                 s
                 <div className="flex items-center space-x-3">
-                  <h3 className="text-gray-900 text-sm font-medium">
+                  <h3 className="text-gray-900 text-sm font-medium text-nouns tracking-wider">
                     {person.twitter !== "" ? person.twitter : "-"}
                   </h3>
-                  <span className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full lowercase">
+                  <span className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full lowercase text">
                     {person.title}
                   </span>
                 </div>
