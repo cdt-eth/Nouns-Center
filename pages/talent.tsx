@@ -39,7 +39,7 @@ const Talent = () => {
                   <h3 className="text-gray-900 text-sm font-medium">
                     {person.twitter !== "" ? person.twitter : "-"}
                   </h3>
-                  <span className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">
+                  <span className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full lowercase">
                     {person.title}
                   </span>
                 </div>
@@ -82,7 +82,7 @@ const Talent = () => {
                           className="w-5 h-5 text-gray-400"
                           aria-hidden="true"
                         />
-                        <span className="ml-3">{person.discord}</span>
+                        <span className="ml-3 lowercase">{person.discord}</span>
                       </a>
                     </div>
                   )}
