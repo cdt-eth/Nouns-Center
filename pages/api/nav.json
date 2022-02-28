@@ -141,6 +141,12 @@
         "external": false
       },
       {
+        "name": "Notes",
+        "image": "earth.png",
+        "link": "/notes",
+        "external": false
+      },
+      {
         "name": "for Nouners",
         "image": "earth.png",
         "link": "/nouners",
