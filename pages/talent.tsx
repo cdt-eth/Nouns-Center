@@ -72,10 +72,11 @@ const Talent = () => {
                   )}
 
                   {/* <div className="-ml-px w-0 flex-1 flex cursor-pointer hover:bg-gray-100 transition duration-150"> */}
-                  {person.discord !== "" && (
+                  {person.discord !== "" && person.discordId !== "" && (
                     <div className="-ml-px w-0 flex-1 flex">
                       <a
-                        // href={`${person.discord}`}
+                        href={` https://discord.com/users/${person.discordId}`}
+                        target="_blank"
                         className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg "
                       >
                         <DiscordIcon
