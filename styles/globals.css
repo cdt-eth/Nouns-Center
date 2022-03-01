@@ -134,12 +134,33 @@ main {
   height: auto !important;
 }
 
-.subscribe-widget form.form .sideBySideWrap input[name="email"] {
+.subscribe-widget .sideBySideWrap input {
   height: 30px !important;
+  font-size: 10px !important;
 }
 
-.subscribe-widget form.form .sideBySideWrap button.rightButton {
+.subscribe-widget .sideBySideWrap button {
   background: darkslategrey !important;
   font-size: 10px !important;
   height: 30px !important;
+  min-width: 80px !important;
+  padding: 0px 8px !important;
+}
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
 }

@@ -36,7 +36,7 @@ const Talent = () => {
               <div className="flex-1 ">
                 <div className="flex items-center space-x-3">
                   <h3 className="text-gray-900 text-sm font-medium text-nouns tracking-wider">
-                    {person.twitter !== "" ? person.twitter : "-"}
+                    {person.name !== "" ? person.name : "-"}
                   </h3>
 
                   {person.title.length <= 1 ? (

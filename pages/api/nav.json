@@ -177,10 +177,16 @@
         "external": true
       },
       {
-        "name": "Merch",
+        "name": "Talent",
         "image": "earth.png",
-        "link": "https://nounstown.shop/",
-        "external": true
+        "link": "/talent",
+        "external": false
+      },
+      {
+        "name": "Gifs",
+        "image": "earth.png",
+        "link": "/gifs",
+        "external": false
       }
     ]
   }

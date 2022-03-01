@@ -2,6 +2,7 @@ import React from "react";
 import { Disclosure } from "@headlessui/react";
 import nav from "../api/nav.json";
 import Link from "next/link";
+import Newsletter from "./newsletter";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -125,6 +126,7 @@ const Nav = ({ setSidebarOpen }) => {
             )
           )}
         </nav>
+        {/* <Newsletter /> */}
       </div>
     </div>
   );
