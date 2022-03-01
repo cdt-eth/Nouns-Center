@@ -1,5 +1,6 @@
 [
   {
+    "name": "Christian",
     "twitter": "cdt_eth",
     "discord": "cdt.eth#3727",
     "discordId": "410593947027505162",
@@ -7,6 +8,7 @@
     "skills": "React, typescript, tailwind, nextjs, frontend"
   },
   {
+    "name": "Brian",
     "twitter": "pbrianandj",
     "discord": "brianj#3816",
     "discordId": "804065259383685161",
@@ -14,6 +16,7 @@
     "skills": "React, typescript, python, java, aws, solidity, data science, ML"
   },
   {
+    "name": "Zeeraffe",
     "twitter": "TheZeeraffe",
     "discord": "zeeraffe#9889",
     "discordId": "616108366502297615",
@@ -21,6 +24,7 @@
     "skills": "Voxel Building"
   },
   {
+    "name": "12bnoun",
     "twitter": "12bnoun",
     "discord": "12bnoun.eth#3479",
     "discordId": "878517610025742336",
@@ -28,6 +32,7 @@
     "skills": "Machine learning, Python, Typescript and Solidity"
   },
   {
+    "name": "Messhup",
     "twitter": "Messhup",
     "discord": "Messhup#2469",
     "discordId": "504122296496291841",
@@ -35,6 +40,7 @@
     "skills": "Digital art"
   },
   {
+    "name": "",
     "twitter": "",
     "discord": "",
     "discordId": "",
@@ -42,6 +48,7 @@
     "skills": "Next.js, Golang and Python scripting, Flow blockchain (Cadence language), some Solidity"
   },
   {
+    "name": "Emma",
     "twitter": "EmmavanCrypto",
     "discord": "emmavancrypto#7357",
     "discordId": "827643770484424723",
@@ -49,6 +56,7 @@
     "skills": "Strategy, producer, project management, product manager, operational efficiency, ux, talent, business development, events, and research."
   },
   {
+    "name": "Pikachu",
     "twitter": "ttyl5h",
     "discord": "pikachu#6696",
     "discordId": "749077435630485544",
@@ -56,6 +64,7 @@
     "skills": "Illustrator, Procreate, Photoshop, Canva"
   },
   {
+    "name": "Naomsa",
     "twitter": "Naomsa666",
     "discord": "naomsa#5548",
     "discordId": "328623458793685002",
@@ -63,6 +72,7 @@
     "skills": "Full Stack + solidity"
   },
   {
+    "name": "Dave Haber",
     "twitter": "davehaber",
     "discord": "1n#6541",
     "discordId": "846122580900446208",
@@ -70,6 +80,7 @@
     "skills": "Growth Consultant, Growth, Strategy, eCommerce, Analytics, low-level design."
   },
   {
+    "name": "Brkfstsndwch",
     "twitter": "thebrkfstsndwch",
     "discord": "brkfstsndwch#6874",
     "discordId": "620406459913469955",
@@ -77,6 +88,7 @@
     "skills": "Project Management. Production. Marketing. Team Building."
   },
   {
+    "name": "Dried Toast",
     "twitter": "driedtoast",
     "discord": "driedtoast#7158",
     "discordId": "736972711561265213",
@@ -84,6 +96,7 @@
     "skills": "Typescript, Java, go, react, Sol (newbie), python"
   },
   {
+    "name": "Lukas",
     "twitter": "Lukaslevert",
     "discord": "deity#3387",
     "discordId": "394697578715021314",
@@ -91,6 +104,7 @@
     "skills": "Artist, Marketer, Advertising, Operations. Project management, basic design (logos/branding), marketing strategy, product strategy"
   },
   {
+    "name": "Joel Cares",
     "twitter": "joelcares_",
     "discord": "JoelCares#5898",
     "discordId": "362737590430072862",
@@ -98,6 +112,7 @@
     "skills": "Planning big projects, leading teams, 3d animation, writing / directing, making joke jokes, programming, web design"
   },
   {
+    "name": "Coral Orca",
     "twitter": "coralorca",
     "discord": "Coral Orca#4823",
     "discordId": "830450430219386902",
@@ -105,6 +120,7 @@
     "skills": "3D, 2D, AR, VR"
   },
   {
+    "name": "Floyd",
     "twitter": "0xfloyd",
     "discord": "0xFloyd#2466",
     "discordId": "383705280174620704",
@@ -112,6 +128,7 @@
     "skills": "Front End - (JS/ TS, React) and 3D Web (Threejs, React Three Fiber)"
   },
   {
+    "name": "David",
     "twitter": "davidkxtz",
     "discord": "dkatz#5951",
     "discordId": "862758677226979358",
@@ -119,6 +136,7 @@
     "skills": "Python, node.js, SQL, solidity, docker, linux"
   },
   {
+    "name": "Leo Clark",
     "twitter": "leoclark",
     "discord": "leoclark.eth#2267",
     "discordId": "832477909486665749",
@@ -126,6 +144,7 @@
     "skills": "Editor, Writer, Director, Camera, Producer"
   },
   {
+    "name": "Lauren Dorman",
     "twitter": "LaurenDorman",
     "discord": "laurendorman#8324",
     "discordId": "635193337577734165",
@@ -133,6 +152,7 @@
     "skills": "React, Web3.js, Ethers.js, useDApp, Node.js, Solidity"
   },
   {
+    "name": "Voadz",
     "twitter": "thevoadz",
     "discord": "WNX#7117",
     "discordId": "420908638979358723",
@@ -140,6 +160,7 @@
     "skills": "Voxel"
   },
   {
+    "name": "Goldy",
     "twitter": "Goldypix",
     "discord": "Goldy.mov#0420",
     "discordId": "245856432107290624",
@@ -147,6 +168,7 @@
     "skills": "Pixel art, stop motion, image retouching, compositing…"
   },
   {
+    "name": "Guthrie_cd",
     "twitter": "guthrie_cd",
     "discord": "Cdguthrie#8776",
     "discordId": "665546772906508330",
@@ -154,6 +176,7 @@
     "skills": "Procreate, acrylic, ink, oil"
   },
   {
+    "name": "Wallivers",
     "twitter": "wallivers_arts",
     "discord": "wallivers.eth",
     "discordId": "",
@@ -161,6 +184,7 @@
     "skills": "Loop, Stencil, Still"
   },
   {
+    "name": "Meta Haps",
     "twitter": "borednoungang",
     "discord": "MetaHaps#6400",
     "discordId": "798712395341496331",
@@ -168,6 +192,7 @@
     "skills": "Design, Art, and Creative Direction"
   },
   {
+    "name": "Metamonk",
     "twitter": "m3tamonk",
     "discord": "metamonk#0001",
     "discordId": "496453865399648256",
@@ -175,6 +200,7 @@
     "skills": "Javascript, HTML, CSS"
   },
   {
+    "name": "Soondooboop",
     "twitter": "soondooboop",
     "discord": "soondooboop#0001",
     "discordId": "719704406886580266",
