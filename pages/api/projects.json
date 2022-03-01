@@ -836,6 +836,22 @@
     "category": ["nfts"]
   },
   {
+    "title": "Sounds of Nouns",
+    "description": "An Original Jingle Every Day for Your Noun.",
+    "creator": ["natemillsart"],
+    "url": "https://www.natemills.ca/sounds-of-nouns",
+    "image": "soundsofnouns.jpeg",
+    "category": ["misc", "smallGrants"]
+  },
+  {
+    "title": "SpecScapes",
+    "description": "A handmade 1/1 collection of Twitter banners, inspired by the ⌐◨-◨.",
+    "creator": ["ianbydesign"],
+    "url": "https://opensea.io/collection/specscapes",
+    "image": "specscapes.jpeg",
+    "category": ["nfts", "smallGrants"]
+  },
+  {
     "title": "Splat Nouns",
     "description": "Splat (Nouns) is a collection of procedurally created fluid sims.",
     "creator": [""],
