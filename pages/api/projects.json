@@ -16,6 +16,14 @@
     "category": ["proposal"]
   },
   {
+    "title": "3D Printed Fashion",
+    "description": "Design, 3D print, and showcase worldwide a Nouns-inspired 3D-printed fashion collection.",
+    "creator": ["danitpeleg3d"],
+    "url": "https://nouns.wtf/vote/26",
+    "image": "fashion.jpeg",
+    "category": ["proposal"]
+  },
+  {
     "title": "8-bit Mini Games",
     "description": "Five 8-bit Noun mini-games that will be playable NFTs with an on-chain leaderboard.",
     "creator": ["8bitnouns", "galaxystargraph"],
