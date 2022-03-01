@@ -116,3 +116,30 @@ h6 {
 main {
   max-width: 1250px;
 }
+
+.embed-page .publication-tagline {
+  display: none !important;
+}
+.embed-page .publication-name {
+  display: none !important;
+}
+.embed-page .no-logo {
+  display: none !important;
+}
+.embed-page .substack-watermark {
+  display: none !important;
+}
+
+.newsletter .embed-page {
+  height: auto !important;
+}
+
+.subscribe-widget form.form .sideBySideWrap input[name="email"] {
+  height: 30px !important;
+}
+
+.subscribe-widget form.form .sideBySideWrap button.rightButton {
+  background: darkslategrey !important;
+  font-size: 10px !important;
+  height: 30px !important;
+}

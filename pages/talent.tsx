@@ -34,16 +34,24 @@ const Talent = () => {
           >
             <div className="w-full flex items-center justify-between p-6 space-x-6">
               <div className="flex-1 ">
-                s
                 <div className="flex items-center space-x-3">
                   <h3 className="text-gray-900 text-sm font-medium text-nouns tracking-wider">
                     {person.twitter !== "" ? person.twitter : "-"}
                   </h3>
-                  <span className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full lowercase text">
-                    {person.title}
-                  </span>
+
+                  {person.title.length <= 1 ? (
+                    <span className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full lowercase text">
+                      {person.title}
+                    </span>
+                  ) : (
+                    person.title.map((t) => (
+                      <span className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full lowercase text">
+                        {t}
+                      </span>
+                    ))
+                  )}
                 </div>
-                {/* <p className="mt-1 text-gray-500 text-sm"> */}
+
                 <p className="mt-1 text-gray-500 text-sm ">{person.skills}</p>
               </div>
               <img
@@ -66,24 +74,25 @@ const Talent = () => {
                           className="w-5 h-5 text-gray-400"
                           aria-hidden="true"
                         />
-                        <span className="ml-3">Twitter</span>
+                        <span className="ml-3 truncate">@{person.twitter}</span>
                       </a>
                     </div>
                   )}
 
-                  {/* <div className="-ml-px w-0 flex-1 flex cursor-pointer hover:bg-gray-100 transition duration-150"> */}
                   {person.discord !== "" && person.discordId !== "" && (
-                    <div className="-ml-px w-0 flex-1 flex">
+                    <div className="-ml-px w-0 flex-1 flex cursor-pointer hover:bg-gray-100 transition duration-150">
                       <a
                         href={` https://discord.com/users/${person.discordId}`}
                         target="_blank"
-                        className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg "
+                        className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
                       >
                         <DiscordIcon
                           className="w-5 h-5 text-gray-400"
                           aria-hidden="true"
                         />
-                        <span className="ml-3 lowercase">{person.discord}</span>
+                        <span className="ml-3 lowercase truncate">
+                          {person.discord}
+                        </span>
                       </a>
                     </div>
                   )}
