@@ -617,6 +617,14 @@
     "category": ["proposal"]
   },
   {
+    "title": "Nouns Atheletes",
+    "description": "Helping athletes reach the people, places and things that bring out their best.",
+    "creator": ["nounsathletes", "skateordao", "artdothaus"],
+    "url": "https://shred.wtf/",
+    "image": "nounsathletes.jpeg",
+    "category": ["smallGrants"]
+  },
+  {
     "title": "Nouns Automations (Integromat & Zapier)",
     "description": "Infrastructure that will enable anyone to work with Nouns DAO data.",
     "creator": ["verbs_team", "verb0xd", "danpeguine"],
