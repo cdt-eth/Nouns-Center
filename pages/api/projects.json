@@ -155,10 +155,17 @@
     "title": "Deep Dream Nouns",
     "description": "Nouns re-imagine using an deep dream AI generator.",
     "creator": ["deepdreamnouns"],
-    "categories": ["monetized", "onchain"],
     "url": "https://opensea.io/collection/deepdreamnouns",
     "image": "deepdream.jpeg",
     "category": ["nfts"]
+  },
+  {
+    "title": "Dev Carrot Stream",
+    "description": "Stream about developing Nouns tooling and infrastructure.",
+    "creator": ["carrot_init"],
+    "url": "https://www.twitch.tv/itsdevcarrot/videos",
+    "image": "carrotstream.png",
+    "category": ["misc"]
   },
   {
     "title": "Discord Stickers",
