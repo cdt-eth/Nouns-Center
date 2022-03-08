@@ -29,7 +29,7 @@ export default function Home() {
       </Script>
 
       <Header title="Nouns Center" />
-      <Title title="Home" />
+      {/* <Title title="Home" /> */}
 
       <>
         {/* <InstantSearch searchClient={searchClient} indexName="nouncenter"> */}
@@ -39,6 +39,12 @@ export default function Home() {
         {/* Adding Data */}
         {/* <Hits />
         </InstantSearch> */}
+        <div className="w-full flex mt-20 flex-col items-center justify-center gap-4">
+          <img className="w-1/6 mr-2" src="earth.gif" alt="earth" />
+          <p className="text-nouns xs:text-3xl sm:text-6xl">
+            home page coming soon
+          </p>
+        </div>
       </>
     </>
   );
