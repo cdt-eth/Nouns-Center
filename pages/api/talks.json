@@ -114,57 +114,5 @@
         "role": ["creator"]
       }
     ]
-  },
-  {
-    "date": "",
-    "topic": "",
-    "image": "",
-    "link": "",
-    "guests": [
-      {
-        "name": "",
-        "handle": "",
-        "project": "",
-        "role": [""]
-      },
-      {
-        "name": "",
-        "handle": "",
-        "project": "",
-        "role": [""]
-      },
-      {
-        "name": "",
-        "handle": "",
-        "project": "",
-        "role": [""]
-      }
-    ]
-  },
-  {
-    "date": "",
-    "topic": "",
-    "image": "",
-    "link": "",
-    "guests": [
-      {
-        "name": "",
-        "handle": "",
-        "project": "",
-        "role": [""]
-      },
-      {
-        "name": "",
-        "handle": "",
-        "project": "",
-        "role": [""]
-      },
-      {
-        "name": "",
-        "handle": "",
-        "project": "",
-        "role": [""]
-      }
-    ]
   }
 ]

@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./components/Header";
 import Title from "./components/Title";
 import talent from "./api/talent.json";
-
 import {
   FaTwitter as TwitterIcon,
   FaDiscord as DiscordIcon,

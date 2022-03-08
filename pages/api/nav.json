@@ -1,53 +1,5 @@
 [
   {
-    "name": "for Creatives",
-    "current": false,
-    "children": [
-      {
-        "name": "Assets",
-        "image": "assets.png",
-        "link": "/assets",
-        "external": false
-      },
-      {
-        "name": "FAQ",
-        "image": "faq.png",
-        "link": "/faq",
-        "external": false
-      }
-    ]
-  },
-  {
-    "name": "for Developers",
-    "current": false,
-    "children": [
-      {
-        "name": "GitHub",
-        "image": "github.png",
-        "link": "https://github.com/nounsDAO/nouns-monorepo",
-        "external": true
-      },
-      {
-        "name": "Tools",
-        "image": "tools.png",
-        "link": "/tools",
-        "external": false
-      },
-      {
-        "name": "Issues",
-        "image": "issues.png",
-        "link": "https://github.com/nounsDAO/nouns-monorepo/issues",
-        "external": true
-      },
-      {
-        "name": "FAQ",
-        "image": "faq.png",
-        "link": "https://github.com/christiandavidturner/TOADZTOOLZ/discussions",
-        "external": false
-      }
-    ]
-  },
-  {
     "name": "Projects",
     "current": false,
     "link": "/projects"
@@ -58,141 +10,18 @@
     "link": "/talks"
   },
   {
-    "name": "General",
+    "name": "Talent",
     "current": false,
-    "children": [
-      {
-        "name": "Nouns.wtf",
-        "image": "earth.png",
-        "link": "https://nouns.wtf/",
-        "external": true
-      },
-      {
-        "name": "Podcasts",
-        "image": "earth.png",
-        "link": "/podcasts",
-        "external": false
-      },
-      {
-        "name": "Stats",
-        "image": "earth.png",
-        "link": "/stats",
-        "external": false
-      },
-      {
-        "name": "Media",
-        "image": "earth.png",
-        "link": "/media",
-        "external": false
-      },
-      {
-        "name": "News",
-        "image": "earth.png",
-        "link": "/news",
-        "external": false
-      }
-    ]
+    "link": "/talent"
   },
   {
-    "name": "Proposals",
+    "name": "Notes",
     "current": false,
-    "children": [
-      {
-        "name": "Template",
-        "image": "earth.png",
-        "link": "/template",
-        "external": false
-      },
-      {
-        "name": "Get Feedback",
-        "image": "earth.png",
-        "link": "https://discourse.nouns.wtf/",
-        "external": true
-      },
-      {
-        "name": "Find a Sponsor",
-        "image": "earth.png",
-        "link": "/sponsor",
-        "external": false
-      },
-      {
-        "name": "Funding",
-        "image": "earth.png",
-        "link": "/funding",
-        "external": false
-      },
-      {
-        "name": "Prop House",
-        "image": "earth.png",
-        "link": "https://prop.house/",
-        "external": true
-      }
-    ]
+    "link": "/notes"
   },
   {
-    "name": "DAO",
+    "name": "Assets",
     "current": false,
-    "children": [
-      {
-        "name": "History",
-        "image": "earth.png",
-        "link": "/history",
-        "external": false
-      },
-      {
-        "name": "Proposals",
-        "image": "earth.png",
-        "link": "https://nouns.wtf/vote",
-        "external": false
-      },
-      {
-        "name": "Notes",
-        "image": "earth.png",
-        "link": "/notes",
-        "external": false
-      },
-      {
-        "name": "for Nouners",
-        "image": "earth.png",
-        "link": "/nouners",
-        "external": false
-      },
-      {
-        "name": "Twitter",
-        "image": "earth.png",
-        "link": "https://twitter.com/nounsdao",
-        "external": true
-      },
-      {
-        "name": "Discord",
-        "image": "earth.png",
-        "link": "http://discord.gg/nouns",
-        "external": true
-      }
-    ]
-  },
-  {
-    "name": "Miscellaneous",
-    "current": false,
-    "children": [
-      {
-        "name": "Create A Noun",
-        "image": "earth.png",
-        "link": "https://nouns.wtf/playground",
-        "external": true
-      },
-      {
-        "name": "Talent",
-        "image": "earth.png",
-        "link": "/talent",
-        "external": false
-      },
-      {
-        "name": "Gifs",
-        "image": "earth.png",
-        "link": "/gifs",
-        "external": false
-      }
-    ]
+    "link": "/assets"
   }
 ]
