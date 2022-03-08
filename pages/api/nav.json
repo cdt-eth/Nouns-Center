@@ -53,6 +53,11 @@
     "link": "/projects"
   },
   {
+    "name": "Talks",
+    "current": false,
+    "link": "/talks"
+  },
+  {
     "name": "General",
     "current": false,
     "children": [
