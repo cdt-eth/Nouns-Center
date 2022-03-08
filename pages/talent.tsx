@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Title from "./components/Title";
 import talent from "./api/talent.json";
-import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
+
 import {
   FaTwitter as TwitterIcon,
   FaDiscord as DiscordIcon,

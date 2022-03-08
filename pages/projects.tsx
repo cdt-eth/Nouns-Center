@@ -38,11 +38,12 @@ const Projects = () => {
 
     setFilteredProjects(filtered);
   };
+
   return (
     <div className="mb-16">
       <Header title="Projects | Nouns Center" />
       <Title title="Projects" />
-
+      {/* {filteredProjects.length} */}
       <div className="mb-4">
         <div className="">
           <fieldset className="mt-2 text-white ">
