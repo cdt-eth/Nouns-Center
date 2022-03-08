@@ -56,6 +56,14 @@
     "category": ["nfts", "smallGrants"]
   },
   {
+    "title": "Auction Bid Data",
+    "description": "Visualization of Noun auctions bids.",
+    "creator": ["fiveoutofnine"],
+    "url": "https://github.com/fiveoutofnine/misc-notebooks/tree/main/nouns-bids",
+    "image": "fiveoutofnine.jpeg",
+    "category": ["stats"]
+  },
+  {
     "title": "Animated Nouns",
     "description": "Nouns that have come to life.",
     "creator": ["nouns_com"],
@@ -977,6 +985,14 @@
     "url": "https://opensea.io/collection/wizardsnouns",
     "image": "wizard.png",
     "category": ["nfts"]
+  },
+  {
+    "title": "Worldwide Webb Apt #8228",
+    "description": "Nounish apartment layout on Worldwide Webb.",
+    "creator": ["0xswift_"],
+    "url": "https://apartments.webb.game/builds/d48fc0d2/index.html",
+    "image": "webb.png",
+    "category": ["misc"]
   },
   {
     "title": "XCOPY Nouns",
