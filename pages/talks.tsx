@@ -84,7 +84,7 @@ const Talks = () => {
                         Guests
                       </p>
                       <p className="mt-2 text-sm font-bold text-gray-500 xs:w-1/3">
-                        View Project
+                        Project
                       </p>
                     </div>
 
