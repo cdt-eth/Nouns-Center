@@ -5,6 +5,11 @@
     "link": "/projects"
   },
   {
+    "name": "Traits",
+    "current": false,
+    "link": "/traits"
+  },
+  {
     "name": "Talks",
     "current": false,
     "link": "/talks"
