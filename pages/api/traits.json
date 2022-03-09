@@ -245,7 +245,7 @@
       "image": "crown"
     },
     {
-      "name": "Crown  Queen",
+      "name": "Crown Queen",
       "image": "queencrown"
     },
     {
@@ -291,10 +291,6 @@
     {
       "name": "Duck",
       "image": "duck"
-    },
-    {
-      "name": "Rubber Ducky",
-      "image": "ducky"
     },
     {
       "name": "Earth",
@@ -699,6 +695,10 @@
     {
       "name": "Rosebud",
       "image": "rosebud"
+    },
+    {
+      "name": "Rubber Ducky",
+      "image": "ducky"
     },
     {
       "name": "Saguaro",
