@@ -1,0 +1,938 @@
+{
+  "bodies": [
+    {
+      "name": "",
+      "image": ""
+    }
+  ],
+  "accessories": [
+    {
+      "name": "",
+      "image": ""
+    }
+  ],
+  "heads": [
+    {
+      "name": "Aardvark",
+      "image": "aardvark"
+    },
+    {
+      "name": "Abstract",
+      "image": "abstract"
+    },
+    {
+      "name": "Ape",
+      "image": "ape"
+    },
+    {
+      "name": "Bag",
+      "image": "bag"
+    },
+    {
+      "name": "Bagpipe",
+      "image": "bagpipe"
+    },
+    {
+      "name": "Banana",
+      "image": "banana"
+    },
+    {
+      "name": "Bank",
+      "image": "bank"
+    },
+    {
+      "name": "Bao",
+      "image": "porkbao"
+    },
+    {
+      "name": "Baseball",
+      "image": "baseball-gameball"
+    },
+    {
+      "name": "Basketball",
+      "image": "basketball"
+    },
+    {
+      "name": "Bat",
+      "image": "bat"
+    },
+    {
+      "name": "Beached Whale",
+      "image": "whale"
+    },
+    {
+      "name": "Bear",
+      "image": "bear"
+    },
+    {
+      "name": "Beer",
+      "image": "beer"
+    },
+    {
+      "name": "Beet",
+      "image": "beet"
+    },
+    {
+      "name": "Bigfoot",
+      "image": "bigfoot"
+    },
+    {
+      "name": "Blackhole",
+      "image": "blackhole"
+    },
+    {
+      "name": "Blueberry",
+      "image": "blueberry"
+    },
+    {
+      "name": "Bomb",
+      "image": "bomb"
+    },
+    {
+      "name": "Bonsai",
+      "image": "bonsai"
+    },
+    {
+      "name": "Boombox",
+      "image": "boombox"
+    },
+    {
+      "name": "Boot",
+      "image": "boot"
+    },
+    {
+      "name": "Box",
+      "image": "box"
+    },
+    {
+      "name": "Boxing Glove",
+      "image": "boxingglove"
+    },
+    {
+      "name": "Brain",
+      "image": "brain"
+    },
+    {
+      "name": "Speech Bubble",
+      "image": "bubble-speech"
+    },
+    {
+      "name": "Bubble Gum",
+      "image": "bubblegum"
+    },
+    {
+      "name": "Burger",
+      "image": "burger-dollarmenu"
+    },
+    {
+      "name": "Cake",
+      "image": "cake"
+    },
+    {
+      "name": "Calculator",
+      "image": "calculator"
+    },
+    {
+      "name": "Camcorder",
+      "image": "camcorder"
+    },
+    {
+      "name": "Canned Ham",
+      "image": "cannedham"
+    },
+    {
+      "name": "Car",
+      "image": "car"
+    },
+    {
+      "name": "Cash Register",
+      "image": "cash-register"
+    },
+    {
+      "name": "Cassette Tape",
+      "image": "cassettetape"
+    },
+    {
+      "name": "Cat",
+      "image": "cat"
+    },
+    {
+      "name": "CD",
+      "image": "cd"
+    },
+    {
+      "name": "Chain",
+      "image": "chain"
+    },
+    {
+      "name": "Chainsaw",
+      "image": "chainsaw"
+    },
+    {
+      "name": "Chameleon",
+      "image": "chameleon"
+    },
+    {
+      "name": "Chart",
+      "image": "chart-bars"
+    },
+    {
+      "name": "Cheese",
+      "image": "cheese"
+    },
+    {
+      "name": "Chef Hat",
+      "image": "chefhat"
+    },
+    {
+      "name": "Cherry",
+      "image": "cherry"
+    },
+    {
+      "name": "Chilli",
+      "image": "chilli"
+    },
+    {
+      "name": "Chipboard",
+      "image": "chipboard"
+    },
+    {
+      "name": "Chips",
+      "image": "chips"
+    },
+    {
+      "name": "Chocolate",
+      "image": "chocolate"
+    },
+    {
+      "name": "Cloud",
+      "image": "cloud"
+    },
+    {
+      "name": "Clover",
+      "image": "clover"
+    },
+    {
+      "name": "Clutch",
+      "image": "clutch"
+    },
+    {
+      "name": "Coffee Bean",
+      "image": "coffeebean"
+    },
+    {
+      "name": "Cone",
+      "image": "cone"
+    },
+    {
+      "name": "Handheld Console",
+      "image": "console-handheld"
+    },
+    {
+      "name": "Cookie",
+      "image": "cookie"
+    },
+    {
+      "name": "Cordless Phone",
+      "image": "cordlessphone"
+    },
+    {
+      "name": "Cotton Ball",
+      "image": "cottonball"
+    },
+    {
+      "name": "Cow",
+      "image": "cow"
+    },
+    {
+      "name": "Crab",
+      "image": "crab"
+    },
+    {
+      "name": "Crane",
+      "image": "crane"
+    },
+    {
+      "name": "Crocodile",
+      "image": "croc-hat"
+    },
+    {
+      "name": "Crown King",
+      "image": "crown"
+    },
+    {
+      "name": "Crown  Queen",
+      "image": "queencrown"
+    },
+    {
+      "name": "CRT",
+      "image": "crt-bsod"
+    },
+    {
+      "name": "Crystal Ball",
+      "image": "crystalball"
+    },
+    {
+      "name": "Diamond Blue",
+      "image": "diamond-blue"
+    },
+    {
+      "name": "Diamond Red",
+      "image": "diamond-red"
+    },
+    {
+      "name": "Dictionary",
+      "image": "dictionary"
+    },
+    {
+      "name": "Dinosaur",
+      "image": "dino"
+    },
+    {
+      "name": "DNA",
+      "image": "dna"
+    },
+    {
+      "name": "Dog",
+      "image": "dog"
+    },
+    {
+      "name": "Doughnut",
+      "image": "doughnut"
+    },
+    {
+      "name": "Drill",
+      "image": "drill"
+    },
+    {
+      "name": "Duck",
+      "image": "Duck"
+    },
+    {
+      "name": "Rubber Ducky",
+      "image": "ducky"
+    },
+    {
+      "name": "Earth",
+      "image": "earth"
+    },
+    {
+      "name": "Faberge Egg",
+      "image": "faberge"
+    },
+    {
+      "name": "Factory",
+      "image": "factory-dark"
+    },
+    {
+      "name": "Fan",
+      "image": "fan"
+    },
+    {
+      "name": "Fence",
+      "image": "fence"
+    },
+    {
+      "name": "35mm Film",
+      "image": "film-35mm"
+    },
+    {
+      "name": "Film Strip",
+      "image": "film-strip"
+    },
+    {
+      "name": "Fir",
+      "image": "fir"
+    },
+    {
+      "name": "Fire Hydrant",
+      "image": "firehydrant"
+    },
+    {
+      "name": "Flamingo",
+      "image": "flamingo"
+    },
+    {
+      "name": "Flower",
+      "image": "flower"
+    },
+    {
+      "name": "Fox",
+      "image": "fox"
+    },
+    {
+      "name": "Frog",
+      "image": "frog"
+    },
+    {
+      "name": "Garlic",
+      "image": "garlic"
+    },
+    {
+      "name": "Gavel",
+      "image": "gavel"
+    },
+    {
+      "name": "Ghost",
+      "image": "ghost-B"
+    },
+    {
+      "name": "Glasses",
+      "image": "glasses-big"
+    },
+    {
+      "name": "Gnome",
+      "image": "gnome"
+    },
+    {
+      "name": "Goat",
+      "image": "goat"
+    },
+    {
+      "name": "Gold Coin",
+      "image": "goldcoin"
+    },
+    {
+      "name": "Goldfish",
+      "image": "goldfish"
+    },
+    {
+      "name": "Grouper",
+      "image": "grouper"
+    },
+    {
+      "name": "Hair",
+      "image": "hair"
+    },
+    {
+      "name": "Hard Hat",
+      "image": "hardhat"
+    },
+    {
+      "name": "Heart",
+      "image": "heart"
+    },
+    {
+      "name": "Helicopter",
+      "image": "helicopter"
+    },
+    {
+      "name": "High Heel",
+      "image": "highheel"
+    },
+    {
+      "name": "Hockey Punk",
+      "image": "hockeypuck"
+    },
+    {
+      "name": "Horse",
+      "image": "horse-deepfried"
+    },
+    {
+      "name": "Hotdog",
+      "image": "hotdog"
+    },
+    {
+      "name": "House",
+      "image": "house"
+    },
+    {
+      "name": "Icepop",
+      "image": "icepop-b"
+    },
+    {
+      "name": "Igloo",
+      "image": "igloo"
+    },
+    {
+      "name": "Island",
+      "image": "island"
+    },
+    {
+      "name": "Jellyfish",
+      "image": "jellyfish"
+    },
+    {
+      "name": "Jupiter",
+      "image": "jupiter"
+    },
+    {
+      "name": "Kangaroo",
+      "image": "kangaroo"
+    },
+    {
+      "name": "Ketchup",
+      "image": "ketchup"
+    },
+    {
+      "name": "Laptop",
+      "image": "laptop"
+    },
+    {
+      "name": "Lightning Bolt",
+      "image": "lightning-bolt"
+    },
+    {
+      "name": "Lint",
+      "image": "lint"
+    },
+    {
+      "name": "Lips",
+      "image": "lips"
+    },
+    {
+      "name": "Lipstick",
+      "image": "lipstick2"
+    },
+    {
+      "name": "Lock",
+      "image": "lock"
+    },
+    {
+      "name": "Macaroni",
+      "image": "macaroni"
+    },
+    {
+      "name": "Mailbox",
+      "image": "mailbox"
+    },
+    {
+      "name": "Maze",
+      "image": "maze"
+    },
+    {
+      "name": "Microwave",
+      "image": "microwave"
+    },
+    {
+      "name": "Milk",
+      "image": "milk"
+    },
+    {
+      "name": "Mirror",
+      "image": "mirror"
+    },
+    {
+      "name": "Mixer",
+      "image": "mixer"
+    },
+    {
+      "name": "Moon",
+      "image": "moon"
+    },
+    {
+      "name": "Moose",
+      "image": "moose"
+    },
+    {
+      "name": "Mosquito",
+      "image": "mosquito"
+    },
+    {
+      "name": "Mountain",
+      "image": "mountain-snowcap"
+    },
+    {
+      "name": "Mouse",
+      "image": "mouse"
+    },
+    {
+      "name": "Mug",
+      "image": "mug"
+    },
+    {
+      "name": "Mushroom",
+      "image": "mushroom"
+    },
+    {
+      "name": "Mustard",
+      "image": "mustard"
+    },
+    {
+      "name": "Nigiri",
+      "image": "nigiri"
+    },
+    {
+      "name": "Noodles",
+      "image": "noodles"
+    },
+    {
+      "name": "Onion",
+      "image": "onion"
+    },
+    {
+      "name": "Orangutan",
+      "image": "orangutan"
+    },
+    {
+      "name": "Orca",
+      "image": "orca"
+    },
+    {
+      "name": "Otter",
+      "image": "otter"
+    },
+    {
+      "name": "Outlet",
+      "image": "outlet"
+    },
+    {
+      "name": "Owl",
+      "image": "owl"
+    },
+    {
+      "name": "Oyster",
+      "image": "oyster"
+    },
+    {
+      "name": "Paintbrush",
+      "image": "paintbrush"
+    },
+    {
+      "name": "Panda",
+      "image": "panda"
+    },
+    {
+      "name": "Paperclip",
+      "image": "paperclip"
+    },
+    {
+      "name": "Peanut",
+      "image": "peanut"
+    },
+    {
+      "name": "Pencil",
+      "image": "pencil-tip"
+    },
+    {
+      "name": "Peyote",
+      "image": "peyote"
+    },
+    {
+      "name": "Piano",
+      "image": "piano"
+    },
+    {
+      "name": "Pickle",
+      "image": "pickle"
+    },
+    {
+      "name": "Pie",
+      "image": "pie"
+    },
+    {
+      "name": "Piggybank",
+      "image": "piggybank"
+    },
+    {
+      "name": "Pill",
+      "image": "pill"
+    },
+    {
+      "name": "Pillow",
+      "image": "pillow"
+    },
+    {
+      "name": "Pineapple",
+      "image": "pineapple"
+    },
+    {
+      "name": "Pipe",
+      "image": "pipe"
+    },
+    {
+      "name": "Pirateship",
+      "image": "pirateship"
+    },
+    {
+      "name": "Pizza",
+      "image": "pizza"
+    },
+    {
+      "name": "Plane",
+      "image": "plane"
+    },
+    {
+      "name": "Pop",
+      "image": "pop"
+    },
+    {
+      "name": "Potato",
+      "image": "potato"
+    },
+    {
+      "name": "Pufferfish",
+      "image": "pufferfish"
+    },
+    {
+      "name": "Pumpkin",
+      "image": "pumpkin"
+    },
+    {
+      "name": "Pyramid",
+      "image": "pyramid"
+    },
+    {
+      "name": "Rabbit",
+      "image": "rabbit"
+    },
+    {
+      "name": "Rainbow",
+      "image": "rainbow"
+    },
+    {
+      "name": "Rangefinder",
+      "image": "rangefinder"
+    },
+    {
+      "name": "Raven",
+      "image": "raven"
+    },
+    {
+      "name": "Retainer",
+      "image": "retainer"
+    },
+    {
+      "name": "RGB",
+      "image": "rgb"
+    },
+    {
+      "name": "Ring",
+      "image": "ring"
+    },
+    {
+      "name": "Road",
+      "image": "road"
+    },
+    {
+      "name": "Robot",
+      "image": "robot"
+    },
+    {
+      "name": "Rock",
+      "image": "rock"
+    },
+    {
+      "name": "Rosebud",
+      "image": "rosebud"
+    },
+    {
+      "name": "Saguaro",
+      "image": "saguaro"
+    },
+    {
+      "name": "Sailboat",
+      "image": "sailboat"
+    },
+    {
+      "name": "Sandwich",
+      "image": "sandwich"
+    },
+    {
+      "name": "Saturn",
+      "image": "saturn"
+    },
+    {
+      "name": "Saw",
+      "image": "saw"
+    },
+    {
+      "name": "Scorpion",
+      "image": "scorpion"
+    },
+    {
+      "name": "Shark",
+      "image": "shark"
+    },
+    {
+      "name": "Shower",
+      "image": "shower"
+    },
+    {
+      "name": "Skateboard",
+      "image": "skateboard"
+    },
+    {
+      "name": "Skeleton",
+      "image": "skeleton-hat"
+    },
+    {
+      "name": "Skilift",
+      "image": "skilift"
+    },
+    {
+      "name": "Smile",
+      "image": "smile"
+    },
+    {
+      "name": "Snowglobe",
+      "image": "snowglobe"
+    },
+    {
+      "name": "Snowmobile",
+      "image": "snowmobile"
+    },
+    {
+      "name": "Spaghetti",
+      "image": "spaghetti"
+    },
+    {
+      "name": "Sponge",
+      "image": "sponge"
+    },
+    {
+      "name": "Squid",
+      "image": "squid"
+    },
+    {
+      "name": "Stapler",
+      "image": "stapler"
+    },
+    {
+      "name": "Star",
+      "image": "star-sparkles"
+    },
+    {
+      "name": "Steak",
+      "image": "steak"
+    },
+    {
+      "name": "Sunset",
+      "image": "sunset"
+    },
+    {
+      "name": "Taco",
+      "image": "taco-classic"
+    },
+    {
+      "name": "Taxi",
+      "image": "taxi"
+    },
+    {
+      "name": "Thumbs Up",
+      "image": "thumbsup"
+    },
+    {
+      "name": "Toaster",
+      "image": "toaster"
+    },
+    {
+      "name": "Toilet Paper",
+      "image": "toiletpaper-full"
+    },
+    {
+      "name": "Tooth",
+      "image": "tooth"
+    },
+    {
+      "name": "Toothbrush",
+      "image": "toothbrush-fresh"
+    },
+    {
+      "name": "Tornado",
+      "image": "tornado"
+    },
+    {
+      "name": "Trash Can",
+      "image": "trashcan"
+    },
+    {
+      "name": "Turing Machine",
+      "image": "turing"
+    },
+    {
+      "name": "UFO",
+      "image": "ufo"
+    },
+    {
+      "name": "Undead",
+      "image": "undead"
+    },
+    {
+      "name": "Unicorn",
+      "image": "unicorn"
+    },
+    {
+      "name": "Vent",
+      "image": "vent"
+    },
+    {
+      "name": "Void",
+      "image": "void"
+    },
+    {
+      "name": "Volcano",
+      "image": "volcano"
+    },
+    {
+      "name": "Volleyball",
+      "image": "volleyball"
+    },
+    {
+      "name": "Wall",
+      "image": "wall"
+    },
+    {
+      "name": "Wallet",
+      "image": "wallet"
+    },
+    {
+      "name": "Wallsafe",
+      "image": "wallsafe"
+    },
+    {
+      "name": "Washing Machine",
+      "image": "washingmachine"
+    },
+    {
+      "name": "Watch",
+      "image": "watch"
+    },
+    {
+      "name": "Watermelon",
+      "image": "watermelon"
+    },
+    {
+      "name": "Wave",
+      "image": "wave"
+    },
+    {
+      "name": "Weed",
+      "image": "weed"
+    },
+    {
+      "name": "Weight",
+      "image": "weight"
+    },
+    {
+      "name": "Werewolf",
+      "image": "werewolf"
+    },
+    {
+      "name": "Whale",
+      "image": "whale-alive"
+    },
+    {
+      "name": "Wine",
+      "image": "wine"
+    },
+    {
+      "name": "Wizard Hat",
+      "image": "wizardhat"
+    },
+    {
+      "name": "Yeti",
+      "image": "bigfoot-yeti"
+    },
+    {
+      "name": "Zebra",
+      "image": "zebra"
+    }
+  ],
+  "glasses": [
+    {
+      "name": "",
+      "image": ""
+    }
+  ]
+}
