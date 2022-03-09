@@ -38,8 +38,7 @@ const Talks = () => {
                 actionIdx === talks.length - 1
                   ? "rounded-bl-lg rounded-br-lg sm:rounded-bl-none"
                   : "",
-                "relative group  transition duration-150 bg-white p-6 "
-
+                "relative group  transition duration-150 bg-white p-6"
                 // focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500
               )}
             >

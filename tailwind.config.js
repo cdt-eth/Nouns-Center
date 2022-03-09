@@ -27,6 +27,9 @@ module.exports = {
         "nouns-pink": "#F39E9F",
         "nouns-brown": "#732C2B",
         "nouns-blue-border": "#8EA4FC",
+        "nouns-cool": "#D4D7E1",
+        "nouns-warm": "#E0D6D4",
+        "nouns-cool-text": "#151c3b",
       },
     },
     screens: {
