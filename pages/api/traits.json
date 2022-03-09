@@ -1,16 +1,4 @@
 {
-  "bodies": [
-    {
-      "name": "",
-      "image": ""
-    }
-  ],
-  "accessories": [
-    {
-      "name": "",
-      "image": ""
-    }
-  ],
   "heads": [
     {
       "name": "Aardvark",
@@ -930,6 +918,210 @@
     }
   ],
   "glasses": [
+    {
+      "name": "Black",
+      "image": "black-eyes-red"
+    },
+    {
+      "name": "Black RGB",
+      "image": "black-rgb"
+    },
+    {
+      "name": "Black",
+      "image": "black"
+    },
+    {
+      "name": "Blue",
+      "image": "blue-med-saturated"
+    },
+    {
+      "name": "Frog Green",
+      "image": "frog-green"
+    },
+    {
+      "name": "Full Black",
+      "image": "fullblack"
+    },
+    {
+      "name": "Green & Blue",
+      "image": "green-blue-multi"
+    },
+    {
+      "name": "Grey",
+      "image": "grey-light"
+    },
+    {
+      "name": "Guava",
+      "image": "guava"
+    },
+    {
+      "name": "Hip Rose",
+      "image": "hip-rose"
+    },
+    {
+      "name": "Honey",
+      "image": "honey"
+    },
+    {
+      "name": "Magenta",
+      "image": "magenta"
+    },
+    {
+      "name": "Orange",
+      "image": "orange"
+    },
+    {
+      "name": "Pink & Purple",
+      "image": "pink-purple-multi"
+    },
+    {
+      "name": "Red",
+      "image": "red"
+    },
+    {
+      "name": "Smoke",
+      "image": "smoke"
+    },
+    {
+      "name": "Teal",
+      "image": "teal"
+    },
+    {
+      "name": "Watermelon",
+      "image": "watermelon"
+    },
+    {
+      "name": "Yellow & Orange",
+      "image": "yellow-orange-multi"
+    },
+    {
+      "name": "Yellow",
+      "image": "yellow-saturated"
+    }
+  ],
+  "bodies": [
+    {
+      "name": "Beige",
+      "image": "bege-bsod"
+    },
+    {
+      "name": "Beige Light",
+      "image": "bege-crt"
+    },
+    {
+      "name": "Blue Sky",
+      "image": "blue-sky"
+    },
+    {
+      "name": "Bluegrey",
+      "image": "bluegrey"
+    },
+    {
+      "name": "Cold",
+      "image": "cold"
+    },
+    {
+      "name": "Computer Blue",
+      "image": "computerblue"
+    },
+    {
+      "name": "Dark Brown",
+      "image": "darkbrown"
+    },
+    {
+      "name": "Dark Pink",
+      "image": "darkpink"
+    },
+    {
+      "name": "Fog Grey",
+      "image": "foggrey"
+    },
+    {
+      "name": "Gold",
+      "image": "gold"
+    },
+    {
+      "name": "White",
+      "image": "grayscale-1"
+    },
+    {
+      "name": "Dark Grey",
+      "image": "grayscale-7"
+    },
+    {
+      "name": "Darker Grey",
+      "image": "grayscale-8"
+    },
+    {
+      "name": "Darkest Grey",
+      "image": "grayscale-9"
+    },
+    {
+      "name": "Green",
+      "image": "green"
+    },
+    {
+      "name": "Gunk",
+      "image": "gunk"
+    },
+    {
+      "name": "Hot Brown",
+      "image": "hotbrown"
+    },
+    {
+      "name": "Magenta",
+      "image": "magenta"
+    },
+    {
+      "name": "Orange",
+      "image": "orange"
+    },
+    {
+      "name": "Orange Light",
+      "image": "orange-yellow"
+    },
+    {
+      "name": "Peach",
+      "image": "peachy-a"
+    },
+    {
+      "name": "Peachy",
+      "image": "peachy-b"
+    },
+    {
+      "name": "Purple",
+      "image": "purple"
+    },
+    {
+      "name": "Red",
+      "image": "red"
+    },
+    {
+      "name": "Pink",
+      "image": "redpinkish"
+    },
+    {
+      "name": "Rust",
+      "image": "rust"
+    },
+    {
+      "name": "Slime Green",
+      "image": "slimegreen"
+    },
+    {
+      "name": "Teal",
+      "image": "teal"
+    },
+    {
+      "name": "Teal Light",
+      "image": "teal-light"
+    },
+    {
+      "name": "Yellow",
+      "image": "yellow"
+    }
+  ],
+  "accessories": [
     {
       "name": "",
       "image": ""
