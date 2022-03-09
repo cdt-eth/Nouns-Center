@@ -75,7 +75,7 @@ const Traits = () => {
                 <img
                   src={`/traits/accessories/accessory-${accessory.image}.png`}
                 />
-                <p className="text-nouns text-nouns-cool-text text-center tracking-wider xs:text-sm sm:text-lg">
+                <p className="text-nouns pt-6 text-nouns-cool-text text-center tracking-wider xs:text-sm sm:text-lg">
                   {accessory.name}
                 </p>
               </div>
