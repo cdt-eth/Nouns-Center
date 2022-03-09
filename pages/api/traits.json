@@ -1,6 +1,10 @@
 {
   "heads": [
     {
+      "name": "35mm Film",
+      "image": "film-35mm"
+    },
+    {
       "name": "Aardvark",
       "image": "aardvark"
     },
@@ -99,10 +103,6 @@
     {
       "name": "Brain",
       "image": "brain"
-    },
-    {
-      "name": "Speech Bubble",
-      "image": "bubble-speech"
     },
     {
       "name": "Bubble Gum",
@@ -213,10 +213,6 @@
       "image": "cone"
     },
     {
-      "name": "Handheld Console",
-      "image": "console-handheld"
-    },
-    {
       "name": "Cookie",
       "image": "cookie"
     },
@@ -294,7 +290,7 @@
     },
     {
       "name": "Duck",
-      "image": "Duck"
+      "image": "duck"
     },
     {
       "name": "Rubber Ducky",
@@ -319,10 +315,6 @@
     {
       "name": "Fence",
       "image": "fence"
-    },
-    {
-      "name": "35mm Film",
-      "image": "film-35mm"
     },
     {
       "name": "Film Strip",
@@ -391,6 +383,10 @@
     {
       "name": "Hair",
       "image": "hair"
+    },
+    {
+      "name": "Handheld Console",
+      "image": "console-handheld"
     },
     {
       "name": "Hard Hat",
@@ -763,6 +759,10 @@
     {
       "name": "Spaghetti",
       "image": "spaghetti"
+    },
+    {
+      "name": "Speech Bubble",
+      "image": "bubble-speech"
     },
     {
       "name": "Sponge",
