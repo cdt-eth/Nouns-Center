@@ -1086,7 +1086,7 @@
     },
     {
       "name": "Peachy",
-      "image": "peachy-b"
+      "image": "peachy-B"
     },
     {
       "name": "Purple",
@@ -1123,8 +1123,516 @@
   ],
   "accessories": [
     {
-      "name": "",
-      "image": ""
+      "name": "1n",
+      "image": "1n"
+    },
+    {
+      "name": "Aardvark",
+      "image": "aardvark"
+    },
+    {
+      "name": "Anchor Necklace",
+      "image": "bling-anchor"
+    },
+    {
+      "name": "Arrow",
+      "image": "bling-arrow"
+    },
+    {
+      "name": "Axe",
+      "image": "axe"
+    },
+    {
+      "name": "Bird Flying",
+      "image": "bird-flying"
+    },
+    {
+      "name": "Cardinal",
+      "image": "bird-side"
+    },
+    {
+      "name": "Chameleon",
+      "image": "belly-chameleon"
+    },
+    {
+      "name": "Cheese Necklace",
+      "image": "bling-cheese"
+    },
+    {
+      "name": "Gold Bar Necklace",
+      "image": "bling-gold-ingot"
+    },
+    {
+      "name": "Heart Necklace",
+      "image": "bling-love"
+    },
+    {
+      "name": "Mask Necklace",
+      "image": "bling-mask"
+    },
+    {
+      "name": "Rings",
+      "image": "bling-rings"
+    },
+    {
+      "name": "Scissors",
+      "image": "bling-scissors"
+    },
+    {
+      "name": "Sparkles",
+      "image": "bling-sparkles"
+    },
+    {
+      "name": "Checker Disco Shirt",
+      "image": "body-gradient-checkerdisco"
+    },
+    {
+      "name": "Dawn Shirt",
+      "image": "body-gradient-dawn"
+    },
+    {
+      "name": "Dusk Shirt",
+      "image": "body-gradient-dusk"
+    },
+    {
+      "name": "Glacier Shirt",
+      "image": "body-gradient-glacier"
+    },
+    {
+      "name": "Ice Shirt",
+      "image": "body-gradient-ice"
+    },
+    {
+      "name": "Pride Shirt",
+      "image": "body-gradient-pride"
+    },
+    {
+      "name": "Red/Pink Shirt",
+      "image": "body-gradient-redpink"
+    },
+    {
+      "name": "Sunset Shirt",
+      "image": "body-gradient-sunset"
+    },
+    {
+      "name": "Carrot",
+      "image": "carrot"
+    },
+    {
+      "name": "Chain Logo",
+      "image": "chain-logo"
+    },
+    {
+      "name": "Checker Blue",
+      "image": "checker-bigwalk-blue-prime"
+    },
+    {
+      "name": "Checker Grey",
+      "image": "checker-bigwalk-greylight"
+    },
+    {
+      "name": "Checker Rainbow",
+      "image": "checker-bigwalk-rainbow"
+    },
+    {
+      "name": "Checker RGB",
+      "image": "checker-RGB"
+    },
+    {
+      "name": "Checker White",
+      "image": "checker-spaced-black"
+    },
+    {
+      "name": "Checker Black",
+      "image": "checker-spaced-white"
+    },
+    {
+      "name": "Checker Vibrant",
+      "image": "checker-vibrant"
+    },
+    {
+      "name": "Checker Big Green",
+      "image": "checkers-big-green"
+    },
+    {
+      "name": "Checker Big Red",
+      "image": "checkers-big-red-cold"
+    },
+    {
+      "name": "Checker Black",
+      "image": "checkers-black"
+    },
+    {
+      "name": "Checker Blue",
+      "image": "checkers-blue"
+    },
+    {
+      "name": "Checker Magenta",
+      "image": "checkers-magenta-80"
+    },
+    {
+      "name": "Chicken",
+      "image": "chicken"
+    },
+    {
+      "name": "Cloud",
+      "image": "cloud"
+    },
+    {
+      "name": "Clover",
+      "image": "clover"
+    },
+    {
+      "name": "Collar Sunset",
+      "image": "collar-sunset"
+    },
+    {
+      "name": "Cow",
+      "image": "cow"
+    },
+    {
+      "name": "Decay",
+      "image": "decay-gray-dark"
+    },
+    {
+      "name": "Decay Pride",
+      "image": "decay-pride"
+    },
+    {
+      "name": "Dinosaur",
+      "image": "dinosaur"
+    },
+    {
+      "name": "Dollar Necklace",
+      "image": "dollar-bling"
+    },
+    {
+      "name": "Dragon",
+      "image": "dragon"
+    },
+    {
+      "name": "Ducky",
+      "image": "ducky"
+    },
+    {
+      "name": "ETH",
+      "image": "eth"
+    },
+    {
+      "name": "Eye",
+      "image": "eye"
+    },
+    {
+      "name": "Flash",
+      "image": "flash"
+    },
+    {
+      "name": "Fries",
+      "image": "fries"
+    },
+    {
+      "name": "Glasses",
+      "image": "glasses-logo-sun"
+    },
+    {
+      "name": "Nouns Glasses",
+      "image": "glasses-logo"
+    },
+    {
+      "name": "Nouns Glasses 2",
+      "image": "glasses"
+    },
+    {
+      "name": "Beige Grid",
+      "image": "grid-simple-bege"
+    },
+    {
+      "name": "Heart",
+      "image": "heart"
+    },
+    {
+      "name": "Hoodie Strings",
+      "image": "hoodiestrings-uneven"
+    },
+    {
+      "name": "ID",
+      "image": "id"
+    },
+    {
+      "name": "Infinity",
+      "image": "infinity"
+    },
+    {
+      "name": "Insignia",
+      "image": "insignia"
+    },
+    {
+      "name": "Leaf",
+      "image": "leaf"
+    },
+    {
+      "name": "Lightbulb",
+      "image": "lightbulb"
+    },
+    {
+      "name": "Lines Green",
+      "image": "lines-45-greens"
+    },
+    {
+      "name": "Lines Rose",
+      "image": "lines-45-rose"
+    },
+    {
+      "name": "LP",
+      "image": "lp"
+    },
+    {
+      "name": "Mars Face",
+      "image": "marsface"
+    },
+    {
+      "name": "Matrix White",
+      "image": "matrix-white"
+    },
+    {
+      "name": "Moon Block",
+      "image": "moon-block"
+    },
+    {
+      "name": "Band Shirt",
+      "image": "oldshirt"
+    },
+    {
+      "name": "Pizza Necklace",
+      "image": "pizza-bling"
+    },
+    {
+      "name": "Pocket Pencil",
+      "image": "pocket-pencil"
+    },
+    {
+      "name": "Rain",
+      "image": "rain"
+    },
+    {
+      "name": "Rainbow Steps",
+      "image": "rainbow-steps"
+    },
+    {
+      "name": "RBG",
+      "image": "rgb"
+    },
+    {
+      "name": "Robot",
+      "image": "robot"
+    },
+    {
+      "name": "Safety Vest",
+      "image": "safety-vest"
+    },
+    {
+      "name": "Clown Scarf",
+      "image": "scarf-clown"
+    },
+    {
+      "name": "XCOPY X",
+      "image": "secret-x"
+    },
+    {
+      "name": "Black Shirt",
+      "image": "shirt-black"
+    },
+    {
+      "name": "Shrimp",
+      "image": "shrimp"
+    },
+    {
+      "name": "Slime Splat",
+      "image": "slimesplat"
+    },
+    {
+      "name": "Chain Necklace",
+      "image": "small-bling"
+    },
+    {
+      "name": "Snowflake",
+      "image": "snowflake"
+    },
+    {
+      "name": "Blood Stains",
+      "image": "stains-blood"
+    },
+    {
+      "name": "Zombie Stains",
+      "image": "stains-zombie"
+    },
+    {
+      "name": "Stripes & Checks",
+      "image": "stripes-and-checks"
+    },
+    {
+      "name": "Big Red Stripes",
+      "image": "stripes-big-red"
+    },
+    {
+      "name": "Blit Stripes",
+      "image": "stripes-blit"
+    },
+    {
+      "name": "Blue Stripes",
+      "image": "stripes-blue-med"
+    },
+    {
+      "name": "Brown Stripes",
+      "image": "stripes-brown"
+    },
+    {
+      "name": "Olive Stripes",
+      "image": "stripes-olive"
+    },
+    {
+      "name": "Red Stripes",
+      "image": "stripes-red-cold"
+    },
+    {
+      "name": "Sunset",
+      "image": "sunset"
+    },
+    {
+      "name": "Taxi",
+      "image": "taxi-checkers"
+    },
+    {
+      "name": "Yo Shirt",
+      "image": "tee-yo"
+    },
+    {
+      "name": "Text Yolo",
+      "image": "text-yolo"
+    },
+    {
+      "name": "Think",
+      "image": "think"
+    },
+    {
+      "name": "Black Tie",
+      "image": "tie-black-on-white"
+    },
+    {
+      "name": "Tie Dye",
+      "image": "tie-dye"
+    },
+    {
+      "name": "Purple Tie",
+      "image": "tie-purple-on-white"
+    },
+    {
+      "name": "Text",
+      "image": "txt-a2+b2"
+    },
+    {
+      "name": "CC",
+      "image": "txt-cc"
+    },
+    {
+      "name": "CC 2",
+      "image": "txt-cc2"
+    },
+    {
+      "name": "Copy",
+      "image": "txt-copy"
+    },
+    {
+      "name": "DAO",
+      "image": "txt-dao-black"
+    },
+    {
+      "name": "Doom",
+      "image": "txt-doom"
+    },
+    {
+      "name": "Dope",
+      "image": "txt-dope-text"
+    },
+    {
+      "name": "Foo",
+      "image": "txt-foo-black"
+    },
+    {
+      "name": "ICO",
+      "image": "txt-ico"
+    },
+    {
+      "name": "I/O",
+      "image": "txt-io"
+    },
+    {
+      "name": "LMAO",
+      "image": "txt-lmao"
+    },
+    {
+      "name": "LOL",
+      "image": "txt-lol"
+    },
+    {
+      "name": "Mint",
+      "image": "txt-mint"
+    },
+    {
+      "name": "Nil",
+      "image": "txt-nil-grey-dark"
+    },
+    {
+      "name": "Noun",
+      "image": "txt-noun-f0f"
+    },
+    {
+      "name": "Noun Green",
+      "image": "txt-noun-green"
+    },
+    {
+      "name": "Pi",
+      "image": "txt-pi"
+    },
+    {
+      "name": "Pop",
+      "image": "txt-pop"
+    },
+    {
+      "name": "ROFL",
+      "image": "txt-rofl"
+    },
+    {
+      "name": "We",
+      "image": "txt-we"
+    },
+    {
+      "name": "YAY",
+      "image": "txt-yay"
+    },
+    {
+      "name": "Wall",
+      "image": "wall"
+    },
+    {
+      "name": "Wave",
+      "image": "wave"
+    },
+    {
+      "name": "Wet Money",
+      "image": "wet-money"
+    },
+    {
+      "name": "Wool Weave",
+      "image": "woolweave-bicolor"
+    },
+    {
+      "name": "Wool Weave 2",
+      "image": "woolweave-dirt"
+    },
+    {
+      "name": "Yin & Yang",
+      "image": "yingyang"
     }
   ]
 }
