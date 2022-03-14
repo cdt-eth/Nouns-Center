@@ -56,6 +56,22 @@
     "buttonText": "Listen to the episode"
   },
   {
+    "date": "7/7/21",
+    "title": "Website Iteration",
+    "body": "Draft idea of nouns.wtf.",
+    "img": "website.jpeg",
+    "link": "https://twitter.com/nounsdao/status/1412944336896073731",
+    "buttonText": "View Tweet"
+  },
+  {
+    "date": "7/16/21",
+    "title": "Rinkeby Testing",
+    "body": "Nouns public testnet goes live for final testing.",
+    "img": "testnet.jpeg",
+    "link": "https://twitter.com/nounsdao/status/1416100755908464641",
+    "buttonText": "View Tweet"
+  },
+  {
     "date": "8/8/21",
     "title": "Project Launch",
     "body": "The experiment called Nouns begins and Xaix wins Auction #1 for 613.37 ETH.",

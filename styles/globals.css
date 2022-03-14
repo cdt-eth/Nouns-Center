@@ -167,6 +167,7 @@ main {
 
 @media (min-width: 1169px) {
   .vertical-timeline-element-date {
+    padding: 10px !important;
     color: white;
     opacity: 100%;
   }
