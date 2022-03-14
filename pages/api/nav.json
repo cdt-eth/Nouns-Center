@@ -5,6 +5,11 @@
     "link": "/projects"
   },
   {
+    "name": "History",
+    "current": false,
+    "link": "/history"
+  },
+  {
     "name": "Traits",
     "current": false,
     "link": "/traits"

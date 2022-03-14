@@ -1,0 +1,66 @@
+[
+  {
+    "date": "6/2/21",
+    "title": "Initial Drafts",
+    "body": "Gremplin & 4156 look at the first sketches on which path to take for the art.",
+    "img": "eyes.png",
+    "link": "https://twitter.com/punk4156/status/1478755068920967177",
+    "buttonText": "View Tweet"
+  },
+  {
+    "date": "6/2/21",
+    "title": "Protonoun",
+    "body": "The first published instance of the Nouns glasses. The ''eraser guy'' was dubbed Protonoun.",
+    "img": "proto.png",
+    "link": "https://twitter.com/punk4156/status/1478753490210017284",
+    "buttonText": "View Tweet"
+  },
+  {
+    "date": "6/3/21",
+    "title": "Git init",
+    "body": "Vape Ape creates the first commit in the Github monorepo.",
+    "img": "init.png",
+    "link": "https://github.com/nounsDAO/nouns-monorepo/commit/85e8da5231dbecca77d92fb67e041b43ce5bcb4b",
+    "buttonText": "View Commit"
+  },
+  {
+    "date": "6/3/21",
+    "title": "Nounish Design",
+    "body": "The rough Noun aesthetics were decided upon and it was time to iterate &#38; polish.",
+    "img": "noun.jpeg",
+    "link": "https://twitter.com/punk4156/status/1478753490210017284",
+    "buttonText": "View Tweet"
+  },
+  {
+    "date": "6/6/21",
+    "title": "First Public Tweet",
+    "body": "4156 laid out the broad strokes of what would become NounsDAO.",
+    "img": "pronoun.png",
+    "link": "https://twitter.com/punk4156/status/1400154938186031104",
+    "buttonText": "View Tweet"
+  },
+  {
+    "date": "6/9/21",
+    "title": "Glasses & Body Done",
+    "body": "The rough Noun aesthetics were decided upon and it was time to iterate & polish.",
+    "img": "glasses.png",
+    "link": "https://twitter.com/punk4156/status/1478880625356648449?s=20&t=ICXZG1qCi_W0vkAYtDxh0Q",
+    "buttonText": "View Tweet"
+  },
+  {
+    "date": "6/16/21",
+    "title": "Digitally Rare Pod",
+    "body": "4156 appears on the podcast, Digitally Rare to discuss the project.",
+    "img": "rare.jpeg",
+    "link": "https://anchor.fm/digitallyrare/episodes/How-Now--Noun-DAO--4156-Interview-e160k9n",
+    "buttonText": "Listen to the episode"
+  },
+  {
+    "date": "8/8/21",
+    "title": "Project Launch",
+    "body": "The experiment called Nouns begins and Auction #1 begins.",
+    "img": "auction0.png",
+    "link": "https://twitter.com/nounsdao/status/1424426919806767107",
+    "buttonText": "View Tweet"
+  }
+]
