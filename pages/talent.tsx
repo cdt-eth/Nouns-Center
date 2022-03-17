@@ -6,17 +6,9 @@ import {
   FaTwitter as TwitterIcon,
   FaDiscord as DiscordIcon,
 } from "react-icons/fa";
+import { getRandomNounPic } from "../utils";
 
 const Talent = () => {
-  const getRandomNoun = () => {
-    const min = 0;
-    const max = 224;
-
-    const nounId = Math.floor(Math.random() * (max - min + 1) + min);
-
-    return nounId;
-  };
-
   return (
     <div>
       <Header title="Talent | Nouns Center" />
@@ -55,7 +47,7 @@ const Talent = () => {
               </div>
               <img
                 className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0"
-                src={`https://noun.pics/${getRandomNoun()}`}
+                src={getRandomNounPic()}
                 alt=""
               />
             </div>
