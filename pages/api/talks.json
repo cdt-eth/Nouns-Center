@@ -114,5 +114,31 @@
         "role": ["creator"]
       }
     ]
+  },
+  {
+    "date": "04/12/2022",
+    "topic": "Nounsの友達  / ''Friends of Nouns''",
+    "image": "5.png",
+    "link": "https://twitter.com/i/spaces/1vAGRkgPWbzJl",
+    "guests": [
+      {
+        "name": "David Horvath",
+        "handle": "davidzhorvath",
+        "project": "https://studio1.wtf/",
+        "role": ["creator"]
+      },
+      {
+        "name": "Komorebi88",
+        "handle": "Komorebi8888",
+        "project": "https://opensea.io/komorebi88",
+        "role": ["nouner"]
+      },
+      {
+        "name": "Genki",
+        "handle": "NFTChef",
+        "project": "https://twitter.com/fractionsdao",
+        "role": ["creator"]
+      }
+    ]
   }
 ]
