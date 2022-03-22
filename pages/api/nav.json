@@ -10,6 +10,11 @@
     "link": "/history"
   },
   {
+    "name": "Funding",
+    "current": false,
+    "link": "/funding"
+  },
+  {
     "name": "Traits",
     "current": false,
     "link": "/traits"
