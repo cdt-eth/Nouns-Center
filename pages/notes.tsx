@@ -94,7 +94,7 @@ const Notes = ({ tableIds }) => {
                   <Menu.Item>
                     {({ active }) => (
                       <div
-                        key={id.Name}
+                        key={uuidv4()}
                         onClick={() => setCurrentPostId(id.id)}
                         className={classNames(
                           active
