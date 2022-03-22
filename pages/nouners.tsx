@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Header from "./components/Header";
 import Title from "./components/Title";
 
-const Nouners = ({ tableIds }) => {
+const Nouners = () => {
   return (
     <div>
       <Header title="Nouners | Nouns Center" />
