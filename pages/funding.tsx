@@ -23,7 +23,7 @@ const Funding = ({ grantsData }) => {
       <Header title="Funding | Nouns Center" />
       <Title title="Funding" />
 
-      <Table grants={grantsData} />
+      {grantsData && <Table grants={grantsData} />}
     </div>
   );
 };

@@ -2,15 +2,8 @@ import React from "react";
 import Header from "./components/Header";
 import Title from "./components/Title";
 import talks from "./api/talks.json";
-import {
-  AcademicCapIcon,
-  BadgeCheckIcon,
-  CashIcon,
-  ClockIcon,
-  ReceiptRefundIcon,
-  LinkIcon,
-  UsersIcon,
-} from "@heroicons/react/outline";
+import { v4 as uuidv4 } from "uuid";
+import { LinkIcon } from "@heroicons/react/outline";
 import { FaTwitter as TwitterIcon } from "react-icons/fa";
 
 const Talks = () => {
@@ -28,7 +21,7 @@ const Talks = () => {
           talks.map((talk, actionIdx) => (
             // talk.image !== "" && (
             <div
-              key={talk.topic}
+              key={uuidv4()}
               className={classNames(
                 actionIdx === 0
                   ? "rounded-tl-lg rounded-tr-lg sm:rounded-tr-none"
@@ -90,7 +83,7 @@ const Talks = () => {
                     </div>
 
                     {talk.guests.map((guest) => (
-                      <div className="flex mb-1 justify-start">
+                      <div key={uuidv4()} className="flex mb-1 justify-start">
                         <a
                           className="flex items-center  cursor-pointer gap-1 xs:w-2/3"
                           href={`https://twitter.com/${guest.handle}`}
