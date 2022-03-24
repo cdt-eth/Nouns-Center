@@ -53,6 +53,7 @@ const Talks = () => {
                   <a
                     className="cursor-pointer flex items-center gap-1 hover:text-blue-500"
                     href={talk.link}
+                    target="_blank"
                   >
                     <p>Listen</p>
                     <svg

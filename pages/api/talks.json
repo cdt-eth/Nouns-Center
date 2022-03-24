@@ -3,7 +3,7 @@
     "date": "02/16/2022",
     "topic": "Extensions Roundup",
     "image": "1.png",
-    "link": "https://open.spotify.com/episode/1UKlraPn4nAYBsNMGyb1Ki?si=25afbdfde89e4c62",
+    "link": "https://pod.link/1615472873/episode/be3065160ff9d89038de9f30354d6ab9",
     "guests": [
       {
         "name": "Toady",
@@ -35,7 +35,7 @@
     "date": "02/23/2022",
     "topic": "Physical Nouns Glasses",
     "image": "2.jpeg",
-    "link": "https://open.spotify.com/episode/11CJjkHt56aw3LnvnI4km1?si=9d83755bc1f1441c",
+    "link": "https://pod.link/1615472873/episode/59e86a1225ed74179ccf6d1335226387",
     "guests": [
       {
         "name": "Salvino Armati",
@@ -61,7 +61,7 @@
     "date": "03/02/2022",
     "topic": "Merch & CC0",
     "image": "3.jpeg",
-    "link": "https://open.spotify.com/episode/2RzVh2epOvuBNLyBSzSa2f?si=6c03b866e968432c",
+    "link": "https://pod.link/1615472873/episode/644cdf49fa0dd06a7c2ad89c6d19a9fa",
     "guests": [
       {
         "name": "Jack Butcher",
@@ -87,7 +87,7 @@
     "date": "03/09/2022",
     "topic": "Guest Spaces",
     "image": "4.jpeg",
-    "link": "https://open.spotify.com/episode/2VRByLFtZFwlb1DW3oITVy?si=2a09c128ecb24daa",
+    "link": "https://pod.link/1615472873/episode/90e270b9e2aae5a75c376cfa05dc3cf7",
     "guests": [
       {
         "name": "Cryptasha",
@@ -119,7 +119,7 @@
     "date": "04/12/2022",
     "topic": "Nounsの友達  / ''Friends of Nouns''",
     "image": "5.png",
-    "link": "https://open.spotify.com/episode/1bBMLlMP6QkS7Hm9BsMaos?si=802076e4e0cb4926",
+    "link": "https://pod.link/1615472873/episode/db314d3b19a7d3281cec10076e5a31c4",
     "guests": [
       {
         "name": "David Horvath",
@@ -138,6 +138,26 @@
         "handle": "NFTChef",
         "project": "https://twitter.com/fractionsdao",
         "role": ["creator"]
+      }
+    ]
+  },
+  {
+    "date": "04/23/2022",
+    "topic": "Nouner Chat",
+    "image": "6.png",
+    "link": "",
+    "guests": [
+      {
+        "name": "Straybits",
+        "handle": "straybits1",
+        "project": "https://www.instagram.com/straybits/",
+        "role": ["nouner"]
+      },
+      {
+        "name": "Noun 40",
+        "handle": "hongkim__",
+        "project": "https://bitwiseinvestments.com/",
+        "role": ["nouner, boardMember"]
       }
     ]
   }
