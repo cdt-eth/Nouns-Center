@@ -2,16 +2,38 @@ import React from "react";
 import Header from "./components/Header";
 import Title from "./components/Title";
 import traits from "./api/traits.json";
+
+import SubheaderBodyButton from "./components/SubheaderBodyButton";
+// import Link from "next/link";
+import Link from "./components/Link";
+
 const Traits = () => {
   const heads = traits.heads;
   const glasses = traits.glasses;
   const bodies = traits.bodies;
   const accessories = traits.accessories;
 
+  const assetsPage = (
+    <Link leavesPage={false} text="assets page" url="/assets" />
+  );
+
   return (
     <div className="">
       <Header title="Traits | Nouns Center" />
       <Title title="Traits" />
+
+      <SubheaderBodyButton
+        title="234 heads, 21 glasses, 30 bodies, 137 accessories"
+        body={
+          <>
+            All the individual traits sized up to 500 x 500px for your
+            convenience. If you need other downloads check out the {assetsPage}.
+          </>
+        }
+        btnLink="/assets/assets_png.zip"
+        btnText="Download traits"
+        download
+      />
 
       <div className="bg-nouns-cool py-6 xs:px-1 sm:px-4 rounded-xl mb-8">
         <h1 className="text-5xl text-nouns mb-6 text-center text-nouns-cool-text">
