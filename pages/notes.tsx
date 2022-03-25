@@ -10,6 +10,7 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import SubheaderBodyButton from "./components/SubheaderBodyButton";
+import Loading from "./components/Loading";
 
 const oniNotionTable = "e29fc3a9-2c4a-44c9-8210-f5142b751502";
 const rootNotionPageId = "e29fc3a92c4a44c98210f5142b751502"; // collection
@@ -33,6 +34,7 @@ function classNames(...classes) {
 const Notes = ({ tableIds }) => {
   const [currentPostId, setCurrentPostId] = useState(rootNotionPageId);
   const [postData, setPostData] = useState(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   useEffect(() => {
     tableIds &&
@@ -47,12 +49,14 @@ const Notes = ({ tableIds }) => {
   }, []);
 
   useEffect(() => {
+    setIsLoading(true);
     const data = fetch(
       `https://notion-api.splitbee.io/v1/page/${currentPostId}`
     )
       .then((res) => res.json())
       .then((data) => {
         setPostData(data);
+        setIsLoading(false);
       });
   }, [currentPostId]);
 
@@ -123,11 +127,14 @@ const Notes = ({ tableIds }) => {
         }
       />
 
-      {/* Week of {week !== "" && postData.Name} */}
-      {postData && (
-        <div className="text-white">
-          <NotionRenderer blockMap={postData} />
-        </div>
+      {isLoading ? (
+        <Loading />
+      ) : (
+        postData && (
+          <div className="text-white">
+            <NotionRenderer blockMap={postData} />
+          </div>
+        )
       )}
     </>
   );
