@@ -13,7 +13,7 @@ const Link = ({ text, url, leavesPage, classes }: LinkProps) => {
       href={url}
       target={leavesPage ? "_blank" : "_self"}
       rel="noreferrer"
-      className={`text-indigo-400 underline text-nouns tracking-wider ${
+      className={`text-blue-500 hover:text-nouns-bg-blue transition duration-100 underline text-nouns tracking-wider ${
         classes && classes
       }`}
     >
