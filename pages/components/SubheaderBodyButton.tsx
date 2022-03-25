@@ -19,7 +19,7 @@ const SubheaderBodyButton = ({
     <div className="sm:flex sm:items-center text-white mb-6">
       <div className="sm:flex-auto">
         <h1 className="text-xl font-semibold ">{title}</h1>
-        <p className="mt-2 text-sm ">{body}</p>
+        <p className="mt-2 text-md ">{body}</p>
       </div>
       <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
         <a
