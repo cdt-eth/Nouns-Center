@@ -1,25 +1,33 @@
 import React from "react";
 import Header from "./components/Header";
 import Title from "./components/Title";
-import talks from "./api/talks.json";
+import podcasts from "./api/podcasts.json";
 import { v4 as uuidv4 } from "uuid";
 import { LinkIcon } from "@heroicons/react/outline";
 import { FaTwitter as TwitterIcon } from "react-icons/fa";
+import SubheaderBodyButton from "./components/SubheaderBodyButton";
 
-const Talks = () => {
+const Podcast = () => {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
 
   return (
     <div className="mb-14">
-      <Header title="Talks | Nouns Center" />
-      <Title title="Talks" />
+      <Header title="Podcast | Nouns Center" />
+      <Title title="Podcast" />
+
+      <SubheaderBodyButton
+        title="Noun O' Talk is a weekly podcast conducted over Twitter Spaces"
+        body="The host, Christian, interviews people in the NounsDAO community. From project builders to Noun owners, we hear about how they came to Nouns and what they love about the project."
+        btnLink="https://pod.link/1615472873"
+        btnText="Listen to all episodes"
+      />
 
       <div className="rounded-lg text-black bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid xs:grid-cols-1 sm:grid-cols-2 sm:gap-px">
         {
-          talks.map((talk, actionIdx) => (
-            // talk.image !== "" && (
+          podcasts.map((podcast, actionIdx) => (
+            // podcast.image !== "" && (
             <div
               key={uuidv4()}
               className={classNames(
@@ -27,8 +35,8 @@ const Talks = () => {
                   ? "rounded-tl-lg rounded-tr-lg sm:rounded-tr-none"
                   : "",
                 actionIdx === 1 ? "sm:rounded-tr-lg" : "",
-                actionIdx === talks.length - 2 ? "sm:rounded-bl-lg" : "",
-                actionIdx === talks.length - 1
+                actionIdx === podcasts.length - 2 ? "sm:rounded-bl-lg" : "",
+                actionIdx === podcasts.length - 1
                   ? "rounded-bl-lg rounded-br-lg sm:rounded-bl-none"
                   : "",
                 "relative group  transition duration-150 bg-white p-6"
@@ -38,14 +46,14 @@ const Talks = () => {
               <div className="flex xs:gap-5 sm:gap-10 xs:flex-col sm:flex-row">
                 <div className="flex flex-col items-center gap-2">
                   <div className="border-black border w-44 h-44 rounded-lg overflow-hidden shadow-md">
-                    <a href={talk.link} target="_blank">
-                      <img src={`talks/${talk.image}`} alt="" />
+                    <a href={podcast.link} target="_blank">
+                      <img src={`podcasts/${podcast.image}`} alt="" />
                     </a>
                   </div>
 
                   <a
                     className="cursor-pointer flex items-center gap-1 hover:text-blue-500"
-                    href={talk.link}
+                    href={podcast.link}
                     target="_blank"
                   >
                     <p>Listen</p>
@@ -66,10 +74,12 @@ const Talks = () => {
                       <p className="text-nouns xs:text-xl sm:text-lg">
                         {/* Extend touch target to entire panel */}
                         {/* <span className="absolute inset-0" aria-hidden="true" /> */}
-                        {talk.topic}
+                        {podcast.topic}
                       </p>
                     </h3>
-                    <p className="text-xs text-gray-500 italic">{talk.date}</p>
+                    <p className="text-xs text-gray-500 italic">
+                      {podcast.date}
+                    </p>
                   </div>
 
                   <div>
@@ -82,7 +92,7 @@ const Talks = () => {
                       </p>
                     </div>
 
-                    {talk.guests.map((guest) => (
+                    {podcast.guests.map((guest) => (
                       <div key={uuidv4()} className="flex mb-1 justify-start">
                         <a
                           className="flex items-center  cursor-pointer gap-1 xs:w-2/3"
@@ -115,4 +125,4 @@ const Talks = () => {
   );
 };
 
-export default Talks;
+export default Podcast;
