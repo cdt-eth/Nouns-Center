@@ -1,0 +1,164 @@
+[
+  {
+    "date": "02/16/2022",
+    "topic": "Extensions Roundup",
+    "image": "1.png",
+    "link": "https://pod.link/1615472873/episode/be3065160ff9d89038de9f30354d6ab9",
+    "guests": [
+      {
+        "name": "Toady",
+        "handle": "toady_hawk",
+        "project": "https://nounpunks.com/",
+        "role": ["creator"]
+      },
+      {
+        "name": "Backseats",
+        "handle": "backseats_eth",
+        "project": "https://nouncats.com/",
+        "role": ["creator"]
+      },
+      {
+        "name": "Dean Harvey",
+        "handle": "theharveydean",
+        "project": "https://nouncats.com/",
+        "role": ["creator"]
+      },
+      {
+        "name": "Gnars",
+        "handle": "0xigami",
+        "project": "https://gnars.wtf/",
+        "role": ["creator", "nouner"]
+      }
+    ]
+  },
+  {
+    "date": "02/23/2022",
+    "topic": "Physical Nouns Glasses",
+    "image": "2.jpeg",
+    "link": "https://pod.link/1615472873/episode/59e86a1225ed74179ccf6d1335226387",
+    "guests": [
+      {
+        "name": "Salvino Armati",
+        "handle": "salvinoarmati",
+        "project": "",
+        "role": ["creator"]
+      },
+      {
+        "name": "Josh Fisher",
+        "handle": "JoshuaFisher",
+        "project": "",
+        "role": ["creator"]
+      },
+      {
+        "name": "Klim",
+        "handle": "bigshottoyworks",
+        "project": "https://oncyber.io/spaces/zOsfAzfXOCtVah5ZcpmK",
+        "role": ["creator"]
+      }
+    ]
+  },
+  {
+    "date": "03/02/2022",
+    "topic": "Merch & CC0",
+    "image": "3.jpeg",
+    "link": "https://pod.link/1615472873/episode/644cdf49fa0dd06a7c2ad89c6d19a9fa",
+    "guests": [
+      {
+        "name": "Jack Butcher",
+        "handle": "jackbutcher",
+        "project": "https://visualizevalue.com/",
+        "role": ["creator", "nouner"]
+      },
+      {
+        "name": "Matt Downey",
+        "handle": "mattdowney",
+        "project": "https://shop.mattdowney.co/",
+        "role": ["creator", "nouncil"]
+      },
+      {
+        "name": "NounsTown Shop",
+        "handle": "nounstownshop",
+        "project": "https://nounstown.shop/",
+        "role": ["creator"]
+      }
+    ]
+  },
+  {
+    "date": "03/09/2022",
+    "topic": "Guest Spaces",
+    "image": "4.jpeg",
+    "link": "https://pod.link/1615472873/episode/90e270b9e2aae5a75c376cfa05dc3cf7",
+    "guests": [
+      {
+        "name": "Cryptasha",
+        "handle": "cryptasha",
+        "project": "https://sharks.wtf/",
+        "role": ["creator"]
+      },
+      {
+        "name": "Danit Peleg",
+        "handle": "danitpeleg3d",
+        "project": "https://danitpeleg.com/",
+        "role": ["creator"]
+      },
+      {
+        "name": "B",
+        "handle": "beautyandpunk",
+        "project": "https://www.risedao.xyz/",
+        "role": ["nouner"]
+      },
+      {
+        "name": "lorepunk",
+        "handle": "margaretlabour",
+        "project": "https://www.barnesandnoble.com/w/noun-poems-margaret-corvid/1140880330",
+        "role": ["creator"]
+      }
+    ]
+  },
+  {
+    "date": "04/12/2022",
+    "topic": "Nounsの友達  / ''Friends of Nouns''",
+    "image": "5.png",
+    "link": "https://pod.link/1615472873/episode/db314d3b19a7d3281cec10076e5a31c4",
+    "guests": [
+      {
+        "name": "David Horvath",
+        "handle": "davidzhorvath",
+        "project": "https://studio1.wtf/",
+        "role": ["creator"]
+      },
+      {
+        "name": "Komorebi88",
+        "handle": "Komorebi8888",
+        "project": "https://opensea.io/komorebi88",
+        "role": ["nouner"]
+      },
+      {
+        "name": "Genki",
+        "handle": "NFTChef",
+        "project": "https://twitter.com/fractionsdao",
+        "role": ["creator"]
+      }
+    ]
+  },
+  {
+    "date": "04/23/2022",
+    "topic": "Nouner Chat",
+    "image": "6.png",
+    "link": "",
+    "guests": [
+      {
+        "name": "Straybits",
+        "handle": "straybits1",
+        "project": "https://www.instagram.com/straybits/",
+        "role": ["nouner"]
+      },
+      {
+        "name": "Noun 40",
+        "handle": "hongkim__",
+        "project": "https://bitwiseinvestments.com/",
+        "role": ["nouner, boardMember"]
+      }
+    ]
+  }
+]
