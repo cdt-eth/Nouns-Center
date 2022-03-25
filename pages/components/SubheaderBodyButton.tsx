@@ -18,7 +18,7 @@ const SubheaderBodyButton = ({
   return (
     <div className="sm:flex sm:items-center text-white mb-6">
       <div className="sm:flex-auto">
-        <h1 className="text-xl font-semibold ">{title}</h1>
+        <h1 className="text-xl font-semibold capitalize">{title}</h1>
         <p className="mt-2 text-md ">{body}</p>
       </div>
       <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
@@ -26,7 +26,7 @@ const SubheaderBodyButton = ({
           download={download}
           href={btnLink}
           target="_blank"
-          className="inline-flex items-center justify-center rounded-md border border-transparent bg-nouns-bg-blue px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 transition duration-100 focus:outline-none focus:ring-2 focus:ring-nouns-bg-blue focus:ring-offset-2 sm:w-auto"
+          className="inline-flex capitalize items-center justify-center rounded-md border border-transparent bg-nouns-bg-blue px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 transition duration-100 focus:outline-none focus:ring-2 focus:ring-nouns-bg-blue focus:ring-offset-2 sm:w-auto"
         >
           {btnText}
         </a>

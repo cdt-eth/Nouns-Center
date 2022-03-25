@@ -7,12 +7,20 @@ import {
   FaDiscord as DiscordIcon,
 } from "react-icons/fa";
 import { getRandomNounPic } from "../utils";
+import SubheaderBodyButton from "./components/SubheaderBodyButton";
 
 const Talent = () => {
   return (
     <div>
       <Header title="Talent | Nouns Center" />
       <Title title="Talent" />
+
+      <SubheaderBodyButton
+        title="Reverse job board"
+        body="A place to connect with community members. You can view someone's skillset and easily connect with them. If you'd like to be added to this list, or are on it and would like to be removed, click the button to send a request."
+        btnLink=""
+        btnText="Add/Remove yourself"
+      />
 
       <ul
         role="list"

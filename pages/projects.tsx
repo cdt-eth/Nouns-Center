@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import projects from "./api/projects.json";
 import XSmall from "./components/Project/XSmall";
 import Title from "./components/Title";
+import SubheaderBodyButton from "./components/SubheaderBodyButton";
 
 const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -43,7 +44,14 @@ const Projects = () => {
     <div className="mb-16">
       <Header title="Projects | Nouns Center" />
       <Title title="Projects" />
-      {/* {filteredProjects.length} */}
+
+      <SubheaderBodyButton
+        title={`${filteredProjects.length} projects and counting!`}
+        body="Here's a comprehensive list of all the projects in the NounsDAO ecosystem. If you don't see your project here and would like to add it, click the button to have it added to the backlog. The site is updated with new projects once a week."
+        btnLink=""
+        btnText="Submit your project"
+      />
+
       <div className="mb-4">
         <div className="">
           <fieldset className="mt-2 text-white ">

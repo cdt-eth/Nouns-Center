@@ -18,7 +18,7 @@ const Podcast = () => {
       <Title title="Podcast" />
 
       <SubheaderBodyButton
-        title="Noun O' Talk is a weekly podcast conducted over Twitter Spaces"
+        title="Noun O' Talk: weekly podcast over Twitter Spaces"
         body="The host, Christian, interviews people in the NounsDAO community. From project builders to Noun owners, we hear about how they came to Nouns and what they love about the project."
         btnLink="https://pod.link/1615472873"
         btnText="Listen to all episodes"
