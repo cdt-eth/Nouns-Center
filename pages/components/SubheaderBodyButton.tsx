@@ -23,7 +23,7 @@ const SubheaderBodyButton = ({
         <h1 className="text-xl font-semibold capitalize">{title}</h1>
         <p className="mt-2 text-md ">{body}</p>
       </div>
-      <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none self-baseline	">
+      <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none self-baseline">
         {customBtn ? (
           customBtn
         ) : (
