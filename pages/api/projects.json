@@ -608,6 +608,14 @@
     "category": ["stats"]
   },
   {
+    "title": "Nouneby's",
+    "description": "The world's nounier destination for art.",
+    "creator": ["0xigami", "nounebys"],
+    "url": "https://nounebys.com/",
+    "image": "nounebys.jpeg",
+    "category": ["misc"]
+  },
+  {
     "title": "Nounish Button",
     "description": "Fork of Rainbow's button. Click it and Nouns glasses popup.",
     "creator": ["0xsvg"],
