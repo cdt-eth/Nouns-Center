@@ -923,6 +923,14 @@
     "category": ["nfts", "smallGrants"]
   },
   {
+    "title": "Stoned Nouns",
+    "description": "4200 random generated CC0 NFTs that loves to be high & !vibe.",
+    "creator": ["stonednouns"],
+    "url": "https://stonednouns.com/",
+    "image": "stoned.jpeg",
+    "category": ["nfts"]
+  },
+  {
     "title": "Studio1",
     "description": "From comics and games, to toys and movies, Nouns Studio1 helps your organization build with Nouns.",
     "creator": ["davidzhorvath"],
