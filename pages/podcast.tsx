@@ -4,7 +4,6 @@ import Title from "./components/Title";
 import podcasts from "./api/podcasts.json";
 import { v4 as uuidv4 } from "uuid";
 import { LinkIcon } from "@heroicons/react/outline";
-import { FaTwitter as TwitterIcon } from "react-icons/fa";
 import SubheaderBodyButton from "./components/SubheaderBodyButton";
 
 const Podcast = () => {

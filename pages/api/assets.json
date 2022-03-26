@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Traits - Photoshop Layers",
+    "image": "photoshop.png",
+    "file": "assets_psd.zip",
+    "download": true
+  },
+  {
+    "title": "Londrina Solid Font",
+    "image": "londrina.png",
+    "file": "https://fonts.google.com/specimen/Londrina+Solid",
+    "download": false
+  },
+  {
+    "title": "Nountown Font",
+    "image": "nountown.png",
+    "file": "nountown.otf",
+    "download": true
+  },
+  {
+    "title": "Traits - 500x500px PNGs",
+    "image": "assets_png.png",
+    "file": "assets_png.zip",
+    "download": true
+  },
+  {
+    "title": "Color Palette",
+    "image": "palette.png",
+    "file": "palette.png",
+    "download": true
+  }
+]
