@@ -424,6 +424,14 @@
     "category": ["misc"]
   },
   {
+    "title": "NickNutts",
+    "description": "Nouns + CryptoDickbutts = NickNutts.",
+    "creator": ["gameduckstudios"],
+    "url": "https://opensea.io/collection/nick-nutts",
+    "image": "nicknutt.gif",
+    "category": ["nfts"]
+  },
+  {
     "title": "Noadz",
     "description": "Nouns + Toadz.",
     "creator": ["thenoadz"],
@@ -670,6 +678,14 @@
     "url": "https://nounsjump.wtf/",
     "image": "nounsjump.png",
     "category": ["nfts", "misc"]
+  },
+  {
+    "title": "Nouns IRL",
+    "description": "Own nouns IRL (In Real Life). Merch purchases == 10% donations to charities.",
+    "creator": ["nounsIRL"],
+    "url": "https://nounsirl.com/",
+    "image": "nounsirl.webp",
+    "category": ["merch"]
   },
   {
     "title": "Nouns Mug",
@@ -993,6 +1009,14 @@
     "url": "https://apartments.webb.game/builds/d48fc0d2/index.html",
     "image": "webb.png",
     "category": ["misc"]
+  },
+  {
+    "title": "World Of Noun",
+    "description": "2,222 Nouns travel the world of the blockchain, and make frens with many communities. World of Noun reimagines the Doodles, DeadFellaz, Alien Frens, and XCOPY universes, putting Nouns and other CC0 personas at the center.",
+    "creator": ["worldofnoun"],
+    "url": "https://www.worldofnoun.com/",
+    "image": "worldofnoun.png",
+    "category": ["nfts"]
   },
   {
     "title": "XCOPY Nouns",
