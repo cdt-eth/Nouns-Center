@@ -1,5 +1,4 @@
 import React from "react";
-import Asset from "./components/Asset";
 import Header from "./components/Header";
 import Title from "./components/Title";
 import { v4 as uuidv4 } from "uuid";
