@@ -7,9 +7,23 @@ import Table from "./nouners/Table";
 const twentytwoNotionPage = "ac22114a6c004bafa500e2d824e32dc3";
 
 export async function getStaticProps() {
-  const data = await fetch(
-    `https://notion-api.splitbee.io/v1/table/${twentytwoNotionPage}`
-  ).then((res) => res.json());
+  let data = [];
+
+  let error = "";
+
+  try {
+    const res = await fetch(
+      `https://notion-api.splitbee.io/v1/table/${twentytwoNotionPage}`
+    );
+    if (res.status !== 200)
+      throw String(`Invalid server response: ${res.status} ${res.statusText}`);
+    data = await res.json();
+
+    if (!data) throw String("No data was found!");
+    data = JSON.parse(JSON.stringify(data));
+  } catch (e) {
+    error = e.toString();
+  }
 
   return {
     props: {
@@ -19,7 +33,7 @@ export async function getStaticProps() {
 }
 
 const Funding = ({ grantsData }) => {
-  return (
+  return grantsData ? (
     <div>
       <Header title="Funding | Nouns Center" />
       <Title title="Funding" />
@@ -33,8 +47,10 @@ const Funding = ({ grantsData }) => {
         btnText="Request funding"
       />
 
-      {grantsData && <Table grants={grantsData} />}
+      <Table grants={grantsData} />
     </div>
+  ) : (
+    <></>
   );
 };
 
