@@ -22,7 +22,7 @@ const Hero = () => {
                 </div>
                 <img
                   className="xs:w-20 sm:w-12 xs:h-20 sm:h-12 "
-                  src="earth.gif"
+                  src="earth-full.gif"
                   alt="earth"
                 />
               </div>
@@ -36,16 +36,15 @@ const Hero = () => {
             <div className="mt-5 mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">
                 <Link passHref href="/projects">
-                  <span className="w-full cursor-pointer flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-nouns-bg-blue hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                  <span className="w-full cursor-pointer flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white transition duration-150  bg-nouns-bg-blue hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
                     View Projects
-                    {/* Find Answers */}
                   </span>
                 </Link>
               </div>
 
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <Link passHref href="/funding">
-                  <span className="w-full cursor-pointer flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-nouns-bg-blue bg-white hover:bg-gray-0 md:py-4 md:text-lg md:px-10">
+                  <span className="w-full cursor-pointer flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-nouns-bg-blue bg-white transition duration-150 hover:bg-gray-300 md:py-4 md:text-lg md:px-10">
                     Get Funding{" "}
                   </span>
                 </Link>
@@ -53,7 +52,7 @@ const Hero = () => {
 
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <Link passHref href="/history">
-                  <span className="w-full cursor-pointer flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md  text-white bg-nouns-bg-blue hover:bg-indigo-700  md:py-4 md:text-lg md:px-10">
+                  <span className="w-full cursor-pointer flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md  text-white transition duration-150  bg-nouns-bg-blue hover:bg-indigo-700  md:py-4 md:text-lg md:px-10">
                     Learn the History{" "}
                   </span>
                 </Link>
@@ -63,7 +62,7 @@ const Hero = () => {
             <div className="mt-5 mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">
                 <Link passHref href="/faq">
-                  <span className="w-full cursor-pointer flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md hover:bg-gray-0  text-nouns-bg-blue bg-white  md:py-4 md:text-lg md:px-10">
+                  <span className="w-full cursor-pointer flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md transition duration-150 hover:bg-gray-300  text-nouns-bg-blue bg-white  md:py-4 md:text-lg md:px-10">
                     Find Answers
                   </span>
                 </Link>
@@ -78,8 +77,8 @@ const Hero = () => {
               </div>
 
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                <Link passHref href="/assets">
-                  <span className="w-full cursor-pointer flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md hover:bg-gray-0  text-nouns-bg-blue bg-white  md:py-4 md:text-lg md:px-10">
+                <Link passHref href="/talent">
+                  <span className="w-full cursor-pointer flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md transition duration-150 hover:bg-gray-300  text-nouns-bg-blue bg-white  md:py-4 md:text-lg md:px-10">
                     Connect with Others
                   </span>
                 </Link>
