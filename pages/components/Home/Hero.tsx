@@ -28,10 +28,10 @@ const Hero = () => {
               </div>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-base text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              Community site for Nouns DAO projects &#38; tools. Want to get
-              invovled? Looking for the assets? Hoping to connect with other
-              talented folks in the DAO? You&apos;ll find answers to everything
-              here.
+              Nouns Center is the community site for Nouns DAO projects &#38;
+              tools. Want to get invovled? Looking for the assets? Hoping to
+              connect with other talented folks in the DAO? You&apos;ll find
+              answers to everything here.
             </p>
             <div className="mt-5 mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">
