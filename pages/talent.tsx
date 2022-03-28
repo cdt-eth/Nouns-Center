@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Header from "./components/Header";
+import { v4 as uuidv4 } from "uuid";
 import Title from "./components/Title";
 import talent from "./api/talent.json";
 import {
@@ -44,7 +46,10 @@ const Talent = () => {
                     </span>
                   ) : (
                     person.title.map((t) => (
-                      <span className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full lowercase text">
+                      <span
+                        key={uuidv4()}
+                        className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full lowercase text"
+                      >
                         {t}
                       </span>
                     ))
@@ -67,6 +72,7 @@ const Talent = () => {
                       <a
                         href={`https://twitter.com/${person.twitter}`}
                         target="_blank"
+                        rel="noreferrer"
                         className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500 truncate px-2"
                       >
                         <TwitterIcon
@@ -83,6 +89,7 @@ const Talent = () => {
                       <a
                         href={` https://discord.com/users/${person.discordId}`}
                         target="_blank"
+                        rel="noreferrer"
                         className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500 truncate px-2"
                       >
                         <DiscordIcon

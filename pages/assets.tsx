@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Header from "./components/Header";
 import Title from "./components/Title";
@@ -48,6 +49,7 @@ const Assets = () => {
                           asset.download ? `/assets/${asset.file}` : asset.file
                         }
                         target={asset.download ? "_self" : "_blank"}
+                        rel="noreferrer"
                       >
                         Download
                       </a>

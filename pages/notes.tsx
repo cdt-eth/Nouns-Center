@@ -102,10 +102,9 @@ const Notes = ({ tableIds }) => {
                   <div className="py-1">
                     {tableIds &&
                       tableIds.map((id) => (
-                        <Menu.Item>
+                        <Menu.Item key={uuidv4()}>
                           {({ active }) => (
                             <div
-                              key={uuidv4()}
                               onClick={() => setCurrentPostId(id.id)}
                               className={classNames(
                                 active

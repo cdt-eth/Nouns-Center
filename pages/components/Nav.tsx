@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Disclosure } from "@headlessui/react";
 import nav from "../api/nav.json";
@@ -11,7 +12,7 @@ function classNames(...classes) {
 const Nav = ({ setSidebarOpen }) => {
   return (
     <div className="flex flex-col flex-grow  pt-5 pb-4 bg-nouns-bg-darkgrey overflow-y-auto">
-      <Link href="/">
+      <Link passHref href="/">
         <div
           className="flex sm:cursor-pointer items-center flex-shrink-0 px-4"
           onClick={() => setSidebarOpen(false)}
@@ -109,7 +110,7 @@ const Nav = ({ setSidebarOpen }) => {
             //                 as="a"
             //                 href={subItem.link}
             //                 target="_blank"
-            //                 rel="no-referrer"
+            //                 rel="noreferrer"
             //                 className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-1 text-base font-medium text-nouns-text-grey  hover:text-white "
             //               >
             //                 {subItem.name}

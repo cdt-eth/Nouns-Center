@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import { getRandomNounPic } from "../../utils";
@@ -19,7 +20,9 @@ const Event = ({ date, title, body, img, link, buttonText }: EventProps) => {
       className="vertical-timeline-element--work timelineEvent"
       date={date}
       iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-      icon={<img className="rounded-full" src={getRandomNounPic()} />}
+      icon={
+        <img className="rounded-full" src={getRandomNounPic()} alt="noun" />
+      }
     >
       <h3 className="vertical-timeline-element-title text-nouns">{title}</h3>
 
@@ -37,6 +40,7 @@ const Event = ({ date, title, body, img, link, buttonText }: EventProps) => {
             className="bg-nouns-cool-text rounded-md px-3 py-2 text-xs text-white"
             href={link}
             target="_blank"
+            rel="noreferrer"
           >
             {buttonText}
           </a>

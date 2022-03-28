@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Header from "./components/Header";
 import Title from "./components/Title";
+import { v4 as uuidv4 } from "uuid";
 import traits from "./api/traits.json";
 
 import SubheaderBodyButton from "./components/SubheaderBodyButton";
@@ -42,8 +44,8 @@ const Traits = () => {
         <div className="grid xs:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-2 ">
           {heads &&
             heads.map((head) => (
-              <div className="flex flex-col items-center mb-8">
-                <img src={`/traits/heads/head-${head.image}.png`} />
+              <div key={uuidv4()} className="flex flex-col items-center mb-8">
+                <img src={`/traits/heads/head-${head.image}.png`} alt="head" />
                 <p className="text-nouns text-nouns-cool-text text-center tracking-wider xs:text-sm sm:text-lg">
                   {head.name}
                 </p>
@@ -59,8 +61,11 @@ const Traits = () => {
         <div className="grid xs:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-2 ">
           {glasses &&
             glasses.map((g) => (
-              <div className="flex flex-col items-center mb-8">
-                <img src={`/traits/glasses/glasses-square-${g.image}.png`} />
+              <div key={uuidv4()} className="flex flex-col items-center mb-8">
+                <img
+                  src={`/traits/glasses/glasses-square-${g.image}.png`}
+                  alt="glasses"
+                />
                 <p className="text-nouns text-nouns-cool-text text-center tracking-wider xs:text-sm sm:text-lg">
                   {g.name}
                 </p>
@@ -76,8 +81,8 @@ const Traits = () => {
         <div className="grid xs:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-2 ">
           {bodies &&
             bodies.map((body) => (
-              <div className="flex flex-col items-center mb-8">
-                <img src={`/traits/bodies/body-${body.image}.png`} />
+              <div key={uuidv4()} className="flex flex-col items-center mb-8">
+                <img src={`/traits/bodies/body-${body.image}.png`} alt="body" />
                 <p className="text-nouns text-nouns-cool-text text-center tracking-wider xs:text-sm sm:text-lg">
                   {body.name}
                 </p>
@@ -93,9 +98,10 @@ const Traits = () => {
         <div className="grid xs:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-2 ">
           {accessories &&
             accessories.map((accessory) => (
-              <div className="flex flex-col items-center mb-8">
+              <div key={uuidv4()} className="flex flex-col items-center mb-8">
                 <img
                   src={`/traits/accessories/accessory-${accessory.image}.png`}
+                  alt="accessory"
                 />
                 <p className="text-nouns pt-6 text-nouns-cool-text text-center tracking-wider xs:text-sm sm:text-lg">
                   {accessory.name}

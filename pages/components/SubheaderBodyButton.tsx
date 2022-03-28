@@ -31,6 +31,7 @@ const SubheaderBodyButton = ({
             download={download && download}
             href={btnLink && btnLink}
             target="_blank"
+            rel="noreferrer"
             className="inline-flex capitalize items-center justify-center rounded-md border border-transparent bg-nouns-bg-blue px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 transition duration-100 focus:outline-none focus:ring-2 focus:ring-nouns-bg-blue focus:ring-offset-2 sm:w-auto"
           >
             {btnText && btnText}

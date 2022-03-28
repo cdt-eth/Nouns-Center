@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 const XSmall = ({ project }) => {
@@ -9,6 +10,7 @@ const XSmall = ({ project }) => {
         className="group block sm:cursor-pointer transition duration-200 h-full w-full aspect-w-10 aspect-h-10 rounded-xl bg-gray-100 focus-within:ring-2 relative focus-within:ring-offset-2 focus-within:ring-offset-gray-100 focus-within:ring-indigo-500 overflow-hidden"
         href={project.url}
         target="_blank"
+        rel="noreferrer"
       >
         <div className="absolute h-full w-full font-semibold px-4 pb-2 text-lg flex items-end gradient">
           {project.title}

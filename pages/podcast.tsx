@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Header from "./components/Header";
 import Title from "./components/Title";
@@ -45,7 +46,7 @@ const Podcast = () => {
               <div className="flex xs:gap-5 sm:gap-10 xs:flex-col sm:flex-row">
                 <div className="flex flex-col items-center gap-2">
                   <div className="border-black border w-44 h-44 rounded-lg overflow-hidden shadow-md">
-                    <a href={podcast.link} target="_blank">
+                    <a href={podcast.link} target="_blank" rel="noreferrer">
                       <img src={`podcasts/${podcast.image}`} alt="" />
                     </a>
                   </div>
@@ -54,6 +55,7 @@ const Podcast = () => {
                     className="cursor-pointer flex items-center gap-1 hover:text-blue-500"
                     href={podcast.link}
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <p>Listen</p>
                     <svg
@@ -97,6 +99,7 @@ const Podcast = () => {
                           className="flex items-center  cursor-pointer gap-1 xs:w-2/3"
                           href={`https://twitter.com/${guest.handle}`}
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <span className="text-sm font-medium hover:text-blue-900 text-blue-600">
                             {guest.name}
@@ -107,6 +110,7 @@ const Podcast = () => {
                           className="xs:w-1/3 hover:text-blue-600 justify-start sm:w-6"
                           href={guest.project}
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <LinkIcon className="h-4 w-4" aria-hidden="true" />
                         </a>
