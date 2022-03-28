@@ -16,9 +16,23 @@ const oniNotionTable = "e29fc3a9-2c4a-44c9-8210-f5142b751502";
 const rootNotionPageId = "e29fc3a92c4a44c98210f5142b751502"; // collection
 
 export async function getStaticProps() {
-  const ids = await fetch(
-    `https://notion-api.splitbee.io/v1/table/${oniNotionTable}`
-  ).then((res) => res.json());
+  let ids = [];
+  let error = "";
+
+  try {
+    const res = await fetch(
+      `https://notion-api.splitbee.io/v1/table/${oniNotionTable}`
+    );
+    if (res.status !== 200)
+      throw String(`Invalid server response: ${res.status} ${res.statusText}`);
+
+    ids = await res.json();
+
+    if (!ids) throw String("No data was found!");
+    ids = JSON.parse(JSON.stringify(ids));
+  } catch (e) {
+    error = e.toString();
+  }
 
   return {
     props: {
