@@ -172,3 +172,7 @@ main {
     opacity: 100%;
   }
 }
+
+.embed-page {
+  padding: 0px !important;
+}
