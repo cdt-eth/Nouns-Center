@@ -3,14 +3,17 @@ import React from "react";
 import Header from "./components/Header";
 import Script from "next/script";
 import Title from "./components/Title";
-import algoliasearch from "algoliasearch/lite";
-import { InstantSearch, SearchBox, Hits } from "react-instantsearch-dom";
+// import algoliasearch from "algoliasearch/lite";
+// import { InstantSearch, SearchBox, Hits } from "react-instantsearch-dom";
+
+import ComingSoon from "./components/ComingSoon";
+import Hero from "./components/Home/Hero";
 
 export default function Home() {
-  const searchClient = algoliasearch(
-    process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
-    process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY
-  );
+  // const searchClient = algoliasearch(
+  //   process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
+  //   process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY
+  // );
 
   return (
     <>
@@ -30,23 +33,10 @@ export default function Home() {
       </Script>
 
       <Header title="Nouns Center" />
-      {/* <Title title="Home" /> */}
 
-      <>
-        {/* <InstantSearch searchClient={searchClient} indexName="nouncenter"> */}
-        {/* Adding Search Box */}
-        {/* <SearchBox /> */}
+      <Hero />
 
-        {/* Adding Data */}
-        {/* <Hits />
-        </InstantSearch> */}
-        <div className="w-full flex mt-20 flex-col items-center justify-center gap-4">
-          <img className="w-1/6 mr-2" src="earth.gif" alt="earth" />
-          <p className="text-nouns xs:text-3xl sm:text-6xl">
-            home page coming soon
-          </p>
-        </div>
-      </>
+      {/* <ComingSoon /> */}
     </>
   );
 }
