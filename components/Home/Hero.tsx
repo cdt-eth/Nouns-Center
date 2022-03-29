@@ -10,10 +10,10 @@ const Hero = () => {
   return (
     <div className="relative overflow-hidden flex justify-around  tracking-wider ">
       <div className="relative pt-6 pb-16 sm:pb-24">
-        <main className=" mx-auto max-w-7xl px-4 sm:mt-24 tracking-wider">
+        <main className=" mx-auto  px-4 sm:mt-24 tracking-wider">
           <div className="text-center">
             <h1 className="text-4xl text-white font-extrabold sm:text-5xl md:text-6xl text-nouns tracking-wider flex gap-4 justify-center">
-              <div className="flex xs:flex-col-reverse	 sm:flex-row items-center gap-4">
+              <div className="flex xs:flex-col-reverse sm:flex-row items-center gap-4">
                 <div>
                   <span className="block xl:inline">Home to all things</span>{" "}
                   <span className="block text-nouns-bg-blue xl:inline">

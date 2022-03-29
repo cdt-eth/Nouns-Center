@@ -341,7 +341,7 @@
     "creator": ["0xsvg"],
     "url": "https://lilnouns.wtf/",
     "image": "lilnouns.svg",
-    "category": ["nfts"]
+    "category": ["nfts", "smallGrants"]
   },
   {
     "title": "Lost Nouns",
