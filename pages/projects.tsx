@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Header from "./components/Header";
-import projects from "./api/projects.json";
-import XSmall from "./components/Project/XSmall";
-import Title from "./components/Title";
-import SubheaderBodyButton from "./components/SubheaderBodyButton";
+import Header from "../components/Header";
+import projects from "../api/projects.json";
+import XSmall from "../components/Project/XSmall";
+import Title from "../components/Title";
+import SubheaderBodyButton from "../components/SubheaderBodyButton";
 
 const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);

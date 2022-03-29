@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Dino from "./components/Dino";
-import Header from "./components/Header";
-import Title from "./components/Title";
+import Dino from "../components/Dino";
+import Header from "../components/Header";
+import Title from "../components/Title";
 
 const Custom404 = () => {
   return (

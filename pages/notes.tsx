@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Header from "./components/Header";
-import Title from "./components/Title";
+import Header from "../components/Header";
+import Title from "../components/Title";
 import "react-notion/src/styles.css";
 import "react-notion/src/styles.css";
 import "prismjs/themes/prism-tomorrow.css";
@@ -9,8 +9,8 @@ import { NotionRenderer } from "react-notion";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
-import SubheaderBodyButton from "./components/SubheaderBodyButton";
-import Loading from "./components/Loading";
+import SubheaderBodyButton from "../components/SubheaderBodyButton";
+import Loading from "../components/Loading";
 
 const oniNotionTable = "e29fc3a9-2c4a-44c9-8210-f5142b751502";
 const rootNotionPageId = "e29fc3a92c4a44c98210f5142b751502"; // collection

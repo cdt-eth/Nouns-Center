@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Header from "./components/Header";
+import Header from "../components/Header";
 import { v4 as uuidv4 } from "uuid";
-import Title from "./components/Title";
-import talent from "./api/talent.json";
+import Title from "../components/Title";
+import talent from "../api/talent.json";
 import {
   FaTwitter as TwitterIcon,
   FaDiscord as DiscordIcon,
 } from "react-icons/fa";
 import { getRandomNounPic } from "../utils";
-import SubheaderBodyButton from "./components/SubheaderBodyButton";
+import SubheaderBodyButton from "../components/SubheaderBodyButton";
 
 const Talent = () => {
   return (

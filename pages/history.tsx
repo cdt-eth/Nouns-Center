@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./components/Header";
-import Title from "./components/Title";
-import Timeline from "./Timeline/Timeline";
+import Header from "../components/Header";
+import Title from "../components/Title";
+import Timeline from "../components/Timeline/Timeline";
 
 const History = () => {
   return (

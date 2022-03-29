@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Header from "./components/Header";
-import Title from "./components/Title";
-import podcasts from "./api/podcasts.json";
+import Header from "../components/Header";
+import Title from "../components/Title";
+import podcasts from "../api/podcasts.json";
 import { v4 as uuidv4 } from "uuid";
 import { LinkIcon } from "@heroicons/react/outline";
-import SubheaderBodyButton from "./components/SubheaderBodyButton";
-import Podcasts from "./components/Podcasts";
+import SubheaderBodyButton from "../components/SubheaderBodyButton";
+import Podcasts from "../components/Podcasts";
 
 const Podcast = () => {
   function classNames(...classes) {
