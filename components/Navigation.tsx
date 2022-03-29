@@ -85,20 +85,6 @@ const Navigation = () => {
           </button>
         </div>
       </div>
-
-      {/* <main className="flex-1 bg-black "> */}
-      {/* <div className="py-6 h-screen">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-              <h1 className="text-2xl font-semibold text-gray-400">
-                Dashboard
-              </h1>
-            </div>
-
-            {/* {children} */}
-      {/* <h1 className="text-white">Hello</h1> */}
-      {/* </div>*/}
-      {/* </main> */}
-      {/* </div> */}
     </div>
   );
 };

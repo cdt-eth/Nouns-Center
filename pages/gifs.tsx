@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Header from "./components/Header";
+import Header from "../components/Header";
 import { v4 as uuidv4 } from "uuid";
-import Title from "./components/Title";
+import Title from "../components/Title";
 import Masonry from "react-masonry-css";
 
-import gifs from "./api/gifs.json";
+import gifs from "../api/gifs.json";
 
 const Gifs = () => {
   return (

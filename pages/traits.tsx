@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Header from "./components/Header";
-import Title from "./components/Title";
+import Header from "../components/Header";
+import Title from "../components/Title";
 import { v4 as uuidv4 } from "uuid";
-import traits from "./api/traits.json";
+import traits from "../api/traits.json";
 
-import SubheaderBodyButton from "./components/SubheaderBodyButton";
+import SubheaderBodyButton from "../components/SubheaderBodyButton";
 // import Link from "next/link";
-import Link from "./components/Link";
+import Link from "../components/Link";
 
 const Traits = () => {
   const heads = traits.heads;

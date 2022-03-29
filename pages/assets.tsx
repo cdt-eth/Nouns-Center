@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Header from "./components/Header";
-import Title from "./components/Title";
+import Header from "../components/Header";
+import Title from "../components/Title";
 import { v4 as uuidv4 } from "uuid";
-import assets from "./api/assets.json";
-import SubheaderBodyButton from "./components/SubheaderBodyButton";
+import assets from "../api/assets.json";
+import SubheaderBodyButton from "../components/SubheaderBodyButton";
 
 const Assets = () => {
   return (
