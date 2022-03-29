@@ -15,7 +15,7 @@ const Assets = () => {
       <SubheaderBodyButton
         title="Resource Hub"
         body="Repository of trait assets, fonts, and other resources you may need to work with Nouns. If you're still looking for something that's not here click the button and let me know."
-        btnLink=""
+        btnLink="https://stage-addressform.netlify.app/form/4e60a8c7-bbc9-4955-98eb-a70380ca4163"
         btnText="What's missing?"
       />
 
