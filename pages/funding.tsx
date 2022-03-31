@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../components/Header";
+import Table from "../components/nouners/Table";
 import SubheaderBodyButton from "../components/SubheaderBodyButton";
 import Title from "../components/Title";
-import Table from "../components/nouners/Table";
 
 const twentytwoNotionPage = "ac22114a6c004bafa500e2d824e32dc3";
 
