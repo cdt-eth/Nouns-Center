@@ -176,3 +176,43 @@ main {
 .embed-page {
   padding: 0px !important;
 }
+
+.introNouns {
+  color: black !important;
+}
+.introNouns .notion-h1 {
+  color: black !important;
+  font-family: "Londrina Solid";
+  font-size: 1.875em !important;
+}
+.introNouns .notion-text {
+  color: black !important;
+  font-size: 18px !important;
+  font-family: "PTROOTUI" !important;
+  text-decoration: none !important;
+  letter-spacing: normal !important;
+}
+.introNouns .notion-h1:not(:first-child) {
+  margin-top: 45px !important;
+}
+.introNouns .notion-row {
+  display: flex !important;
+  color: black !important;
+}
+.introNouns .notion-asset-wrapper {
+  width: auto !important;
+}
+.introNouns .notion-asset-wrapper div {
+  padding-bottom: inherit !important;
+}
+.introNouns .notion-text:not(:first-child) {
+  margin-top: 0px !important;
+  margin-botom: 10px !important;
+}
+
+.introNouns .notion-link {
+}
+
+.introNouns .notion-callout-text {
+  color: black !important;
+}
