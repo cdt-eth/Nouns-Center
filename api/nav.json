@@ -1,5 +1,10 @@
 [
   {
+    "name": "Intro",
+    "current": false,
+    "link": "/intro"
+  },
+  {
     "name": "Projects",
     "current": false,
     "link": "/projects"
