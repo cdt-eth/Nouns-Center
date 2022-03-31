@@ -211,6 +211,18 @@ main {
 }
 
 .introNouns .notion-link {
+  color: #3e64ff;
+  font-family: "Londrina solid";
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.introNouns .notion-link:hover {
+  color: #1d4ed8;
 }
 
 .introNouns .notion-callout-text {
