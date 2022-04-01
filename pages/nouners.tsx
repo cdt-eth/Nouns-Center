@@ -1,7 +1,9 @@
 import React from "react";
 import Header from "../components/Header";
 import Title from "../components/Title";
-import { Client } from "@notionhq/client";
+
+import { NotionRenderer } from "react-notion";
+import SubheaderBodyButton from "../components/SubheaderBodyButton";
 
 const twentytwoOnboardingNotionPage = "5d9bc001ab1c457f9f0c4910be72622d";
 
@@ -18,28 +20,21 @@ export async function getStaticProps() {
 }
 
 const Nouners = ({ onboardData }) => {
-  onboardData &&
-    console.log(
-      "onboardData",
-      onboardData
-      // [onboardData].map((o) => <>{o?.value?.properties?.title}</>)
-    );
-
-  // const notion = new Client({
-  //   auth: "secret_qFrnOPkZkx094spJmiikJz3MDrIH10gNPzBY2BtIwpf",
-  // });
-  // const notion = new Client({ auth: process.env.NOTION_API_KEY });
-
-  // (async () => {
-  //   const pageId = "b55c9c91-384d-452b-81db-d1ef79372b75";
-  //   const response = await notion.pages.retrieve({ page_id: pageId });
-  //   console.log("response", response);
-  // })();
-
   return (
     <div>
       <Header title="Nouners | Nouns Center" />
       <Title title="Nouners" />
+
+      <SubheaderBodyButton
+        title="So you bought a Noun, now what?"
+        body="Here's a high-level overview, written by Noun 22, of everything you need to know directly about acquiring a Noun. First things first, click that button and follow the instructions to verify your role as a Nouner."
+        btnLink="https://discord.com/channels/849745721544146955/898686706667126794"
+        btnText="Type !join in #verify"
+      />
+
+      <div className=" bg-white introNouns nouners rounded-lg px-10 py-4">
+        <NotionRenderer blockMap={onboardData} />
+      </div>
     </div>
   );
 };

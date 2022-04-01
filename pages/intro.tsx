@@ -37,12 +37,14 @@ const Intro = ({ docsData }) => {
     <div>
       <Header title="Intro | Nouns Center" />
       <Title title="Intro" />
+
       <SubheaderBodyButton
         title="A Brief Introduction to Nouns"
         body="If you ever wanted to know what Nouns is all about, this is a great place to start."
         btnLink="https://nouns.notion.site/Explore-Nouns-a2a9dceeb1d54e10b9cbf3f931c2266f"
         btnText="More info"
       />
+
       <div className=" bg-white introNouns rounded-lg px-10 py-4">
         <NotionRenderer blockMap={docsData} />
       </div>

@@ -21,6 +21,7 @@ module.exports = {
         "nouns-text-nav-header": "#878787",
         "nouns-bg-grey": "#F2F2F2",
         "nouns-bg-blue": "#3E64FF",
+        "nouns-earth-blue": "#538cfa",
         "nouns-bg-darkblue": "#1F1D28",
         "nouns-grey": "#7A7A7A",
         "nouns-blue": "#002AFF",

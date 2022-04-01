@@ -180,7 +180,9 @@ main {
 .introNouns {
   color: black !important;
 }
-.introNouns .notion-h1 {
+.introNouns .notion-h1,
+.notion-h2,
+.notion-h3 {
   color: black !important;
   font-family: "Londrina Solid";
   font-size: 1.875em !important;
@@ -188,7 +190,7 @@ main {
 .introNouns .notion-text {
   color: black !important;
   font-size: 18px !important;
-  font-family: "PTROOTUI" !important;
+  font-family: "PTRootUI" !important;
   text-decoration: none !important;
   letter-spacing: normal !important;
 }
@@ -227,4 +229,32 @@ main {
 
 .introNouns .notion-callout-text {
   color: black !important;
+}
+.nouners .notion-h1 {
+}
+.nouners .notion-h2 {
+  font-family: "PTRootUI" !important;
+  text-decoration: underline !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+}
+.nouners .notion-h3 {
+  font-family: "PTRootUI" !important;
+  color: #3e64ff !important;
+  font-weight: 700 !important;
+  margin-bottom: 5px !important;
+  margin-top: 25px !important;
+  max-width: fit-content !important;
+  font-size: 1.35em !important;
+}
+
+.nouners .notion-asset-wrapper {
+  display: none;
+}
+
+.nouners .notion-text:first-of-type {
+  display: none;
+}
+.nouners .notion-h1:first-of-type {
+  margin-top: 0px !important;
 }
