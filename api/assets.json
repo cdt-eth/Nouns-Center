@@ -1,5 +1,23 @@
 [
   {
+    "title": "Traits - 500x500px PNGs",
+    "image": "assets_png.png",
+    "file": "assets_png.zip",
+    "download": true
+  },
+  {
+    "title": "Glasses Only - Various Sizes",
+    "image": "glasses.png",
+    "file": "glasses.zip",
+    "download": true
+  },
+  {
+    "title": "Color Palette",
+    "image": "palette.png",
+    "file": "palette.png",
+    "download": true
+  },
+  {
     "title": "Traits - Photoshop Layers",
     "image": "photoshop.png",
     "file": "assets_psd.zip",
@@ -15,18 +33,6 @@
     "title": "Nountown Font",
     "image": "nountown.png",
     "file": "nountown.otf",
-    "download": true
-  },
-  {
-    "title": "Traits - 500x500px PNGs",
-    "image": "assets_png.png",
-    "file": "assets_png.zip",
-    "download": true
-  },
-  {
-    "title": "Color Palette",
-    "image": "palette.png",
-    "file": "palette.png",
     "download": true
   }
 ]

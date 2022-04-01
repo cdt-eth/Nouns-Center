@@ -33,7 +33,7 @@ const Assets = () => {
                   </p>
                   <div className="aspect-w-3 aspect-h-2">
                     <img
-                      className="object-cover shadow-lg rounded-lg max-h-48 h-48"
+                      className="object-cover shadow-lg rounded-lg w-full  max-h-48 h-60"
                       src={`/assets/${asset.image}`}
                       alt={asset.image}
                     />
