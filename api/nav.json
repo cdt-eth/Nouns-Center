@@ -10,6 +10,11 @@
     "link": "/projects"
   },
   {
+    "name": "Dev",
+    "current": false,
+    "link": "/dev"
+  },
+  {
     "name": "Nouners",
     "current": false,
     "link": "/nouners"
