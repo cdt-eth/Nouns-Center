@@ -42,6 +42,10 @@
   font-family: "Londrina Solid", sans-serif;
 }
 
+.text-pt {
+  font-family: "PTRootUI";
+}
+
 html {
   background: black;
 }
@@ -258,4 +262,7 @@ main {
 }
 .nouners .notion-h1:first-of-type {
   margin-top: 0px !important;
+}
+.devGrid ul li:nth-child(4n) {
+  border: none;
 }
