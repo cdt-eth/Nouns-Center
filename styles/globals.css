@@ -237,6 +237,7 @@ main {
   text-decoration: underline !important;
   font-size: 1.5rem !important;
   font-weight: 700 !important;
+  margin-top: 25px !important;
 }
 .nouners .notion-h3 {
   font-family: "PTRootUI" !important;
