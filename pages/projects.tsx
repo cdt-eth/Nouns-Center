@@ -40,6 +40,8 @@ const Projects = () => {
 
   const getProjectsText = (curr: string) => {
     switch (curr) {
+      case "all":
+        return "projects and counting!";
       case "nfts":
         return "NFT Projects";
       case "proposal":
