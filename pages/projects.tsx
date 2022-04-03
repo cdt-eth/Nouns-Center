@@ -4,9 +4,12 @@ import projects from "../api/projects.json";
 import XSmall from "../components/Project/XSmall";
 import Title from "../components/Title";
 import SubheaderBodyButton from "../components/SubheaderBodyButton";
+import { useRouter } from "next/router";
 
 const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [projectsText, setProjectsText] = useState("projects and counting!");
+  const router = useRouter();
 
   // let shuffled = filteredProjects
   //   .map((value) => ({ value, sort: Math.random() }))
@@ -24,9 +27,46 @@ const Projects = () => {
     { id: "misc", title: "Misc" },
   ];
 
+  const getPath = (curr: string) => {
+    switch (curr) {
+      case "propHouse":
+        return "prop-house";
+      case "smallGrants":
+        return "small-grants";
+      default:
+        return curr;
+    }
+  };
+
+  const getProjectsText = (curr: string) => {
+    switch (curr) {
+      case "nfts":
+        return "NFT Projects";
+      case "proposal":
+        return "Proposals";
+      case "propHouse":
+        return "Prop House Projects";
+      case "smallGrants":
+        return "Small Grant Projects";
+      case "merch":
+        return "Merch Shops";
+      case "stats":
+        return "Statistics Dashboards";
+      case "misc":
+        return "Miscellaneous Projects";
+      default:
+        return curr;
+    }
+  };
+
   const handleClick = (e) => {
     const curr = e.target.id;
     let filtered = [];
+
+    setProjectsText(getProjectsText(curr));
+
+    // console.log("curr", e.target);
+    // router.push(`/projects/${getPath(curr)}`);
 
     if (curr === "all") {
       filtered = projects;
@@ -46,7 +86,7 @@ const Projects = () => {
       <Title title="Projects" />
 
       <SubheaderBodyButton
-        title={`${filteredProjects.length} projects and counting!`}
+        title={`${filteredProjects.length} ${projectsText}`}
         body="Here's a comprehensive list of all the projects in the NounsDAO ecosystem. If you don't see your project here and would like to add it, click the button to have it added to the backlog. The site is updated with new projects once a week."
         btnLink="https://stage-addressform.netlify.app/form/4bc3c7d3-53ac-4b58-bc35-ad22ad97243b"
         btnText="Submit your project"
