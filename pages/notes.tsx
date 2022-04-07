@@ -87,7 +87,7 @@ const Notes = ({ tableIds }) => {
 
       <SubheaderBodyButton
         title="Weekly Nouner call notes"
-        body="Click the button to filter through past weeks and read the meeting notes."
+        body="Click the button and select a week to read the meeting notes."
         customBtn={
           <>
             <Menu as="div" className="relative w-full inline-block text-left">
