@@ -51,6 +51,23 @@ const Podcasts = () => {
         seamless
         src="https://player.cohostpodcasting.com/d6e19728-6bef-4471-8b8e-74f63d7a5ba9/e90ccfca-1af5-4bbf-989f-50c2a3f2f1c6"
       ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/52f7f77d-1560-4ee4-995a-af3bb9fa916d/a11c73d3-b187-4351-856d-dcce11f6a4e0"
+      ></iframe>
+
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/26dbba20-e6a1-4b05-8674-71abe6cc92e1/e7acaefc-0a31-4d6a-9485-0a49b6527e73"
+      ></iframe>
     </div>
   );
 };
