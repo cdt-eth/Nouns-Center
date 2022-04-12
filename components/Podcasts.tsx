@@ -59,7 +59,6 @@ const Podcasts = () => {
         seamless
         src="https://player.cohostpodcasting.com/52f7f77d-1560-4ee4-995a-af3bb9fa916d/a11c73d3-b187-4351-856d-dcce11f6a4e0"
       ></iframe>
-
       <iframe
         height="200px"
         width="100%"

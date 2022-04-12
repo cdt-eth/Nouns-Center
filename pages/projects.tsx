@@ -90,7 +90,7 @@ const Projects = () => {
       <SubheaderBodyButton
         title={`${filteredProjects.length} ${projectsText}`}
         body="Here's a comprehensive list of all the projects in the NounsDAO ecosystem. If you don't see your project here and would like to add it, click the button to have it added to the backlog. The site is updated with new projects once a week."
-        btnLink="https://stage-addressform.netlify.app/form/4bc3c7d3-53ac-4b58-bc35-ad22ad97243b"
+        btnLink="https://www.addressform.io/form/9e6bc6c2-0f0d-4420-b66e-0d416a5fe73a"
         btnText="Submit your project"
       />
 
