@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import { getRandomNounPic } from "../../utils";
 
