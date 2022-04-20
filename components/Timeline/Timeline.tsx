@@ -8,7 +8,7 @@ import events from "../../api/timeline.json";
 const Timeline = () => {
   return (
     <VerticalTimeline>
-      {events.map((event) => (
+      {events.map((event, idx) => (
         <Event
           date={event.date}
           title={event.title}
@@ -17,6 +17,7 @@ const Timeline = () => {
           link={event.link}
           buttonText={event.buttonText}
           key={uuidv4()}
+          idx={idx}
         />
       ))}
     </VerticalTimeline>

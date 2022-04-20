@@ -28,7 +28,7 @@ const Talent = () => {
         role="list"
         className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
       >
-        {talent.map((person) => (
+        {talent.map((person, idx) => (
           <li
             key={person.skills}
             className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200 flex flex-col justify-between"
@@ -60,7 +60,7 @@ const Talent = () => {
               </div>
               <img
                 className="w-16 h-16 bg-gray-300 rounded-full flex-shrink-0"
-                src={getRandomNounPic()}
+                src={getRandomNounPic(idx)}
                 alt=""
               />
             </div>

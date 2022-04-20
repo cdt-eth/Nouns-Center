@@ -1,8 +1,5 @@
-export const getRandomNounPic = () => {
-  const min = 0;
-  const max = 262;
+export const getRandomNounPic = (idx: number) => {
+  // const nounId = Math.floor(Math.random() * (max - min + 1) + min);
 
-  const nounId = Math.floor(Math.random() * (max - min + 1) + min);
-
-  return `https://noun.pics/${nounId}`;
+  return `https://noun-api.com/beta/pfp/?utm_source=${idx}`;
 };
