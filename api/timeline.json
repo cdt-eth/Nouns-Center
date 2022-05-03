@@ -16,6 +16,14 @@
     "buttonText": "View Tweet"
   },
   {
+    "date": "6/2/21",
+    "title": "First Public Tweet",
+    "body": "4156 laid out the broad strokes of what would become NounsDAO.",
+    "img": "pronoun.png",
+    "link": "https://twitter.com/punk4156/status/1400154938186031104",
+    "buttonText": "View Tweet"
+  },
+  {
     "date": "6/3/21",
     "title": "Git init",
     "body": "Vape Ape creates the first commit in the Github monorepo.",
@@ -29,14 +37,6 @@
     "body": "The rough Noun aesthetics were decided upon and it was time to iterate &#38; polish.",
     "img": "noun.jpeg",
     "link": "https://twitter.com/punk4156/status/1478753490210017284",
-    "buttonText": "View Tweet"
-  },
-  {
-    "date": "6/2/21",
-    "title": "First Public Tweet",
-    "body": "4156 laid out the broad strokes of what would become NounsDAO.",
-    "img": "pronoun.png",
-    "link": "https://twitter.com/punk4156/status/1400154938186031104",
     "buttonText": "View Tweet"
   },
   {
