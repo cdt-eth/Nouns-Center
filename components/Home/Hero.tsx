@@ -61,9 +61,9 @@ const Hero = () => {
 
             <div className="mt-5 mx-auto sm:flex sm:justify-center md:mt-8">
               <div className="rounded-md shadow">
-                <Link passHref href="/faq">
+                <Link passHref href="/traits">
                   <span className="w-full cursor-pointer flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md transition duration-150 hover:bg-gray-300  text-nouns-bg-blue bg-white  md:py-4 md:text-lg md:px-10">
-                    Find Answers
+                    View Traits
                   </span>
                 </Link>
               </div>
