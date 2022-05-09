@@ -6,7 +6,7 @@ import { getRandomNounPic } from "../../utils";
 interface EventProps {
   date: string;
   title: string;
-  body: string;
+  body: any | string;
   img?: string;
   link?: string;
   buttonText?: string;
@@ -33,7 +33,9 @@ const Event = ({
         <img className="rounded-full" src={getRandomNounPic(idx)} alt="noun" />
       }
     >
-      <h3 className="vertical-timeline-element-title text-nouns">{title}</h3>
+      <h3 className="vertical-timeline-element-title text-nouns capitalize">
+        {title}
+      </h3>
 
       <p>{body}</p>
 
@@ -46,7 +48,7 @@ const Event = ({
       {link !== "" && (
         <div className="pt-4 pb-2">
           <a
-            className="bg-nouns-cool-text rounded-md px-3 py-2 text-xs text-white"
+            className="bg-nouns-cool-text hover:bg-opacity-80 transition rounded-md px-3 py-2 text-xs text-white"
             href={link}
             target="_blank"
             rel="noreferrer"

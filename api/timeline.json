@@ -1,11 +1,19 @@
 [
   {
     "date": "6/2/21",
+    "title": "First Public Tweet",
+    "body": "4156 laid out the broad strokes of what would become NounsDAO.",
+    "img": "pronoun.png",
+    "link": "https://twitter.com/punk4156/status/1400154938186031104",
+    "buttonText": "View tweet"
+  },
+  {
+    "date": "6/2/21",
     "title": "Initial Drafts",
     "body": "Gremplin & 4156 look at the first sketches on which path to take for the art.",
     "img": "eyes.png",
     "link": "https://twitter.com/punk4156/status/1478755068920967177",
-    "buttonText": "View Tweet"
+    "buttonText": "View tweet"
   },
   {
     "date": "6/2/21",
@@ -13,15 +21,7 @@
     "body": "The first published instance of the Nouns glasses. The ''eraser guy'' was dubbed Protonoun.",
     "img": "proto.png",
     "link": "https://twitter.com/punk4156/status/1478753490210017284",
-    "buttonText": "View Tweet"
-  },
-  {
-    "date": "6/2/21",
-    "title": "First Public Tweet",
-    "body": "4156 laid out the broad strokes of what would become NounsDAO.",
-    "img": "pronoun.png",
-    "link": "https://twitter.com/punk4156/status/1400154938186031104",
-    "buttonText": "View Tweet"
+    "buttonText": "View tweet"
   },
   {
     "date": "6/3/21",
@@ -29,7 +29,7 @@
     "body": "Vape Ape creates the first commit in the Github monorepo.",
     "img": "init.png",
     "link": "https://github.com/nounsDAO/nouns-monorepo/commit/85e8da5231dbecca77d92fb67e041b43ce5bcb4b",
-    "buttonText": "View Commit"
+    "buttonText": "View commit"
   },
   {
     "date": "6/3/21",
@@ -37,7 +37,7 @@
     "body": "The rough Noun aesthetics were decided upon and it was time to iterate &#38; polish.",
     "img": "noun.jpeg",
     "link": "https://twitter.com/punk4156/status/1478753490210017284",
-    "buttonText": "View Tweet"
+    "buttonText": "View tweet"
   },
   {
     "date": "6/9/21",
@@ -45,7 +45,7 @@
     "body": "The rough Noun aesthetics were decided upon and it was time to iterate & polish.",
     "img": "glasses.png",
     "link": "https://twitter.com/punk4156/status/1478880625356648449?s=20&t=ICXZG1qCi_W0vkAYtDxh0Q",
-    "buttonText": "View Tweet"
+    "buttonText": "View tweet"
   },
   {
     "date": "6/16/21",
@@ -53,7 +53,7 @@
     "body": "4156 appears on the podcast, Digitally Rare to discuss the project.",
     "img": "rare.jpeg",
     "link": "https://anchor.fm/digitallyrare/episodes/How-Now--Noun-DAO--4156-Interview-e160k9n",
-    "buttonText": "Listen to the episode"
+    "buttonText": "Listen to episode"
   },
   {
     "date": "7/7/21",
@@ -61,7 +61,7 @@
     "body": "Draft idea of nouns.wtf.",
     "img": "website.jpeg",
     "link": "https://twitter.com/nounsdao/status/1412944336896073731",
-    "buttonText": "View Tweet"
+    "buttonText": "View tweet"
   },
   {
     "date": "7/16/21",
@@ -69,7 +69,15 @@
     "body": "Nouns public testnet goes live for final testing.",
     "img": "testnet.jpeg",
     "link": "https://twitter.com/nounsdao/status/1416100755908464641",
-    "buttonText": "View Tweet"
+    "buttonText": "View tweet"
+  },
+  {
+    "date": "8/1/21",
+    "title": "First Extension Project",
+    "body": "Noun GAN Study by VanArman, based off the Rinkeby Nouns, releases on OpenSea.",
+    "img": "noungan.png",
+    "link": "https://opensea.io/collection/noun-gan",
+    "buttonText": "OpenSea"
   },
   {
     "date": "8/8/21",
@@ -77,6 +85,62 @@
     "body": "The experiment called Nouns begins and Xaix wins Auction #1 for 613.37 ETH.",
     "img": "auction1.png",
     "link": "https://nouns.wtf/noun/1",
-    "buttonText": "View Auction"
+    "buttonText": "View auction"
+  },
+  {
+    "date": "8/18/21",
+    "title": "Noun Fractionalized",
+    "body": "Noun 11 was bought by PartDAO and became the first fractionalized Noun.",
+    "img": "party.png",
+    "link": "https://www.partybid.app/party/0xd6ba6f10c981CC8C6C8244EC7d7Dc5BD81865333",
+    "buttonText": "View PartyBid"
+  },
+  {
+    "date": "9/2/21",
+    "title": "First proposal passes",
+    "body": "The DAO's frist proposal, 'Donate 5 ETH each to 6 Charities', passes",
+    "img": "prop1.png",
+    "link": "https://nouns.wtf/vote/1",
+    "buttonText": "Read proposal"
+  },
+  {
+    "date": "10/27/21",
+    "title": "First secondary sale",
+    "body": "Noun 40 sold on OpenSea.",
+    "img": "sale1.png",
+    "link": "https://etherscan.io/tx/0x134f026c73a7940b231f126bc2e6338664412eee4a08c12c859c57df40792905",
+    "buttonText": "View sale"
+  },
+  {
+    "date": "10/01/21",
+    "title": "First Auction Fork",
+    "body": "The extension project, Alt Nouns, forked the distribution mechanism.",
+    "img": "alt.jpeg",
+    "link": "https://twitter.com/onChainCo/status/1454538053540843521?s=20&t=kXPt-IlHgwnwcTf85oBcpA",
+    "buttonText": "Read more"
+  },
+  {
+    "date": "10/31/21",
+    "title": "Small Grants Committee",
+    "body": "Prop 13 passes and the 'Small Grants and Retro Funding' committee forms to help empower builders.",
+    "img": "smallgrants.png",
+    "link": "https://nouns.center/funding",
+    "buttonText": "Funded projects"
+  },
+  {
+    "date": "12/25/21",
+    "title": "FOMO community-mints Noun",
+    "body": "The 'FOMO Nouns' project (proposal 13) delivers the first community-minted Noun.",
+    "img": "fomo.png",
+    "link": "https://nouns.wtf/vote/8",
+    "buttonText": "Learn about FOMO"
+  },
+  {
+    "date": "2/8/22",
+    "title": "Nouns x Superbowl",
+    "body": "Nouns glasses appeard in the BudLight commercial for Superbowl LVI.",
+    "img": "bud.png.webp",
+    "link": "https://youtu.be/2rGOf_caxhQ?t=36",
+    "buttonText": "Watch commercial"
   }
 ]
