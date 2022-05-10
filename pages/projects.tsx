@@ -137,7 +137,7 @@ const Projects = () => {
 
         <ul
           role="list"
-          className="divide-y divide-gray-200 sm:hidden bg-white rounded-xl p-4"
+          className="grid sm:hidden bg-white rounded-xl p-4 divide-y divide-gray-200 "
         >
           {filteredProjects.map((project) => (
             // <Link
