@@ -131,13 +131,13 @@
     "title": "Bunnies",
     "description": "Bunnies multiply until they are everywhere. NFTs meet hyperinflationary tokenomics in this first-of-its-kind blockchain game.",
     "creator": ["bunnieswtf"],
-    "url": "",
+    "url": "https://bunnies.wtf/",
     "image": "bunnies.jpeg",
     "category": ["nfts"]
   },
   {
     "title": "Coloring Book",
-    "description": "View all Noun heads by category.",
+    "description": "These series of coloring books are made with the purpose of proliferating Nouns into the mainstream culture, incentivizing creativity, and reaching the next generation of creators who can build on top of Nouns ecosystem. Nouns are really interesting creatures, some of them love exploring the outdoors, some prefer to study at home or even play their favorite video game.",
     "creator": ["nounsense_wtf", "messhup"],
     "url": "https://nounsense.wtf/",
     "image": "coloringbook.png",
@@ -368,14 +368,6 @@
     "category": ["smallGrants"]
   },
   {
-    "title": "Masterpiece",
-    "description": "Ownership statistics.",
-    "creator": ["usemasterpiece"],
-    "url": "https://masterpiece.so/artwork/227187-nouns",
-    "image": "masterpiece.png",
-    "category": ["stats"]
-  },
-  {
     "title": "Matt Downey Shop",
     "description": "Nouns merch shop.",
     "creator": ["mattdowney"],
@@ -542,14 +534,6 @@
     "url": "https://opensea.io/collection/noadz",
     "image": "nounpacas.png",
     "category": ["nfts"]
-  },
-  {
-    "title": "Nounsmas",
-    "description": "An ultra-rare 1/1 PFP, brought to you by NounsDAO & Gitcoin.",
-    "creator": ["gitcoin", "nowonderer"],
-    "url": "https://nounsmas.wtf/",
-    "image": "nounsmas.png",
-    "category": ["nfts", "misc"]
   },
   {
     "title": "Nounspedia",
@@ -832,14 +816,6 @@
     "creator": ["pokenouns"],
     "url": "https://opensea.io/collection/pokenouns",
     "image": "pokenouns.png",
-    "category": ["nfts"]
-  },
-  {
-    "title": "Proper Nouns",
-    "description": "Unique and specific Nouns.",
-    "creator": ["propernouns_nft"],
-    "url": "",
-    "image": "propernouns.jpeg",
     "category": ["nfts"]
   },
   {
