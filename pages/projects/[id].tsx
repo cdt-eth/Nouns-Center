@@ -40,9 +40,9 @@ const getProjectsText = (category: string) => {
       return "NFTs";
     case "proposal":
       return "Proposals";
-    case "propHouse":
+    case "prop-pouse":
       return "Prop House";
-    case "smallGrants":
+    case "small-grants":
       return "Small Grants";
     case "merch":
       return "Merch";

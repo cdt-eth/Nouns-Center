@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import projects from "../api/projects.json";
 import XSmall from "../components/Project/XSmall";
@@ -11,7 +11,9 @@ import Link from "next/link";
 const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
   const [projectsText, setProjectsText] = useState("projects and counting!");
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
+  const { query } = useRouter();
 
   // let shuffled = filteredProjects
   //   .map((value) => ({ value, sort: Math.random() }))
@@ -22,23 +24,12 @@ const Projects = () => {
     { id: "all", title: "All" },
     { id: "nfts", title: "NFTs" },
     { id: "proposal", title: "Proposal" },
-    { id: "propHouse", title: "Prop House" },
-    { id: "smallGrants", title: "Small Grants" },
+    { id: "prop-house", title: "Prop House" },
+    { id: "small-grants", title: "Small Grants" },
     { id: "merch", title: "Merch" },
     { id: "stats", title: "Stats" },
     { id: "misc", title: "Misc" },
   ];
-
-  const getPath = (curr: string) => {
-    switch (curr) {
-      case "propHouse":
-        return "prop-house";
-      case "smallGrants":
-        return "small-grants";
-      default:
-        return curr;
-    }
-  };
 
   const getProjectsText = (curr: string) => {
     switch (curr) {
@@ -48,9 +39,9 @@ const Projects = () => {
         return "NFT Projects";
       case "proposal":
         return "Proposals";
-      case "propHouse":
+      case "prop-pouse":
         return "Prop House Projects";
-      case "smallGrants":
+      case "small-grants":
         return "Small Grant Projects";
       case "merch":
         return "Merch Shops";
@@ -63,25 +54,27 @@ const Projects = () => {
     }
   };
 
+  useEffect(() => {
+    if (query.category) {
+      setIsLoading(true);
+      if (query.category === "all") {
+        setFilteredProjects(projects);
+        setIsLoading(false);
+      } else {
+        setFilteredProjects(
+          projects.filter((p) => p.category.includes(query.category as string))
+        );
+        setIsLoading(false);
+      }
+    }
+  }, [query.category]);
+
   const handleClick = (e) => {
     const curr = e.target.id;
-    let filtered = [];
 
     setProjectsText(getProjectsText(curr));
 
-    // console.log("curr", e.target);
-    // router.push(`/projects/${getPath(curr)}`);
-
-    if (curr === "all") {
-      filtered = projects;
-    } else {
-      filtered = projects.filter(
-        (p) => p.category && p.category.includes(curr)
-        // filtered = projects.filter((p) => p.category === curr);
-      );
-    }
-
-    setFilteredProjects(filtered);
+    router.push(`/projects?category=${curr}`);
   };
 
   return (
@@ -108,9 +101,13 @@ const Projects = () => {
                   <input
                     onClick={handleClick}
                     id={category.id}
-                    name="notification-method"
                     type="radio"
-                    defaultChecked={category.id === "all"}
+                    name="category"
+                    defaultChecked={
+                      category.id === "all"
+                        ? category.id === "all"
+                        : category.id === query.category
+                    }
                     className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
                   />
                   <label
@@ -128,55 +125,66 @@ const Projects = () => {
 
       {/* <div className="grid grid-cols-2 gap-x-4 gap-y-8 xs:grid-cols-3  sm:grid-cols-4 sm:gap-x-6 lg:grid-cols-6 xl:gap-x-8"> */}
       <div className="">
-        <div className="xs:hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {filteredProjects &&
-            filteredProjects.map((project) => (
-              <XSmall key={project.title} project={project} />
-            ))}
-        </div>
-
-        <ul
-          role="list"
-          className="grid sm:hidden bg-white rounded-xl p-4 divide-y divide-gray-200 "
-        >
-          {filteredProjects.map((project) => (
-            // <Link
-            //   href={
-            //     "/projects/" + project.title.replace(/\s+/g, "-").toLowerCase()
-            //   }
-            //   passHref
-            //   key={project.title}
-            // >
-            <a
-              key={project.title}
-              href={project.url}
-              target="_blank"
-              rel="noreferrer"
+        <>
+          {isLoading ? (
+            <h3>loading...</h3>
+          ) : (
+            <div className="xs:hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {filteredProjects &&
+                filteredProjects.map((project) => (
+                  <XSmall key={project.title} project={project} />
+                ))}
+            </div>
+          )}
+        </>
+        <>
+          {isLoading ? (
+            <h3>loading...</h3>
+          ) : (
+            <ul
+              role="list"
+              className="grid sm:hidden bg-white rounded-xl p-4 divide-y divide-gray-200 "
             >
-              <li key={project.title} className="py-4 flex">
-                <img
-                  className="h-24 w-full max-w-[6rem] object-cover rounded-md"
-                  src={`/projects/${project.image}`}
-                  alt={project.image}
-                />
-                <div className="ml-3">
-                  <p className="text-lg font-medium text-gray-900 text-nouns tracking-wide">
-                    {project.title}
-                  </p>
+              {filteredProjects.map((project) => (
+                // <Link
+                //   href={
+                //     "/projects/" + project.title.replace(/\s+/g, "-").toLowerCase()
+                //   }
+                //   passHref
+                //   key={project.title}
+                // >
+                <a
+                  key={project.title}
+                  href={project.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <li key={project.title} className="py-4 flex">
+                    <img
+                      className="h-24 w-full max-w-[6rem] object-cover rounded-md"
+                      src={`/projects/${project.image}`}
+                      alt={project.image}
+                    />
+                    <div className="ml-3">
+                      <p className="text-lg font-medium text-gray-900 text-nouns tracking-wide">
+                        {project.title}
+                      </p>
 
-                  {/* <p className="text-sm text-gray-500 w-1/3">
+                      {/* <p className="text-sm text-gray-500 w-1/3">
                     {project.category.join(" • ")}
                   </p> */}
 
-                  <p className="text-gray-500 text-sm line-clamp-2">
-                    {project.description}
-                  </p>
-                </div>
-              </li>
-            </a>
-            // {/* </Link> */}
-          ))}
-        </ul>
+                      <p className="text-gray-500 text-sm line-clamp-2">
+                        {project.description}
+                      </p>
+                    </div>
+                  </li>
+                </a>
+                // {/* </Link> */}
+              ))}
+            </ul>
+          )}
+        </>
       </div>
     </div>
   );

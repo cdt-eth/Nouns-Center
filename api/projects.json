@@ -29,7 +29,7 @@
     "creator": ["8bitnouns", "galaxystargraph"],
     "url": "https://discourse.nouns.wtf/t/small-grants-8bit-nouns-mini-games/679",
     "image": "8bit.jpg",
-    "category": ["smallGrants", "misc"]
+    "category": ["small-grants", "misc"]
   },
   {
     "title": "Abstract Nouns",
@@ -37,7 +37,7 @@
     "creator": ["abstractnouns_"],
     "url": "https://opensea.io/collection/abstract-nouns",
     "image": "abstract.png",
-    "category": ["nfts", "smallGrants"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "AI Nouns",
@@ -45,7 +45,7 @@
     "creator": ["abstractnounz"],
     "url": "https://opensea.io/collection/ai-noun",
     "image": "ainouns.png",
-    "category": ["nfts", "smallGrants"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "AltNouns",
@@ -53,7 +53,7 @@
     "creator": ["onchainco"],
     "url": "https://opensea.io/collection/altnouns",
     "image": "altnouns.svg",
-    "category": ["nfts", "smallGrants"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "Auction Bid Data",
@@ -141,7 +141,7 @@
     "creator": ["nounsense_wtf", "messhup"],
     "url": "https://nounsense.wtf/",
     "image": "coloringbook.png",
-    "category": ["nfts", "smallGrants", "proposal"]
+    "category": ["nfts", "small-grants", "proposal"]
   },
   {
     "title": "Cookie Wrestler",
@@ -149,7 +149,7 @@
     "creator": ["12bnoun"],
     "url": "https://nouns.com/game/cookie-wrestler",
     "image": "cookie.png",
-    "category": ["misc", "smallGrants"]
+    "category": ["misc", "small-grants"]
   },
   {
     "title": "Crystal Ball",
@@ -181,7 +181,7 @@
     "creator": ["matyETH"],
     "url": "https://drive.google.com/drive/folders/14vlzqHtRSLaBCS78Z6psvkzi37UpwPjY",
     "image": "discord.jpg",
-    "category": ["misc", "smallGrants"]
+    "category": ["misc", "small-grants"]
   },
   {
     "title": "Dune Analytics",
@@ -197,7 +197,7 @@
     "creator": ["matyETH", "joelcares_"],
     "url": "https://www.facebook.com/fbcameraeffects/tryit/2050002801834821/",
     "image": "ar-fb.png",
-    "category": ["smallGrants", "misc"]
+    "category": ["small-grants", "misc"]
   },
   {
     "title": "Fast Food Nouns",
@@ -213,7 +213,7 @@
     "creator": ["sn0wberry1"],
     "url": "https://www.figma.com/community/plugin/1045020359359636829/Nouns",
     "image": "figma.png",
-    "category": ["smallGrants", "misc"]
+    "category": ["small-grants", "misc"]
   },
   {
     "title": "Fine Art Nouns",
@@ -301,7 +301,7 @@
     "creator": ["matyETH", "joelcares_"],
     "url": "https://www.instagram.com/ar/2050002801834821/",
     "image": "ar-ig.png",
-    "category": ["smallGrants", "misc"]
+    "category": ["small-grants", "misc"]
   },
   {
     "title": "Internouns",
@@ -325,7 +325,7 @@
     "creator": ["thisismcgregor"],
     "url": "https://apps.apple.com/us/app/nounish-stickers/id1606930723",
     "image": "ios.jpg",
-    "category": ["misc", "smallGrants"]
+    "category": ["misc", "small-grants"]
   },
   {
     "title": "Irregular Nouns",
@@ -341,7 +341,7 @@
     "creator": ["0xsvg"],
     "url": "https://lilnouns.wtf/",
     "image": "lilnouns.svg",
-    "category": ["nfts", "smallGrants"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "Lost Nouns",
@@ -365,7 +365,7 @@
     "creator": ["SalvinoArmati", "SignoraArmati"],
     "url": "https://twitter.com/SalvinoArmati",
     "image": "salvino.jpeg",
-    "category": ["smallGrants"]
+    "category": ["small-grants"]
   },
   {
     "title": "Matt Downey Shop",
@@ -389,7 +389,7 @@
     "creator": ["sine_nomine_art", "anonartsoc"],
     "url": "https://twitter.com/anonartsoc/status/1492900020881813505",
     "image": "mural.png",
-    "category": ["propHouse"]
+    "category": ["prop-house"]
   },
   {
     "title": "Nerman",
@@ -397,7 +397,7 @@
     "creator": ["NounsTweeter", "joelcares_"],
     "url": "https://twitter.com/NounsTweeter",
     "image": "nerman.jpeg",
-    "category": ["smallGrants", "misc"]
+    "category": ["small-grants", "misc"]
   },
   {
     "title": "Neural Nouns",
@@ -429,7 +429,7 @@
     "creator": ["thenoadz"],
     "url": "https://opensea.io/collection/noadz",
     "image": "noadz.gif",
-    "category": ["nfts", "smallGrants"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "Noggles",
@@ -437,7 +437,7 @@
     "creator": ["joelcares_"],
     "url": "https://noggles.wtf/",
     "image": "noggles.png",
-    "category": ["nfts", "smallGrants"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "Nounalytics",
@@ -509,7 +509,7 @@
     "creator": ["12bnoun", "0xFloyd"],
     "url": "https://nounify.wtf/",
     "image": "nounify.gif",
-    "category": ["smallGrants", "misc"]
+    "category": ["small-grants", "misc"]
   },
   {
     "title": "Nounite",
@@ -525,7 +525,7 @@
     "creator": ["NFT_Derivatives"],
     "url": "https://opensea.io/collection/nounks",
     "image": "nounks.png",
-    "category": ["nfts", "smallGrants"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "Nounpacas",
@@ -541,7 +541,7 @@
     "creator": ["12bnoun"],
     "url": "https://nouns.com/nounspedia",
     "image": "nounspedia.jpg",
-    "category": ["nfts", "smallGrants"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "NounsTown Shop",
@@ -549,7 +549,7 @@
     "creator": ["nounstownshop"],
     "url": "https://nounstown.shop",
     "image": "nounstownshop.jpeg",
-    "category": ["smallGrants", "merch"]
+    "category": ["small-grants", "merch"]
   },
   {
     "title": "Nounzy",
@@ -581,7 +581,7 @@
     "creator": ["MargaretLabour"],
     "url": "https://www.barnesandnoble.com/w/noun-poems-margaret-corvid/1140880330",
     "image": "poems.jpeg",
-    "category": ["smallGrants"]
+    "category": ["small-grants"]
   },
   {
     "title": "Noun Stats",
@@ -637,7 +637,7 @@
     "creator": ["nounsathletes", "skateordao", "artdothaus"],
     "url": "https://shred.wtf/",
     "image": "nounsathletes.jpeg",
-    "category": ["smallGrants"]
+    "category": ["small-grants"]
   },
   {
     "title": "Nouns Automations (Integromat & Zapier)",
@@ -685,7 +685,7 @@
     "creator": ["DivineOpus9"],
     "url": "https://twitter.com/DivineOpus9/status/1485691681387294721",
     "image": "nounsmug.jpeg",
-    "category": ["propHouse"]
+    "category": ["prop-house"]
   },
   {
     "title": "Nouns Need Names",
@@ -776,7 +776,7 @@
     "creator": ["voxnouns", "TheZeeraffe", "justkidddinc", "syazwanamidun"],
     "url": "https://opensea.io/collection/voxelnouns",
     "image": "nounsvox.png",
-    "category": ["nfts", "smallGrants"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "OnCyber Gallery",
@@ -808,7 +808,7 @@
     "creator": ["matyETH"],
     "url": "https://opensea.io/collection/noun-cards-animal",
     "image": "playingcards.jpeg",
-    "category": ["nfts", "propHouse"]
+    "category": ["nfts", "prop-house"]
   },
   {
     "title": "PokeNouns",
@@ -832,7 +832,7 @@
     "creator": ["wanuda5"],
     "url": "https://twitter.com/wanuda5/status/1485568535514726401",
     "image": "sailing.jpeg",
-    "category": ["propHouse"]
+    "category": ["prop-house"]
   },
   {
     "title": "Sculpture",
@@ -840,7 +840,7 @@
     "creator": ["GMI_Studio"],
     "url": "https://twitter.com/GMI_Studio/status/1483633218414858241",
     "image": "sculpture.jpeg",
-    "category": ["propHouse"]
+    "category": ["prop-house"]
   },
   {
     "title": "Sidenoun",
@@ -848,7 +848,7 @@
     "creator": ["sidenoun"],
     "url": "https://sidenoun.com/",
     "image": "sidenoun.png",
-    "category": ["nfts", "smallGrants"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "Skelenouns",
@@ -864,7 +864,7 @@
     "creator": ["coralorca"],
     "url": "https://lens.snapchat.com/d1507087c8f5479f89a73464805f76cb",
     "image": "ar-snap.png",
-    "category": ["smallGrants", "misc"]
+    "category": ["small-grants", "misc"]
   },
   {
     "title": "Snuon",
@@ -880,7 +880,7 @@
     "creator": ["natemillsart"],
     "url": "https://www.natemills.ca/sounds-of-nouns",
     "image": "soundsofnouns.jpeg",
-    "category": ["misc", "smallGrants"]
+    "category": ["misc", "small-grants"]
   },
   {
     "title": "SpecScapes",
@@ -888,7 +888,7 @@
     "creator": ["ianbydesign"],
     "url": "https://opensea.io/collection/specscapes",
     "image": "specscapes.jpeg",
-    "category": ["nfts", "smallGrants"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "Splat Nouns",
@@ -896,7 +896,7 @@
     "creator": [""],
     "url": "https://objkt.com/collection/KT1CKdxVH514ReLWWV6h4TgWfVsYqBvCyRXV",
     "image": "splat.gif",
-    "category": ["nfts", "smallGrants"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "Stoned Nouns",
@@ -920,7 +920,7 @@
     "creator": ["12bnoun"],
     "url": "https://synthetic-nouns.herokuapp.com/",
     "image": "synthetic.jpeg",
-    "category": ["misc", "smallGrants"]
+    "category": ["misc", "small-grants"]
   },
   {
     "title": "The Mouns",
@@ -944,7 +944,7 @@
     "creator": ["12bnoun"],
     "url": "https://want2bnoun.herokuapp.com/",
     "image": "thisorthat.png",
-    "category": ["misc", "smallGrants"]
+    "category": ["misc", "small-grants"]
   },
   {
     "title": "Touns",
@@ -960,7 +960,7 @@
     "creator": ["nouns_bot", "andreitr"],
     "url": "https://twitter.com/nouns_bot",
     "image": "twitter.jpeg",
-    "category": ["smallGrants", "misc"]
+    "category": ["small-grants", "misc"]
   },
   {
     "title": "Verbs",
@@ -992,7 +992,7 @@
     "creator": ["thevoadz"],
     "url": "https://twitter.com/thevoadz/status/1483702016631525383",
     "image": "voadz-legos.jpeg",
-    "category": ["propHouse"]
+    "category": ["prop-house"]
   },
   {
     "title": "Wizard Nouns",
