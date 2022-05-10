@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import Header from "../components/Header";
 import projects from "../api/projects.json";
@@ -5,6 +6,7 @@ import XSmall from "../components/Project/XSmall";
 import Title from "../components/Title";
 import SubheaderBodyButton from "../components/SubheaderBodyButton";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -124,11 +126,57 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-x-4 gap-y-8 xs:grid-cols-3  sm:grid-cols-4 sm:gap-x-6 lg:grid-cols-6 xl:gap-x-8">
-        {filteredProjects &&
-          filteredProjects.map((project) => (
-            <XSmall key={project.title} project={project} />
+      {/* <div className="grid grid-cols-2 gap-x-4 gap-y-8 xs:grid-cols-3  sm:grid-cols-4 sm:gap-x-6 lg:grid-cols-6 xl:gap-x-8"> */}
+      <div className="">
+        <div className="xs:hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {filteredProjects &&
+            filteredProjects.map((project) => (
+              <XSmall key={project.title} project={project} />
+            ))}
+        </div>
+
+        <ul
+          role="list"
+          className="divide-y divide-gray-200 sm:hidden bg-white rounded-xl p-4"
+        >
+          {filteredProjects.map((project) => (
+            // <Link
+            //   href={
+            //     "/projects/" + project.title.replace(/\s+/g, "-").toLowerCase()
+            //   }
+            //   passHref
+            //   key={project.title}
+            // >
+            <a
+              key={project.title}
+              href={project.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <li key={project.title} className="py-4 flex">
+                <img
+                  className="h-24 w-full max-w-[6rem] object-cover rounded-md"
+                  src={`/projects/${project.image}`}
+                  alt={project.image}
+                />
+                <div className="ml-3">
+                  <p className="text-lg font-medium text-gray-900 text-nouns tracking-wide">
+                    {project.title}
+                  </p>
+
+                  {/* <p className="text-sm text-gray-500 w-1/3">
+                    {project.category.join(" • ")}
+                  </p> */}
+
+                  <p className="text-gray-500 text-sm line-clamp-2">
+                    {project.description}
+                  </p>
+                </div>
+              </li>
+            </a>
+            // {/* </Link> */}
           ))}
+        </ul>
       </div>
     </div>
   );

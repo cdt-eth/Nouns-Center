@@ -181,6 +181,9 @@ main {
   padding: 0px !important;
 }
 
+.notion li {
+  color: black !important;
+}
 .introNouns {
   color: black !important;
 }
@@ -234,8 +237,7 @@ main {
 .introNouns .notion-callout-text {
   color: black !important;
 }
-.nouners .notion-h1 {
-}
+
 .nouners .notion-h2 {
   font-family: "PTRootUI" !important;
   text-decoration: underline !important;
