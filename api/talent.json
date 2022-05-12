@@ -40,12 +40,28 @@
     "skills": "Digital art"
   },
   {
-    "name": "",
-    "twitter": "",
-    "discord": "",
+    "name": "Rye",
+    "twitter": "ryeshrimp",
+    "discord": "ryeshrimp#8056",
+    "discordId": "388565991065649152",
+    "title": ["developer"],
+    "skills": "Full stack, Solidity, Design, UX, Project Management"
+  },
+  {
+    "name": "Levx.eth",
+    "twitter": "LEVXeth",
+    "discord": "LevX#6476",
     "discordId": "",
     "title": ["developer"],
-    "skills": "Next.js, Golang and Python scripting, Flow blockchain (Cadence language), some Solidity"
+    "skills": "Solidity, Frontend,  Node.js"
+  },
+  {
+    "name": "Blowned",
+    "twitter": "BlownedEth",
+    "discord": "Blowned.eth#5048",
+    "discordId": "817740890281082901",
+    "title": ["Writer"],
+    "skills": "Article Writing, Copy, Project Management, Blogs"
   },
   {
     "name": "Emma",
