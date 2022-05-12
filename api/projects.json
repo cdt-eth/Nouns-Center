@@ -104,6 +104,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Blouns",
+    "description": "Blounds are nounish, fun, cool, high-res, and cc0.",
+    "creator": ["stas_kulesh", "subnouns"],
+    "url": "https://blouns.gmi.sh/",
+    "image": "blouns.jpeg",
+    "category": ["nfts"]
+  },
+  {
     "title": "Bored Ape Nouns",
     "description": "Bored Apes with Nouns glasses.",
     "creator": ["apenouns"],
@@ -464,6 +472,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Noun GIF",
+    "description": "Ornamental moving versions of Nouns.",
+    "creator": ["NounGIF", "sishamo_moyashi"],
+    "url": "https://opensea.io/collection/noun-gif",
+    "image": "noungif.gif",
+    "category": ["nfts"]
+  },
+  {
     "title": "Noun O'Clock Bot",
     "description": "Noun O'Clock bot posts a message in Discord to remind people to visit FOMONOUNS.wtf to help select the next Noun.",
     "creator": ["joelcares_"],
@@ -493,6 +509,14 @@
     "creator": ["nouncats"],
     "url": "https://nouncats.com",
     "image": "nouncats.jpeg",
+    "category": ["nfts"]
+  },
+  {
+    "title": "NounCreepz",
+    "description": "The Cold Blooded Creepz have hijacked the Noun Generator. Once the generator has finished processing the Creepz traits and rarities, there will be 11,111 NounCreepz minted on the Ethereum network to help with the invasion of earth.",
+    "creator": ["NounCreepz, shad_0"],
+    "url": "https://www.nouncreepz.com/",
+    "image": "nouncreepz.gif",
     "category": ["nfts"]
   },
   {
@@ -544,6 +568,14 @@
     "category": ["nfts", "small-grants"]
   },
   {
+    "title": "NounsNation",
+    "description": "NounsNation characters are derivaties of Nouns.",
+    "creator": ["fiveoceans_dev"],
+    "url": "https://nounsnation.com/",
+    "image": "nounsnation.gif",
+    "category": ["nfts"]
+  },
+  {
     "title": "NounsTown Shop",
     "description": "Shop for Nouns stickers, apparel, gear & more.",
     "creator": ["nounstownshop"],
@@ -584,6 +616,14 @@
     "category": ["small-grants"]
   },
   {
+    "title": "Noun Soup",
+    "description": "Noun-ish ANdy Warhol inspired soup cans. Mint proceeds donate to Ukraine.",
+    "creator": ["heyjeres"],
+    "url": "https://nounsoup.wtf/",
+    "image": "nounsoup.svg",
+    "category": ["nfts"]
+  },
+  {
     "title": "Noun Stats",
     "description": "Auction statistics.",
     "creator": ["nicolagreco"],
@@ -606,6 +646,14 @@
     "url": "https://github.com/lilnounsDAO/nounishButton",
     "image": "nounishbutton.png",
     "category": ["misc"]
+  },
+  {
+    "title": "NounProfiles",
+    "description": "WTF does the profile of a profile pic look like more than One NounProfile, every day, until we're caught up, or it's not fun anymore.",
+    "creator": ["nounprofiles", "chriscocreated"],
+    "url": "https://opensea.io/collection/nounprofiles",
+    "image": "profiles.png",
+    "category": ["nfts"]
   },
   {
     "title": "Nouns 3D",
@@ -921,6 +969,14 @@
     "url": "https://synthetic-nouns.herokuapp.com/",
     "image": "synthetic.jpeg",
     "category": ["misc", "small-grants"]
+  },
+  {
+    "title": "The Boney Batz",
+    "description": "333 Winged companions for The Boneys!",
+    "creator": ["theboneys", "therealmrboney"],
+    "url": "https://opensea.io/collection/the-boney-batz",
+    "image": "boneybatz.png",
+    "category": ["nfts"]
   },
   {
     "title": "The Mouns",
