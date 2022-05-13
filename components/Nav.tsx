@@ -16,7 +16,7 @@ const Nav = ({ setSidebarOpen }) => {
           className="flex sm:cursor-pointer items-center flex-shrink-0 px-4"
           onClick={() => setSidebarOpen(false)}
         >
-          <img className="w-1/6 mr-2" src="earth.gif" alt="earth" />
+          <img className="w-1/6 mr-2" src="/earth.gif" alt="earth" />
         </div>
       </Link>
 
