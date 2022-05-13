@@ -10,8 +10,27 @@ export default function Layout({ children }) {
   return (
     <>
       <Navigation />
-      <div className="xs:px-6 md:pl-[18rem] xs:pt-4 xs:pb-12 sm:py-12 flex flex-col flex-1 flex-between h-screen bg-black text-white">
-        <main className="pb-10">{children}</main>
+
+      <div className="xs:px-6 xs:pt-4 xs:pb-12 sm:py-12 sm:px-10 flex flex-col flex-1 flex-between h-screen bg-black text-white">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+
+        <main className="pb-10 w-full">
+          {asPath === "/" && (
+            <>
+              <video
+                id="background-video"
+                src="/nounish.mp4"
+                autoPlay
+                loop
+                muted
+              />
+              <div className="bg-gradient"></div>
+              <div className="bg-gradient2"></div>
+              <div className="bg-gradient3"></div>
+            </>
+          )}
+          {children}
+        </main>
 
         {asPath !== "/" && (
           <>
