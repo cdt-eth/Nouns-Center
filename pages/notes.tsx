@@ -144,7 +144,7 @@ const Notes = ({ tableIds }) => {
         <Loading />
       ) : (
         postData && (
-          <div className="text-white">
+          <div className="text-white notionNotes">
             <NotionRenderer blockMap={postData} />
           </div>
         )

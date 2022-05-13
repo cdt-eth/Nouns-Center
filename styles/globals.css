@@ -184,6 +184,9 @@ main {
 .notion li {
   color: black !important;
 }
+.notionNotes .notion li {
+  color: white !important;
+}
 .introNouns {
   color: black !important;
 }
