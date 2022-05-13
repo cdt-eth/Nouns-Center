@@ -288,6 +288,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Governance Stats",
+    "description": "Governance dashboard displaying proposal & voting analytics.",
+    "creator": ["votewithtally"],
+    "url": "https://www.tally.xyz/governance/eip155:1:0x6f3E6272A167e8AcCb32072d08E0957F9c79223d",
+    "image": "tally.png",
+    "category": ["stats"]
+  },
+  {
     "title": "Grinderz",
     "description": "Gnars mini-game.",
     "creator": ["skateordao", "artdothaus"],
