@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Nav from "./Nav";
+import Link from "next/link";
 
 const Navigation = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navigation = () => {
       <Transition.Root show={sidebarOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="fixed inset-0 flex z-40 md:hidden"
+          className="fixed inset-0 flex z-40 "
           onClose={setSidebarOpen}
         >
           <Transition.Child
@@ -35,7 +36,7 @@ const Navigation = () => {
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
           >
-            <div className="relative flex-1 flex flex-col max-w-xs w-full bg-nouns-bg-darkgrey">
+            <div className="relative flex-1 flex flex-col max-w-[15rem] w-full bg-nouns-bg-darkgrey">
               <Transition.Child
                 as={Fragment}
                 enter="ease-in-out duration-300"
@@ -68,21 +69,36 @@ const Navigation = () => {
       </Transition.Root>
 
       {/* Static sidebar for desktop */}
-      <div className="xs:hidden  md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
-        {/* Sidebar component, swap this element with another sidebar if you like */}
-        <Nav setSidebarOpen={setSidebarOpen} />
-      </div>
+      {/* <div className="xs:hidden  md:flex md:w-64 md:flex-col md:fixed md:inset-y-0"> */}
+      {/* Sidebar component, swap this element with another sidebar if you like */}
+      {/* <Nav setSidebarOpen={setSidebarOpen} />
+      </div> */}
 
-      <div className="md:pl-64 flex flex-col flex-1">
-        <div className="sticky top-0 z-10 md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3 bg-black">
+      <div className="sm:px-4 flex flex-row flex-1 pt-4 items-center">
+        <div className="sticky top-0 xs:pl-2 pt-1 sm:pl-0 sm:pt-0 z-40">
           <button
             type="button"
-            className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-white focus:outline-none "
+            className="-mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-white hover:text-gray-500 focus:outline-none "
             onClick={() => setSidebarOpen(true)}
           >
             <span className="sr-only">Open sidebar</span>
             <MenuIcon className="h-6 w-6" aria-hidden="true" />
           </button>
+        </div>
+
+        <div className="flex w-full justify-center absolute z-30 ">
+          <Link passHref href="/">
+            <div className="flex items-center cursor-pointer text-nouns hover:text-nouns-earth-blue transition text-white xs:text-xl sm:text-3xl gap-2">
+              <p className="xs:hidden sm:block">Nouns</p>
+              {/*  eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/earth.gif"
+                alt="earth"
+                className="h-12 w-12 flex self-center"
+              />
+              <p className="xs:hidden sm:block">Center</p>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

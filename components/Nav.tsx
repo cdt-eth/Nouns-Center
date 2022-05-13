@@ -13,14 +13,14 @@ const Nav = ({ setSidebarOpen }) => {
     <div className="flex flex-col flex-grow  pt-5 pb-4 bg-nouns-bg-darkgrey overflow-y-auto">
       <Link passHref href="/">
         <div
-          className="flex sm:cursor-pointer items-center flex-shrink-0 px-4"
+          className="sm:cursor-pointer items-center flex-shrink-0 px-4"
           onClick={() => setSidebarOpen(false)}
         >
-          <img className="w-1/6 mr-2" src="/earth.gif" alt="earth" />
+          <img className="hidden w-1/6 mr-2" src="earth.gif" alt="earth" />
         </div>
       </Link>
 
-      <div className="mt-5 flex-grow flex flex-col">
+      <div className="flex-grow flex flex-col">
         <nav
           className="flex-1 px-4 space-y-1 bg-nouns-bg-darkgrey"
           aria-label="Sidebar"

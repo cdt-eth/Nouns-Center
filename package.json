@@ -8,11 +8,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@algolia/autocomplete-js": "^1.6.3",
+    "@algolia/autocomplete-theme-classic": "^1.6.3",
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
     "@notionhq/client": "^1.0.4",
     "@tailwindcss/aspect-ratio": "^0.4.0",
-    "algoliasearch": "^4.12.0",
+    "algoliasearch": "^4.13.0",
     "dotenv": "^11.0.0",
     "jszip": "^3.7.1",
     "next": "latest",
@@ -26,6 +28,7 @@
     "react-ga": "^3.3.0",
     "react-icons": "^4.3.1",
     "react-instantsearch-dom": "^6.19.0",
+    "react-instantsearch-hooks-web": "^6.24.3",
     "react-loading": "^2.0.3",
     "react-masonry-css": "^1.0.16",
     "react-notion": "^0.10.0",

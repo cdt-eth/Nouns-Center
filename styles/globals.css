@@ -118,7 +118,6 @@ h6 {
 }
 
 main {
-  max-width: 1250px;
 }
 
 .embed-page .publication-tagline {
@@ -270,4 +269,119 @@ main {
 }
 .devGrid ul li:nth-child(4n) {
   border: none;
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.bg-gradient {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 95%;
+  background: linear-gradient(to right, #000000, #151515, #151515);
+  background-image: radial-gradient(
+    farthest-side at 100% 21%,
+    transparent,
+    #151515
+  );
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  background: linear-gradient(
+      267deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 0, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 255, 0) 70.71%);
+
+  background: linear-gradient(
+      -53deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0) 90.71%
+    ),
+    linear-gradient(127deg, rgba(0, 0, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+@media (max-width: 640px) {
+  .bg-gradient {
+    opacity: 80%;
+    background: black;
+  }
+}
+
+.bg-gradient2 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 50%;
+  background: #151515;
+  background: linear-gradient(to top, #000000, #151515, #151515);
+  background-image: radial-gradient(
+    farthest-side at 100% 21%,
+    transparent,
+    #151515
+  );
+  background: linear-gradient(
+    0deg,
+    transparent,
+    rgba(0, 0, 0, 0.03) 15%,
+    rgba(0, 0, 0, 0.125) 30%,
+    rgba(0, 0, 0, 0.25) 46%,
+    rgba(0, 0, 0, 0.4) 61%,
+    rgba(0, 0, 0, 0.553) 75%,
+    rgba(0, 0, 0, 0.694) 88%,
+    rgba(0, 0, 0, 0.8)
+  );
+}
+.bg-gradient3 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 60%;
+  background: black;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.8099614845938375) 0%,
+    rgba(0, 0, 0, 0.8071603641456583) 50%,
+    rgba(0, 0, 0, 0.6811099439775911) 100%
+  );
+}
+
+#autocomplete {
+}
+.aa-Autocomplete {
+  width: 75% !important;
+  margin: auto !important;
+}
+@media (max-width: 640px) {
+  .aa-Autocomplete {
+    width: 100% !important;
+  }
+}
+.aa-Form {
+  border-radius: 12px !important;
+  min-height: 55px !important;
+}
+.aa-Autocomplete {
+  border-radius: 12px !important;
 }
