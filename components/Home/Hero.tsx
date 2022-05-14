@@ -28,20 +28,12 @@ const Hero = () => {
           <main className=" mx-auto  px-4 sm:mt-24 tracking-wider">
             <div className="text-center">
               <h1 className=" text-white  font-extrabold text-5xl md:text-6xl text-nouns tracking-wider flex gap-4 justify-center">
-                {/* Home to all things Nounish */}
                 What are you looking for?
               </h1>
 
               <p className="mt-3 max-w-md mx-auto text-base font-medium text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
                 Nouns Center serves as the knowledge center &#38; resource hub
                 for Nouns DAO.
-                {/* a all the you can is the
-                community site for Nouns DAO projects &#38; tools. You&apos;ll
-                find answers to everything here. */}
-                {/* Nouns Center is the community site for Nouns DAO projects &#38;
-                tools. Want to get invovled? Looking for the assets? Hoping to
-                connect with other talented folks in the DAO? You&apos;ll find
-                answers to everything here. */}
               </p>
 
               <div className="mt-6" id="autocomplete"></div>

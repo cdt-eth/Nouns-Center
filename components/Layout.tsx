@@ -20,10 +20,18 @@ export default function Layout({ children }) {
               <video
                 id="background-video"
                 src="/nounish.mp4"
+                className="xs:hidden sm:block"
                 autoPlay
                 loop
                 muted
               />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className="sm:hidden nounish"
+                src="/nounish.jpeg"
+                alt="nounish"
+              />
+
               <div className="bg-gradient"></div>
               <div className="bg-gradient2"></div>
               <div className="bg-gradient3"></div>
