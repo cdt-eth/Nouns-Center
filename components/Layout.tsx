@@ -28,7 +28,7 @@ export default function Layout({ children }) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className="sm:hidden nounish"
-                src="/nounish.jpeg"
+                src="/nnsh.gif"
                 alt="nounish"
               />
 
