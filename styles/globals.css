@@ -46,8 +46,8 @@
   font-family: "PTRootUI";
 }
 
-html {
-  background: black;
+.darkMode {
+  color: yelllow !important;
 }
 
 body {

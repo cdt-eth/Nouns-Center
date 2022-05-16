@@ -7,12 +7,18 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 const DarkModeToggle = () => {
-  const [enabled, setEnabled] = useState(true);
+  const [enabled, setEnabled] = useState(false);
+
+  const toggleDarkMode = () => {
+    var element = document.getElementById("parent");
+    element.classList.toggle("dark");
+    setEnabled(!enabled);
+  };
 
   return (
     <Switch
       checked={enabled}
-      onChange={setEnabled}
+      onChange={toggleDarkMode}
       className={classNames(
         enabled ? "bg-nouns-blue" : "bg-gray-200",
         "relative inline-flex flex-shrink-0 h-7 w-12 pl-0.5 items-center border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-nouns-blue"

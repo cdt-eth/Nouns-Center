@@ -18,7 +18,7 @@ const SubheaderBodyButton = ({
   download,
 }: SubheaderBodyButtonProps) => {
   return (
-    <div className="sm:flex sm:items-center text-white mb-6">
+    <div className="sm:flex sm:items-center dark:text-white mb-6">
       <div className="sm:flex-auto">
         <h1 className="text-xl font-semibold capitalize">{title}</h1>
         <p className="mt-2 text-md ">{body}</p>

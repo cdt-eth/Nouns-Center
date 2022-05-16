@@ -29,13 +29,13 @@ const Hero = () => {
     <>
       <div className="relative overflow-hidden flex justify-around tracking-wider pt-10">
         <div className="relative pt-6 pb-16 sm:pb-24">
-          <main className=" mx-auto  px-4 sm:mt-24 tracking-wider">
+          <main className=" mx-auto  px-4 sm:mt-24 tracking-wider text-white">
             <div className="text-center">
-              <h1 className=" text-white  font-extrabold text-5xl md:text-6xl text-nouns tracking-wider flex gap-4 justify-center">
+              <h1 className=" font-extrabold text-5xl md:text-6xl text-nouns tracking-wider flex gap-4 justify-center">
                 What are you looking for?
               </h1>
 
-              <p className="mt-3 max-w-md mx-auto text-base font-medium text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+              <p className="mt-3 max-w-md mx-auto text-base font-medium  sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
                 Nouns Center serves as the knowledge center &#38; resource hub
                 for Nouns DAO
               </p>

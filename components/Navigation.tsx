@@ -4,9 +4,13 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Nav from "./Nav";
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
+import { useRouter } from "next/router";
 
 const Navigation = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const router = useRouter();
+  const { asPath } = router;
 
   return (
     <div>
@@ -79,22 +83,36 @@ const Navigation = () => {
         <div className="sticky top-0 xs:px-3 sm:px-6 z-40 flex items-center justify-between w-full">
           <button
             type="button"
-            className="-mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-white hover:text-gray-500 focus:outline-none "
+            className={`-mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-grey-900 dark:text-white hover:text-gray-500 focus:outline-none ${
+              asPath === "/" && "text-white"
+            } `}
             onClick={() => setSidebarOpen(true)}
           >
             <span className="sr-only">Open sidebar</span>
             <MenuIcon className="h-6 w-6" aria-hidden="true" />
           </button>
           <Link passHref href="/">
-            <div className="flex items-center cursor-pointer text-nouns hover:text-nouns-earth-blue transition text-white xs:text-xl sm:text-3xl gap-2">
-              <p className="xs:hidden sm:block">Nouns</p>
+            <div className="flex items-center cursor-pointer text-nouns  transition text-nouns-earth-blue hover:text-nouns-bg-blue dark:text-white dark:hover:text-nouns-earth-blue xs:text-xl sm:text-3xl gap-2">
+              <p
+                className={`xs:hidden sm:block ${
+                  asPath === "/" && "text-white"
+                }`}
+              >
+                Nouns
+              </p>
               {/*  eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/earth.gif"
                 alt="earth"
                 className="h-12 w-12 flex self-center"
               />
-              <p className="xs:hidden sm:block">Center</p>
+              <p
+                className={`xs:hidden sm:block ${
+                  asPath === "/" && "text-white"
+                }`}
+              >
+                Center
+              </p>
             </div>
           </Link>
           <DarkModeToggle />

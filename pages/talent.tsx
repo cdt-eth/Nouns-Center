@@ -31,9 +31,10 @@ const Talent = () => {
         {talent.map((person, idx) => (
           <li
             key={person.skills}
-            className="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200 flex flex-col justify-between"
+            className="col-span-1  bg-white rounded-lg shadow-md divide-y divide-gray-200 flex flex-col justify-between"
+            // className="col-span-1  bg-nouns-grey dark:bg-white rounded-lg shadow divide-y divide-gray-200 flex flex-col justify-between"
           >
-            <div className="w-full flex items-center justify-between p-6 space-x-6">
+            <div className="w-full flex items-center justify-between p-6 space-x-6 ">
               <div className="flex-1 ">
                 <div className="flex items-center space-x-3">
                   <h3 className="text-gray-900 text-sm font-medium text-nouns tracking-wider">
@@ -66,7 +67,7 @@ const Talent = () => {
             </div>
             {(person.twitter || person.discord) && (
               <div>
-                <div className="-mt-px flex divide-x divide-gray-200">
+                <div className="-mt-px flex divide-x divide-gray-200 bg-gray-100">
                   {person.twitter !== "" && (
                     <div className="w-0 flex-1 flex cursor-pointer hover:bg-gray-100 transition duration-150 rounded-bl-lg ">
                       <a

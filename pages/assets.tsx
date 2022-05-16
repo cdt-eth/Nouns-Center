@@ -19,7 +19,7 @@ const Assets = () => {
         btnText="What's missing?"
       />
 
-      <div className="bg-white rounded-md">
+      <div className="bg-nouns-grey rounded-md">
         <div className="mx-auto py-4 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-8 ">
           <ul
             role="list"

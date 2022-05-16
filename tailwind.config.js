@@ -2,6 +2,7 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
   mode: "jit",
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -19,11 +20,11 @@ module.exports = {
         "nouns-bg-darkgrey": "#151515",
         "nouns-text-grey": "#D0D0D0",
         "nouns-text-nav-header": "#878787",
-        "nouns-bg-grey": "#F2F2F2",
+        "nouns-grey": "#f5f5f5",
         "nouns-bg-blue": "#3E64FF",
         "nouns-earth-blue": "#538cfa",
         "nouns-bg-darkblue": "#1F1D28",
-        "nouns-grey": "#7A7A7A",
+        "nouns-dark-grey": "#7A7A7A",
         "nouns-blue": "#002AFF",
         "nouns-yellow": "#FDF45F",
         "nouns-border": "#C1C1C1",

@@ -6,7 +6,7 @@ const Newsletter = () => {
       <div className="max-w-7xl w-11/12 mx-auto xs:py-6 sm:py-12  lg:py-0 flex xs:flex-col sm:flex-row xs:items-center">
         <div className="pb-4">
           <h2
-            className="text-xl font-extrabold tracking-tight text-white sm:text-lg"
+            className="text-xl font-extrabold tracking-tight text-black sm:text-lg"
             id="newsletter-headline"
           >
             Sign up for the{" "}
