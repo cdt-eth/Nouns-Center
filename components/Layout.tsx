@@ -41,13 +41,13 @@ export default function Layout({ children }) {
         </main>
 
         {/* {asPath !== "/" && ( */}
-        {asPath !== "/" && (
+        {/* {asPath !== "/" && (
           <>
             <Divider />
 
             <Newsletter />
           </>
-        )}
+        )} */}
       </div>
     </>
   );

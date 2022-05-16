@@ -10,7 +10,7 @@ function classNames(...classes) {
 
 const Nav = ({ setSidebarOpen }) => {
   return (
-    <div className="flex flex-col flex-grow  pt-5 pb-4 bg-nouns-bg-darkgrey overflow-y-auto">
+    <div className="flex flex-col flex-grow  pt-5 pb-4 bg-[#ebebeb] dark:bg-nouns-bg-darkgrey overflow-y-auto">
       <Link passHref href="/">
         <div
           className="sm:cursor-pointer items-center flex-shrink-0 px-4"
@@ -22,7 +22,7 @@ const Nav = ({ setSidebarOpen }) => {
 
       <div className="flex-grow flex flex-col">
         <nav
-          className="flex-1 px-4 space-y-1 bg-nouns-bg-darkgrey"
+          className="flex-1 px-4 space-y-1 bg-[#ebebeb] dark:bg-nouns-bg-darkgrey"
           aria-label="Sidebar"
         >
           {/* No SubNav */}
@@ -35,7 +35,7 @@ const Nav = ({ setSidebarOpen }) => {
                   className={classNames(
                     item.current
                       ? "bg-nouns-bg-darkgrey text-white"
-                      : "bg-nouns-bg-darkgrey text-nouns-text-grey hover:bg-nouns-bg-darkgrey hover:text-white",
+                      : "bg-[#ebebeb] text-black hover:text-gray-500 dark:bg-nouns-bg-darkgrey dark:text-nouns-text-grey dark:hover:bg-nouns-bg-darkgrey dark:hover:text-white",
                     "group w-full flex items-center pl-2 py-2 xs:text-text-lg sm:text-base font-medium rounded-md"
                   )}
                 >

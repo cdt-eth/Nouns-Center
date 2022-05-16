@@ -30,7 +30,7 @@ const Navigation = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-90" />
+            <Dialog.Overlay className="fixed inset-0 bg-nouns-grey dark:bg-black bg-opacity-90" />
           </Transition.Child>
           <Transition.Child
             as={Fragment}
@@ -54,11 +54,14 @@ const Navigation = () => {
                 <div className="absolute top-0 right-0 -mr-12 pt-2">
                   <button
                     type="button"
-                    className="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    className="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset ring-black dark:ring-white focus:ring-black dark:focus:ring-white"
                     onClick={() => setSidebarOpen(false)}
                   >
                     <span className="sr-only">Close sidebar</span>
-                    <XIcon className="h-6 w-6 text-white" aria-hidden="true" />
+                    <XIcon
+                      className="h-6 w-6 black-text dark:text-white"
+                      aria-hidden="true"
+                    />
                   </button>
                 </div>
               </Transition.Child>
@@ -117,21 +120,6 @@ const Navigation = () => {
           </Link>
           <DarkModeToggle />
         </div>
-
-        {/* <div className="flex w-full justify-center absolute z-30 max-w-screen-2xl	">
-          <Link passHref href="/">
-            <div className="flex items-center cursor-pointer text-nouns hover:text-nouns-earth-blue transition text-white xs:text-xl sm:text-3xl gap-2">
-              <p className="xs:hidden sm:block">Nouns</p>
-               eslint-disable-next-line @next/next/no-img-element
-              <img
-                src="/earth.gif"
-                alt="earth"
-                className="h-12 w-12 flex self-center"
-              />
-              <p className="xs:hidden sm:block">Center</p>
-            </div>
-          </Link>
-        </div> */}
       </div>
     </div>
   );

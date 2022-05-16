@@ -19,7 +19,8 @@ const Assets = () => {
         btnText="What's missing?"
       />
 
-      <div className="bg-nouns-grey rounded-md">
+      {/* <div className="bg-nouns-grey rounded-md"> */}
+      <div className="rounded-md">
         <div className="mx-auto py-4 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-8 ">
           <ul
             role="list"
@@ -28,7 +29,7 @@ const Assets = () => {
             {assets.map((asset) => (
               <li key={uuidv4()}>
                 <div className="space-y-4">
-                  <p className="text-nouns-bg-blue font-medium text-lg text-nouns tracking-wide">
+                  <p className="dark:text-white font-medium text-lg text-nouns tracking-wide">
                     {asset.title}
                   </p>
                   <div className="aspect-w-3 aspect-h-2">

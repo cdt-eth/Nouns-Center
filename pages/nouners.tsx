@@ -32,7 +32,7 @@ const Nouners = ({ onboardData }) => {
         btnText="Type !join in #verify"
       />
 
-      <div className=" bg-white introNouns nouners rounded-lg px-10 py-4">
+      <div className=" bg-[#ebebeb] introNouns nouners rounded-lg px-10 py-4">
         <NotionRenderer blockMap={onboardData} />
       </div>
     </div>
