@@ -5,6 +5,7 @@ import ButtonGroup from "./ButtonGroup";
 import algoliasearch from "algoliasearch/lite";
 import { autocomplete, getAlgoliaResults } from "@algolia/autocomplete-js";
 import "@algolia/autocomplete-theme-classic";
+import NounishButton from "./NounishButton";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -19,6 +20,9 @@ const searchClient = algoliasearch(
 //   container: "#autocomplete",
 //   placeholder: "Search the Nouniverse",
 // });
+const action = () => {
+  //on click action to pass to button
+};
 
 const Hero = () => {
   return (
@@ -38,7 +42,44 @@ const Hero = () => {
 
               <div className="mt-6" id="autocomplete"></div>
 
-              <ButtonGroup />
+              <div className="mt-5 mx-auto xs:grid grid-cols-2 xs:gap-3 sm:gap-0 sm:flex sm:justify-center md:mt-8">
+                <NounishButton
+                  text="View Projects"
+                  buttonId={"one"}
+                  buttonAction={action}
+                  path="/projects"
+                />
+                <NounishButton
+                  text="Download Assets"
+                  buttonId={"two"}
+                  buttonAction={action}
+                  path="/assets"
+                />
+                <NounishButton
+                  text="Get Funding"
+                  buttonId={"three"}
+                  buttonAction={action}
+                  path="/funding"
+                />
+                <NounishButton
+                  text="Dev Resources"
+                  buttonId={"four"}
+                  buttonAction={action}
+                  path="/dev"
+                />
+                <NounishButton
+                  text="History of Nouns"
+                  buttonId={"five"}
+                  buttonAction={action}
+                  path="/history"
+                />
+                <NounishButton
+                  text="View Traits"
+                  buttonId={"six"}
+                  buttonAction={action}
+                  path="/traits"
+                />
+              </div>
             </div>
           </main>
         </div>
