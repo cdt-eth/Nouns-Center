@@ -3,6 +3,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Nav from "./Nav";
 import Link from "next/link";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Navigation = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -74,8 +75,8 @@ const Navigation = () => {
       {/* <Nav setSidebarOpen={setSidebarOpen} />
       </div> */}
 
-      <div className="sm:px-0 flex flex-row flex-1 pt-4 items-center">
-        <div className="sticky top-0 xs:pl-2 pt-1 sm:pl-0 sm:pt-0 z-40">
+      <div className="flex flex-row flex-1 pt-5">
+        <div className="sticky top-0 xs:px-3 sm:px-6 z-40 flex items-center justify-between w-full">
           <button
             type="button"
             className="-mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-white hover:text-gray-500 focus:outline-none "
@@ -84,9 +85,6 @@ const Navigation = () => {
             <span className="sr-only">Open sidebar</span>
             <MenuIcon className="h-6 w-6" aria-hidden="true" />
           </button>
-        </div>
-
-        <div className="flex w-full justify-center absolute z-30 max-w-screen-2xl	">
           <Link passHref href="/">
             <div className="flex items-center cursor-pointer text-nouns hover:text-nouns-earth-blue transition text-white xs:text-xl sm:text-3xl gap-2">
               <p className="xs:hidden sm:block">Nouns</p>
@@ -99,7 +97,23 @@ const Navigation = () => {
               <p className="xs:hidden sm:block">Center</p>
             </div>
           </Link>
+          <DarkModeToggle />
         </div>
+
+        {/* <div className="flex w-full justify-center absolute z-30 max-w-screen-2xl	">
+          <Link passHref href="/">
+            <div className="flex items-center cursor-pointer text-nouns hover:text-nouns-earth-blue transition text-white xs:text-xl sm:text-3xl gap-2">
+              <p className="xs:hidden sm:block">Nouns</p>
+               eslint-disable-next-line @next/next/no-img-element
+              <img
+                src="/earth.gif"
+                alt="earth"
+                className="h-12 w-12 flex self-center"
+              />
+              <p className="xs:hidden sm:block">Center</p>
+            </div>
+          </Link>
+        </div> */}
       </div>
     </div>
   );
