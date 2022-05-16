@@ -91,7 +91,7 @@ const Projects = () => {
 
       <div className="mb-4">
         <div className="">
-          <fieldset className="mt-2 text-white ">
+          <fieldset className="mt-2 text-black dark:text-white ">
             <div className="xs:grid xs:grid-cols-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-10 sm:text-base sm:justify-center sm:mb-2">
               {categories.map((category) => (
                 <div
