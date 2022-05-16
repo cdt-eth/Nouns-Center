@@ -397,8 +397,6 @@ main {
   border-radius: 12px !important;
 }
 
-// nounish button
-
 .nounish_button:hover {
   -webkit-transform: scale(1.075);
   transform: scale(1.075);
