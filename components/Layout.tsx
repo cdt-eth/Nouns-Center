@@ -11,7 +11,7 @@ export default function Layout({ children }) {
     <>
       <Navigation />
 
-      <div className="xs:px-6 xs:pt-4 xs:pb-12 sm:py-12 sm:px-10 flex flex-col flex-1 flex-between h-screen bg-black text-white">
+      <div className="xs:px-6 xs:pt-4 xs:pb-12 sm:py-12 sm:px-10 flex flex-col flex-1 flex-between h-auto bg-black text-white">
         {/* eslint-disable-next-line @next/next/no-img-element */}
 
         <main className="pb-10 w-full">
@@ -40,6 +40,7 @@ export default function Layout({ children }) {
           {children}
         </main>
 
+        {/* {asPath !== "/" && ( */}
         {asPath !== "/" && (
           <>
             <Divider />

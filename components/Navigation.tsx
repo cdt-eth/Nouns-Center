@@ -74,7 +74,7 @@ const Navigation = () => {
       {/* <Nav setSidebarOpen={setSidebarOpen} />
       </div> */}
 
-      <div className="sm:px-4 flex flex-row flex-1 pt-4 items-center">
+      <div className="sm:px-0 flex flex-row flex-1 pt-4 items-center">
         <div className="sticky top-0 xs:pl-2 pt-1 sm:pl-0 sm:pt-0 z-40">
           <button
             type="button"
@@ -86,7 +86,7 @@ const Navigation = () => {
           </button>
         </div>
 
-        <div className="flex w-full justify-center absolute z-30 ">
+        <div className="flex w-full justify-center absolute z-30 max-w-screen-2xl	">
           <Link passHref href="/">
             <div className="flex items-center cursor-pointer text-nouns hover:text-nouns-earth-blue transition text-white xs:text-xl sm:text-3xl gap-2">
               <p className="xs:hidden sm:block">Nouns</p>
