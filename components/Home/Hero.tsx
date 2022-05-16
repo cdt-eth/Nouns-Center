@@ -47,37 +47,37 @@ const Hero = () => {
                   text="View Projects"
                   buttonId={"one"}
                   buttonAction={action}
-                  path="/projects"
+                  path="projects"
                 />
                 <NounishButton
                   text="Download Assets"
                   buttonId={"two"}
                   buttonAction={action}
-                  path="/assets"
+                  path="assets"
                 />
                 <NounishButton
                   text="Get Funding"
                   buttonId={"three"}
                   buttonAction={action}
-                  path="/funding"
+                  path="funding"
                 />
                 <NounishButton
                   text="Dev Resources"
                   buttonId={"four"}
                   buttonAction={action}
-                  path="/dev"
+                  path="dev"
                 />
                 <NounishButton
                   text="History of Nouns"
                   buttonId={"five"}
                   buttonAction={action}
-                  path="/history"
+                  path="history"
                 />
                 <NounishButton
                   text="View Traits"
                   buttonId={"six"}
                   buttonAction={action}
-                  path="/traits"
+                  path="traits"
                 />
               </div>
             </div>

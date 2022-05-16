@@ -419,17 +419,8 @@ main {
   animation-fill-mode: none;
   animation-play-state: running;
   animation-name: nounish-button;
-  background-color: rgb(9, 9, 17);
-  border-radius: 18px;
-  -webkit-box-shadow: 0 5px 15px rgba(13, 20, 20, 0.4),
-    0 10px 30px rgb(37 41 46 / 20%);
-  box-shadow: 0 5px 15px rgba(23, 38, 39, 0.4), 0 10px 30px rgb(37 41 46 / 20%);
-  cursor: pointer;
-
-  margin: 0 12px 24px;
   position: relative;
   -webkit-transition: 0.125s ease;
   transition: 0.125s ease;
-
   z-index: 2;
 }
