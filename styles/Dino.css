@@ -31,7 +31,7 @@ html[subframe] #main-frame-error {
 }
 
 #main-frame-error {
-  margin: 0;
+  margin: auto;
 }
 
 .hidden {
