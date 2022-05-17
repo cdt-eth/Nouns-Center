@@ -37,8 +37,8 @@ const Traits = () => {
         download
       />
 
-      <div className="bg-nouns-cool py-6 xs:px-1 sm:px-4 rounded-xl mb-8">
-        <h1 className="text-5xl text-nouns mb-6 text-center text-nouns-cool-text">
+      <div className="bg-grey-base py-6 xs:px-1 sm:px-4 rounded-xl mb-8">
+        <h1 className="text-5xl text-nouns mb-6 text-center text-black">
           Heads
         </h1>
         <div className="grid xs:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-2 ">
@@ -46,7 +46,7 @@ const Traits = () => {
             heads.map((head) => (
               <div key={uuidv4()} className="flex flex-col items-center mb-8">
                 <img src={`/traits/heads/head-${head.image}.png`} alt="head" />
-                <p className="text-nouns text-nouns-cool-text text-center tracking-wider xs:text-sm sm:text-lg">
+                <p className="text-nouns text-black text-center tracking-wider xs:text-sm sm:text-lg">
                   {head.name}
                 </p>
               </div>
@@ -54,8 +54,8 @@ const Traits = () => {
         </div>
       </div>
 
-      <div className="bg-nouns-cool py-6 xs:px-1 sm:px-4 rounded-xl  mb-8">
-        <h1 className="text-5xl text-nouns mb-6 text-center text-nouns-cool-text">
+      <div className="bg-grey-base py-6 xs:px-1 sm:px-4 rounded-xl  mb-8">
+        <h1 className="text-5xl text-nouns mb-6 text-center text-black">
           Glasses
         </h1>
         <div className="grid xs:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-2 ">
@@ -66,7 +66,7 @@ const Traits = () => {
                   src={`/traits/glasses/glasses-square-${g.image}.png`}
                   alt="glasses"
                 />
-                <p className="text-nouns text-nouns-cool-text text-center tracking-wider xs:text-sm sm:text-lg">
+                <p className="text-nouns text-black text-center tracking-wider xs:text-sm sm:text-lg">
                   {g.name}
                 </p>
               </div>
@@ -74,8 +74,8 @@ const Traits = () => {
         </div>
       </div>
 
-      <div className="bg-nouns-cool py-6 xs:px-1 sm:px-4 rounded-xl  mb-8">
-        <h1 className="text-5xl text-nouns mb-6 text-center text-nouns-cool-text">
+      <div className="bg-grey-base py-6 xs:px-1 sm:px-4 rounded-xl  mb-8">
+        <h1 className="text-5xl text-nouns mb-6 text-center text-black">
           Bodies
         </h1>
         <div className="grid xs:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-2 ">
@@ -83,7 +83,7 @@ const Traits = () => {
             bodies.map((body) => (
               <div key={uuidv4()} className="flex flex-col items-center mb-8">
                 <img src={`/traits/bodies/body-${body.image}.png`} alt="body" />
-                <p className="text-nouns text-nouns-cool-text text-center tracking-wider xs:text-sm sm:text-lg">
+                <p className="text-nouns text-black text-center tracking-wider xs:text-sm sm:text-lg">
                   {body.name}
                 </p>
               </div>
@@ -91,8 +91,8 @@ const Traits = () => {
         </div>
       </div>
 
-      <div className="bg-nouns-cool py-6 xs:px-1 sm:px-4 rounded-xl  mb-8">
-        <h1 className="text-5xl text-nouns mb-6 text-center text-nouns-cool-text">
+      <div className="bg-grey-base py-6 xs:px-1 sm:px-4 rounded-xl  mb-8">
+        <h1 className="text-5xl text-nouns mb-6 text-center text-black">
           Accessories
         </h1>
         <div className="grid xs:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-2 ">
@@ -103,7 +103,7 @@ const Traits = () => {
                   src={`/traits/accessories/accessory-${accessory.image}.png`}
                   alt="accessory"
                 />
-                <p className="text-nouns pt-6 text-nouns-cool-text text-center tracking-wider xs:text-sm sm:text-lg">
+                <p className="text-nouns pt-6 text-black text-center tracking-wider xs:text-sm sm:text-lg">
                   {accessory.name}
                 </p>
               </div>

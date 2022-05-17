@@ -21,7 +21,7 @@ const Gifs = () => {
         {gifs.map((g) => (
           <img
             key={uuidv4()}
-            className="mb-6"
+            className="mb-6 rounded-lg"
             src={`/memes/gifs/${g.img}`}
             alt="gif"
           />

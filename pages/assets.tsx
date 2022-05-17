@@ -19,9 +19,9 @@ const Assets = () => {
         btnText="What's missing?"
       />
 
-      {/* <div className="bg-nouns-grey rounded-md"> */}
+      {/* <div className="bg-grey-light rounded-md"> */}
       <div className="rounded-md">
-        <div className="mx-auto py-4 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-8 ">
+        <div className="mx-auto py-4 lg:py-8 ">
           <ul
             role="list"
             className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8 "
@@ -34,7 +34,7 @@ const Assets = () => {
                   </p>
                   <div className="aspect-w-3 aspect-h-2">
                     <img
-                      className="object-cover shadow-lg rounded-lg w-full  max-h-48 h-60"
+                      className="object-cover shadow-lg rounded-lg w-full  xs:max-h-48 sm:max-h-60 h-60"
                       src={`/assets/${asset.image}`}
                       alt={asset.image}
                     />
@@ -44,7 +44,10 @@ const Assets = () => {
                     <div className="leading-6 font-medium space-y-1 flex  justify-between items-start">
                       <a
                         type="button"
-                        className="inline-flex sm:cursor-pointer items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex sm:cursor-pointer items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md 
+                        
+                        text-black dark:text-white  bg-gray-200 focus:ring-gray-200 hover:bg-grey-base dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue 
+                        "
                         download={asset.download}
                         href={
                           asset.download ? `/assets/${asset.file}` : asset.file

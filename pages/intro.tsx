@@ -45,7 +45,7 @@ const Intro = ({ docsData }) => {
         btnText="More info"
       />
 
-      <div className={`bg-white introNouns rounded-lg px-10 py-4`}>
+      <div className="introNouns rounded-lg py-4">
         <NotionRenderer blockMap={docsData} />
       </div>
     </div>

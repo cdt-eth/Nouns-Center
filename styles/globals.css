@@ -2,6 +2,43 @@
 
 @tailwind base;
 @tailwind components;
+@layer components {
+  .notion {
+    @apply text-black dark:text-white caret-black dark:caret-white;
+  }
+  .notion li {
+    @apply text-black dark:text-white;
+  }
+  .notionNotes .notion li {
+    @apply text-black dark:text-white;
+  }
+  .introNouns {
+    @apply text-black dark:text-white;
+  }
+  .introNouns .notion-h1,
+  .notion-h2,
+  .notion-h3 {
+    @apply text-black dark:text-white;
+  }
+  .introNouns .notion-text {
+    @apply text-black dark:text-white;
+  }
+  .introNouns .notion-row {
+    @apply text-black dark:text-white;
+  }
+  .introNouns .notion-callout-text {
+    @apply text-black dark:text-white;
+  }
+  .vertical-timeline {
+    @apply before-bg-black dark:before-bg-white;
+  }
+  .vertical-timeline-element-date {
+    @apply text-black dark:text-white;
+  }
+  .vertical-timeline-element--work {
+    @apply text-black dark:text-white;
+  }
+}
 @font-face {
   font-family: "CalSans";
   src: local("CalSans"), url("/fonts/CalSans.woff2") format("woff2");
@@ -103,10 +140,9 @@ h6 {
 }
 
 .notion {
-  color: white !important;
-  caret-color: white !important;
   margin: 20px 0px;
 }
+
 .notion-text {
   font-size: 28px;
   font-family: "Londrina Solid", sans-serif;
@@ -115,9 +151,6 @@ h6 {
 }
 .notion-text:not(:first-child) {
   margin-top: 25px;
-}
-
-main {
 }
 
 .embed-page .publication-tagline {
@@ -171,7 +204,7 @@ main {
 @media (min-width: 1169px) {
   .vertical-timeline-element-date {
     padding: 10px !important;
-    color: white;
+
     opacity: 100%;
   }
 }
@@ -180,24 +213,13 @@ main {
   padding: 0px !important;
 }
 
-.notion li {
-  color: black !important;
-}
-.notionNotes .notion li {
-  color: white !important;
-}
-.introNouns {
-  color: black !important;
-}
 .introNouns .notion-h1,
 .notion-h2,
 .notion-h3 {
-  color: black !important;
   font-family: "Londrina Solid";
   font-size: 1.875em !important;
 }
 .introNouns .notion-text {
-  color: black !important;
   font-size: 18px !important;
   font-family: "PTRootUI" !important;
   text-decoration: none !important;
@@ -208,8 +230,18 @@ main {
 }
 .introNouns .notion-row {
   display: flex !important;
-  color: black !important;
+  justify-content: space-between;
 }
+
+@media (max-width: 640px) {
+  .introNouns .notion-spacer {
+    display: none !important;
+  }
+  .introNouns .notion-row {
+    justify-content: space-between !important;
+  }
+}
+
 .introNouns .notion-asset-wrapper {
   width: auto !important;
 }
@@ -234,10 +266,6 @@ main {
 }
 .introNouns .notion-link:hover {
   color: #1d4ed8;
-}
-
-.introNouns .notion-callout-text {
-  color: black !important;
 }
 
 .nouners .notion-h2 {

@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-
+import Script from "next/script";
 class MyDocument extends Document {
   render() {
     return (
@@ -10,7 +10,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="bg-nouns-grey dark:bg-black text-black dark:text-white">
+        <body className="bg-grey-light dark:bg-black text-black dark:text-white">
           <Main />
           <NextScript />
         </body>

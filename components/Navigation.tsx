@@ -30,7 +30,7 @@ const Navigation = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-nouns-grey dark:bg-black bg-opacity-90" />
+            <Dialog.Overlay className="fixed inset-0 bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-90" />
           </Transition.Child>
           <Transition.Child
             as={Fragment}
@@ -86,7 +86,7 @@ const Navigation = () => {
         <div className="sticky top-0 xs:px-3 sm:px-6 z-40 flex items-center justify-between w-full">
           <button
             type="button"
-            className={`-mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-grey-900 dark:text-white hover:text-gray-500 focus:outline-none ${
+            className={`-mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-900 dark:text-white hover:text-gray-500 focus:outline-none ${
               asPath === "/" && "text-white"
             } `}
             onClick={() => setSidebarOpen(true)}

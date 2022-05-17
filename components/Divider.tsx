@@ -7,7 +7,7 @@ const Divider = () => {
         <div className="w-full border-t border-gray-300" />
       </div>
       <div className="relative flex justify-center">
-        <span className="px-2 bg-nouns-grey dark:bg-black text-sm dark:text-white">
+        <span className="px-2 bg-grey-light dark:bg-black text-sm dark:text-white">
           ⌐◨-◨
         </span>
       </div>

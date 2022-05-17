@@ -24,8 +24,8 @@ const Event = ({
 }: EventProps) => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: "#D4D7E1", color: "#151c3b" }}
-      contentArrowStyle={{ borderRight: "7px solid  #D4D7E1" }}
+      contentStyle={{ background: "#ebebeb", color: "#151c3b" }}
+      contentArrowStyle={{ borderRight: "7px solid  #ebebeb" }}
       className="vertical-timeline-element--work timelineEvent"
       date={date}
       iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
@@ -33,7 +33,7 @@ const Event = ({
         <img className="rounded-full" src={getRandomNounPic(idx)} alt="noun" />
       }
     >
-      <h3 className="vertical-timeline-element-title text-nouns capitalize">
+      <h3 className="vertical-timeline-element-title text-nouns capitalize ">
         {title}
       </h3>
 
