@@ -20,8 +20,10 @@ const DarkModeToggle = () => {
       checked={enabled}
       onChange={toggleDarkMode}
       className={classNames(
-        enabled ? "bg-nouns-blue" : "bg-gray-200",
-        "relative inline-flex flex-shrink-0 h-7 w-12 pl-0.5 items-center border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-nouns-blue"
+        enabled
+          ? "bg-gray-500 focus:ring-gray-500"
+          : "bg-gray-200 focus:ring-gray-200",
+        "relative inline-flex flex-shrink-0 h-7 w-12 pl-0.5 items-center border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 "
       )}
     >
       <span className="sr-only">Dark Mode</span>
