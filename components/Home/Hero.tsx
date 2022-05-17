@@ -50,7 +50,7 @@ const Hero = () => {
                   image="traits.png"
                   buttonId={"two"}
                   buttonAction={action}
-                  path="assets"
+                  path="traits"
                 />
                 <NounishButton
                   text="Get Funding"
