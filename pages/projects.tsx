@@ -108,11 +108,11 @@ const Projects = () => {
                         ? category.id === "all"
                         : category.id === query.category
                     }
-                    className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                    className="focus:ring-nouns-earth-blue h-4 w-4 text-nouns-earth-blue border-gray-300"
                   />
                   <label
                     htmlFor={category.id}
-                    className="xs:ml-1.5 sm:ml-3 block text-sm font-medium"
+                    className="xs:ml-1.5 sm:ml-3 block text-sm font-medium text-black dark:text-white"
                   >
                     {category.title}
                   </label>
@@ -143,12 +143,13 @@ const Projects = () => {
           ) : (
             <ul
               role="list"
-              className="grid sm:hidden bg-white rounded-xl p-4 divide-y divide-gray-200 "
+              className="grid sm:hidden rounded-xl p-4 divide-y divide-gray-200 "
             >
               {filteredProjects.map((project) => (
                 // <Link
                 //   href={
-                //     "/projects/" + project.title.replace(/\s+/g, "-").toLowerCase()
+                //     "/projects/" +
+                //     project.title.replace(/\s+/g, "-").toLowerCase()
                 //   }
                 //   passHref
                 //   key={project.title}
@@ -166,7 +167,7 @@ const Projects = () => {
                       alt={project.image}
                     />
                     <div className="ml-3">
-                      <p className="text-lg font-medium text-gray-900 text-nouns tracking-wide">
+                      <p className="text-lg font-medium text-gray-900 dark:text-white text-nouns tracking-wide">
                         {project.title}
                       </p>
 
@@ -174,13 +175,13 @@ const Projects = () => {
                     {project.category.join(" • ")}
                   </p> */}
 
-                      <p className="text-gray-500 text-sm line-clamp-2">
+                      <p className="text-gray-500 dark:text-white text-sm line-clamp-2">
                         {project.description}
                       </p>
                     </div>
                   </li>
                 </a>
-                // {/* </Link> */}
+                // </Link>
               ))}
             </ul>
           )}
