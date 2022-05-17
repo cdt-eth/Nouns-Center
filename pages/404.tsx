@@ -12,8 +12,7 @@ const Custom404 = () => {
       <span className="xs:hidden sm:block">
         <Dino />
       </span>
-      <img className="sm:hidden" src="/dino/error_b.png" alt="dino" />
-      {/* <img className="sm:hidden" src="/dino/error.jpg" alt="dino" /> */}
+      <img className="sm:hidden" src="/dino/error.png" alt="dino" />
     </div>
   );
 };

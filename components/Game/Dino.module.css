@@ -30,9 +30,6 @@
   display: none;
 } */
 
-#main-frame-error {
-  margin: 0 !important;
-}
 .interstitial-wrapper {
   margin: 0 !important;
 }
@@ -103,9 +100,6 @@
   }
 }
 
-#main-frame-error {
-  margin: auto !important;
-}
 .interstitial-wrapper {
   margin: 0 !important;
 }
