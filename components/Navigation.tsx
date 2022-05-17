@@ -96,26 +96,26 @@ const Navigation = () => {
           </button>
           <Link passHref href="/">
             <div className="flex items-center cursor-pointer text-nouns  transition text-nouns-earth-blue hover:text-nouns-bg-blue dark:text-white dark:hover:text-nouns-earth-blue xs:text-xl sm:text-3xl gap-2">
-              <p
+              {/* <p
                 className={`xs:hidden sm:block ${
                   asPath === "/" && "text-white"
                 }`}
               >
                 Nouns
-              </p>
+              </p> */}
               {/*  eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/earth.gif"
                 alt="earth"
                 className="h-12 w-12 flex self-center"
               />
-              <p
+              {/* <p
                 className={`xs:hidden sm:block ${
                   asPath === "/" && "text-white"
                 }`}
               >
                 Center
-              </p>
+              </p> */}
             </div>
           </Link>
           <DarkModeToggle />
