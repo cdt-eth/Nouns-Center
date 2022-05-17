@@ -37,6 +37,7 @@ export default function Layout({ children }) {
               <div className="bg-gradient"></div>
               <div className="bg-gradient2"></div>
               <div className="bg-gradient3"></div>
+              {/* <div className="bg-gradient4"></div> */}
             </>
           )}
           {children}

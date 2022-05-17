@@ -38,6 +38,9 @@
   .vertical-timeline-element--work {
     @apply text-black dark:text-white;
   }
+  .bg-gradient3 {
+    @apply bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-10;
+  }
 }
 @font-face {
   font-family: "CalSans";
@@ -397,13 +400,6 @@ h6 {
   min-width: 100%;
   min-height: 100%;
   opacity: 60%;
-  background: black;
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.8099614845938375) 0%,
-    rgba(0, 0, 0, 0.8071603641456583) 50%,
-    rgba(0, 0, 0, 0.6811099439775911) 100%
-  );
 }
 
 #autocomplete {
