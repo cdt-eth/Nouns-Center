@@ -23,6 +23,8 @@ export default function Layout({ children }) {
                 className="xs:hidden sm:block"
                 autoPlay
                 loop
+                webkit-playsinline
+                playsInline
                 muted
               />
               {/* eslint-disable-next-line @next/next/no-img-element */}
