@@ -23,16 +23,16 @@ export default function Layout({ children }) {
                 className="xs:hidden sm:block"
                 autoPlay
                 loop
-                webkit-playsinline
+                webkit-playsinline="true"
                 playsInline
                 muted
               />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              {/* <img
                 className="sm:hidden nounish"
                 src="/nnsh.gif"
                 alt="nounish"
-              />
+              /> */}
 
               <div className="bg-gradient"></div>
               <div className="bg-gradient2"></div>
