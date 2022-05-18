@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
 
@@ -9,9 +9,22 @@ function classNames(...classes) {
 const DarkModeToggle = () => {
   const [enabled, setEnabled] = useState(false);
 
+  useEffect(() => {
+    setEnabled(document.documentElement.classList.contains("dark"));
+  }, []);
+  useEffect(() => {
+    if (enabled) {
+      window.document.documentElement.classList.add("dark");
+      localStorage.setItem("vidyaDarkMode", "true");
+    } else {
+      window.document.documentElement.classList.remove("dark");
+      localStorage.setItem("vidyaDarkMode", "false");
+    }
+  }, [enabled]);
+
   const toggleDarkMode = () => {
-    var element = document.getElementById("parent");
-    element.classList.toggle("dark");
+    // var element = document.getElementById("parent");
+    // element.classList.toggle("dark");
     setEnabled(!enabled);
   };
 

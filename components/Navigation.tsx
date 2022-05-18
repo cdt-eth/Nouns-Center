@@ -5,6 +5,8 @@ import Nav from "./Nav";
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
 import { useRouter } from "next/router";
+import { DocSearch } from "@docsearch/react";
+import "@docsearch/css";
 
 const Navigation = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -76,26 +78,22 @@ const Navigation = () => {
         </Dialog>
       </Transition.Root>
 
-      {/* Static sidebar for desktop */}
-      {/* <div className="xs:hidden  md:flex md:w-64 md:flex-col md:fixed md:inset-y-0"> */}
-      {/* Sidebar component, swap this element with another sidebar if you like */}
-      {/* <Nav setSidebarOpen={setSidebarOpen} />
-      </div> */}
-
       <div className="flex flex-row flex-1 pt-5">
         <div className="sticky top-0 xs:px-3 sm:px-6 z-40 flex items-center justify-between w-full">
-          <button
-            type="button"
-            className={`-mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-900 dark:text-white hover:text-gray-500 focus:outline-none ${
-              asPath === "/" && "text-white"
-            } `}
-            onClick={() => setSidebarOpen(true)}
-          >
-            <span className="sr-only">Open sidebar</span>
-            <MenuIcon className="h-6 w-6" aria-hidden="true" />
-          </button>
+          <div className="w-1/3 flex self-center">
+            <button
+              type="button"
+              className={`-mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-900 dark:text-white hover:text-gray-500 focus:outline-none ${
+                asPath === "/" && "text-black sm:text-white dark:text-white"
+              } `}
+              onClick={() => setSidebarOpen(true)}
+            >
+              <span className="sr-only">Open sidebar</span>
+              <MenuIcon className="h-6 w-6" aria-hidden="true" />
+            </button>
+          </div>
           <Link passHref href="/">
-            <div className="flex items-center cursor-pointer text-nouns  transition text-nouns-earth-blue hover:text-nouns-bg-blue dark:text-white dark:hover:text-nouns-earth-blue xs:text-xl sm:text-3xl gap-2">
+            <div className="flex self-center  items-center cursor-pointer text-nouns  transition text-nouns-earth-blue hover:text-nouns-bg-blue dark:text-white dark:hover:text-nouns-earth-blue xs:text-xl sm:text-3xl gap-2">
               {/* <p
                 className={`xs:hidden sm:block ${
                   asPath === "/" && "text-white"
@@ -118,7 +116,19 @@ const Navigation = () => {
               </p> */}
             </div>
           </Link>
-          <DarkModeToggle />
+          <div className="w-1/3 flex items-center justify-end gap-3">
+            <DarkModeToggle />
+            <DocSearch
+              appId="PGIH0KF5F5"
+              indexName="nounscenterdata"
+              apiKey="faf1987de1d83c02e82fbf9bfd7ca5a9"
+            />
+            {/* <DocSearch
+              appId="R2IYF7ETH7"
+              apiKey="599cec31baffa4868cae4e79f180729b"
+              indexName="docsearch"
+            /> */}
+          </div>
         </div>
       </div>
     </div>

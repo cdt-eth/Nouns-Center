@@ -370,8 +370,10 @@ h6 {
 
 @media (max-width: 640px) {
   .bg-gradient {
-    opacity: 60%;
-    background: black;
+    display: none;
+  }
+  .bg-gradient2 {
+    display: none;
   }
 }
 .nounish {
