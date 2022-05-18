@@ -6,7 +6,6 @@ import algoliasearch from "algoliasearch/lite";
 import { autocomplete, getAlgoliaResults } from "@algolia/autocomplete-js";
 import "@algolia/autocomplete-theme-classic";
 import NounishButton from "./NounishButton";
-import { TwitterIcon } from "../../public/icons/twitter.svg";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");

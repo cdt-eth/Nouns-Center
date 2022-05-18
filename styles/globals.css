@@ -39,8 +39,12 @@
     @apply text-black dark:text-white;
   }
   .bg-gradient3 {
-    @apply bg-white bg-opacity-40 dark:bg-black dark:bg-opacity-10;
+    @apply bg-white sm:bg-opacity-40 dark:bg-black dark:bg-opacity-10;
   }
+  .DocSearch-Container {
+    @apply bg-white bg-opacity-40 dark:bg-black dark:bg-opacity-10 !important;
+  }
+  background: rgba(255, 255, 255, 0.9) !important;
 }
 @font-face {
   font-family: "CalSans";
@@ -113,6 +117,7 @@ h5 {
   font-size: 20px;
   letter-spacing: 0.03em;
 }
+
 h6 {
   font-size: 16px;
   letter-spacing: 0.04em;
@@ -460,4 +465,11 @@ h6 {
   -webkit-transition: 0.125s ease;
   transition: 0.125s ease;
   z-index: 2;
+}
+
+.DocSearch-Container {
+  @apply bg-yellow-400 !important;
+}
+.DocSearch-Container {
+  @apply bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-70 !important;
 }
