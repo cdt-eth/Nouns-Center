@@ -29,15 +29,7 @@
   .introNouns .notion-callout-text {
     @apply text-black dark:text-white;
   }
-  .vertical-timeline {
-    @apply before-bg-black dark:before-bg-white;
-  }
-  .vertical-timeline-element-date {
-    @apply text-black dark:text-white;
-  }
-  .vertical-timeline-element--work {
-    @apply text-black dark:text-white;
-  }
+
   .bg-gradient3 {
     @apply bg-white sm:bg-opacity-40 dark:bg-black dark:bg-opacity-10;
   }
@@ -475,6 +467,21 @@ h6 {
 .DocSearch-Container {
   @apply bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-70 !important;
 }
-.display-none {
-  @apply hidden;
+
+.vertical-timeline-element-date {
+  @apply text-black dark:text-white;
+}
+.vertical-timeline-element--work {
+  @apply text-black dark:text-white;
+}
+.vertical-timeline:before {
+  background: #ebebeb !important;
+}
+.vertical-timeline.vertical-timeline--two-columns:before.vertical-timeline:before {
+  background: #ebebeb !important;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: none !important;
+  outline: 4px solid #ebebeb;
 }

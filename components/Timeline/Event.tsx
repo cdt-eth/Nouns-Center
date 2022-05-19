@@ -28,7 +28,7 @@ const Event = ({
       contentArrowStyle={{ borderRight: "7px solid  #ebebeb" }}
       className="vertical-timeline-element--work timelineEvent"
       date={date}
-      iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+      iconStyle={{ background: "rgb(33, 150, 243)", color: "#ebebeb" }}
       icon={
         <img className="rounded-full" src={getRandomNounPic(idx)} alt="noun" />
       }
