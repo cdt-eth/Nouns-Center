@@ -14,8 +14,6 @@ export const getStaticProps = async (context) => {
     // (p) => p.title.replace(/\s+/g, "-").toLowerCase() === id
   );
 
-  // console.log("p", p);
-
   return {
     props: {
       projectData: p[0],
@@ -77,14 +75,14 @@ const ProjectDetails = ({ projectData }) => {
             </div>
 
             <Link passHref href="/projects">
-              <a className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block">
+              <a className="hidden text-sm font-semibold text-nouns-earth-blue hover:text-nouns-earth-blue sm:block">
                 All projects<span aria-hidden="true"> &rarr;</span>
               </a>
             </Link>
           </div>
 
           <div className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
-            <div className="group aspect-w-2 aspect-h-1 rounded-lg border-2 border-black overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
+            <div className="group aspect-w-2 aspect-h-1 rounded-lg border-black overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
               <a href={url} target="_blank" rel="noreferrer">
                 <img
                   src={`/projects/${image}`}
@@ -176,7 +174,7 @@ const ProjectDetails = ({ projectData }) => {
           <div className="mt-6 sm:hidden">
             <a
               href="#"
-              className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
+              className="block text-sm font-semibold text-nouns-earth-blue hover:text-nouns-earth-blue"
             >
               Browse all categories<span aria-hidden="true"> &rarr;</span>
             </a>

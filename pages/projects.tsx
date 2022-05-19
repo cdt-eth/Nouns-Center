@@ -175,7 +175,7 @@ const Projects = () => {
                     {project.category.join(" • ")}
                   </p> */}
 
-                      <p className="text-gray-500 dark:text-white text-sm line-clamp-2">
+                      <p className="text-gray-500 dark:text-white text-sm line-clamp-3">
                         {project.description}
                       </p>
                     </div>

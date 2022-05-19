@@ -415,8 +415,6 @@ h6 {
   opacity: 60%;
 }
 
-#autocomplete {
-}
 .aa-Autocomplete {
   width: 75% !important;
   margin: auto !important;
@@ -467,7 +465,6 @@ h6 {
 .DocSearch-Container {
   @apply bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-70 !important;
 }
-
 .vertical-timeline-element-date {
   @apply text-black dark:text-white;
 }
