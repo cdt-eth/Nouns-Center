@@ -106,11 +106,11 @@ const Navigation = () => {
           <div className="w-1/3 flex items-center justify-end gap-3">
             <DarkModeToggle />
 
-            <DocSearch
+            {/* <DocSearch
               appId="PGIH0KF5F5"
               indexName="nounscenterdata"
               apiKey="faf1987de1d83c02e82fbf9bfd7ca5a9"
-            />
+            /> */}
             {/* <DocSearch
               appId="R2IYF7ETH7"
               apiKey="599cec31baffa4868cae4e79f180729b"
