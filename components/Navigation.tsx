@@ -1,12 +1,13 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Nav from "./Nav";
 import Link from "next/link";
-import DarkModeToggle from "./DarkModeToggle";
 import { useRouter } from "next/router";
 import { DocSearch } from "@docsearch/react";
 import "@docsearch/css";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Navigation = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -94,30 +95,17 @@ const Navigation = () => {
           </div>
           <Link passHref href="/">
             <div className="flex self-center  items-center cursor-pointer text-nouns  transition text-nouns-earth-blue hover:text-nouns-bg-blue dark:text-white dark:hover:text-nouns-earth-blue xs:text-xl sm:text-3xl gap-2">
-              {/* <p
-                className={`xs:hidden sm:block ${
-                  asPath === "/" && "text-white"
-                }`}
-              >
-                Nouns
-              </p> */}
               {/*  eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/earth.gif"
                 alt="earth"
                 className="h-12 w-12 flex self-center"
               />
-              {/* <p
-                className={`xs:hidden sm:block ${
-                  asPath === "/" && "text-white"
-                }`}
-              >
-                Center
-              </p> */}
             </div>
           </Link>
           <div className="w-1/3 flex items-center justify-end gap-3">
             <DarkModeToggle />
+
             <DocSearch
               appId="PGIH0KF5F5"
               indexName="nounscenterdata"

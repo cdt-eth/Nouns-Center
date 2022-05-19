@@ -475,3 +475,6 @@ h6 {
 .DocSearch-Container {
   @apply bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-70 !important;
 }
+.display-none {
+  @apply hidden;
+}
