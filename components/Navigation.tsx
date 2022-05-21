@@ -33,7 +33,7 @@ const Navigation = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-90" />
+            <Dialog.Overlay className="fixed inset-0 bg-grey-light bg-opacity-95 dark:bg-black dark:bg-opacity-90" />
           </Transition.Child>
           <Transition.Child
             as={Fragment}
@@ -79,7 +79,7 @@ const Navigation = () => {
         </Dialog>
       </Transition.Root>
 
-      <div className="flex flex-row flex-1 pt-5">
+      <div className="flex flex-row flex-1 pt-5 ">
         <div className="sticky top-0 xs:px-3 sm:px-6 z-40 flex items-center justify-between w-full">
           <div className="w-1/3 flex self-center">
             <button
@@ -104,13 +104,12 @@ const Navigation = () => {
             </div>
           </Link>
           <div className="w-1/3 flex items-center justify-end gap-3">
-            <DarkModeToggle />
-
-            {/* <DocSearch
+            <DocSearch
               appId="PGIH0KF5F5"
-              indexName="nounscenterdata"
+              indexName="nc"
               apiKey="faf1987de1d83c02e82fbf9bfd7ca5a9"
-            /> */}
+            />
+            {/* {/* // apiKey="567090186f67f33178636e2281fd3655"  */}
             {/* <DocSearch
               appId="R2IYF7ETH7"
               apiKey="599cec31baffa4868cae4e79f180729b"
