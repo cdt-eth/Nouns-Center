@@ -32,7 +32,7 @@ const SubheaderBodyButton = ({
             href={btnLink && btnLink}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex capitalize items-center justify-center rounded-md border border-transparent text-black dark:text-white  bg-gray-200 focus:ring-gray-200 hover:bg-grey-base dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-2 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto"
+            className="inline-flex capitalize items-center justify-center rounded-md border border-transparent text-black dark:text-white bg-grey-lightest focus:ring-gray-200 hover:bg-grey-base dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-2 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto"
           >
             {btnText && btnText}
           </a>
