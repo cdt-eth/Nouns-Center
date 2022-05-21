@@ -1,7 +1,7 @@
 import React from "react";
 
 interface SubheaderBodyButtonProps {
-  title: string;
+  title?: string;
   body: any;
   btnLink?: string;
   btnText?: string;
@@ -18,7 +18,7 @@ const SubheaderBodyButton = ({
   download,
 }: SubheaderBodyButtonProps) => {
   return (
-    <div className="sm:flex sm:items-center dark:text-white mb-6">
+    <div className="sm:flex sm:items-center dark:text-white mb-12">
       <div className="sm:flex-auto">
         <h1 className="text-xl font-semibold capitalize">{title}</h1>
         <p className="mt-2 text-md ">{body}</p>
