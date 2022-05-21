@@ -56,7 +56,7 @@ const ThemeSwitch = () => {
           className={classNames(
             darkModeActive
               ? "bg-gray-500 focus:ring-gray-500"
-              : "bg-gray-200 focus:ring-gray-200",
+              : "bg-gray-500 focus:ring-gray-500",
             "pointer-events-none absolute h-6 w-12 mx-auto rounded-full transition-colors ease-in-out duration-200"
           )}
         />
