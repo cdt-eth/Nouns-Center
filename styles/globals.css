@@ -87,7 +87,7 @@
 }
 
 body {
-  color: #161616;
+  color: #292929;
   font-family: ;
 }
 h1 {
@@ -459,8 +459,8 @@ h6 {
   z-index: 2;
 }
 
-.DocSearch-Container {
-  @apply bg-yellow-400 !important;
+.DocSearch-Button {
+  @apply bg-grey-lightest !important;
 }
 .DocSearch-Container {
   @apply bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-70 !important;

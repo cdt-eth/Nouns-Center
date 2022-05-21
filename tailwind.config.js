@@ -35,9 +35,11 @@ module.exports = {
         "nouns-warm": "#E0D6D4",
         "nouns-cool-text": "#151c3b",
         grey: {
-          light: "f5f5f5",
+          lightest: "#F7F6F7",
+          light: "#e3e2e2",
           base: "#ebebeb",
         },
+        black: "#292929",
       },
     },
     screens: {
