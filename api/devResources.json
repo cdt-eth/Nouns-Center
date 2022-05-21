@@ -4,41 +4,53 @@
     "imageUrl": "protocol.png",
     "bio": "Suite of smart contracts that generates and auctions a Noun every day. The protocol serves as an open standard for generative art - Nouns.",
     "url": "https://nouns.notion.site/Noun-Protocol-32e4f0bf74fe433e927e2ea35e52a507",
-    "btnText": "Read More"
+    "btnText": "Read More",
+    "notion": true,
+    "notionId": "32e4f0bf74fe433e927e2ea35e52a507"
   },
   {
     "name": "Github Org",
     "imageUrl": "github.png",
     "bio": "Official GitHub of the Nouns Foundation.",
-    "url": "https://nouns.notion.site/Noun-Protocol-32e4f0bf74fe433e927e2ea35e52a507",
-    "btnText": "Read More"
+    "url": "https://github.com/nounsDAO",
+    "btnText": "Read More",
+    "notion": false,
+    "notionId": ""
   },
   {
     "name": "Smart Contract Architecture",
     "imageUrl": "smartcontract.png",
     "bio": "NounsToken, NounsSeeder, NounsDescriptor, NounsAuctionHouse, NounsDAOExecutor, NounsDAOProxy, and NounsDAOLogicV1.",
     "url": "https://nouns.notion.site/Smart-contract-architecture-eb6e3e2c9c5f49feb09b5bad26a6001c",
-    "btnText": "Read More"
+    "btnText": "Read More",
+    "notion": true,
+    "notionId": "eb6e3e2c9c5f49feb09b5bad26a6001c"
   },
   {
     "name": "Generate a random Noun on-chain",
     "imageUrl": "generate.png",
     "bio": "Explore how to generate a pseudo-random noun, fully on-chain, with just two contract calls.",
-    "url": "https://nouns.notion.site/Noun-Protocol-32e4f0bf74fe433e927e2ea35e52a507",
-    "btnText": "Read More"
+    "url": "https://nouns.notion.site/Generate-a-random-Noun-on-chain-4235479b512741289ede4cd22954cffc",
+    "btnText": "Read More",
+    "notion": true,
+    "notionId": "4235479b512741289ede4cd22954cffc"
   },
   {
     "name": "The Noun Crystal Ball",
     "imageUrl": "crystal.png",
     "bio": "What a Noun looks like is based on its Noun ID and the block before the auction was settled so we can predict what the next Noun will look like.",
-    "url": "https://nouns.notion.site/Noun-Protocol-32e4f0bf74fe433e927e2ea35e52a507",
-    "btnText": "Read More"
+    "url": "https://observablehq.com/@gitblamecarrot/the-noun-crystal-ball",
+    "btnText": "Read More",
+    "notion": false,
+    "notionId": ""
   },
   {
     "name": "Dev FAQ",
     "imageUrl": "discussions.png",
     "bio": "Ask technical questions you're wondering about, share ideas, or engage with other community members.",
     "url": "https://github.com/nounsDAO/nouns-monorepo/discussions",
-    "btnText": "Read More"
+    "btnText": "Read More",
+    "notion": false,
+    "notionId": ""
   }
 ]
