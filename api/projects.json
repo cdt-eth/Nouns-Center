@@ -232,6 +232,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "FloriNouns",
+    "description": "FloriNouns, your FL nounish friends. A class project from FGCU's Professor Werder and students. Supported by a Nouns DAO small grants. FloriNoun-ish merch & mini-drops.",
+    "creator": ["profwerder"],
+    "url": "https://www.florinouns.xyz/",
+    "image": "florinouns.jpeg",
+    "category": ["nfts", "smallGrants", "merch"]
+  },
+  {
     "title": "Fomo Nouns",
     "description": "Pick the next Noun every day at Noun O'Clock as a community via voting.",
     "creator": ["fomonouns", "_forager", "0xRayo"],
@@ -397,6 +405,14 @@
     "creator": ["NounMeta"],
     "url": "https://opensea.io/collection/metanoun",
     "image": "metanoun.png",
+    "category": ["nfts"]
+  },
+  {
+    "title": "Mixed Nouns",
+    "description": "1 Noun + 1 Noun = Mixed Nouns. A GOAT CLUB joint.",
+    "creator": ["goldypix", "tummlin"],
+    "url": "https://opensea.io/collection/mixed-nouns",
+    "image": "mixednouns.png",
     "category": ["nfts"]
   },
   {
