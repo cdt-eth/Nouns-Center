@@ -112,12 +112,28 @@
     "skills": "Project Management. Production. Marketing. Team Building."
   },
   {
+    "name": "Elad",
+    "twitter": "eladmallel",
+    "discord": "elad | ⌐◨-◨#6192",
+    "discordId": "378904401290592258",
+    "title": ["developer"],
+    "skills": "Solidity, javascript, full stack, product management"
+  },
+  {
     "name": "Dried Toast",
     "twitter": "driedtoast",
     "discord": "driedtoast#7158",
     "discordId": "736972711561265213",
     "title": ["developer"],
     "skills": "Typescript, Java, go, react, Sol (newbie), python"
+  },
+  {
+    "name": "BigshotKlim",
+    "twitter": "bigshottoyworks",
+    "discord": "Bigshot Klim#1853",
+    "discordId": "813140072609218573",
+    "title": ["producer"],
+    "skills": "Product development, character design, merchandising and manufacturing"
   },
   {
     "name": "Lukas",
