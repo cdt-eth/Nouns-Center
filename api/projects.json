@@ -144,6 +144,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "CeeFriends",
+    "description": "An NFT project exploring the role of intellectual property in the future of digital art.",
+    "creator": ["NatashaSookTomi", "CeeFriends"],
+    "url": "https://opensea.io/collection/ceefriends",
+    "image": "ceefriends.jpeg",
+    "category": ["nfts", "small-grants", "proposal"]
+  },
+  {
     "title": "Coloring Book",
     "description": "These series of coloring books are made with the purpose of proliferating Nouns into the mainstream culture, incentivizing creativity, and reaching the next generation of creators who can build on top of Nouns ecosystem. Nouns are really interesting creatures, some of them love exploring the outdoors, some prefer to study at home or even play their favorite video game.",
     "creator": ["nounsense_wtf", "messhup"],
@@ -237,7 +245,7 @@
     "creator": ["profwerder"],
     "url": "https://www.florinouns.xyz/",
     "image": "florinouns.jpeg",
-    "category": ["nfts", "smallGrants", "merch"]
+    "category": ["nfts", "small-grants", "merch"]
   },
   {
     "title": "Fomo Nouns",
@@ -584,6 +592,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "NounRalph",
+    "description": "NounRalph have been created by Munich based artist Alexa Wagner, as a tribute to Nouns. Nouns not only created the iconic square glasses everybody in the NFT space recognizes already from the distance. Nouns also introduced an identity, community, government and treasury approach that is brining NFTs to a next level. NounRalph is a collection of 99 NFTs on the Ethereum / Polygon blockchain. They are based on the CryptoRalph art, age groups and attributes. Each NounRalph has a unique set attributes showing details of real Ralph's life (just like CryptoRalph). So basically this is the first time a Noun derivative is based on a real person life.",
+    "creator": ["vernisartstudio", "CryptoRalphNFT"],
+    "url": "https://cryptoralph.io/nounralph",
+    "image": "NounRalph.png",
+    "category": ["nfts"]
+  },
+  {
     "title": "Nounspedia",
     "description": "View all Noun heads by category.",
     "creator": ["12bnoun"],
@@ -606,6 +622,14 @@
     "url": "https://nounstown.shop",
     "image": "nounstownshop.jpeg",
     "category": ["small-grants", "merch"]
+  },
+  {
+    "title": "NOUNWORKS",
+    "description": "Apparel, toys and unique NOUNish products powered by BIGSHOT.",
+    "creator": ["NounWorks", "bigshottoyworks"],
+    "url": "https://bigshottoyshop.com/collections/nouns",
+    "image": "nounworks.webp",
+    "category": ["nfts", "merch"]
   },
   {
     "title": "Nounzy",
@@ -685,6 +709,14 @@
     "creator": ["Nouns_3D"],
     "url": "https://www.nouns3d.com/",
     "image": "nouns3d.jpeg",
+    "category": ["nfts"]
+  },
+  {
+    "title": "Nouns Almanac",
+    "description": "The Nouns Almanac is for anyone who loves Nouns. The book contains the first 256 Nouns ever minted! Each Noun receives their very own full page feature including all their special Noun traits, owner details, mint date and one to two sentences about Nouns in the context of all the Nouns in the Nouns Almanac.",
+    "creator": ["mintfaced"],
+    "url": "https://www.nouns.zone/",
+    "image": "bt21.jpeg",
     "category": ["nfts"]
   },
   {
@@ -995,6 +1027,14 @@
     "category": ["misc", "small-grants"]
   },
   {
+    "title": "The Boanez",
+    "description": "Boanez. (The Boneys + Noadz) 1/1 animated CC0 project.",
+    "creator": ["TheBoanez"],
+    "url": "https://opensea.io/collection/theboanez",
+    "image": "boanez.gif",
+    "category": ["nfts"]
+  },
+  {
     "title": "The Boney Batz",
     "description": "333 Winged companions for The Boneys!",
     "creator": ["theboneys", "therealmrboney"],
@@ -1009,6 +1049,14 @@
     "url": "https://opensea.io/collection/themouns",
     "image": "mouns.png",
     "category": ["nfts"]
+  },
+  {
+    "title": "The Nouns Museum",
+    "description": "The first ever Nouns museum in Cryptovoxels.",
+    "creator": ["tortitatrades"],
+    "url": "https://www.cryptovoxels.com/parcels/4986",
+    "image": "museum.jpeg",
+    "category": ["misc"]
   },
   {
     "title": "The Trapped Nouns",
