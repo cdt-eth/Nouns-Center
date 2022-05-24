@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "../components/Header";
-import SubheaderBodyButton from "../components/SubheaderBodyButton";
+import Subheader from "../components/Subheader";
 import Title from "../components/Title";
 import { NotionRenderer } from "react-notion";
 import PageContent from "../components/Layout/PageContent";
 import PageHeader from "../components/Layout/PageHeader";
+import Button from "../components/common/Button";
 
 const introToNounsNotionPage = "90485892d0c54ef1be05abf0ecfc18da";
 
@@ -41,11 +42,13 @@ const Intro = ({ docsData }) => {
         <Header title="Intro | Nouns Center" />
         <Title title="Intro" />
 
-        <SubheaderBodyButton
+        <Subheader
           title="A Brief Introduction to Nouns"
           body="If you ever wanted to know what Nouns is all about, this is a great place to start."
-          btnLink="https://nouns.notion.site/Explore-Nouns-a2a9dceeb1d54e10b9cbf3f931c2266f"
-          btnText="More info"
+        />
+        <Button
+          link="https://nouns.notion.site/Explore-Nouns-a2a9dceeb1d54e10b9cbf3f931c2266f"
+          text="More info"
         />
       </PageHeader>
 

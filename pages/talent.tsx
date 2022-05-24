@@ -9,9 +9,10 @@ import {
   FaDiscord as DiscordIcon,
 } from "react-icons/fa";
 import { getRandomNounPic } from "../utils";
-import SubheaderBodyButton from "../components/SubheaderBodyButton";
+import Subheader from "../components/Subheader";
 import PageContent from "../components/Layout/PageContent";
 import PageHeader from "../components/Layout/PageHeader";
+import Button from "../components/common/Button";
 
 const Talent = () => {
   return (
@@ -20,11 +21,13 @@ const Talent = () => {
         <Header title="Talent | Nouns Center" />
         <Title title="Talent" />
 
-        <SubheaderBodyButton
+        <Subheader
           title="Reverse job board"
           body="A place to connect with community members. You can view someone's skillset and easily connect with them. If you'd like to be added to this list, or are on it and would like to be removed, click the button to send a request."
-          btnLink="https://www.addressform.io/form/2a1a3ad0-ba4b-4516-8667-e09ce558b132"
-          btnText="Add yourself"
+        />
+        <Button
+          text="Add yourself"
+          link="https://www.addressform.io/form/2a1a3ad0-ba4b-4516-8667-e09ce558b132"
         />
       </PageHeader>
 

@@ -5,11 +5,12 @@ import Title from "../components/Title";
 import { v4 as uuidv4 } from "uuid";
 import traits from "../api/traits.json";
 
-import SubheaderBodyButton from "../components/SubheaderBodyButton";
+import Subheader from "../components/Subheader";
 // import Link from "next/link";
 import Link from "../components/Link";
 import PageHeader from "../components/Layout/PageHeader";
 import PageContent from "../components/Layout/PageContent";
+import Button from "../components/common/Button";
 
 const Traits = () => {
   const heads = traits.heads;
@@ -27,7 +28,7 @@ const Traits = () => {
         <Header title="Traits | Nouns Center" />
         <Title title="Traits" />
 
-        <SubheaderBodyButton
+        <Subheader
           title="234 heads, 21 glasses, 30 bodies, 137 accessories"
           body={
             <>
@@ -36,10 +37,8 @@ const Traits = () => {
               {assetsPage}.
             </>
           }
-          btnLink="/assets/assets_png.zip"
-          btnText="Download traits"
-          download
         />
+        <Button link="/assets/assets_png.zip" text="Download traits" download />
       </PageHeader>
 
       <PageContent>

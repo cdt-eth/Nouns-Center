@@ -4,11 +4,12 @@ import Header from "../components/Header";
 import projects from "../api/projects.json";
 import XSmall from "../components/Project/XSmall";
 import Title from "../components/Title";
-import SubheaderBodyButton from "../components/SubheaderBodyButton";
+import Subheader from "../components/Subheader";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import PageContent from "../components/Layout/PageContent";
 import PageHeader from "../components/Layout/PageHeader";
+import Button from "../components/common/Button";
 
 const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -84,11 +85,13 @@ const Projects = () => {
       <PageHeader>
         <Header title="Projects | Nouns Center" />
         <Title title="Projects" />
-        <SubheaderBodyButton
+        <Subheader
           title={`${filteredProjects.length} ${projectsText}`}
           body="Here's a comprehensive list of all the projects in the NounsDAO ecosystem. If you don't see your project here and would like to add it, click the button to have it added to the backlog. The site is updated with new projects once a week."
-          btnLink="https://www.addressform.io/form/9e6bc6c2-0f0d-4420-b66e-0d416a5fe73a"
-          btnText="Submit your project"
+        />
+        <Button
+          link="https://www.addressform.io/form/9e6bc6c2-0f0d-4420-b66e-0d416a5fe73a"
+          text="Submit your project"
         />
       </PageHeader>
       <PageContent>

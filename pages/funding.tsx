@@ -1,9 +1,10 @@
 import React from "react";
+import Button from "../components/common/Button";
 import Header from "../components/Header";
 import PageContent from "../components/Layout/PageContent";
 import PageHeader from "../components/Layout/PageHeader";
 import Table from "../components/nouners/Table";
-import SubheaderBodyButton from "../components/SubheaderBodyButton";
+import Subheader from "../components/Subheader";
 import Title from "../components/Title";
 
 const twentytwoNotionPage = "ac22114a6c004bafa500e2d824e32dc3";
@@ -41,13 +42,15 @@ const Funding = ({ grantsData }) => {
         <Header title="Funding | Nouns Center" />
         <Title title="Funding" />
 
-        <SubheaderBodyButton
+        <Subheader
           title="Small Grants &#38; Reto Funding"
           body="A list of all projects &#38; creators who have either been given a
           grant from NounsDAO or received retroactive funding for proliferating
           Nouns."
-          btnLink="https://discord.com/channels/849745721544146955/903077530502828092"
-          btnText="Request funding"
+        />
+        <Button
+          text="Request funding"
+          link="https://discord.com/channels/849745721544146955/903077530502828092"
         />
       </PageHeader>
 

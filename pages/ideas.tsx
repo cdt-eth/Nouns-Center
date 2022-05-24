@@ -65,6 +65,7 @@ const ideas = () => {
             {/* <h3 className="text-2xl pt-2 pb-4 text-nouns sm:text-center leading-6 font-medium text-black dark:xs:text-white dark:sm:text-black">
               The Idea Garden
             </h3> */}
+
             <div className="grid sm:grid-cols-1 gap-x-6">
               {ideasGroup.map((idea) => (
                 <IdeaCard
