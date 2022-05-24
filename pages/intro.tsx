@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import SubheaderBodyButton from "../components/SubheaderBodyButton";
 import Title from "../components/Title";
 import { NotionRenderer } from "react-notion";
+import PageContent from "../components/Layout/PageContent";
+import PageHeader from "../components/Layout/PageHeader";
 
 const introToNounsNotionPage = "90485892d0c54ef1be05abf0ecfc18da";
 
@@ -34,21 +36,25 @@ export async function getStaticProps() {
 
 const Intro = ({ docsData }) => {
   return docsData ? (
-    <div>
-      <Header title="Intro | Nouns Center" />
-      <Title title="Intro" />
+    <>
+      <PageHeader>
+        <Header title="Intro | Nouns Center" />
+        <Title title="Intro" />
 
-      <SubheaderBodyButton
-        title="A Brief Introduction to Nouns"
-        body="If you ever wanted to know what Nouns is all about, this is a great place to start."
-        btnLink="https://nouns.notion.site/Explore-Nouns-a2a9dceeb1d54e10b9cbf3f931c2266f"
-        btnText="More info"
-      />
+        <SubheaderBodyButton
+          title="A Brief Introduction to Nouns"
+          body="If you ever wanted to know what Nouns is all about, this is a great place to start."
+          btnLink="https://nouns.notion.site/Explore-Nouns-a2a9dceeb1d54e10b9cbf3f931c2266f"
+          btnText="More info"
+        />
+      </PageHeader>
 
-      <div className="introNouns rounded-lg py-4">
-        <NotionRenderer blockMap={docsData} />
-      </div>
-    </div>
+      <PageContent>
+        <div className="introNouns">
+          <NotionRenderer blockMap={docsData} />
+        </div>
+      </PageContent>
+    </>
   ) : (
     <></>
   );

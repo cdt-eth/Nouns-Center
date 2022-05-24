@@ -7,6 +7,8 @@ import Title from "../components/Title";
 import SubheaderBodyButton from "../components/SubheaderBodyButton";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import PageContent from "../components/Layout/PageContent";
+import PageHeader from "../components/Layout/PageHeader";
 
 const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -79,20 +81,20 @@ const Projects = () => {
 
   return (
     <div className="mb-16">
-      <Header title="Projects | Nouns Center" />
-      <Title title="Projects" />
-
-      <SubheaderBodyButton
-        title={`${filteredProjects.length} ${projectsText}`}
-        body="Here's a comprehensive list of all the projects in the NounsDAO ecosystem. If you don't see your project here and would like to add it, click the button to have it added to the backlog. The site is updated with new projects once a week."
-        btnLink="https://www.addressform.io/form/9e6bc6c2-0f0d-4420-b66e-0d416a5fe73a"
-        btnText="Submit your project"
-      />
-
-      <div className="mb-4">
-        <div className="">
+      <PageHeader>
+        <Header title="Projects | Nouns Center" />
+        <Title title="Projects" />
+        <SubheaderBodyButton
+          title={`${filteredProjects.length} ${projectsText}`}
+          body="Here's a comprehensive list of all the projects in the NounsDAO ecosystem. If you don't see your project here and would like to add it, click the button to have it added to the backlog. The site is updated with new projects once a week."
+          btnLink="https://www.addressform.io/form/9e6bc6c2-0f0d-4420-b66e-0d416a5fe73a"
+          btnText="Submit your project"
+        />
+      </PageHeader>
+      <PageContent>
+        <div className="mb-4">
           <fieldset className="mt-2 text-black dark:text-white ">
-            <div className="xs:grid xs:grid-cols-2 sm:flex sm:items-center sm:space-y-0 sm:space-x-10 sm:text-base sm:justify-center sm:mb-2">
+            <div className="xs:grid xs:grid-cols-2 sm:grid-cols-4 sm:items-center sm:pl-24 sm:text-base sm:justify-center sm:mb-2">
               {categories.map((category) => (
                 <div
                   key={category.id}
@@ -108,7 +110,7 @@ const Projects = () => {
                         ? category.id === "all"
                         : category.id === query.category
                     }
-                    className="focus:ring-nouns-earth-blue h-4 w-4 text-nouns-earth-blue border-gray-300"
+                    className="focus:ring-blue-base h-4 w-4 text-blue-base border-gray-300"
                   />
                   <label
                     htmlFor={category.id}
@@ -121,72 +123,72 @@ const Projects = () => {
             </div>
           </fieldset>
         </div>
-      </div>
 
-      {/* <div className="grid grid-cols-2 gap-x-4 gap-y-8 xs:grid-cols-3  sm:grid-cols-4 sm:gap-x-6 lg:grid-cols-6 xl:gap-x-8"> */}
-      <div className="">
-        <>
-          {isLoading ? (
-            <h3>loading...</h3>
-          ) : (
-            <div className="xs:hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {filteredProjects &&
-                filteredProjects.map((project) => (
-                  <XSmall key={project.title} project={project} />
-                ))}
-            </div>
-          )}
-        </>
-        <>
-          {isLoading ? (
-            <h3>loading...</h3>
-          ) : (
-            <ul
-              role="list"
-              className="grid sm:hidden rounded-xl p-4 divide-y divide-gray-200 "
-            >
-              {filteredProjects.map((project) => (
-                // <Link
-                //   href={
-                //     "/projects/" +
-                //     project.title.replace(/\s+/g, "-").toLowerCase()
-                //   }
-                //   passHref
-                //   key={project.title}
-                // >
-                <a
-                  key={project.title}
-                  href={project.url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <li key={project.title} className="py-4 flex">
-                    <img
-                      className="h-24 w-full max-w-[6rem] object-cover rounded-md"
-                      src={`/projects/${project.image}`}
-                      alt={project.image}
-                    />
-                    <div className="ml-3">
-                      <p className="text-lg font-medium text-gray-900 dark:text-white text-nouns tracking-wide">
-                        {project.title}
-                      </p>
+        {/* <div className="grid grid-cols-2 gap-x-4 gap-y-8 xs:grid-cols-3  sm:grid-cols-4 sm:gap-x-6 lg:grid-cols-6 xl:gap-x-8"> */}
+        <div className="">
+          <>
+            {isLoading ? (
+              <h3>loading...</h3>
+            ) : (
+              <div className="xs:hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {filteredProjects &&
+                  filteredProjects.map((project) => (
+                    <XSmall key={project.title} project={project} />
+                  ))}
+              </div>
+            )}
+          </>
+          <>
+            {isLoading ? (
+              <h3>loading...</h3>
+            ) : (
+              <ul
+                role="list"
+                className="grid sm:hidden rounded-xl divide-y divide-gray-200 "
+              >
+                {filteredProjects.map((project) => (
+                  // <Link
+                  //   href={
+                  //     "/projects/" +
+                  //     project.title.replace(/\s+/g, "-").toLowerCase()
+                  //   }
+                  //   passHref
+                  //   key={project.title}
+                  // >
+                  <a
+                    key={project.title}
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <li key={project.title} className="py-4 flex">
+                      <img
+                        className="h-24 w-full max-w-[6rem] object-cover rounded-md"
+                        src={`/projects/${project.image}`}
+                        alt={project.image}
+                      />
+                      <div className="ml-3">
+                        <p className="text-lg font-medium text-gray-900 dark:text-white text-nouns tracking-wide">
+                          {project.title}
+                        </p>
 
-                      {/* <p className="text-sm text-gray-500 w-1/3">
+                        {/* <p className="text-sm text-gray-500 w-1/3">
                     {project.category.join(" • ")}
                   </p> */}
 
-                      <p className="text-gray-500 dark:text-white text-sm line-clamp-3">
-                        {project.description}
-                      </p>
-                    </div>
-                  </li>
-                </a>
-                // </Link>
-              ))}
-            </ul>
-          )}
-        </>
-      </div>
+                        <p className="text-gray-500 dark:text-white text-sm line-clamp-3">
+                          {project.description}
+                        </p>
+                      </div>
+                    </li>
+                  </a>
+                  // </Link>
+                ))}
+              </ul>
+            )}
+          </>
+        </div>
+      </PageContent>
     </div>
   );
 };
