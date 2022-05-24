@@ -37,7 +37,7 @@ const Hero = () => {
 
               <div className="mt-6 sm:mb-14" id="autocomplete"></div>
 
-              <div className="mt-5 sm:mx-auto xs:grid grid-cols-2 xs:gap-3 sm:gap-8 sm:flex sm:justify-center md:mt-8">
+              <div className="mt-5 sm:mx-auto grid grid-cols-2  xs:gap-3 sm:gap-8 sm:justify-center md:mt-8 lg:grid-flow-col">
                 <NounishButton
                   text="Intro to Nouns"
                   image="intro.png"
