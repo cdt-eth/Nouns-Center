@@ -11,8 +11,8 @@ export default function Layout({ children }) {
     <>
       <Navigation />
 
-      <div className="xs:px-6 xs:pt-4 xs:pb-12 sm:py-12 sm:px-10 flex flex-col flex-1 flex-between h-auto text-black bg-grey-light dark:bg-black dark:text-white sm:max-w-5xl m-auto">
-        <main className="pb-10 w-full ">
+      <div className=" flex flex-col flex-1 flex-between h-auto text-black dark:bg-black dark:text-white m-auto">
+        <main className="pb-10 w-full">
           {asPath === "/" && (
             <>
               <video
@@ -35,13 +35,12 @@ export default function Layout({ children }) {
               <div className="bg-gradient"></div>
               <div className="bg-gradient2"></div>
               <div className="bg-gradient3"></div>
-              {/* <div className="bg-gradient4"></div> */}
             </>
           )}
+
           {children}
         </main>
 
-        {/* {asPath !== "/" && ( */}
         {/* {asPath !== "/" && (
           <>
             <Divider />

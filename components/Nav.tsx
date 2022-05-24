@@ -11,7 +11,7 @@ function classNames(...classes) {
 
 const Nav = ({ setSidebarOpen }) => {
   return (
-    <div className="flex flex-col flex-grow  py-5 pb-4 bg-grey-base dark:bg-nouns-bg-darkgrey overflow-y-auto">
+    <div className="flex flex-col flex-grow  py-5 pb-4 bg-grey-base dark:bg-nouns-bg-darkgrey overflow-y-auto ">
       <Link passHref href="/">
         <div
           className="sm:cursor-pointer items-center flex-shrink-0 px-4"

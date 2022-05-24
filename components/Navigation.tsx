@@ -80,7 +80,7 @@ const Navigation = () => {
       </Transition.Root>
 
       <div className="flex flex-row flex-1 pt-5 ">
-        <div className="sticky top-0 xs:px-3 sm:px-6 z-40 flex items-center justify-between w-full">
+        <div className="sticky top-0 xs:px-4 sm:px-6 z-40 flex items-center justify-between w-full">
           <div className="w-1/3 flex self-center">
             <button
               type="button"
@@ -94,7 +94,7 @@ const Navigation = () => {
             </button>
           </div>
           <Link passHref href="/">
-            <div className="flex self-center  items-center cursor-pointer text-nouns  transition text-nouns-earth-blue hover:text-nouns-bg-blue dark:text-white dark:hover:text-nouns-earth-blue xs:text-xl sm:text-3xl gap-2">
+            <div className="flex self-center  items-center cursor-pointer text-nouns  transition text-blue-base hover:text-nouns-bg-blue dark:text-white dark:hover:text-blue-base xs:text-xl sm:text-3xl gap-2">
               {/*  eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/earth.gif"
