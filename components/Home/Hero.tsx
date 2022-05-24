@@ -71,7 +71,7 @@ const Hero = () => {
           </main>
         </div>
       </div>
-      <div className="relative text-black sm:text-white dark:text-white font-medium gap-2 items-center w-full flex flex-col text-center">
+      <div className="relative xs:px-6 sm:px-0 text-black sm:text-white dark:text-white font-medium gap-2 items-center w-full flex flex-col text-center">
         <p>
           Nouns Center serves as the knowledge center &#38; resource hub for
           Nouns DAO
