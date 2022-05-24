@@ -2,7 +2,7 @@ import React from "react";
 
 const Podcasts = () => {
   return (
-    <div className="rounded-lg text-black overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid xs:grid-cols-1 sm:grid-cols-2 sm:gap-3">
+    <div className=" overflow-hidden divide-y divide-gray-200 sm:divide-y-0 sm:grid xs:grid-cols-1 sm:grid-cols-2 sm:gap-3">
       <iframe
         height="200px"
         width="100%"
@@ -66,6 +66,30 @@ const Podcasts = () => {
         scrolling="no"
         seamless
         src="https://player.cohostpodcasting.com/26dbba20-e6a1-4b05-8674-71abe6cc92e1/e7acaefc-0a31-4d6a-9485-0a49b6527e73"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/5230ee9d-23f0-4040-bcbf-616ae600293a/435ddab0-9901-42fe-b18e-d1b2a46a1187"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/1921c7ae-da93-446b-a949-1fa46a7924ee/df5e52ff-e87e-4ef8-ba1b-0f9d354daf5d"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/588480fb-1c00-4250-b331-966e66039b1d/c76aa9e1-1532-4499-8aec-f69efcfe3427"
       ></iframe>
     </div>
   );
