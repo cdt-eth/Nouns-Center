@@ -4,6 +4,8 @@ import Title from "../components/Title";
 
 import { NotionRenderer } from "react-notion";
 import SubheaderBodyButton from "../components/SubheaderBodyButton";
+import PageHeader from "../components/Layout/PageHeader";
+import PageContent from "../components/Layout/PageContent";
 
 const twentytwoOnboardingNotionPage = "5d9bc001ab1c457f9f0c4910be72622d";
 
@@ -21,21 +23,25 @@ export async function getStaticProps() {
 
 const Nouners = ({ onboardData }) => {
   return (
-    <div>
-      <Header title="Nouners | Nouns Center" />
-      <Title title="Nouners" />
+    <>
+      <PageHeader>
+        <Header title="Nouners | Nouns Center" />
+        <Title title="Nouners" />
 
-      <SubheaderBodyButton
-        title="So you bought a Noun, now what?"
-        body="Here's a high-level overview, written by Noun 22, of everything you need to know directly about acquiring a Noun. First things first, click that button and follow the instructions to verify your role as a Nouner."
-        btnLink="https://discord.com/channels/849745721544146955/898686706667126794"
-        btnText="Type !join in #verify"
-      />
+        <SubheaderBodyButton
+          title="So you bought a Noun, now what?"
+          body="Here's a high-level overview, written by Noun 22, of everything you need to know directly about acquiring a Noun. First things first, click that button and follow the instructions to verify your role as a Nouner."
+          btnLink="https://discord.com/channels/849745721544146955/974425425239494747"
+          btnText="Collabland Join"
+        />
+      </PageHeader>
 
-      <div className=" introNouns nouners rounded-lg py-4">
-        <NotionRenderer blockMap={onboardData} />
-      </div>
-    </div>
+      <PageContent>
+        <div className=" introNouns nouners">
+          <NotionRenderer blockMap={onboardData} />
+        </div>
+      </PageContent>
+    </>
   );
 };
 

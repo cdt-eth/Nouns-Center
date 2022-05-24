@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
+import PageContent from "../components/Layout/PageContent";
+import PageHeader from "../components/Layout/PageHeader";
 import Table from "../components/nouners/Table";
 import SubheaderBodyButton from "../components/SubheaderBodyButton";
 import Title from "../components/Title";
@@ -34,21 +36,25 @@ export async function getStaticProps() {
 
 const Funding = ({ grantsData }) => {
   return grantsData ? (
-    <div>
-      <Header title="Funding | Nouns Center" />
-      <Title title="Funding" />
+    <>
+      <PageHeader>
+        <Header title="Funding | Nouns Center" />
+        <Title title="Funding" />
 
-      <SubheaderBodyButton
-        title="Small Grants &#38; Reto Funding"
-        body="A list of all projects &#38; creators who have either been given a
+        <SubheaderBodyButton
+          title="Small Grants &#38; Reto Funding"
+          body="A list of all projects &#38; creators who have either been given a
           grant from NounsDAO or received retroactive funding for proliferating
           Nouns."
-        btnLink="https://discord.com/channels/849745721544146955/903077530502828092"
-        btnText="Request funding"
-      />
+          btnLink="https://discord.com/channels/849745721544146955/903077530502828092"
+          btnText="Request funding"
+        />
+      </PageHeader>
 
-      <Table grants={grantsData} />
-    </div>
+      <PageContent>
+        <Table grants={grantsData} />
+      </PageContent>
+    </>
   ) : (
     <></>
   );

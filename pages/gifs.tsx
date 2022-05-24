@@ -6,28 +6,34 @@ import Title from "../components/Title";
 import Masonry from "react-masonry-css";
 
 import gifs from "../api/gifs.json";
+import PageHeader from "../components/Layout/PageHeader";
+import PageContent from "../components/Layout/PageContent";
 
 const Gifs = () => {
   return (
-    <div>
-      <Header title="Gifs | Nouns Center" />
-      <Title title="Gifs" />
+    <>
+      <PageHeader>
+        <Header title="Gifs | Nouns Center" />
+        <Title title="Gifs" />
+      </PageHeader>
 
-      <Masonry
-        breakpointCols={{ default: 4, 800: 2 }}
-        className="my-masonry-grid"
-        columnClassName="my-masonry-grid_column"
-      >
-        {gifs.map((g) => (
-          <img
-            key={uuidv4()}
-            className="mb-6 rounded-lg"
-            src={`/memes/gifs/${g.img}`}
-            alt="gif"
-          />
-        ))}
-      </Masonry>
-    </div>
+      <PageContent>
+        <Masonry
+          breakpointCols={{ default: 4, 800: 2 }}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+          {gifs.map((g) => (
+            <img
+              key={uuidv4()}
+              className="mb-6 rounded-lg"
+              src={`/memes/gifs/${g.img}`}
+              alt="gif"
+            />
+          ))}
+        </Masonry>
+      </PageContent>
+    </>
   );
 };
 
