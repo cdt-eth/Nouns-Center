@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Link from "next/link";
-import ButtonGroup from "./ButtonGroup";
 import algoliasearch from "algoliasearch/lite";
 import { autocomplete, getAlgoliaResults } from "@algolia/autocomplete-js";
 import "@algolia/autocomplete-theme-classic";
@@ -71,6 +69,7 @@ const Hero = () => {
           </main>
         </div>
       </div>
+
       <div className="relative xs:px-6 sm:px-0 text-black sm:text-white  font-medium gap-2 items-center w-full flex flex-col text-center">
         <p>
           Nouns Center serves as the knowledge center &#38; resource hub for
