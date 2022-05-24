@@ -457,3 +457,6 @@ h6 {
   box-shadow: none !important;
   outline: 4px solid #ebebeb;
 }
+.vertical-timeline {
+  width: 100% !important;
+}
