@@ -29,7 +29,7 @@ const Hero = () => {
     <>
       <div className="relative overflow-hidden flex justify-around tracking-wider pt-10">
         <div className="relative pb-16 sm:pb-24 ">
-          <main className="mx-auto sm:px-4 tracking-wider text-black sm:text-white dark:text-white ">
+          <main className="mx-auto sm:px-4 tracking-wider text-black sm:text-white ">
             <div className="text-center flex flex-col justify-between h-full xs:px-6 sm:px-0">
               <h1 className=" font-extrabold text-5xl md:text-6xl text-nouns tracking-wider flex gap-4 justify-center">
                 Welcome to Nouns Center
@@ -71,7 +71,7 @@ const Hero = () => {
           </main>
         </div>
       </div>
-      <div className="relative xs:px-6 sm:px-0 text-black sm:text-white dark:text-white font-medium gap-2 items-center w-full flex flex-col text-center">
+      <div className="relative xs:px-6 sm:px-0 text-black sm:text-white  font-medium gap-2 items-center w-full flex flex-col text-center">
         <p>
           Nouns Center serves as the knowledge center &#38; resource hub for
           Nouns DAO
@@ -84,7 +84,7 @@ const Hero = () => {
             rel="noreferrer"
           >
             <svg
-              className="w-6 h-8 fill-black sm:fill-white dark:fill-white hover:fill-gray-400 transition cursor-pointer"
+              className="w-6 h-8 fill-black sm:fill-white  hover:fill-gray-400 transition cursor-pointer"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
             >
@@ -95,7 +95,7 @@ const Hero = () => {
           {/* Discord */}
           <a href="https://discord.gg/nouns" target="_blank" rel="noreferrer">
             <svg
-              className="h-8 w-7 fill-black sm:fill-white dark:fill-white hover:fill-gray-400 transition cursor-pointer"
+              className="h-8 w-7 fill-black sm:fill-white  hover:fill-gray-400 transition cursor-pointer"
               viewBox="0 0 100 100"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +124,7 @@ const Hero = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 -1 104 106"
-              className="h-6 w-6 fill-black sm:fill-white dark:fill-white hover:fill-gray-400 transition cursor-pointer"
+              className="h-6 w-6 fill-black sm:fill-white  hover:fill-gray-400 transition cursor-pointer"
             >
               <title>Discourse_logo</title>
               <g id="Layer_2">
