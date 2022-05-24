@@ -34,7 +34,6 @@ const Talent = () => {
             <li
               key={person.skills}
               className="col-span-1  bg-white rounded-lg shadow-md divide-y divide-gray-200 flex flex-col justify-between"
-              // className="col-span-1  bg-grey-light dark:bg-white rounded-lg shadow divide-y divide-gray-200 flex flex-col justify-between"
             >
               <div className="w-full flex items-center justify-between p-6 space-x-6 ">
                 <div className="flex-1 ">

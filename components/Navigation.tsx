@@ -33,7 +33,7 @@ const Navigation = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-grey-light bg-opacity-95 dark:bg-black dark:bg-opacity-90" />
+            <Dialog.Overlay className="fixed inset-0 bg-grey-light bg-opacity-95 " />
           </Transition.Child>
           <Transition.Child
             as={Fragment}
@@ -57,14 +57,11 @@ const Navigation = () => {
                 <div className="absolute top-0 right-0 -mr-12 pt-2">
                   <button
                     type="button"
-                    className="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset ring-black dark:ring-white focus:ring-black dark:focus:ring-white"
+                    className="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset ring-black focus:ring-black"
                     onClick={() => setSidebarOpen(false)}
                   >
                     <span className="sr-only">Close sidebar</span>
-                    <XIcon
-                      className="h-6 w-6 black-text dark:text-white"
-                      aria-hidden="true"
-                    />
+                    <XIcon className="h-6 w-6 black-text " aria-hidden="true" />
                   </button>
                 </div>
               </Transition.Child>
@@ -84,8 +81,8 @@ const Navigation = () => {
           <div className="w-1/3 flex self-center">
             <button
               type="button"
-              className={`-mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-900 dark:text-white hover:text-gray-500 focus:outline-none ${
-                asPath === "/" && "text-black sm:text-white dark:text-white"
+              className={`-mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-900  hover:text-gray-500 focus:outline-none ${
+                asPath === "/" && "text-black sm:text-white "
               } `}
               onClick={() => setSidebarOpen(true)}
             >
@@ -94,7 +91,7 @@ const Navigation = () => {
             </button>
           </div>
           <Link passHref href="/">
-            <div className="flex self-center  items-center cursor-pointer text-nouns  transition text-blue-base hover:text-nouns-bg-blue dark:text-white dark:hover:text-blue-base xs:text-xl sm:text-3xl gap-2">
+            <div className="flex self-center  items-center cursor-pointer text-nouns  transition text-blue-base hover:text-nouns-bg-blue  dark:hover:text-blue-base xs:text-xl sm:text-3xl gap-2">
               {/*  eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/earth.gif"
@@ -104,11 +101,11 @@ const Navigation = () => {
             </div>
           </Link>
           <div className="w-1/3 flex items-center justify-end gap-3">
-            <DocSearch
+            {/* <DocSearch
               appId="PGIH0KF5F5"
               indexName="nc"
               apiKey="faf1987de1d83c02e82fbf9bfd7ca5a9"
-            />
+            /> */}
             {/* {/* // apiKey="567090186f67f33178636e2281fd3655"  */}
             {/* <DocSearch
               appId="R2IYF7ETH7"

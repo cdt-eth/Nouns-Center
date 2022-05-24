@@ -11,7 +11,7 @@ export default function Layout({ children }) {
     <>
       <Navigation />
 
-      <div className=" flex flex-col flex-1 flex-between h-auto text-black dark:bg-black dark:text-white m-auto">
+      <div className=" flex flex-col flex-1 flex-between h-auto text-black m-auto">
         <main className="pb-10 w-full">
           {asPath === "/" && (
             <>

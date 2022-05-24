@@ -34,7 +34,7 @@ const Assets = () => {
               {assets.map((asset) => (
                 <li key={uuidv4()}>
                   <div className="space-y-4">
-                    <p className="dark:text-white font-medium text-lg text-nouns tracking-wide">
+                    <p className=" font-medium text-lg text-nouns tracking-wide">
                       {asset.title}
                     </p>
                     <div className="aspect-w-3 aspect-h-2">
@@ -49,9 +49,7 @@ const Assets = () => {
                       <div className="leading-6 font-medium space-y-1 flex  justify-between items-start">
                         <a
                           type="button"
-                          className="inline-flex sm:cursor-pointer items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md 
-                        
-                        text-black dark:text-white  bg-gray-200 focus:ring-gray-200 hover:bg-grey-base dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue 
+                          className="inline-flex sm:cursor-pointer items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md bg-blue-base text-white focus:ring-gray-200 hover:bg-grey-base 
                         "
                           download={asset.download}
                           href={

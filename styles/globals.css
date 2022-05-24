@@ -4,30 +4,30 @@
 @tailwind components;
 @layer components {
   .notion {
-    @apply text-black dark:text-white caret-black dark:caret-white;
+    @apply text-black  caret-black dark:caret-white;
   }
   .notion li {
-    @apply text-black dark:text-white;
+    @apply text-black;
   }
   .notionNotes .notion li {
-    @apply text-black dark:text-white;
+    @apply text-black;
   }
   .introNouns {
-    @apply text-black dark:text-white;
+    @apply text-black;
   }
   .introNouns .notion-h1,
   .notion-h2,
   .notion-h3 {
-    @apply text-black dark:text-white;
+    @apply text-black;
   }
   .introNouns .notion-text {
-    @apply text-black dark:text-white;
+    @apply text-black;
   }
   .introNouns .notion-row {
-    @apply text-black dark:text-white;
+    @apply text-black;
   }
   .introNouns .notion-callout-text {
-    @apply text-black dark:text-white;
+    @apply text-black;
   }
 
   .bg-gradient3 {

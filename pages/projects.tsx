@@ -114,7 +114,7 @@ const Projects = () => {
                   />
                   <label
                     htmlFor={category.id}
-                    className="xs:ml-1.5 sm:ml-3 block text-sm font-medium text-black dark:text-white"
+                    className="xs:ml-1.5 sm:ml-3 block text-sm font-medium text-black "
                   >
                     {category.title}
                   </label>
