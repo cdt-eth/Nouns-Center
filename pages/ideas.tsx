@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import IdeaCard from "../components/ideas/IdeaCard";
 import Title from "../components/Title";
 import { v4 as uuidv4 } from "uuid";
+import PageHeader from "../components/Layout/PageHeader";
+import PageContent from "../components/Layout/PageContent";
 
 const ideas = () => {
   const ideasGroup = [
@@ -51,30 +53,34 @@ const ideas = () => {
   ];
 
   return (
-    <div>
-      <Header title="Ideas | Nouns Center" />
-      <Title title="Ideas" />
+    <>
+      <PageHeader>
+        <Header title="Ideas | Nouns Center" />
+        <Title title="Ideas" />
+      </PageHeader>
 
-      <div className="shadow-md rounded-lg sm:bg-gray-100 dark:sm:bg-gray-200">
-        <div className="px-4 py-5 sm:p-6">
-          <h3 className="text-2xl pt-2 pb-4 text-nouns sm:text-center leading-6 font-medium text-black dark:xs:text-white dark:sm:text-black">
-            The Idea Garden
-          </h3>
-          <div className="grid sm:grid-cols-2 gap-x-6 ">
-            {ideasGroup.map((idea) => (
-              <IdeaCard
-                key={uuidv4()}
-                title={idea.title}
-                body={idea.body}
-                submittedBy={idea.submittedBy}
-                date={idea.date}
-                votes={idea.votes}
-              />
-            ))}
+      <PageContent>
+        <div>
+          <div>
+            {/* <h3 className="text-2xl pt-2 pb-4 text-nouns sm:text-center leading-6 font-medium text-black dark:xs:text-white dark:sm:text-black">
+              The Idea Garden
+            </h3> */}
+            <div className="grid sm:grid-cols-1 gap-x-6">
+              {ideasGroup.map((idea) => (
+                <IdeaCard
+                  key={uuidv4()}
+                  title={idea.title}
+                  body={idea.body}
+                  submittedBy={idea.submittedBy}
+                  date={idea.date}
+                  votes={idea.votes}
+                />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </PageContent>
+    </>
   );
 };
 
