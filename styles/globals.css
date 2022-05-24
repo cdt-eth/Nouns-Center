@@ -31,7 +31,7 @@
   }
 
   .bg-gradient3 {
-    @apply bg-white sm:bg-opacity-40 dark:bg-black dark:bg-opacity-10;
+    @apply bg-black sm:bg-opacity-100 dark:bg-black dark:bg-opacity-10;
   }
   .DocSearch-Container {
     @apply bg-white bg-opacity-40 dark:bg-black dark:bg-opacity-10 !important;
@@ -133,14 +133,11 @@ h6 {
   );
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.65) 5%,
-    rgba(0, 0, 0, 0.2) 50%
+    rgba(0, 0, 0, 0.5) 5%,
+    rgba(0, 0, 0, 0.05) 50%
   );
 }
 
-.gradient2:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
 .gradient:hover {
   background-image: linear-gradient(0deg, rgb(0 0 0 / 85%), transparent);
 }
@@ -326,27 +323,6 @@ h6 {
   min-width: 100%;
   min-height: 100%;
   opacity: 95%;
-  background: linear-gradient(to right, #000000, #151515, #151515);
-  background-image: radial-gradient(
-    farthest-side at 100% 21%,
-    transparent,
-    #151515
-  );
-  background: linear-gradient(
-      217deg,
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
-  background: linear-gradient(
-      267deg,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0) 70.71%
-    ),
-    linear-gradient(127deg, rgba(0, 0, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 255, 0) 70.71%);
-
   background: linear-gradient(
       -53deg,
       rgba(0, 0, 0, 0.8),
@@ -402,13 +378,17 @@ h6 {
     rgba(0, 0, 0, 0.8)
   );
 }
-.bg-gradient3 {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 60%;
+@media (min-width: 640px) {
+  .bg-gradient3 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: #292929;
+    background: black;
+    opacity: 75%;
+  }
 }
 
 .aa-Autocomplete {
@@ -473,7 +453,6 @@ h6 {
 .vertical-timeline.vertical-timeline--two-columns:before.vertical-timeline:before {
   background: #ebebeb !important;
 }
-
 .vertical-timeline-element-icon {
   box-shadow: none !important;
   outline: 4px solid #ebebeb;
