@@ -13,7 +13,7 @@
     "imageUrl": "github.png",
     "bio": "Official GitHub of the Nouns Foundation.",
     "url": "https://github.com/nounsDAO",
-    "btnText": "Read More",
+    "btnText": "Go to Github",
     "notion": false,
     "notionId": ""
   },
@@ -49,7 +49,7 @@
     "imageUrl": "discussions.png",
     "bio": "Ask technical questions you're wondering about, share ideas, or engage with other community members.",
     "url": "https://github.com/nounsDAO/nouns-monorepo/discussions",
-    "btnText": "Read More",
+    "btnText": "View FAQs",
     "notion": false,
     "notionId": ""
   }
