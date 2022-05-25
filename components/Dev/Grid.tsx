@@ -8,16 +8,18 @@ interface ResourceProps {
   bio: string;
   url: string;
   btnText: string;
+  notion: boolean;
+  notionId: string;
 }
 
 const Grid = () => {
   return (
-    <div className="bg-white text-black rounded-lg">
-      <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-14">
+    <div className="rounded-lg">
+      <div className="mx-auto ">
         <div className="devGrid">
           <ul
             role="list"
-            className="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0 grid xs:grid-rows-1 sm:grid-rows-3  sm:grid-flow-col gap-4"
+            className="space-y-12 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0 grid xs:grid-rows-1 sm:grid-rows-3  sm:grid-flow-col gap-4"
           >
             {devResources.map((resource: ResourceProps) => (
               <li key={resource.name} className="sm:py-8">
@@ -35,17 +37,20 @@ const Grid = () => {
 
                 <div className="mt-4">
                   <div className="text-base">
-                    <p className="text-gray-500">{resource.bio}</p>
+                    <p className="min-h-[90px]">{resource.bio}</p>
                   </div>
-                  <a
-                    href={resource.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex capitalize items-center justify-center rounded-md border border-transparent  px-4 py-2  mt-2 text-sm font-medium shadow-sm  transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto
-                    
-                    text-black dark:text-white bg-gray-200  focus:ring-gray-200 hover:bg-grey-base dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue
 
-                    "
+                  <a
+                    href={
+                      resource.notion
+                        ? "/dev/" +
+                          resource.name.replace(/\s+/g, "-").toLowerCase()
+                        : resource.url
+                    }
+                    target={resource.notion ? "_self" : "_blank"}
+                    rel="noreferrer"
+                    key={resource.name}
+                    className="inline-flex capitalize items-center justify-center rounded-md border border-transparent  px-4 py-2  mt-2 text-sm font-medium shadow-sm  transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto  bg-blue-base text-white focus:ring-gray-200 hover:bg-opacity-80"
                   >
                     {resource.btnText}
                   </a>

@@ -60,7 +60,7 @@ const ProjectDetails = ({ guideData, docsData }) => {
   return (
     <PageContent>
       {notionId ? (
-        <div className="introNouns">
+        <div className="introNouns devNotion">
           <NotionRenderer blockMap={docsData} />
         </div>
       ) : (
