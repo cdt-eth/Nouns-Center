@@ -4,10 +4,14 @@
 @tailwind components;
 @layer components {
   .notion {
-    @apply text-black  caret-black dark:caret-white;
+    @apply text-black  caret-black;
+  }
+  .notion-text,
+  .notion-code {
+    @apply whitespace-normal;
   }
   .notion li {
-    @apply text-black;
+    @apply text-black whitespace-pre-wrap;
   }
   .notionNotes .notion li {
     @apply text-black;
@@ -459,4 +463,37 @@ h6 {
 }
 .vertical-timeline {
   width: 100% !important;
+}
+
+.devNotion .notion-code {
+  margin-bottom: 25px;
+  background: red;
+  background: #e0d6d4;
+  padding: 34px 16px 32px 32px;
+  overflow-x: auto;
+}
+
+.devNotion .notion-code code {
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: left;
+  font-family: SFMono-Regular, Menlo, Consolas, "PT Mono", "Liberation Mono",
+    Courier, monospace;
+  font-size: 85%;
+  tab-size: 2;
+  min-height: 1em;
+  white-space: pre;
+}
+
+.devNotion table {
+  background: #e0d6d4;
+  table-layout: fixed;
+  width: 100%;
+}
+.devNotion .notion-h2,
+.notion-h3 {
+  margin-top: 45px !important;
+}
+.devNotion .notion-table .notion-td {
+  overflow-wrap: break-word;
 }
