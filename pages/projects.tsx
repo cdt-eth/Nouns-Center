@@ -171,7 +171,7 @@ const Projects = () => {
                         alt={project.image}
                       />
                       <div className="ml-3">
-                        <p className="text-lg font-medium text-gray-900 dark:text-white text-nouns tracking-wide">
+                        <p className="text-lg font-medium text-gray-900  text-nouns tracking-wide">
                           {project.title}
                         </p>
 
@@ -179,7 +179,7 @@ const Projects = () => {
                     {project.category.join(" • ")}
                   </p> */}
 
-                        <p className="text-gray-500 dark:text-white text-sm line-clamp-3">
+                        <p className="text-gray-500 text-sm line-clamp-3">
                           {project.description}
                         </p>
                       </div>
