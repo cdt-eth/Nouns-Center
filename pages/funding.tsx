@@ -125,11 +125,11 @@ const Funding = ({ grantsData }) => {
                       })}{" "}
                       eth {item.distributed} {item.recipients}{" "}
                       {item.recipientType} */}
-                      • Total eth:{" "}
+                      • Total spent:{" "}
                       {item.totalEth.toLocaleString(undefined, {
                         maximumFractionDigits: 2,
-                      })}{" "}
-                      <br />• {item.recipients} {item.recipientType} funded
+                      })}
+                      Ξ <br />• {item.recipients} {item.recipientType} funded
                       <br />
                       <br />
                       {item.tagline}
