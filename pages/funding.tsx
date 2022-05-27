@@ -174,7 +174,7 @@ const Funding = ({ grantsData }) => {
                   </dt>
 
                   <dd className="mt-1 flex flex-col justify-between items-baseline md:block lg:flex font-extrabold">
-                    <div className="items-baseline text-4xl font-semibold">
+                    <div className="items-baseline text-4xl">
                       {item.range}Ξ{" "}
                     </div>
 
