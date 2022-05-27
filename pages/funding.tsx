@@ -83,8 +83,8 @@ const funding = [
     linkText: "Learn more",
     tagline:
       "Resources allocated for the long-term growth of the Nouns project. Larger in scope and undergo more scruntiny.",
-    textColor: "text-[#FD8B5B]",
-    bgColor: "bg-[#FD8B5B]",
+    textColor: "text-[#d63c5e]",
+    bgColor: "bg-[#d63c5e]",
   },
 ];
 function classNames(...classes) {
