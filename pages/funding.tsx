@@ -180,7 +180,6 @@ const Funding = ({ grantsData }) => {
 
                     <div className="pt-3 text-sm flex flex-col gap-1">
                       <div>
-                        •{" "}
                         <span
                           className={`${item.bgColor} text-white px-1 py-px rounded-md`}
                         >
@@ -192,7 +191,6 @@ const Funding = ({ grantsData }) => {
                         funded
                       </div>
                       <div>
-                        • {/*Total spent:{" "} */}
                         <span
                           className={`${item.bgColor} text-white px-1 py-px rounded-md`}
                         >
