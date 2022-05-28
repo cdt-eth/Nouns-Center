@@ -1,5 +1,21 @@
 [
   {
+    "name": "Metamonk",
+    "twitter": "m3tamonk",
+    "discord": "metamonk#0001",
+    "discordId": "496453865399648256",
+    "title": ["developer"],
+    "skills": "Javascript, HTML, CSS"
+  },
+  {
+    "name": "Soondooboop",
+    "twitter": "soondooboop",
+    "discord": "soondooboop#0001",
+    "discordId": "719704406886580266",
+    "title": ["designer"],
+    "skills": "Design, Webflow, Figma"
+  },
+  {
     "name": "Christian",
     "twitter": "cdt_eth",
     "discord": "cdt.eth#3727",
@@ -294,21 +310,5 @@
     "discordId": "798712395341496331",
     "title": ["designer"],
     "skills": "Design, Art, and Creative Direction"
-  },
-  {
-    "name": "Metamonk",
-    "twitter": "m3tamonk",
-    "discord": "metamonk#0001",
-    "discordId": "496453865399648256",
-    "title": ["developer"],
-    "skills": "Javascript, HTML, CSS"
-  },
-  {
-    "name": "Soondooboop",
-    "twitter": "soondooboop",
-    "discord": "soondooboop#0001",
-    "discordId": "719704406886580266",
-    "title": ["designer"],
-    "skills": "Design, Webflow, Figma"
   }
 ]
