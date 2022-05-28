@@ -16,6 +16,70 @@
     "skills": "React, typescript, python, java, aws, solidity, data science, ML"
   },
   {
+    "name": "Brushee",
+    "twitter": "brushee128",
+    "discord": "brushee#8282",
+    "discordId": "919827120665026561",
+    "title": ["Product"],
+    "skills": "Design & Ops"
+  },
+  {
+    "name": "Kiran Cherukuri",
+    "twitter": "neuroswish",
+    "discord": "Kiran#7899",
+    "discordId": "750728425521676308",
+    "title": ["Developer"],
+    "skills": "Solidity, Typescript, React, Design"
+  },
+  {
+    "name": "Woody",
+    "twitter": "supertightwoody",
+    "discord": "SuperTightWoody#3744",
+    "discordId": "756585502391664822",
+    "title": ["Artist"],
+    "skills": "Creative Producer: Music, video, animation, graphic design, !vibes"
+  },
+  {
+    "name": "Matt Downey",
+    "twitter": "mattdowney",
+    "discord": "mattdowney#0001",
+    "discordId": "217472025306857472",
+    "title": ["Designer"],
+    "skills": "Design, Creative Direction, UI, Frontend, E-Commerce"
+  },
+  {
+    "name": "Ben",
+    "twitter": "bkraaus",
+    "discord": "bkraaus#0606",
+    "discordId": "694238277414289588",
+    "title": ["Consultant/PM"],
+    "skills": "Strategy/growth conduct. Product/Marketer. Team Building. Writing. Nounish entrepreneurial."
+  },
+  {
+    "name": "Krel",
+    "twitter": "krel404",
+    "discord": "krel#0404",
+    "discordId": "361204440499486720",
+    "title": ["Designer"],
+    "skills": "Pixel-stuff, UI-stuff, Figma"
+  },
+  {
+    "name": "Jakz",
+    "twitter": "0xJakz",
+    "discord": "Jakz#8841",
+    "discordId": "",
+    "title": ["Developer"],
+    "skills": "Javascript, React, Typescript, Tailwind"
+  },
+  {
+    "name": "Motiondesign.eth",
+    "twitter": "motiondesigneth",
+    "discord": "motiondesigneth#7971",
+    "discordId": "",
+    "title": ["Artist"],
+    "skills": "Animation, VFX, Graphic Arts, Illustration, Motion Design"
+  },
+  {
     "name": "Zeeraffe",
     "twitter": "TheZeeraffe",
     "discord": "zeeraffe#9889",
