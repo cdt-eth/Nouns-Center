@@ -1,18 +1,16 @@
-import Divider from "./Divider";
 import Navigation from "./Navigation";
-import Newsletter from "./Newsletter";
 import { useRouter } from "next/router";
 
 export default function Layout({ children }) {
   const router = useRouter();
-  const { asPath, route, pathname } = router;
+  const { asPath } = router;
 
   return (
     <>
       <Navigation />
 
       <div className=" flex flex-col flex-1 flex-between h-auto text-black m-auto">
-        <main className="pb-10 w-full">
+        <main className="pb-10 w-full DocSearch-content">
           {asPath === "/" && (
             <>
               <video
@@ -40,14 +38,6 @@ export default function Layout({ children }) {
 
           {children}
         </main>
-
-        {/* {asPath !== "/" && (
-          <>
-            <Divider />
-
-            <Newsletter />
-          </>
-        )} */}
       </div>
     </>
   );
