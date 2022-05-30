@@ -65,6 +65,10 @@
       "image": "beet"
     },
     {
+      "name": "Bell",
+      "image": "bell"
+    },
+    {
       "name": "Bigfoot",
       "image": "bigfoot"
     },
@@ -121,6 +125,10 @@
       "image": "calculator"
     },
     {
+      "name": "Calendar",
+      "image": "calendar"
+    },
+    {
       "name": "Camcorder",
       "image": "camcorder"
     },
@@ -175,6 +183,10 @@
     {
       "name": "Cherry",
       "image": "cherry"
+    },
+    {
+      "name": "Chicken",
+      "image": "chicken"
     },
     {
       "name": "Chilli",
@@ -291,6 +303,10 @@
     {
       "name": "Duck",
       "image": "duck"
+    },
+    {
+      "name": "Egg",
+      "image": "egg"
     },
     {
       "name": "Earth",
@@ -823,6 +839,10 @@
     {
       "name": "Trash Can",
       "image": "trashcan"
+    },
+    {
+      "name": "Triangular Ruler ",
+      "image": "ruler-triangular"
     },
     {
       "name": "Turing Machine",
