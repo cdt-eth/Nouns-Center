@@ -45,6 +45,15 @@
     "notionId": ""
   },
   {
+    "name": "Subgraph",
+    "imageUrl": "subgraph.png",
+    "bio": "Subgraph for Nouns proposals & auctions.",
+    "url": "https://thegraph.com/hosted-service/subgraph/nounsdao/nouns-subgraph",
+    "btnText": "Read More",
+    "notion": false,
+    "notionId": ""
+  },
+  {
     "name": "Generate on-chain Noun",
     "imageUrl": "generate.png",
     "bio": "Explore how to generate a pseudo-random noun, fully on-chain, with just two contract calls.",
