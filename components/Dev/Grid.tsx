@@ -19,7 +19,7 @@ const Grid = () => {
         <div className="devGrid">
           <ul
             role="list"
-            className="space-y-12 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0 grid xs:grid-rows-1 sm:grid-rows-3  sm:grid-flow-col gap-4"
+            className="space-y-12 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0 grid xs:grid-cols-1 sm:grid-cols-2  gap-4"
           >
             {devResources.map((resource: ResourceProps) => (
               <li key={resource.name} className="sm:py-8">
@@ -29,7 +29,7 @@ const Grid = () => {
 
                 <div className="w-full flex gap-6 xs:flex-col sm:flex-row">
                   <img
-                    className="object-cover shadow-lg rounded-lg sm:max-w-md  sm:h-52"
+                    className="object-cover shadow-lg w-full rounded-lg sm:max-w-md  sm:h-52"
                     src={`/dev/${resource.imageUrl}`}
                     alt=""
                   />

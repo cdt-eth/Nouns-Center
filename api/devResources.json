@@ -27,7 +27,25 @@
     "notionId": "eb6e3e2c9c5f49feb09b5bad26a6001c"
   },
   {
-    "name": "Generate a random Noun on-chain",
+    "name": "Noun Pics",
+    "imageUrl": "nounpics.png",
+    "bio": "Get a Noun image by ID or a tile of the Nouns owned by an Address or ENS Name, including delegation.",
+    "url": "https://noun.pics/",
+    "btnText": "View API",
+    "notion": false,
+    "notionId": ""
+  },
+  {
+    "name": "Noun API",
+    "imageUrl": "nounapi.png",
+    "bio": "A free service that enables builders to integrate Nouns into their projects with only a url.",
+    "url": "https://noun-api.com/",
+    "btnText": "Read Docs",
+    "notion": false,
+    "notionId": ""
+  },
+  {
+    "name": "Generate on-chain Noun",
     "imageUrl": "generate.png",
     "bio": "Explore how to generate a pseudo-random noun, fully on-chain, with just two contract calls.",
     "url": "https://nouns.notion.site/Generate-a-random-Noun-on-chain-4235479b512741289ede4cd22954cffc",
