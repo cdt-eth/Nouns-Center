@@ -446,10 +446,10 @@ h6 {
   @apply bg-white bg-opacity-90 dark:bg-black dark:bg-opacity-70 !important;
 }
 .vertical-timeline-element-date {
-  @apply text-black dark:text-white;
+  @apply text-black;
 }
 .vertical-timeline-element--work {
-  @apply text-black dark:text-white;
+  @apply text-black;
 }
 .vertical-timeline:before {
   background: #ebebeb !important;
@@ -460,6 +460,7 @@ h6 {
 .vertical-timeline-element-icon {
   box-shadow: none !important;
   outline: 4px solid #ebebeb;
+  border-radius: 50px !important;
 }
 .vertical-timeline {
   width: 100% !important;
