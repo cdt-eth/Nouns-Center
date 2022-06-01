@@ -4,63 +4,54 @@ import Header from "../../components/Header";
 import PageContent from "../../components/Layout/PageContent";
 import PageHeader from "../../components/Layout/PageHeader";
 import Title from "../../components/Title";
-import { CheckIcon, ThumbUpIcon, UserIcon } from "@heroicons/react/solid";
-import { ExternalLinkIcon } from "@heroicons/react/solid";
 import Button from "../../components/common/Button";
 import Subheader from "../../components/Subheader";
 import Link from "../../components/Link";
 import Status from "../../components/common/Status";
 
-const timeline = [
+const props = [
   {
-    id: 1,
-    content: "Applied to",
-    target: "Front End Developer",
-    href: "#",
-    date: "Sep 20",
-    datetime: "2020-09-20",
-    icon: UserIcon,
-    iconBackground: "bg-gray-400",
+    title: "DAO residents",
+    href: "https://nouns.wtf/vote/17",
+    description:
+      "Fund a designer, engineer, and community lead in residency to help push forward new projects.",
+    date: "Nov 28, 2021",
+    imageUrl:
+      "https://pbs.twimg.com/media/FJcno3EWUAUNAhj?format=jpg&name=large",
+    author: {
+      name: "Brian",
+      href: "https://twitter.com/pbrianandj",
+      imageUrl:
+        "https://pbs.twimg.com/profile_images/1439973770643443714/GW7Vf9qj_400x400.png",
+    },
+  },
+
+  {
+    title: "Nouns Marketplace",
+    href: "https://nouns.wtf/vote/46",
+    description: "Create a marketplace for Nouns and their extension projects.",
+    date: "April 2, 2022",
+    imageUrl: "https://jacob.energy/img/hyper.png",
+    author: {
+      name: "Jacob",
+      href: "https://twitter.com/js_horne",
+      imageUrl:
+        "https://pbs.twimg.com/profile_images/1501994286824501260/AYUsXOxm_400x400.png",
+    },
   },
   {
-    id: 2,
-    content: "Advanced to phone screening by",
-    target: "Bethany Blake",
-    href: "#",
-    date: "Sep 22",
-    datetime: "2020-09-22",
-    icon: ThumbUpIcon,
-    iconBackground: "bg-blue-500",
-  },
-  {
-    id: 3,
-    content: "Completed phone screening with",
-    target: "Martha Gardner",
-    href: "#",
-    date: "Sep 28",
-    datetime: "2020-09-28",
-    icon: CheckIcon,
-    iconBackground: "bg-green-500",
-  },
-  {
-    id: 4,
-    content: "Advanced to interview by",
-    target: "Bethany Blake",
-    href: "#",
-    date: "Sep 30",
-    datetime: "2020-09-30",
-    icon: ThumbUpIcon,
-    iconBackground: "bg-blue-500",
-  },
-  {
-    id: 5,
-    content: "Completed interview with",
-    target: "Katherine Snyder",
-    href: "#",
-    date: "Oct 4",
-    datetime: "2020-10-04",
-    icon: CheckIcon,
-    iconBackground: "bg-green-500",
+    title: "Children's Book",
+    href: "https://nouns.wtf/vote/83",
+    description:
+      "Create an illustrated book that will open a path to the traditional publishing world for Nouns.",
+    date: "May 26, 2022",
+    imageUrl: "https://i.imgur.com/biSbsDm.jpeg",
+    author: {
+      name: "Brandon Mighty",
+      href: "https://twitter.com/brandonmighty",
+      imageUrl:
+        "https://pbs.twimg.com/profile_images/1511768684276109316/vBfvqz3y_400x400.jpg",
+    },
   },
 ];
 
@@ -98,12 +89,12 @@ const proposals = () => {
 
                 <div className="mt-8 flex gap-4">
                   <Button
-                    text={"View Proposals"}
-                    link="https://nouns.wtf/vote"
+                    text={"Post An Idea"}
+                    link="https://discourse.nouns.wtf/"
                   />
                   <Button
-                    text={"Create Discourse"}
-                    link="https://discourse.nouns.wtf/"
+                    text={"Past Proposals"}
+                    link="https://nouns.wtf/vote"
                   />
                 </div>
               </div>
@@ -136,21 +127,101 @@ const proposals = () => {
           </div>
 
           <div className="my-8">
-            <Subheader title="How To write a prop" />
-            <p>What, How, Who, How Much, How Long.</p>
-            <br />
+            <Subheader title="How to write a prop" />
+            <p>Your proposal should effectively communicate:</p>
+            <ul className="list-disc list-inside pb-4">
+              <li className="ml-6">What is the project</li>
+              <li className="ml-6">How will it proliferate Nouns</li>
+              <li className="ml-6">How much funding you&apos;ll need</li>
+              <li className="ml-6">How the funds break down</li>
+            </ul>
+
             <p>
-              Nunc volutpat ultricies ex, vel semper odio faucibus a. Integer et
-              nisl nibh. Cras eu quam vitae libero pellentesque rhoncus. Nam
-              porttitor, augue rutrum gravida ullamcorper, arcu urna gravida
-              mauris, non pretium justo libero sit amet augue. Morbi a arcu
-              elit. Ut eget mauris eget sem dignissim consequat et quis elit.
-              Class aptent taciti sociosqu ad litora torquent per conubia
-              nostra, per inceptos himenaeos. Ut faucibus massa id commodo
-              iaculis. Suspendisse potenti. Curabitur mattis et magna sed
-              ultricies. Nulla facilisi. Donec sit amet eleifend arcu, in
-              maximus nibh.
+              It would be wise to keep this information at the very beginning,
+              potentially in a <b>&quot;TLDR section&quot;</b>. It is easy for
+              proposals to become very long as people write out all the
+              implementation details so, for the sake of the reviewers, having
+              this <em>baseline info</em> easily available is appreciated. Think
+              &quot;if they don&apos;t read the full proposal, what do they{" "}
+              <b>need</b> to know?&quot; Below you can see three well-rounded
+              proposals that were successfully funded. Each of them clearly
+              communicated their idea with a simple overview, a timeline with
+              milestones, and a cost breakdown.
             </p>
+
+            <div>
+              <div className="relative sm:py-6">
+                <div className="relative max-w-7xl mx-auto">
+                  <div className="xs:mt-6 sm:mt-0 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+                    {props.map((prop) => (
+                      <div
+                        key={prop.title}
+                        className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                      >
+                        <div className="flex-shrink-0">
+                          <a href={prop.href} target="_blank" rel="noreferrer">
+                            <img
+                              className="h-48 w-full object-cover"
+                              src={prop.imageUrl}
+                              alt=""
+                            />
+                          </a>
+                        </div>
+                        <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                          <div className="flex-1">
+                            <a
+                              href={prop.href}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="block mt-2"
+                            >
+                              <p className="text-xl text-nouns tracking-wide text-gray-900">
+                                {prop.title}
+                              </p>
+                              <p className="mt-3 text-base text-gray-500">
+                                {prop.description}
+                              </p>
+                            </a>
+                          </div>
+                          <div className="mt-6 flex items-center">
+                            <div className="flex-shrink-0">
+                              <a
+                                href={prop.author.href}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <span className="sr-only">
+                                  {prop.author.name}
+                                </span>
+                                <img
+                                  className="h-10 w-10 rounded-full"
+                                  src={prop.author.imageUrl}
+                                  alt={prop.title}
+                                />
+                              </a>
+                            </div>
+                            <div className="ml-3">
+                              <p className="text-sm font-medium text-gray-900">
+                                <a
+                                  href={prop.author.href}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  {prop.author.name}
+                                </a>
+                              </p>
+                              <div className="flex space-x-1 text-sm text-gray-500">
+                                {prop.date}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="my-8">
@@ -198,24 +269,9 @@ const proposals = () => {
                 leavesPage={true}
               />{" "}
               or any of the{" "}
-              <Link text="Nouns' Subdaos" url="/subdaos" leavesPage={true} /> to
-              sponsor your proposal.
+              <Link text="Nouns' Subdaos" url="/subdaos" leavesPage={false} />{" "}
+              to sponsor your proposal.
             </p>
-
-            {/* <div className="grid grid-cols-2 gap-0.5 lg:mt-8">
-              <div className="text-nouns cursor-pointer hover:bg-opacity-50 transition tracking-wider text-gray-500 text-2xl col-span-1 flex justify-center py-8 px-8 bg-gray-200 rounded-tl-xl">
-                Nouncil
-              </div>
-              <div className="text-nouns cursor-pointer hover:bg-opacity-50 transition tracking-wider text-gray-500 text-2xl col-span-1 flex justify-center py-8 px-8 bg-gray-200 rounded-tr-xl">
-                Nouners
-              </div>
-              <div className="text-nouns cursor-pointer hover:bg-opacity-50 transition tracking-wider text-gray-500 text-2xl col-span-1 flex justify-center py-8 px-8 bg-gray-200 rounded-bl-xl">
-                SubDAOs
-              </div>
-              <div className="text-nouns cursor-pointer hover:bg-opacity-50 transition tracking-wider text-gray-500 text-2xl col-span-1 flex justify-center py-8 px-8 bg-gray-200 rounded-br-xl">
-                Delegatees
-              </div>
-            </div> */}
           </div>
 
           <div className="my-8">
@@ -234,54 +290,6 @@ const proposals = () => {
               effectively based off the proposed execution and funds requested.
             </p>
           </div>
-
-          {/* <div className="flow-root mb-12">
-            <ul role="list" className="-mb-8">
-              {timeline.map((event, eventIdx) => (
-                <li key={event.id}>
-                  <div className="relative pb-8">
-                    {eventIdx !== timeline.length - 1 ? (
-                      <span
-                        className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
-                        aria-hidden="true"
-                      />
-                    ) : null}
-                    <div className="relative flex space-x-3">
-                      <div>
-                        <span
-                          className={classNames(
-                            event.iconBackground,
-                            "h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white"
-                          )}
-                        >
-                          <event.icon
-                            className="h-5 w-5 text-white"
-                            aria-hidden="true"
-                          />
-                        </span>
-                      </div>
-                      <div className="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
-                        <div>
-                          <p className="text-sm text-gray-500">
-                            {event.content}{" "}
-                            <a
-                              href={event.href}
-                              className="font-medium text-gray-900"
-                            >
-                              {event.target}
-                            </a>
-                          </p>
-                        </div>
-                        <div className="text-right text-sm whitespace-nowrap text-gray-500">
-                          <time dateTime={event.datetime}>{event.date}</time>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div> */}
 
           <div className="my-8">
             <Subheader title="Voting Timeline" />
