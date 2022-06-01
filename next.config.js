@@ -12,6 +12,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: "/nounstalgia",
+        destination: "/history",
+        permanent: true,
+      },
+      {
         source: "/project",
         destination: "/projects",
         permanent: true,
