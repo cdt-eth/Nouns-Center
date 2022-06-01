@@ -51,12 +51,13 @@ const funding = [
     recipients: 84,
     recipientType: "projects",
     distributed: "given to",
-    link: "https://discord.com/channels/849745721544146955/903077530502828092",
+    link: "/funding/smallgrants",
     linkText: "Request a grant",
     tagline:
       "Creators who have either been given a grant from NounsDAO or received retroactive funding for proliferating Nouns.",
     textColor: "text-[#028940]",
     bgColor: "bg-[#028940]",
+    img: "sml.png",
   },
   {
     source: "Prop House",
@@ -65,12 +66,13 @@ const funding = [
     recipients: 12,
     recipientType: "winners",
     distributed: "awarded to ",
-    link: "https://prop.house/",
+    link: "/funding/prophouse",
     linkText: "Submit prop",
     tagline:
       "Submit proposals to prop.house. Each round has a specified ETH amount, and the community votes on who wins.",
     textColor: "text-blue-base",
     bgColor: "bg-blue-base",
+    img: "med.png",
   },
   {
     source: "Proposals",
@@ -79,12 +81,13 @@ const funding = [
     recipients: 67,
     recipientType: "props",
     distributed: "across",
-    link: "https://nouns.wtf/vote",
+    link: "/funding/proposals",
     linkText: "Learn more",
     tagline:
       "Resources allocated for the long-term growth of the Nouns project. Larger in scope and undergo more scruntiny.",
-    textColor: "text-[#d63c5e]",
-    bgColor: "bg-[#d63c5e]",
+    textColor: "text-[#E5284A]",
+    bgColor: "bg-[#E5284A]",
+    img: "lg.png",
   },
 ];
 function classNames(...classes) {
@@ -163,64 +166,69 @@ const Funding = ({ grantsData }) => {
           <div>
             <dl className="mt-5 grid grid-cols-1 flex-col rounded-xl overflow-hidden sm:shadow-none md:grid-cols-3 xs:gap-8 sm:gap-4">
               {funding.map((item) => (
-                <div
-                  key={item.recipients}
-                  className="relative bg-white py-5 px-4 pb-16 sm:pt-6 sm:px-5 xs:shadow-sm sm:shadow-none xs:rounded-lg  overflow-hidden sm:divide-x divide-white "
-                >
-                  <dt
-                    className={`text-nouns text-2xl tracking-wide pb-4 ${item.textColor}`}
-                  >
-                    {item.source}
-                  </dt>
+                <div key={item.recipients}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={`/funding/${item.img}`} alt={item.img} />
 
-                  <dd className="mt-1 flex flex-col justify-between items-baseline md:block lg:flex font-extrabold">
-                    <div className="items-baseline text-4xl">
-                      {item.range}Ξ{" "}
-                    </div>
+                  <div className="relative bg-white py-5 px-4 pb-16 sm:pt-6 sm:px-5 xs:shadow-sm sm:shadow-none xs:rounded-lg  overflow-hidden sm:divide-x divide-white ">
+                    <dt
+                      className={`text-nouns text-2xl tracking-wide pb-4 ${item.textColor}`}
+                    >
+                      {item.source}
+                    </dt>
 
-                    <div className="pt-3 text-sm flex flex-col gap-1">
-                      <div>
-                        <span
-                          className={`${item.bgColor} text-white px-1 py-px rounded-md`}
-                        >
-                          {item.source === "Proposals"
-                            ? totalProposals && totalProposals
-                            : item.recipients}{" "}
-                          {item.recipientType}
-                        </span>{" "}
-                        funded
+                    <dd className="mt-1 flex flex-col justify-between items-baseline md:block lg:flex font-extrabold">
+                      <div className="items-baseline text-4xl">
+                        {item.range}Ξ{" "}
                       </div>
-                      <div>
-                        <span
-                          className={`${item.bgColor} text-white px-1 py-px rounded-md`}
-                        >
-                          {item.source === "Proposals"
-                            ? totalProposalEthSpent &&
-                              totalProposalEthSpent.toLocaleString(undefined, {
-                                maximumFractionDigits: 2,
-                              })
-                            : item.totalEth.toLocaleString(undefined, {
-                                maximumFractionDigits: 2,
-                              })}
-                          {/* Ξ */} eth
-                        </span>{" "}
-                        spent
-                      </div>
-                      <span className="font-normal text-black pt-4">
-                        {item.tagline}
-                      </span>{" "}
-                    </div>
-                  </dd>
 
-                  <div
-                    className={`absolute hover:bg-opacity-80 transition cursor-pointer bottom-0 inset-x-0
+                      <div className="pt-3 text-sm flex flex-col gap-1">
+                        <div>
+                          <span
+                            className={`${item.bgColor} text-white px-1 py-px rounded-md`}
+                          >
+                            {item.source === "Proposals"
+                              ? totalProposals && totalProposals
+                              : item.recipients}{" "}
+                            {item.recipientType}
+                          </span>{" "}
+                          funded
+                        </div>
+                        <div>
+                          <span
+                            className={`${item.bgColor} text-white px-1 py-px rounded-md`}
+                          >
+                            {item.source === "Proposals"
+                              ? totalProposalEthSpent &&
+                                totalProposalEthSpent.toLocaleString(
+                                  undefined,
+                                  {
+                                    maximumFractionDigits: 2,
+                                  }
+                                )
+                              : item.totalEth.toLocaleString(undefined, {
+                                  maximumFractionDigits: 2,
+                                })}
+                            {/* Ξ */} eth
+                          </span>{" "}
+                          spent
+                        </div>
+                        <span className="font-normal text-black pt-4">
+                          {item.tagline}
+                        </span>{" "}
+                      </div>
+                    </dd>
+
+                    <div
+                      className={`absolute hover:bg-opacity-80 transition cursor-pointer bottom-0 inset-x-0
                      rounded-b-xl ${item.bgColor} px-4 py-3 sm:px-5`}
-                  >
-                    <div className="text-sm ">
-                      <a href={item.link} className="font-medium text-white">
-                        {" "}
-                        {item.linkText} →
-                      </a>
+                    >
+                      <div className="text-sm ">
+                        <a href={item.link} className="font-medium text-white">
+                          {" "}
+                          {item.linkText} →
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
