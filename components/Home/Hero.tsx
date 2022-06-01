@@ -43,6 +43,7 @@ const Hero = () => {
                   buttonId={"one"}
                   buttonAction={action}
                   path="intro"
+                  color="bg-[#E5284A]"
                 />
                 <NounishButton
                   text="View Traits"
@@ -50,6 +51,7 @@ const Hero = () => {
                   buttonId={"two"}
                   buttonAction={action}
                   path="traits"
+                  color="bg-[#028940]"
                 />
                 <NounishButton
                   text="Get Funding"
@@ -57,6 +59,7 @@ const Hero = () => {
                   buttonId={"three"}
                   buttonAction={action}
                   path="funding"
+                  color="bg-[#A734A3]"
                 />
                 <NounishButton
                   text="Nounish Projects"
@@ -64,6 +67,7 @@ const Hero = () => {
                   buttonId={"four"}
                   buttonAction={action}
                   path="projects"
+                  color="bg-blue-base"
                 />
               </div>
             </div>

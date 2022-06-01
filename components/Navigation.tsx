@@ -82,7 +82,7 @@ const Navigation = () => {
             <button
               type="button"
               className={`-mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-900  hover:text-gray-500 focus:outline-none ${
-                asPath === "/" && "text-black sm:text-white "
+                asPath === "/" && "text-black "
               } `}
               onClick={() => setSidebarOpen(true)}
             >
@@ -90,6 +90,7 @@ const Navigation = () => {
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
+
           <Link passHref href="/">
             <div className="flex self-center  items-center cursor-pointer text-nouns  transition text-blue-base hover:text-nouns-bg-blue  dark:hover:text-blue-base xs:text-xl sm:text-3xl gap-2">
               {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -101,11 +102,11 @@ const Navigation = () => {
             </div>
           </Link>
           <div className="w-1/3 flex items-center justify-end gap-3">
-            {/* <DocSearch
+            <DocSearch
               appId="PGIH0KF5F5"
               indexName="nc"
               apiKey="faf1987de1d83c02e82fbf9bfd7ca5a9"
-            /> */}
+            />
             {/* {/* // apiKey="567090186f67f33178636e2281fd3655"  */}
             {/* <DocSearch
               appId="R2IYF7ETH7"
