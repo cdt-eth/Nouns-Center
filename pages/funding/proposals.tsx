@@ -106,12 +106,13 @@ const proposals = () => {
             <Subheader title="Overview" />
             <p>
               This guide will walk you through the steps creating a Nouns DAO
-              proposal. If you&apos;re unsure if a proposal is the correct path
-              for your idea to take to receive funding, please refer back to{" "}
+              proposal. If you&apos;re unsure if opening a proposal is the
+              correct path to take for your ideato receive funding, please refer
+              back to{" "}
               <Link text="this guide" url="/funding" leavesPage={false} /> to
-              make sure you&apos;re in the correct place. If you&apos;re idea is
-              still in a nascent stage or the details haven&apos;t been fleshed
-              out, you can get feedback in the{" "}
+              make sure you&apos;re in the correct place. If your idea is still
+              in a nascent stage or the details haven&apos;t been fleshed out,
+              you can get feedback in the{" "}
               <Link
                 text="#proposal-ideas"
                 url="https://discord.com/channels/849745721544146955/875751366340005908"
@@ -128,6 +129,26 @@ const proposals = () => {
           </div>
 
           <div className="my-8">
+            <Subheader title="Sponsorship" />
+            <p>
+              Only Noun owners (Nouners) can submit official proposals to the
+              DAO for funding. If you don&apos;t own a Noun yourself then
+              you&apos;ll have to get a sponsor to open the proposal for you.
+              You can connect with a Nouner sponsor either by waiting on
+              feedback on your Discourse post or networking in the Discord. You
+              can also try to get groups like{" "}
+              <Link
+                text="The Nouncil"
+                url="https://nouncil.wtf"
+                leavesPage={true}
+              />{" "}
+              or any of the{" "}
+              <Link text="Nouns' Subdaos" url="/subdaos" leavesPage={false} />{" "}
+              to sponsor your proposal.
+            </p>
+          </div>
+
+          <div className="my-8">
             <Subheader title="How to write a prop" />
             <p>Your proposal should effectively communicate:</p>
             <ul className="list-disc list-inside pb-4">
@@ -135,11 +156,12 @@ const proposals = () => {
               <li className="ml-6">How will it proliferate Nouns</li>
               <li className="ml-6">How much funding you&apos;ll need</li>
               <li className="ml-6">How the funds break down</li>
+              <li className="ml-6">What are the success metrics</li>
             </ul>
 
             <p>
               It would be wise to keep this information at the very beginning,
-              potentially in a <b>&quot;TLDR section&quot;</b>. It is easy for
+              potentially in a <b>&quot;TLDR section&quot;</b>. It is common for
               proposals to become very long as people write out all the
               implementation details so, for the sake of the reviewers, having
               this <em>baseline info</em> easily available is appreciated. Think
@@ -244,7 +266,7 @@ const proposals = () => {
               note, Discourse doesn&apos;t give editing privileges to new
               accounts until they&apos;ve been active for a while so if you
               submit your post and made a mistake you won&apos;t be able to
-              change anything, but you can specifcy in the comments what was
+              change anything, but you can specify in the comments what was
               wrong.
             </p>
 
@@ -253,26 +275,6 @@ const proposals = () => {
               src="/funding/discourse.png"
               alt="discourse"
             />
-          </div>
-
-          <div className="my-8">
-            <Subheader title="Sponsorship" />
-            <p>
-              Only Noun owners (Nouners) can submit official proposals to the
-              DAO for funding. If you don&apos;t own a Noun yourself then
-              you&apos;ll have to get a sponsor to open the proposal for you.
-              You can connect with a Nouner sponsor either by waiting on
-              feedback on your Discourse post or networking in the Discord. You
-              can also try to get groups like{" "}
-              <Link
-                text="The Nouncil"
-                url="https://nouncil.wtf"
-                leavesPage={true}
-              />{" "}
-              or any of the{" "}
-              <Link text="Nouns' Subdaos" url="/subdaos" leavesPage={false} />{" "}
-              to sponsor your proposal.
-            </p>
           </div>
 
           <div className="my-8">
