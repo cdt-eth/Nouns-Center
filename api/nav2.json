@@ -1,26 +1,44 @@
 [
   {
-    "name": "for Creatives",
+    "name": "About Nouns",
     "current": false,
     "children": [
       {
-        "name": "Assets",
+        "name": "Intro",
         "image": "assets.png",
-        "link": "/assets",
+        "link": "/intro",
         "external": false
       },
       {
-        "name": "FAQ",
+        "name": "Traits",
         "image": "faq.png",
-        "link": "/faq",
+        "link": "/traits",
+        "external": false
+      },
+      {
+        "name": "History",
+        "image": "assets.png",
+        "link": "/history",
+        "external": false
+      },
+      {
+        "name": "Nouners",
+        "image": "assets.png",
+        "link": "/nouners",
         "external": false
       }
     ]
   },
   {
-    "name": "for Developers",
+    "name": "for Builders",
     "current": false,
     "children": [
+      {
+        "name": "Assets",
+        "image": "tools.png",
+        "link": "/assets",
+        "external": false
+      },
       {
         "name": "GitHub",
         "image": "github.png",
@@ -28,121 +46,69 @@
         "external": true
       },
       {
-        "name": "Tools",
-        "image": "tools.png",
-        "link": "/tools",
-        "external": false
-      },
-      {
-        "name": "Issues",
+        "name": "Dev FAQ",
         "image": "issues.png",
         "link": "https://github.com/nounsDAO/nouns-monorepo/issues",
         "external": true
       },
       {
-        "name": "FAQ",
+        "name": "Dev Resources",
         "image": "faq.png",
-        "link": "https://github.com/christiandavidturner/TOADZTOOLZ/discussions",
+        "link": "/dev",
         "external": false
       }
     ]
   },
   {
-    "name": "Projects",
-    "current": false,
-    "link": "/projects"
-  },
-  {
-    "name": "Talks",
-    "current": false,
-    "link": "/talks"
-  },
-  {
-    "name": "General",
+    "name": "Funding",
     "current": false,
     "children": [
       {
-        "name": "Nouns.wtf",
-        "image": "earth.png",
-        "link": "https://nouns.wtf/",
-        "external": true
-      },
-      {
-        "name": "Podcasts",
-        "image": "earth.png",
-        "link": "/podcasts",
-        "external": false
-      },
-      {
-        "name": "Stats",
-        "image": "earth.png",
-        "link": "/stats",
-        "external": false
-      },
-      {
-        "name": "Media",
-        "image": "earth.png",
-        "link": "/media",
-        "external": false
-      },
-      {
-        "name": "News",
-        "image": "earth.png",
-        "link": "/news",
-        "external": false
-      }
-    ]
-  },
-  {
-    "name": "Proposals",
-    "current": false,
-    "children": [
-      {
-        "name": "Template",
-        "image": "earth.png",
-        "link": "/template",
-        "external": false
-      },
-      {
-        "name": "Get Feedback",
-        "image": "earth.png",
-        "link": "https://discourse.nouns.wtf/",
-        "external": true
-      },
-      {
-        "name": "Find a Sponsor",
-        "image": "earth.png",
-        "link": "/sponsor",
-        "external": false
-      },
-      {
-        "name": "Funding",
+        "name": "Overview",
         "image": "earth.png",
         "link": "/funding",
         "external": false
       },
       {
+        "name": "Proposals",
+        "image": "earth.png",
+        "link": "/funding/proposals",
+        "external": false
+      },
+      {
+        "name": "Small Grants",
+        "image": "earth.png",
+        "link": "/funding/smallgrants",
+        "external": false
+      },
+      {
         "name": "Prop House",
         "image": "earth.png",
-        "link": "https://prop.house/",
-        "external": true
+        "link": "/funding/prophouse",
+        "external": false
       }
     ]
   },
   {
-    "name": "DAO",
+    "name": "Community",
     "current": false,
     "children": [
       {
-        "name": "History",
+        "name": "Projects",
         "image": "earth.png",
-        "link": "/history",
+        "link": "/projects",
         "external": false
       },
       {
-        "name": "Proposals",
+        "name": "Talent",
         "image": "earth.png",
-        "link": "https://nouns.wtf/vote",
+        "link": "/talent",
+        "external": false
+      },
+      {
+        "name": "Podcasts",
+        "image": "earth.png",
+        "link": "/podcasts",
         "external": false
       },
       {
@@ -152,46 +118,16 @@
         "external": false
       },
       {
-        "name": "for Nouners",
-        "image": "earth.png",
-        "link": "/nouners",
-        "external": false
-      },
-      {
-        "name": "Twitter",
-        "image": "earth.png",
-        "link": "https://twitter.com/nounsdao",
-        "external": true
-      },
-      {
-        "name": "Discord",
-        "image": "earth.png",
-        "link": "http://discord.gg/nouns",
-        "external": true
-      }
-    ]
-  },
-  {
-    "name": "Miscellaneous",
-    "current": false,
-    "children": [
-      {
-        "name": "Create A Noun",
-        "image": "earth.png",
-        "link": "https://nouns.wtf/playground",
-        "external": true
-      },
-      {
-        "name": "Talent",
-        "image": "earth.png",
-        "link": "/talent",
-        "external": false
-      },
-      {
         "name": "Gifs",
         "image": "earth.png",
         "link": "/gifs",
         "external": false
+      },
+      {
+        "name": "Blog",
+        "image": "earth.png",
+        "link": "https://nouns.blog/",
+        "external": true
       }
     ]
   }
