@@ -11,7 +11,7 @@ import Status from "../../components/common/Status";
 
 const props = [
   {
-    title: "DAO residents",
+    title: "DAO Residency",
     href: "https://nouns.wtf/vote/17",
     description:
       "Fund a designer, engineer, and community lead in residency to help push forward new projects.",
@@ -45,7 +45,8 @@ const props = [
     description:
       "Create an illustrated book that will open a path to the traditional publishing world for Nouns.",
     date: "May 26, 2022",
-    imageUrl: "https://i.imgur.com/biSbsDm.jpeg",
+    imageUrl:
+      "https://cdn.discordapp.com/attachments/979401162358931596/979401735648997496/unknown.png",
     author: {
       name: "Brandon Mighty",
       href: "https://twitter.com/brandonmighty",
