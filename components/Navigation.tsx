@@ -102,11 +102,11 @@ const Navigation = () => {
             </div>
           </Link>
           <div className="w-1/3 flex items-center justify-end gap-3">
-            <DocSearch
+            {/* <DocSearch
               appId="PGIH0KF5F5"
               indexName="nc"
               apiKey="faf1987de1d83c02e82fbf9bfd7ca5a9"
-            />
+            /> */}
             {/* {/* // apiKey="567090186f67f33178636e2281fd3655"  */}
             {/* <DocSearch
               appId="R2IYF7ETH7"
