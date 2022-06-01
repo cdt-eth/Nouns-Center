@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import Divider from "../Divider";
 import Newsletter from "../Newsletter";
+import Footer from "../Footer";
 
 const PageContent = ({ children }) => {
   const router = useRouter();
@@ -15,9 +16,11 @@ const PageContent = ({ children }) => {
         <>
           <Divider />
 
-          <div className="sm:ml-14">
+          <div className="sm:ml-20 mb-2">
             <Newsletter />
           </div>
+
+          <Footer />
         </>
       )}
     </div>

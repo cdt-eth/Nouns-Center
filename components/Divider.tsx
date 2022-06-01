@@ -2,7 +2,7 @@ import React from "react";
 
 const Divider = () => {
   return (
-    <div className="relative py-8 w-full m-auto opacity-70">
+    <div className="relative xs:py-4 xs:mt-4 sm:py-8 w-full m-auto opacity-70">
       <div className="absolute inset-0 flex items-center" aria-hidden="true">
         <div className="w-full border-t border-gray-300" />
       </div>
