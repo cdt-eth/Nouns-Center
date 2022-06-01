@@ -315,7 +315,7 @@ const proposals = () => {
                 leavesPage={true}
               />
               , finding the prop, and clicking the{" "}
-              {`"{ insert queued button text here}"`} button. Anyone can do this
+              <b>&quot;Queue Proposal ⌐◨-◨&quot;</b> button. Anyone can do this
               and it will cost some gas. Then the status will be changed to{" "}
               <Status status="queued" bgColor="bg-black" /> and after 2 final
               days it will be{" "}
