@@ -46,10 +46,6 @@ const Intro = ({ docsData }) => {
           title="A Brief Introduction to Nouns"
           body="If you ever wanted to know what Nouns is all about, this is a great place to start."
         />
-        <Button
-          link="https://nouns.notion.site/Explore-Nouns-a2a9dceeb1d54e10b9cbf3f931c2266f"
-          text="More info"
-        />
       </PageHeader>
 
       <PageContent>
