@@ -33,6 +33,7 @@ const Nav = ({ setSidebarOpen }) => {
             {/* No SubNav */}
             <Link passHref href="/">
               <img
+                onClick={() => setSidebarOpen(false)}
                 src="/earth.gif"
                 alt="earth"
                 className="h-12 w-12 ml-1.5 flex cursor-pointer self-center mb-8"
