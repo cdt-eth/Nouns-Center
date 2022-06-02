@@ -8,8 +8,6 @@ import axios from "axios";
 import { formatUnits } from "ethers/lib/utils";
 import { BigNumber } from "ethers";
 
-import Table from "../components/nouners/Table";
-
 /*
  * Proposals for which data won't be calculated
  *
@@ -149,7 +147,6 @@ const Funding = ({ grantsData }) => {
     getEthSpentOnProposals();
   }, []);
 
-  // return grantsData ? (
   return (
     <>
       <PageHeader>
@@ -160,86 +157,75 @@ const Funding = ({ grantsData }) => {
       </PageHeader>
 
       <PageContent>
-        <>
-          {/* <Table grants={grantsData} /> */}
+        <dl className="mt-5 grid grid-cols-1 flex-col rounded-xl overflow-hidden sm:shadow-none md:grid-cols-3 xs:gap-8 sm:gap-4">
+          {funding.map((item) => (
+            <div key={item.recipients}>
+              <a href={item.link} className="cursor-pointer">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={`/funding/${item.img}`} alt={item.img} />
+              </a>
 
-          <div>
-            <dl className="mt-5 grid grid-cols-1 flex-col rounded-xl overflow-hidden sm:shadow-none md:grid-cols-3 xs:gap-8 sm:gap-4">
-              {funding.map((item) => (
-                <div key={item.recipients}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={`/funding/${item.img}`} alt={item.img} />
+              <div className="relative bg-white py-5 px-4 pb-16 sm:pt-6 sm:px-5 xs:shadow-sm sm:shadow-none xs:rounded-lg  overflow-hidden sm:divide-x divide-white ">
+                <dt
+                  className={`text-nouns text-2xl tracking-wide pb-4 ${item.textColor}`}
+                >
+                  {item.source}
+                </dt>
 
-                  <div className="relative bg-white py-5 px-4 pb-16 sm:pt-6 sm:px-5 xs:shadow-sm sm:shadow-none xs:rounded-lg  overflow-hidden sm:divide-x divide-white ">
-                    <dt
-                      className={`text-nouns text-2xl tracking-wide pb-4 ${item.textColor}`}
-                    >
-                      {item.source}
-                    </dt>
+                <dd className="mt-1 flex flex-col justify-between items-baseline md:block lg:flex font-extrabold">
+                  <div className="items-baseline text-4xl">{item.range}Ξ </div>
 
-                    <dd className="mt-1 flex flex-col justify-between items-baseline md:block lg:flex font-extrabold">
-                      <div className="items-baseline text-4xl">
-                        {item.range}Ξ{" "}
-                      </div>
-
-                      <div className="pt-3 text-sm flex flex-col gap-1">
-                        <div>
-                          <span
-                            className={`${item.bgColor} text-white px-1 py-px rounded-md`}
-                          >
-                            {item.source === "Proposals"
-                              ? totalProposals && totalProposals
-                              : item.recipients}{" "}
-                            {item.recipientType}
-                          </span>{" "}
-                          funded
-                        </div>
-                        <div>
-                          <span
-                            className={`${item.bgColor} text-white px-1 py-px rounded-md`}
-                          >
-                            {item.source === "Proposals"
-                              ? totalProposalEthSpent &&
-                                totalProposalEthSpent.toLocaleString(
-                                  undefined,
-                                  {
-                                    maximumFractionDigits: 2,
-                                  }
-                                )
-                              : item.totalEth.toLocaleString(undefined, {
-                                  maximumFractionDigits: 2,
-                                })}
-                            {/* Ξ */} eth
-                          </span>{" "}
-                          spent
-                        </div>
-                        <span className="font-normal text-black pt-4">
-                          {item.tagline}
-                        </span>{" "}
-                      </div>
-                    </dd>
-
-                    <div
-                      className={`absolute hover:bg-opacity-80 transition cursor-pointer bottom-0 inset-x-0
-                     rounded-b-xl ${item.bgColor} px-4 py-3 sm:px-5`}
-                    >
-                      <div className="text-sm ">
-                        <a href={item.link} className="font-medium text-white">
-                          {" "}
-                          {item.linkText} →
-                        </a>
-                      </div>
+                  <div className="pt-3 text-sm flex flex-col gap-1">
+                    <div>
+                      <span
+                        className={`${item.bgColor} text-white px-1 py-px rounded-md`}
+                      >
+                        {item.source === "Proposals"
+                          ? totalProposals && totalProposals
+                          : item.recipients}{" "}
+                        {item.recipientType}
+                      </span>{" "}
+                      funded
                     </div>
+                    <div>
+                      <span
+                        className={`${item.bgColor} text-white px-1 py-px rounded-md`}
+                      >
+                        {item.source === "Proposals"
+                          ? totalProposalEthSpent &&
+                            totalProposalEthSpent.toLocaleString(undefined, {
+                              maximumFractionDigits: 2,
+                            })
+                          : item.totalEth.toLocaleString(undefined, {
+                              maximumFractionDigits: 2,
+                            })}
+                        {/* Ξ */} eth
+                      </span>{" "}
+                      spent
+                    </div>
+                    <span className="font-normal text-black pt-4">
+                      {item.tagline}
+                    </span>{" "}
+                  </div>
+                </dd>
+
+                <div
+                  className={`absolute hover:bg-opacity-80 transition cursor-pointer bottom-0 inset-x-0
+                     rounded-b-xl ${item.bgColor} px-4 py-3 sm:px-5`}
+                >
+                  <div className="text-sm ">
+                    <a href={item.link} className="font-medium text-white">
+                      {" "}
+                      {item.linkText} →
+                    </a>
                   </div>
                 </div>
-              ))}
-            </dl>
-          </div>
-        </>
+              </div>
+            </div>
+          ))}
+        </dl>
       </PageContent>
     </>
-    // ) : (
-    //   <></>
   );
 };
 
