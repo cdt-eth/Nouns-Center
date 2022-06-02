@@ -8,6 +8,7 @@ import Button from "../../components/common/Button";
 import Subheader from "../../components/Subheader";
 import Link from "../../components/Link";
 import Status from "../../components/common/Status";
+import TextContent from "../../components/Layout/TextContent";
 
 const props = [
   {
@@ -102,8 +103,7 @@ const proposals = () => {
             </div>
           </div>
 
-          <div className="my-8">
-            <Subheader title="Overview" />
+          <TextContent title="Overview">
             <p>
               This guide will walk you through the steps creating a Nouns DAO
               proposal. If you&apos;re unsure if opening a proposal is the
@@ -126,10 +126,9 @@ const proposals = () => {
               />
               .
             </p>
-          </div>
+          </TextContent>
 
-          <div className="my-8">
-            <Subheader title="Sponsorship" />
+          <TextContent title="Sponsorship">
             <p>
               Only Noun owners (Nouners) can submit official proposals to the
               DAO for funding. If you don&apos;t own a Noun yourself then
@@ -146,10 +145,9 @@ const proposals = () => {
               <Link text="Nouns' Subdaos" url="/subdaos" leavesPage={false} />{" "}
               to sponsor your proposal.
             </p>
-          </div>
+          </TextContent>
 
-          <div className="my-8">
-            <Subheader title="How to write a prop" />
+          <TextContent title="How to write a prop">
             <p>Your proposal should effectively communicate:</p>
             <ul className="list-disc list-inside pb-4">
               <li className="ml-6">What is the project</li>
@@ -245,10 +243,9 @@ const proposals = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </TextContent>
 
-          <div className="my-8">
-            <Subheader title="Post on Discourse" />
+          <TextContent title="Post on Discourse">
             <p>
               Once you have all the details nailed down you can post your
               proposal on{" "}
@@ -275,10 +272,9 @@ const proposals = () => {
               src="/funding/discourse.png"
               alt="discourse"
             />
-          </div>
+          </TextContent>
 
-          <div className="my-8">
-            <Subheader title="Getting Feedback" />
+          <TextContent title="Getting Feedback">
             <p>
               This is the refinement period. All proposals undergo budget &amp;
               impact scrutiny so don&apos;t be surprised if yours receives some.
@@ -292,10 +288,9 @@ const proposals = () => {
               it. The aim is to make sure the proposal proliferates Nouns
               effectively based off the proposed execution and funds requested.
             </p>
-          </div>
+          </TextContent>
 
-          <div className="my-8">
-            <Subheader title="Voting Timeline" />
+          <TextContent title="Voting Timeline">
             <p>
               Once your proposal is submitted it will undergo the{" "}
               <em>&quot;Voting Week&quot;</em> which will be a minimum of 7
@@ -330,7 +325,7 @@ const proposals = () => {
               src="/funding/governance.jpeg"
               alt="timeline"
             />
-          </div>
+          </TextContent>
         </div>
       </PageContent>
     </>
