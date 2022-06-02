@@ -18,6 +18,15 @@
     "notionId": ""
   },
   {
+    "name": "Nouns Frontend Stream",
+    "imageUrl": "stream.png",
+    "bio": "Going over the Nouns Frontend and deploying to IPFS.",
+    "url": "https://nounish.tv/w/wetmy9J6oW4C4Pao5ZjnZk",
+    "btnText": "Watch Stream",
+    "notion": false,
+    "notionId": ""
+  },
+  {
     "name": "Smart Contract Architecture",
     "imageUrl": "smartcontract.png",
     "bio": "NounsToken, NounsSeeder, NounsDescriptor, NounsAuctionHouse, NounsDAOExecutor, NounsDAOProxy, and NounsDAOLogicV1.",
