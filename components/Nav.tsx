@@ -18,7 +18,9 @@ const Nav = ({ setSidebarOpen }) => {
           className="sm:cursor-pointer items-center flex-shrink-0 px-4"
           onClick={() => setSidebarOpen(false)}
         >
-          <img className="hidden w-1/6 mr-2" src="earth.gif" alt="earth" />
+          <Link passHref href="/">
+            <img className="hidden w-1/6 mr-2" src="earth.gif" alt="earth" />
+          </Link>
         </div>
       </Link>
 
@@ -27,106 +29,74 @@ const Nav = ({ setSidebarOpen }) => {
           className="flex-1 px-4 space-y-1 bg-grey-base flex-col justify-between flex"
           aria-label="Sidebar"
         >
-          <div>
+          <div className="">
             {/* No SubNav */}
-            {nav.map((item) =>
-              !item.children ? (
-                <div key={item.name}>
-                  {/* <a
-                    href={item.link}
-                    className={classNames(
-                      item.current
-                        ? "bg-grey-base text-red-500"
-                        : "bg-grey-base text-black hover:text-gray-500",
-                      "group w-full flex items-center pl-2 py-2 xs:text-text-lg sm:text-base font-medium rounded-md"
-                    )}
-                  >
-                    {}
-                    {item.name}
-                  </a> */}
-                  TESTING
-                </div>
-              ) : (
-                //  Has SubNav
-                <Disclosure as="div" key={item.name} className="space-y-1">
-                  {({ open }) => (
-                    <>
-                      <Disclosure.Button
+            <Link passHref href="/">
+              <img
+                src="/earth.gif"
+                alt="earth"
+                className="h-12 w-12 ml-1.5 flex cursor-pointer self-center mb-8"
+              />
+            </Link>
+
+            {nav.map((item) => (
+              <Disclosure as="div" key={item.name} className="space-y-1 mb-4">
+                {({ open }) => (
+                  <>
+                    <Disclosure.Button
+                      className={classNames(
+                        item.current
+                          ? "bg-grey-base text-black focus:outline-none"
+                          : "bg-grey-base text-black hover:bg-opacity-80  hover:text-blue-base",
+                        "group w-full flex items-center text-nouns tracking-wide text-left xs:text-lg sm:text-lg font-medium rounded-md focus:outline-none transition duration-150"
+                      )}
+                    >
+                      <svg
                         className={classNames(
-                          item.current
-                            ? "bg-grey-base text-black focus:outline-none"
-                            : "bg-grey-base text-black hover:bg-opacity-80  hover:text-gray-500",
-                          "group w-full flex items-center pl-2 pr-1 py-2 text-left xs:text-text-lg sm:text-base font-medium rounded-md focus:outline-none "
+                          open ? "text-black rotate-90" : "text-black",
+                          "flex-shrink-0 h-5 w-5 transform group-hover:text-blue-base transition duration-150"
                         )}
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
                       >
-                        <span className="flex-1">{item.name}</span>
+                        <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
+                      </svg>
 
-                        {item.children.length ? (
-                          <span
-                            className={classNames(
-                              item.current
-                                ? "bg-black"
-                                : "bg-black text-white group-hover:bg-opacity-80",
-                              "ml-3 inline-block py-0.5 px-2 text-xs font-medium rounded-full group-hover:text-white"
-                            )}
-                          >
-                            {item.children.length}
-                          </span>
-                        ) : null}
+                      <span className="flex-1 text-xl">{item.name}</span>
+                    </Disclosure.Button>
 
-                        <svg
-                          className={classNames(
-                            open ? "text-black rotate-90" : "text-black",
-                            "ml-3 flex-shrink-0 h-5 w-5 transform group-hover:text-gray-500 transition-colors ease-in-out duration-150"
-                          )}
-                          viewBox="0 0 20 20"
-                          aria-hidden="true"
+                    <Disclosure.Panel className="space-y-1">
+                      {item.children.map((subItem) => (
+                        <div
+                          key={item.name}
+                          className="flex ml-3 px-1 items-center rounded-md"
+                          onClick={() => setSidebarOpen(false)}
                         >
-                          <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
-                        </svg>
-                      </Disclosure.Button>
-
-                      <Disclosure.Panel className="space-y-1">
-                        {item.children.map((subItem) => (
-                          <div
-                            key={item.name}
-                            className="flex ml-3 px-1 items-center rounded-md"
-                            onClick={() => setSidebarOpen(false)}
-                          >
-                            {/* <Link passHref href="/">
-                              <img
-                                className="w-6 h-6 cursor-pointer rounded-full"
-                                src={`/nav/${subItem.image}`}
-                                alt="earth"
-                              />
-                            </Link> */}
-
-                            {subItem.external ? (
-                              <Disclosure.Button
-                                key={item.name}
-                                as="a"
-                                href={subItem.link}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-1 text-base font-medium text-nouns-black hover:text-gray-500 "
-                              >
+                          {subItem.external ? (
+                            <Disclosure.Button
+                              key={item.name}
+                              as="a"
+                              href={subItem.link}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-0.5 text-base font-medium text-nouns-black hover:text-blue-base "
+                            >
+                              {subItem.name}
+                            </Disclosure.Button>
+                          ) : (
+                            <Link href={subItem.link}>
+                              <a className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-0.5 text-base font-medium text-nouns-black hover:text-blue-base ">
                                 {subItem.name}
-                              </Disclosure.Button>
-                            ) : (
-                              <Link href={subItem.link}>
-                                <a className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-1 text-base font-medium text-nouns-black hover:text-gray-500 ">
-                                  {subItem.name}
-                                </a>
-                              </Link>
-                            )}
-                          </div>
-                        ))}
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
-              )
-            )}
+                              </a>
+                            </Link>
+                          )}
+                        </div>
+                      ))}
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+            ))}
           </div>
 
           {/* <div className="px-2 pb-2 hidden">

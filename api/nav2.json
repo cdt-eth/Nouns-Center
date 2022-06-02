@@ -5,85 +5,73 @@
     "children": [
       {
         "name": "Intro",
-        "image": "assets.png",
         "link": "/intro",
         "external": false
       },
       {
         "name": "Traits",
-        "image": "faq.png",
         "link": "/traits",
         "external": false
       },
       {
         "name": "History",
-        "image": "assets.png",
         "link": "/history",
         "external": false
       },
       {
         "name": "Nouners",
-        "image": "assets.png",
         "link": "/nouners",
         "external": false
       }
     ]
   },
   {
-    "name": "for Builders",
+    "name": "For Builders",
     "current": false,
     "children": [
       {
         "name": "Assets",
-        "image": "tools.png",
         "link": "/assets",
         "external": false
       },
       {
         "name": "GitHub",
-        "image": "github.png",
         "link": "https://github.com/nounsDAO/nouns-monorepo",
         "external": true
       },
       {
         "name": "Dev FAQ",
-        "image": "issues.png",
         "link": "https://github.com/nounsDAO/nouns-monorepo/issues",
         "external": true
       },
       {
         "name": "Dev Resources",
-        "image": "faq.png",
         "link": "/dev",
         "external": false
       }
     ]
   },
   {
-    "name": "Funding",
+    "name": "Get Funding",
     "current": false,
     "children": [
       {
         "name": "Overview",
-        "image": "earth.png",
         "link": "/funding",
         "external": false
       },
       {
         "name": "Proposals",
-        "image": "earth.png",
         "link": "/funding/proposals",
         "external": false
       },
       {
         "name": "Small Grants",
-        "image": "earth.png",
         "link": "/funding/smallgrants",
         "external": false
       },
       {
         "name": "Prop House",
-        "image": "earth.png",
         "link": "/funding/prophouse",
         "external": false
       }
@@ -95,37 +83,31 @@
     "children": [
       {
         "name": "Projects",
-        "image": "earth.png",
         "link": "/projects",
         "external": false
       },
       {
         "name": "Talent",
-        "image": "earth.png",
         "link": "/talent",
         "external": false
       },
       {
         "name": "Podcasts",
-        "image": "earth.png",
         "link": "/podcasts",
         "external": false
       },
       {
         "name": "Notes",
-        "image": "earth.png",
         "link": "/notes",
         "external": false
       },
       {
         "name": "Gifs",
-        "image": "earth.png",
         "link": "/gifs",
         "external": false
       },
       {
         "name": "Blog",
-        "image": "earth.png",
         "link": "https://nouns.blog/",
         "external": true
       }
