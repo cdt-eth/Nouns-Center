@@ -46,6 +46,13 @@ const smallgrants = ({ grantsData }) => {
       </PageHeader>
 
       <PageContent>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          className="xs:h-32 sm:h-60 w-full object-cover"
+          src="https://pbs.twimg.com/media/FUMnGDgUYAMS2V4?format=jpg&name=large"
+          alt="noadz"
+        />
+
         <TextContent title="Overview">
           <p>
             The Small Grants Committee was created by{" "}
@@ -73,6 +80,7 @@ const smallgrants = ({ grantsData }) => {
             .
           </p>
         </TextContent>
+
         <TextContent title="Small Grant vs. retro funding">
           <p>
             <b>Small Grant: </b> <em>upfront payment</em> to fund a project
