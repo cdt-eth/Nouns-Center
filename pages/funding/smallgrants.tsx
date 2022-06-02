@@ -55,9 +55,10 @@ const smallgrants = ({ grantsData }) => {
               leavesPage={true}
             />
             . It&apos;s run by a group of Nouners to be a &quot;flexible pool of
-            capital&quot; that can be deployed when the ask is too small for an
-            official proposal or retroactive funding is merited because the work
-            is already done. If you have questions you can ask in the{" "}
+            capital&quot; that can be deployed when either the project is time
+            sensitive, the ask is too small for an official proposal, or
+            retroactive funding is merited because the work is already done. If
+            you have questions you can ask in the{" "}
             <Link
               text="#grants-and-retro-funding"
               url="https://discord.com/channels/849745721544146955/903077530502828092"
