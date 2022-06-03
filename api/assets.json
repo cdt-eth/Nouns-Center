@@ -6,16 +6,22 @@
     "download": true
   },
   {
-    "title": "Glasses Only - Various Sizes",
-    "image": "glasses.png",
-    "file": "glasses.zip",
+    "title": "Traits - SVGs",
+    "image": "traitssvgs.png",
+    "file": "traits-svg.zip",
     "download": true
   },
   {
-    "title": "Color Palette",
-    "image": "official_palette.png",
-    "file": "NounsOfficialPalette.act",
-    "download": true
+    "title": "Traits - Figma",
+    "image": "figma.png",
+    "file": "https://www.figma.com/community/file/1114615324301474327",
+    "download": false
+  },
+  {
+    "title": "Nouns Generator - Figma",
+    "image": "figma2.png",
+    "file": "https://www.figma.com/community/plugin/1045020359359636829/Nouns",
+    "download": false
   },
   {
     "title": "3D Nouns Glasses (.mtl, .fbx, .obj, .vox)",
@@ -24,9 +30,9 @@
     "download": true
   },
   {
-    "title": "Traits - Photoshop Layers",
-    "image": "photoshop.png",
-    "file": "assets_psd.zip",
+    "title": "Color Palette",
+    "image": "official_palette.png",
+    "file": "NounsOfficialPalette.act",
     "download": true
   },
   {
@@ -39,6 +45,18 @@
     "title": "Nountown Font",
     "image": "nountown.png",
     "file": "nountown.otf",
+    "download": true
+  },
+  {
+    "title": "Traits - Photoshop Layers",
+    "image": "photoshop.png",
+    "file": "assets_psd.zip",
+    "download": true
+  },
+  {
+    "title": "Glasses Only - Various Sizes",
+    "image": "glasses.png",
+    "file": "glasses.zip",
     "download": true
   }
 ]
