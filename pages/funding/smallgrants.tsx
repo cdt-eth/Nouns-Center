@@ -48,7 +48,7 @@ const smallgrants = ({ grantsData }) => {
       <PageContent>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          className="xs:h-32 sm:h-60 w-full object-cover"
+          className="xs:h-32 sm:h-60 w-full object-cover rounded-xl"
           src="https://pbs.twimg.com/media/FUMnGDgUYAMS2V4?format=jpg&name=large"
           alt="noadz"
         />
