@@ -1,6 +1,7 @@
 [
   {
     "name": "About Nouns",
+    "defaultOpen": true,
     "current": false,
     "children": [
       {
