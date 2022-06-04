@@ -48,6 +48,30 @@
     "skills": "Solidity, Typescript, React, Design"
   },
   {
+    "name": "Forager",
+    "twitter": "_forager",
+    "discord": "forager#7144",
+    "discordId": "437720101039374346",
+    "title": ["Developer"],
+    "skills": "Javascript (node/vue/react), Solidity, Python, ML, AWS, Finance, Serial Tinkerer"
+  },
+  {
+    "name": "Ripe",
+    "twitter": "unripeengine",
+    "discord": "ripe#5673",
+    "discordId": "731246793765027992",
+    "title": ["Developer"],
+    "skills": "Web Design, Product Design, Front-end dev"
+  },
+  {
+    "name": "Remixr",
+    "twitter": "Remixrfi",
+    "discord": "Remixr#0001",
+    "discordId": "304103585409531905",
+    "title": ["Artist"],
+    "skills": "Ops, Creative Strategy, Commercial production, Adobe suite, Wearing Hats"
+  },
+  {
     "name": "Woody",
     "twitter": "supertightwoody",
     "discord": "SuperTightWoody#3744",
@@ -62,6 +86,14 @@
     "discordId": "217472025306857472",
     "title": ["Designer"],
     "skills": "Design, Creative Direction, UI, Frontend, E-Commerce"
+  },
+  {
+    "name": "Munky",
+    "twitter": "munkydev_eth",
+    "discord": "Munky #4789",
+    "discordId": "281906820824563712",
+    "title": ["Developer"],
+    "skills": "React, Typescript, NextJS, Emotion, Tailwind"
   },
   {
     "name": "Ben",
@@ -232,12 +264,36 @@
     "skills": "Planning big projects, leading teams, 3d animation, writing / directing, making joke jokes, programming, web design"
   },
   {
+    "name": "Ezra Shibboleth",
+    "twitter": "shibboleth88",
+    "discord": "ezra | shibboleth.eth ⌐◨-◨#7380",
+    "discordId": "810490145794031636",
+    "title": ["Artist"],
+    "skills": "Words"
+  },
+  {
+    "name": "David Brai",
+    "twitter": "davidbrai",
+    "discord": "davidbrai#5671",
+    "discordId": "701029092547493888",
+    "title": ["Developer"],
+    "skills": "Solidity, Machine Learning"
+  },
+  {
+    "name": "Jawshua Fisher",
+    "twitter": "joshuafisher",
+    "discord": "joshuafisher#0001",
+    "discordId": "497119763286196225",
+    "title": ["Creative"],
+    "skills": "Prop Building, Brainstorming, Planning, Executing"
+  },
+  {
     "name": "Coral Orca",
     "twitter": "coralorca",
     "discord": "Coral Orca#4823",
     "discordId": "830450430219386902",
     "title": ["artist"],
-    "skills": "3D, 2D, AR, VR"
+    "skills": "3D, 2D, VR, AR, Game Engines, Architecture (IRL), Design Thinking"
   },
   {
     "name": "Floyd",
