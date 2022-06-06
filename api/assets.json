@@ -24,15 +24,21 @@
     "download": false
   },
   {
-    "title": "3D Nouns Glasses (.mtl, .fbx, .obj, .vox)",
-    "image": "3dnounsglasses.JPG",
-    "file": "NounsGlasses3D.zip",
+    "title": "Color Palette (.act)",
+    "image": "official_palette.png",
+    "file": "NounsOfficialPalette.act",
     "download": true
   },
   {
-    "title": "Color Palette",
+    "title": "Color Palette (.ase)",
     "image": "official_palette.png",
-    "file": "NounsOfficialPalette.act",
+    "file": "NounsOfficialPalette.ase",
+    "download": true
+  },
+  {
+    "title": "3D Nouns Glasses (.mtl, .fbx, .obj, .vox)",
+    "image": "3dnounsglasses.JPG",
+    "file": "NounsGlasses3D.zip",
     "download": true
   },
   {
