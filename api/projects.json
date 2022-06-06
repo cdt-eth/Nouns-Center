@@ -716,7 +716,7 @@
     "description": "The Nouns Almanac is for anyone who loves Nouns. The book contains the first 256 Nouns ever minted! Each Noun receives their very own full page feature including all their special Noun traits, owner details, mint date and one to two sentences about Nouns in the context of all the Nouns in the Nouns Almanac.",
     "creator": ["mintfaced"],
     "url": "https://www.nouns.zone/",
-    "image": "bt21.jpeg",
+    "image": "almanac.jpeg",
     "category": ["nfts"]
   },
   {
@@ -768,6 +768,14 @@
     "category": ["nfts", "proposal"]
   },
   {
+    "title": "Nouns IRL",
+    "description": "Own nouns IRL (In Real Life). Merch purchases == 10% donations to charities.",
+    "creator": ["nounsIRL"],
+    "url": "https://nounsirl.com/",
+    "image": "nounsirl.webp",
+    "category": ["merch"]
+  },
+  {
     "title": "Nouns Jump",
     "description": "3K nouns & toadz jumping beyond the endless skyline.",
     "creator": ["nounsjump"],
@@ -776,12 +784,12 @@
     "category": ["nfts", "misc"]
   },
   {
-    "title": "Nouns IRL",
-    "description": "Own nouns IRL (In Real Life). Merch purchases == 10% donations to charities.",
-    "creator": ["nounsIRL"],
-    "url": "https://nounsirl.com/",
-    "image": "nounsirl.webp",
-    "category": ["merch"]
+    "title": "Nouns Love",
+    "description": "This is a minting service for people who want to have affordable Nounish NFTs. A newly minted NFT will be priced at 1ETH initiallly, and the price will go down gradually until somebody purchases it (Dutch Auction).",
+    "creator": ["nounsfes", "nounslove"],
+    "url": "https://nouns.love/",
+    "image": "nounslove.jpeg",
+    "category": ["nfts"]
   },
   {
     "title": "Nouns Mug",
