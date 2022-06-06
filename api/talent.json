@@ -112,12 +112,44 @@
     "skills": "Strategy/growth conduct. Product/Marketer. Team Building. Writing. Nounish entrepreneurial."
   },
   {
+    "name": "Toastee",
+    "twitter": "noun239",
+    "discord": "toastee#0239",
+    "discordId": "954180506772181062",
+    "title": ["Designer"],
+    "skills": "Figma, React"
+  },
+  {
+    "name": "Mono",
+    "twitter": "0xMonografia",
+    "discord": "mono#9024",
+    "discordId": "825433753269698560",
+    "title": ["Designer"],
+    "skills": "Product Design, Doodling"
+  },
+  {
+    "name": "WizNav",
+    "twitter": "wiznav",
+    "discord": "wiznav#1617",
+    "discordId": "975751778031255582",
+    "title": ["Developer"],
+    "skills": "Solidity, Fullstack"
+  },
+  {
     "name": "Krel",
     "twitter": "krel404",
     "discord": "krel#0404",
     "discordId": "361204440499486720",
     "title": ["Designer"],
     "skills": "Pixel-stuff, UI-stuff, Figma"
+  },
+  {
+    "name": "Andréas",
+    "twitter": "0xharb",
+    "discord": "Harbinger#5096",
+    "discordId": "",
+    "title": ["Developer"],
+    "skills": "Typescript, React, Nextjs, Nodejs, Solidity"
   },
   {
     "name": "Jakz",
@@ -128,12 +160,28 @@
     "skills": "Javascript, React, Typescript, Tailwind"
   },
   {
+    "name": "Sidenoun",
+    "twitter": "sidenoun",
+    "discord": "sidenoun#1868",
+    "discordId": "908510562047123506",
+    "title": ["Developer"],
+    "skills": "React, Tailwind, JavaScript, Graphic Design"
+  },
+  {
+    "name": "Mindtoasted",
+    "twitter": "Mindtoasted0x",
+    "discord": "Mindtoasted#6613",
+    "discordId": "982450544679456838",
+    "title": ["Developer"],
+    "skills": "Javascript, React, Typescript, Tailwind"
+  },
+  {
     "name": "Motiondesign.eth",
     "twitter": "motiondesigneth",
     "discord": "motiondesigneth#7971",
     "discordId": "",
     "title": ["Artist"],
-    "skills": "Animation, VFX, Graphic Arts, Illustration, Motion Design"
+    "skills": "Graphic Design, Illustrator, Concept Artist, Video Editing"
   },
   {
     "name": "Zeeraffe",
@@ -208,6 +256,22 @@
     "skills": "Illustrator, Procreate, Photoshop, Canva"
   },
   {
+    "name": "Jack",
+    "twitter": "scobesx",
+    "discord": "scobes#0001",
+    "discordId": "",
+    "title": ["Developer"],
+    "skills": "Typescript, Javascript, React, Tailwind, Solidity"
+  },
+  {
+    "name": "Teji",
+    "twitter": "0xTEJI",
+    "discord": "TEJI#1111",
+    "discordId": "864840159065014293",
+    "title": ["Artist"],
+    "skills": "Creative Direction"
+  },
+  {
     "name": "Naomsa",
     "twitter": "Naomsa666",
     "discord": "naomsa#5548",
@@ -216,12 +280,28 @@
     "skills": "Full Stack + solidity"
   },
   {
+    "name": "Sabrina",
+    "twitter": "sabrinaxdoll",
+    "discord": "ladysabrina#1583",
+    "discordId": "922972388772151357",
+    "title": ["Writer"],
+    "skills": "Content Writing, Long-form Writing, Storytelling"
+  },
+  {
     "name": "Dave Haber",
     "twitter": "davehaber",
     "discord": "1n#6541",
     "discordId": "846122580900446208",
     "title": ["consultant"],
     "skills": "Growth Consultant, Growth, Strategy, eCommerce, Analytics, low-level design."
+  },
+  {
+    "name": "Jean-Marc Saad",
+    "twitter": "worldofnoun",
+    "discord": "zJMS#7868",
+    "discordId": "211824936778596352",
+    "title": ["Developer"],
+    "skills": "Full-stack Development, DevOps Engineering, Blockchain Development, Adobe Suite, Pixel Art"
   },
   {
     "name": "Brkfstsndwch",
