@@ -43,6 +43,12 @@ const smallgrants = ({ grantsData }) => {
       <PageHeader>
         <Header title="Small Grants | Nouns Center" />
         <Title title="Funding: Small Grants" />
+
+        <Subheader
+          title="For projects needing 0.1-10Ξ
+"
+          body="Creators who have either been given a grant from NounsDAO or received retroactive funding for proliferating Nouns."
+        />
       </PageHeader>
 
       <PageContent>
