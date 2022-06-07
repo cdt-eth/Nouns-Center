@@ -60,8 +60,8 @@ const funding = [
   {
     source: "Prop House",
     range: "2 - 10",
-    totalEth: 49,
-    recipients: 12,
+    totalEth: 71,
+    recipients: 23,
     recipientType: "winners",
     distributed: "awarded to ",
     link: "/funding/prophouse",
