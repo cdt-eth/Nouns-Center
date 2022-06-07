@@ -4,6 +4,7 @@ import React from "react";
 
 // import openseaIcon from "../../public/icons/opensea.svg";
 import projects from "../../api/projects.json";
+import PageContent from "../../components/Layout/PageContent";
 
 export const getStaticProps = async (context) => {
   const id = context.params.id;
@@ -57,7 +58,7 @@ const ProjectDetails = ({ projectData }) => {
   const { title, description, creator, url, image, category } = projectData;
 
   return (
-    <div className="">
+    <PageContent>
       <div className="bg-gray-50 rounded-xl">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-12 sm:px-6 lg:px-8">
           <div className="sm:flex sm:items-baseline sm:justify-between">
@@ -75,7 +76,7 @@ const ProjectDetails = ({ projectData }) => {
             </div>
 
             <Link passHref href="/projects">
-              <a className="hidden text-sm font-semibold text-nouns-earth-blue hover:text-nouns-earth-blue sm:block">
+              <a className="hidden text-sm font-semibold text-blue-base hover:text-blue-base sm:block">
                 All projects<span aria-hidden="true"> &rarr;</span>
               </a>
             </Link>
@@ -174,7 +175,7 @@ const ProjectDetails = ({ projectData }) => {
           <div className="mt-6 sm:hidden">
             <a
               href="#"
-              className="block text-sm font-semibold text-nouns-earth-blue hover:text-nouns-earth-blue"
+              className="block text-sm font-semibold text-blue-base hover:text-blue-base"
             >
               Browse all categories<span aria-hidden="true"> &rarr;</span>
             </a>
@@ -212,7 +213,7 @@ const ProjectDetails = ({ projectData }) => {
           View
         </a>
       </div> */}
-    </div>
+    </PageContent>
   );
 };
 
