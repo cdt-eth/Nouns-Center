@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { publicProvider } from 'wagmi/providers/public';
 
-import { chain, configureChains, createClient, WagmiProvider } from 'wagmi';
+import { chain, configureChains, createClient, WagmiConfig } from 'wagmi';
 
 const { chains, provider } = configureChains(
   [chain.mainnet],
@@ -58,11 +58,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      <WagmiProvider client={wagmiClient}>
+      <WagmiConfig client={wagmiClient}>
         <RainbowKitProvider chains={chains} coolMode>
           <Component {...pageProps} />
         </RainbowKitProvider>
-      </WagmiProvider>
+      </WagmiConfig>
       {/* {asPath === "/" && <div id="autocomplete"></div>} */}
     </Layout>
   );

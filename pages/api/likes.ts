@@ -27,7 +27,6 @@ export default async function likes(req: NextApiRequest, res: NextApiResponse) {
           );
 
           if (likeExists) {
-            console.log(`isUpdate: ${likeExists}, flip to liked: ${liked}`);
             // update
             const updateResponse = await updateLikedForIdeaAndAddress(
               jwtToken,
