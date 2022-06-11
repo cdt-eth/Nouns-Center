@@ -14,6 +14,7 @@ import '@rainbow-me/rainbowkit/styles.css';
 
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useAccount, useSigner } from 'wagmi';
+import { useRouter } from 'next/router';
 
 const Ideas = () => {
   const [title, setTitle] = useState<string>('');
@@ -22,6 +23,10 @@ const Ideas = () => {
   const [isPreview, setIsPreview] = useState<boolean>(false);
   const [isFormValid, setIsFormValid] = useState<boolean>(false);
   const [authError, setAuthError] = useState<string>(undefined);
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [submitText, setSubmitText] = useState<string>('Sign and Submit');
+
+  const router = useRouter();
 
   const { data: accountData } = useAccount();
   const { data: signer } = useSigner();
@@ -52,6 +57,8 @@ const Ideas = () => {
 
   const handleSubmitIdea = async (event) => {
     event.preventDefault();
+    setIsSubmitting(true);
+    setSubmitText('Submitting...');
 
     // verify auth
     try {
@@ -80,10 +87,14 @@ const Ideas = () => {
           setAuthError('There was an error during authentication');
           return;
         }
+        setIsSubmitting(false);
+        setSubmitText('Sign and Submit');
       }
     } catch (error) {
       // set error
       console.log({ error });
+      setIsSubmitting(false);
+      setSubmitText('Sign and Submit');
     }
 
     try {
@@ -100,8 +111,13 @@ const Ideas = () => {
       });
       const respData = await response.json();
       console.log({ respData });
+      setIsSubmitting(false);
+      setSubmitText('Sign and Submit');
+      router.push('/ideas');
     } catch (err) {
       console.log({ err });
+      setIsSubmitting(false);
+      setSubmitText('Sign and Submit');
     }
   };
 
@@ -161,8 +177,9 @@ const Ideas = () => {
             <button
               className="inline-flex justify-center ml-3 py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-sky-600 disabled:bg-sky-300 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
               onClick={handleSubmitIdea}
+              disabled={isSubmitting}
             >
-              Sign and Submit
+              {submitText}
             </button>
           </div>
         </div>

@@ -47,7 +47,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
     };
 
     if (status == 'connected') {
-      doHandleSubmitIdea();
+      //   doHandleSubmitIdea();
     }
     if (status == 'disconnected') {
       doLogout();
