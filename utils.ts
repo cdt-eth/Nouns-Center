@@ -1,2 +1,2 @@
 export const getRandomNounPic = (idx: number) =>
-  `https://noun-api.com/beta/pfp/?utm_source=${idx}`;
+  `https://api.cloudnouns.com/v1/pfp?ref=nounscenter&utm_source=${idx}`;
