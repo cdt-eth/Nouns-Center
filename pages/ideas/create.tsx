@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
+import Link from 'next/link';
 
 import Header from '../../components/Header';
 import Title from '../../components/Title';
@@ -241,12 +242,15 @@ const Ideas = () => {
                   properly!
                 </p>
                 <p className="mt-3 text-sm md:mt-0 md:ml-6">
-                  <a
-                    href="#"
-                    className="whitespace-nowrap font-medium text-blue-700 hover:text-blue-600"
-                  >
-                    Link to syntax <span aria-hidden="true">&rarr;</span>
-                  </a>
+                  <Link href="https://www.markdownguide.org/basic-syntax/">
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      className="whitespace-nowrap font-medium text-blue-700 hover:text-blue-600"
+                    >
+                      Link to syntax <span aria-hidden="true">&rarr;</span>
+                    </a>
+                  </Link>
                 </p>
               </div>
             </div>
