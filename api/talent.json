@@ -232,6 +232,14 @@
     "skills": "Creative Director, VR, XR, Video Editor/Director, Music Supervisor, Composition, Sound Design"
   },
   {
+    "name": "Antonio",
+    "twitter": "",
+    "discord": "PapiTones#5131",
+    "discordId": "",
+    "title": ["Developer"],
+    "skills": "JavaScript, React, Emotion (and other css), Apollo (graphql client), Elixir"
+  },
+  {
     "name": "Blowned",
     "twitter": "BlownedEth",
     "discord": "Blowned.eth#5048",
@@ -270,6 +278,14 @@
     "discordId": "",
     "title": ["Developer"],
     "skills": "Typescript, Javascript, React, Tailwind, Solidity"
+  },
+  {
+    "name": "Greta Gremplin",
+    "twitter": "greta_gremplin",
+    "discord": "nftalina#3195",
+    "discordId": "986638852796076112",
+    "title": ["Designer"],
+    "skills": "Graphic Design, Illustration"
   },
   {
     "name": "Teji",
