@@ -20,7 +20,12 @@
         "external": false
       },
       {
-        "name": "Nouners",
+        "name": "Discord Channels",
+        "link": "/channels",
+        "external": false
+      },
+      {
+        "name": "Nouners Intro",
         "link": "/nouners",
         "external": false
       }
