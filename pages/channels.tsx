@@ -20,12 +20,12 @@ const Channels = () => {
       <PageContent>
         <div className="bg-white shadow overflow-hidden sm:rounded-lg">
           {channelGroups.map((group) => (
-            <>
-              <div className="px-4 py-5 sm:px-6" key={group.title}>
-                <h3 className="text-lg leading-6 font-medium text-gray-900">
+            <div className="pb-14" key={group.title}>
+              <div className="px-4 py-5 sm:px-6">
+                <h3 className="text-4xl pb-2 leading-6 font-medium text-gray-900 text-nouns">
                   {group.title}
                 </h3>
-                <p className="mt-1 max-w-2xl text-sm text-gray-500">
+                <p className="mt-2 italic max-w-2xl text-md text-gray-500">
                   {group.overview}
                 </p>
               </div>
@@ -36,18 +36,18 @@ const Channels = () => {
                   key={channel.name}
                 >
                   <dl className="sm:divide-y sm:divide-gray-200">
-                    <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                      <dt className="text-sm font-medium text-gray-500">
-                        {channel.name}
+                    <div className="py-1 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                      <dt className="text-lg font-semibold ">
+                        #{channel.name}
                       </dt>
-                      <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                      <dd className="mt-1 text-md text-gray-600 sm:mt-0 sm:col-span-2">
                         {channel.description}
                       </dd>
                     </div>
                   </dl>
                 </div>
               ))}
-            </>
+            </div>
           ))}
         </div>
       </PageContent>

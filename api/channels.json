@@ -1,133 +1,133 @@
 [
   {
     "title": "nounsdao",
-    "overview": "",
+    "overview": "Only Noun owners can write in these, but anyone can read them.",
     "channels": [
       {
         "name": "nouner-general",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "An all-purpose chat for Nouners (Noun owners)."
       },
       {
         "name": "treasury-management",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "Discussion around the treasury: how to use, protect, and grow it."
       },
       {
         "name": "dao-security",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "Conversations about mitigations for possible future social or 51% attacks on the DAO."
       }
     ]
   },
   {
     "title": "community",
-    "overview": "",
+    "overview": "The main set of non-project related channels to be used by anyone.",
     "channels": [
       {
         "name": "general",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "The main discussion channel for what's going on on a daily basis. Before adding links or asking questions, take a read through other channels to see which may be a better fit."
       },
       {
         "name": "nouniverse",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "Stands for 'Nouns Universe' and is where all extension projects can post updates on their Nounish projects, art, and creations."
       },
       {
         "name": "developers",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "A place to ask technical questions about the Nouns code and contracts."
       },
       {
         "name": "proposal-ideas",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "Post your project idea here if you want initial feedback on it before putting it on Discourse for more scrutiny. This channel can often be used as a 'temp check' or sanity check' before moving forward."
       },
       {
         "name": "grants-and-retro-funding",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "The Small Grants & Retro Funding Committee's channel to announce projects they've awarded funding to or discuss projects asking for it. You can ask questions about your project's merit here."
       },
       {
         "name": "discourse-notifications",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "A read-only channel that a bot sends notifications to anytime a new comment or post is made, by anyone, on Disourse."
       },
       {
         "name": "nouns-otc",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "'OTC' means 'Over the counter' and is in reference to buying Nouns. If you want to buy/sell a Noun you can try striking a deal here before going to secondary markets."
       },
       {
         "name": "subdaos",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "Discussion around DAOs/groups created to buy Nouns or participate in Nouns governance."
       },
       {
         "name": "voice-public-text",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "A 'sibling' text channel to drop links & images being referenced in #voice-public."
       },
       {
         "name": "voice-public",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "A drop-in voice channel. Anyone can join and instantly be a part of whatever conversation is going on."
       }
     ]
   },
   {
     "title": "community-projects",
-    "overview": "",
+    "overview": "Set of projects by and for the community. These are community or DAO efforts not funded via proposal.",
     "channels": [
       {
         "name": "noundry",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "Stands for 'Nouns Foundry'. On the Nouns anniversary, August 8th, new traits will be added. Submit your ideas here to be considered."
       },
       {
         "name": "nouns-physicals",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "Share any physicals Nouns ideas. Whether it be toys, glasses, pins, clothing etc. This is where IRL Nouns products are discussed."
       },
       {
         "name": "writers-room",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "Ongoing effort to write stories, scripts, and/or screenplays about Nouns."
       },
       {
         "name": "cryptovoxels",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "Project to create a Nounish space in the Voxels virtual world."
       },
       {
         "name": "1-click-nounsdao",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "This project is both a product & protocol that will allow anyone to deploy a fully functional Nouns DAO fork in just a few clicks and with 0 code."
       }
     ]
   },
   {
     "title": "international",
-    "overview": "",
+    "overview": "A '#general' channel for our growing international communities.",
     "channels": [
       {
         "name": "「🇯🇵日本語」",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "Home to the Japanese community and was the first international channel."
       },
       {
         "name": "🇧🇷-português",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "A place for Portuguese speakers and the NounsDAO Brazil efforts."
       },
       {
         "name": "español",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "The channel for Spanish-speakers and the NounsDAO Amigos project."
       }
     ]
   },
   {
     "title": "funded-proposals",
-    "overview": "",
+    "overview": "Every funded proposal gets its own channel to discuss things specific to it. You can ask proposal-specific questions in their respective channel.",
     "channels": [
       {
-        "name": "",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "name": "[num]-[name]",
+        "description": "Every funded proposal gets its own channel to discuss things specific to it. Won't listen them all here, but they follow the same format of 'proposal num & proposal name'. You can ask proposal-specific questions in their respective channel."
       }
     ]
   },
   {
     "title": "nouncil",
-    "overview": "",
+    "overview": "Stands for 'The Nouns Council' and is the group of builders who govern a Nouns delegated to them.",
     "channels": [
       {
         "name": "nouncil",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "The '#general' channel for the Nouncil."
       },
       {
         "name": "nouncil-votes",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+        "description": "Nouncillors use emoji-based voting for how they will, as a group, vote on official proposals."
       }
     ]
   }
