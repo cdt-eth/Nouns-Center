@@ -1,5 +1,31 @@
 [
   {
+    "title": "start here",
+    "overview": "Group of channels to help people join the Discord, learn about channels, and verify assets.",
+    "channels": [
+      {
+        "name": "collabland-join",
+        "description": "Technically lives right outside this section, but it's the place to both verify you're not a bot when joining the Discord for the first time as well as verifying your Noun NFT to gain your `Nouner` role."
+      },
+      {
+        "name": "welcome",
+        "description": "Where you land when you first join the Discord. No tangible purpose and history non-viewable."
+      },
+      {
+        "name": "getting-started",
+        "description": "Overview of all channel groups in the Discord. Functions a lot like this page does."
+      },
+      {
+        "name": "verify",
+        "description": "Old verification channel/method. Replaced by #collabland-join."
+      },
+      {
+        "name": "announcements",
+        "description": "Not used anymore, but it is where community-wide announcements were posted."
+      }
+    ]
+  },
+  {
     "title": "nounsdao",
     "overview": "Only Noun owners can write in these, but anyone can read them.",
     "channels": [
