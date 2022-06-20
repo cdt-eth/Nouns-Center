@@ -1,0 +1,134 @@
+[
+  {
+    "title": "nounsdao",
+    "overview": "",
+    "channels": [
+      {
+        "name": "nouner-general",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "treasury-management",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "dao-security",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      }
+    ]
+  },
+  {
+    "title": "community",
+    "overview": "",
+    "channels": [
+      {
+        "name": "general",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "nouniverse",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "developers",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "proposal-ideas",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "grants-and-retro-funding",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "discourse-notifications",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "nouns-otc",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "subdaos",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "voice-public-text",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "voice-public",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      }
+    ]
+  },
+  {
+    "title": "community-projects",
+    "overview": "",
+    "channels": [
+      {
+        "name": "noundry",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "nouns-physicals",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "writers-room",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "cryptovoxels",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "1-click-nounsdao",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      }
+    ]
+  },
+  {
+    "title": "international",
+    "overview": "",
+    "channels": [
+      {
+        "name": "「🇯🇵日本語」",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "🇧🇷-português",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "español",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      }
+    ]
+  },
+  {
+    "title": "funded-proposals",
+    "overview": "",
+    "channels": [
+      {
+        "name": "",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      }
+    ]
+  },
+  {
+    "title": "nouncil",
+    "overview": "",
+    "channels": [
+      {
+        "name": "nouncil",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      },
+      {
+        "name": "nouncil-votes",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus lectus id tellus pharetra sollicitudin. "
+      }
+    ]
+  }
+]
