@@ -201,6 +201,14 @@
   },
   {
     "title": "Dune Analytics",
+    "description": "Dashboard about Nouners, the DAO, treasury, and auctions.",
+    "creator": ["hildobby_"],
+    "url": "https://dune.com/hildobby/nouns",
+    "image": "dunedash.jpg",
+    "category": ["stats"]
+  },
+  {
+    "title": "Dune Analytics II",
     "description": "Auction statistics.",
     "creator": ["3pa15"],
     "url": "https://dune.xyz/aaaaaaaaaa/NounsDAO",
