@@ -34,6 +34,7 @@
   {
     "name": "For Builders",
     "current": false,
+    "defaultOpen": true,
     "children": [
       {
         "name": "Assets",
@@ -60,6 +61,7 @@
   {
     "name": "Get Funding",
     "current": false,
+    "defaultOpen": true,
     "children": [
       {
         "name": "Overview",
@@ -86,6 +88,7 @@
   {
     "name": "Community",
     "current": false,
+    "defaultOpen": true,
     "children": [
       {
         "name": "Projects",
