@@ -107,6 +107,14 @@ const Podcasts = () => {
         seamless
         src="https://player.cohostpodcasting.com/269b6b54-159e-4520-b45f-40d788f04ab6/56c797f6-96a0-46ae-ab8a-6cf7b7ce3a10"
       ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/324e4910-ea2e-42a1-8193-46a68bd71d76/cb538344-bef4-46d7-b7f9-b3f281bc6773"
+      ></iframe>
     </div>
   );
 };
