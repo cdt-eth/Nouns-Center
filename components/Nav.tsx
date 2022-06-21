@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Disclosure } from "@headlessui/react";
-// import nav from "../api/nav.json";
 import nav from "../api/nav2.json";
+import { v4 as uuidv4 } from "uuid";
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
 
@@ -41,10 +41,16 @@ const Nav = ({ setSidebarOpen }) => {
             </Link>
 
             {nav.map((item) => (
-              <Disclosure as="div" key={item.name} className="space-y-1 mb-4">
+              <Disclosure
+                as="div"
+                defaultOpen
+                key={item.name}
+                className="space-y-1 mb-4"
+              >
                 {({ open }) => (
                   <>
                     <Disclosure.Button
+                      as="button"
                       className={classNames(
                         item.current
                           ? "bg-grey-base text-black focus:outline-none"
@@ -69,13 +75,12 @@ const Nav = ({ setSidebarOpen }) => {
                     <Disclosure.Panel className="space-y-1">
                       {item.children.map((subItem) => (
                         <div
-                          key={item.name}
+                          key={uuidv4()}
                           className="flex ml-3 px-1 items-center rounded-md"
                           onClick={() => setSidebarOpen(false)}
                         >
                           {subItem.external ? (
                             <Disclosure.Button
-                              key={item.name}
                               as="a"
                               href={subItem.link}
                               target="_blank"
