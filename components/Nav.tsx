@@ -85,13 +85,13 @@ const Nav = ({ setSidebarOpen }) => {
                               href={subItem.link}
                               target="_blank"
                               rel="noreferrer"
-                              className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-0.5 text-base font-medium text-nouns-black hover:text-blue-base "
+                              className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-0.5 text-sm font-medium text-nouns-black hover:text-blue-base "
                             >
                               {subItem.name}
                             </Disclosure.Button>
                           ) : (
                             <Link href={subItem.link}>
-                              <a className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-0.5 text-base font-medium text-nouns-black hover:text-blue-base ">
+                              <a className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-0.5 text-sm font-medium text-nouns-black hover:text-blue-base ">
                                 {subItem.name}
                               </a>
                             </Link>
