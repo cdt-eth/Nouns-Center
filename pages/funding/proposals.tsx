@@ -37,7 +37,7 @@ const props = [
       name: "Jacob",
       href: "https://twitter.com/js_horne",
       imageUrl:
-        "https://pbs.twimg.com/profile_images/1501994286824501260/AYUsXOxm_400x400.png",
+        "https://pbs.twimg.com/profile_images/1534610987755642881/sPGI-poF_400x400.jpg",
     },
   },
   {
