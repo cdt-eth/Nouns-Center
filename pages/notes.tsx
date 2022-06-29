@@ -166,7 +166,7 @@ const Notes = ({ tableIds }) => {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className="origin-left absolute left-0 mt-2 w-28 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <Menu.Items className="origin-left absolute left-0 mt-2 w-28 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none overflow-y-scroll h-72">
                 <div className="py-1">
                   {tableIds &&
                     tableIds.map((id) => (
