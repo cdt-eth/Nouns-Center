@@ -12,7 +12,7 @@ function classNames(...classes) {
 
 const Nav = ({ setSidebarOpen }) => {
   return (
-    <div className="flex flex-col flex-grow  py-5 pb-4 bg-grey-base">
+    <div className="flex flex-col flex-grow  py-5 pb-4 bg-grey-base overflow-y-scroll">
       <Link passHref href="/">
         <div
           className="sm:cursor-pointer items-center flex-shrink-0 px-4"
@@ -29,7 +29,7 @@ const Nav = ({ setSidebarOpen }) => {
           className="flex-1 px-4 space-y-1 bg-grey-base flex-col justify-between flex"
           aria-label="Sidebar"
         >
-          <div className="">
+          <div>
             {/* No SubNav */}
             <Link passHref href="/">
               <img
