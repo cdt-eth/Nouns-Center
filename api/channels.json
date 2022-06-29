@@ -106,6 +106,10 @@
         "description": "Updates on Noun 355: the first AI-controlled Nouns DAO member."
       },
       {
+        "name": "nouns-clients",
+        "description": "Fudning teams to build alternatives nouns.wtf frontends."
+      },
+      {
         "name": "writers-room",
         "description": "Ongoing effort to write stories, scripts, and/or screenplays about Nouns."
       },
