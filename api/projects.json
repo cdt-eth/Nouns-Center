@@ -1043,6 +1043,14 @@
     "category": ["misc", "small-grants"]
   },
   {
+    "title": "SZNouns",
+    "description": "Nounish derivative with seasonal minting cadence with circle glasses ◐-◐¬ on-chain. Completely cc0 for the community by the @sznsNFT team which is an NFT fractionalization protocol. SZNouns aspire to be a high-quality, lower-price entry to Nouns by conferring proxy ownership, as 80% of SZNouns DAO treasury will be used to buy Nouns, forever.",
+    "creator": ["jl2fa", "sznounsdao", "sznsnft"],
+    "url": "https://sznouns.wtf",
+    "image": "sznouns.svg",
+    "category": ["nfts"]
+  },
+  {
     "title": "The Boanez",
     "description": "Boanez. (The Boneys + Noadz) 1/1 animated CC0 project.",
     "creator": ["TheBoanez"],
