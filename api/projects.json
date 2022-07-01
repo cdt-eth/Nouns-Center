@@ -1051,6 +1051,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "Terminal Dashboard",
+    "description": "Terminal is a dashboard for tokenized communities.",
+    "creator": ["forefront__"],
+    "url": "https://www.terminal.co/community/featured/nouns.wtf",
+    "image": "terminal.png",
+    "category": ["stats"]
+  },
+  {
     "title": "The Boanez",
     "description": "Boanez. (The Boneys + Noadz) 1/1 animated CC0 project.",
     "creator": ["TheBoanez"],
