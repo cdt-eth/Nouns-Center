@@ -135,6 +135,26 @@ export async function getIdea(ideaId: string) {
   return response?.data?.ideas;
 }
 
+export async function getLikesForAddress(address: string) {
+  const operationsDoc = `
+    query getLikesForAddress($address: String!) {
+        ideas_likes(where: {liked: {_eq: true}, address: {_eq: $address}) {
+            idea_id
+        }
+    }
+`;
+
+  const response = await adminQueryHasuraGQL(
+    operationsDoc,
+    'getLikesForAddress',
+    {
+      address,
+    }
+  );
+
+  return response?.data?.ideas_likes;
+}
+
 export async function insertIdea(token, { address, title, tldr, description }) {
   const operationsDoc = `
     mutation insertIdea($address: String!, $title: String!, $tldr: String!, $description: String!) {

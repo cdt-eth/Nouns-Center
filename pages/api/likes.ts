@@ -61,7 +61,7 @@ export default async function likes(req: NextApiRequest, res: NextApiResponse) {
       res.status(500).send({ done: false, error: error?.message });
     }
   } else {
-    res.setHeader('Allow', ['GET']);
+    res.setHeader('Allow', ['POST']);
     res.status(405).end(`Method ${method} not supported`);
   }
 }

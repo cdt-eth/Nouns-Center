@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Header from '../../components/Header';
 
@@ -9,12 +9,12 @@ import PageContent from '../../components/Layout/PageContent';
 
 import { getIdeas } from '../../lib/db/hasura';
 import { getAddressFromContext } from '../../lib/utils';
-import { signUser } from '../../lib/signUser';
+// import { signUser } from '../../lib/signUser';
 
 import '@rainbow-me/rainbowkit/styles.css';
 
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-import { useAccount, useSigner, useConnect } from 'wagmi';
+import { useAccount } from 'wagmi';
 
 export async function getServerSideProps(context) {
   let address = await getAddressFromContext(context);
@@ -31,28 +31,28 @@ export async function getServerSideProps(context) {
 }
 
 const Ideas = ({ ideas, ideas_likes }) => {
-  const { status } = useConnect();
   const { data: accountData } = useAccount();
-  const { data: signer } = useSigner();
-  const ideasLiked = ideas_likes.map((idea_liked) => {
+  const ideasLikedByIdeaId = ideas_likes.map((idea_liked) => {
     return idea_liked.idea_id;
   });
 
+  const [ideasLiked, setIdeasLiked] = useState<number[]>(ideasLikedByIdeaId);
+
   useEffect(() => {
-    const doLogout = async () => {
-      await fetch('/api/logout');
-    };
-    const doHandleSubmitIdea = async () => {
-      await signUser(accountData, signer);
+    const getIdeaLikes = async () => {
+      const likesByAddressResp = await fetch(
+        `/api/likes_by_address?address=${accountData.address}`
+      );
+      const likesByAddress = await likesByAddressResp.json();
+      if (likesByAddress?.data?.length) {
+        setIdeasLiked(likesByAddress.data);
+      }
     };
 
-    if (status == 'connected') {
-      //   doHandleSubmitIdea();
+    if (accountData?.address) {
+      getIdeaLikes();
     }
-    if (status == 'disconnected') {
-      doLogout();
-    }
-  }, [status, accountData, signer]);
+  }, [accountData]);
 
   return (
     <>
