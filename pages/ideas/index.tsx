@@ -9,7 +9,6 @@ import PageContent from '../../components/Layout/PageContent';
 
 import { getIdeas } from '../../lib/db/hasura';
 import { getAddressFromContext } from '../../lib/utils';
-// import { signUser } from '../../lib/signUser';
 
 import '@rainbow-me/rainbowkit/styles.css';
 
@@ -76,18 +75,19 @@ const Ideas = ({ ideas, ideas_likes }) => {
             </div>
 
             <div className="grid sm:grid-cols-1 gap-x-6">
-              {ideas.map((idea) => (
-                <IdeaCard
-                  key={idea.id}
-                  id={idea.id}
-                  title={idea.title}
-                  tldr={idea.tldr}
-                  submittedBy={idea.address}
-                  date={idea.created_at}
-                  liked={ideasLiked.includes(idea.id)}
-                  votes={idea.ideas_liked_aggregate.aggregate.count}
-                />
-              ))}
+              {ideas &&
+                ideas.map((idea) => (
+                  <IdeaCard
+                    key={idea.id}
+                    id={idea.id}
+                    title={idea.title}
+                    tldr={idea.tldr}
+                    submittedBy={idea.address}
+                    date={idea.created_at}
+                    liked={ideasLiked.includes(idea.id)}
+                    votes={idea.ideas_liked_aggregate.aggregate.count}
+                  />
+                ))}
             </div>
           </div>
         </div>
