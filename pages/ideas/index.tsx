@@ -20,7 +20,7 @@ export async function getServerSideProps(context) {
   let address = await getAddressFromContext(context);
   if (!address) address = '';
   const ideaData = await getIdeas(address);
-  const { ideas, ideas_likes } = ideaData;
+  const { ideas = [], ideas_likes = [] } = ideaData;
 
   return {
     props: {
