@@ -1,12 +1,31 @@
-import "tailwindcss/tailwind.css";
-import "../styles/globals.css";
-import Layout from "../components/Layout";
-import algoliasearch from "algoliasearch/lite";
-import { autocomplete, getAlgoliaResults } from "@algolia/autocomplete-js";
-import "@algolia/autocomplete-theme-classic";
-import { useRouter } from "next/router";
+import 'tailwindcss/tailwind.css';
+import '../styles/globals.css';
+import Layout from '../components/Layout';
+import algoliasearch from 'algoliasearch/lite';
+import { autocomplete, getAlgoliaResults } from '@algolia/autocomplete-js';
+import '@algolia/autocomplete-theme-classic';
+import { useRouter } from 'next/router';
 
-import { useEffect } from "react";
+import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { publicProvider } from 'wagmi/providers/public';
+
+import { chain, configureChains, createClient, WagmiConfig } from 'wagmi';
+
+const { chains, provider } = configureChains(
+  [chain.mainnet],
+  [publicProvider()]
+);
+
+const { connectors } = getDefaultWallets({
+  appName: 'Nouns Center',
+  chains,
+});
+
+const wagmiClient = createClient({
+  autoConnect: true,
+  connectors,
+  provider,
+});
 
 // const searchClient = algoliasearch(
 //   "PGIH0KF5F5",
@@ -39,7 +58,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      <Component {...pageProps} />
+      <WagmiConfig client={wagmiClient}>
+        <RainbowKitProvider chains={chains} coolMode>
+          <Component {...pageProps} />
+        </RainbowKitProvider>
+      </WagmiConfig>
       {/* {asPath === "/" && <div id="autocomplete"></div>} */}
     </Layout>
   );
