@@ -86,7 +86,6 @@ export async function isNewUser(token: string, address: string) {
 }
 
 export async function getIdeas(address: string) {
-  //   return response?.data?.ideas;
   const operationsDoc = `
     query getIdeas($address: String) {
         ideas (order_by: {ideas_liked_aggregate: {count: desc}}) {
