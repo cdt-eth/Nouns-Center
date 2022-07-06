@@ -138,6 +138,10 @@
       {
         "name": "español",
         "description": "The channel for Spanish-speakers and the NounsDAO Amigos project."
+      },
+      {
+        "name": "中文",
+        "description": "The channel for the Chinese NounsDAO community."
       }
     ]
   },
