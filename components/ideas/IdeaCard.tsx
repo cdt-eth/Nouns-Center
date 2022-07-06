@@ -1,10 +1,11 @@
+import React, { useState, useEffect } from 'react';
+
 import { truncateEthAddress } from '../../lib/utils';
 import { signUser } from '../../lib/signUser';
 import { useAccount, useSigner } from 'wagmi';
 
 import Heart from '../icons/heart-icon';
 
-import React, { useState } from 'react';
 import { useEnsName } from 'wagmi';
 import Link from 'next/link';
 
@@ -33,6 +34,10 @@ const IdeaCard = ({
   const { data: ensName } = useEnsName({ address: submittedBy });
   const { data: accountData } = useAccount();
   const { data: signer } = useSigner();
+
+  useEffect(() => {
+    setIsLiked(liked);
+  }, [liked]);
 
   const runLikesService = async (val: boolean) => {
     return await fetch('/api/likes', {
