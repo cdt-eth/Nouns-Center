@@ -1,8 +1,6 @@
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
 import Layout from '../components/Layout';
-import algoliasearch from 'algoliasearch/lite';
-import { autocomplete, getAlgoliaResults } from '@algolia/autocomplete-js';
 import '@algolia/autocomplete-theme-classic';
 import { useRouter } from 'next/router';
 

@@ -32,7 +32,7 @@ const IdeaCard = ({
   const [voteCount, setVoteCount] = useState(votes);
 
   const { data: ensName } = useEnsName({ address: submittedBy });
-  const { data: accountData } = useAccount();
+  const { address } = useAccount();
   const { data: signer } = useSigner();
 
   useEffect(() => {
@@ -53,7 +53,7 @@ const IdeaCard = ({
   };
 
   const handleToggleHeart = async () => {
-    if (await signUser(accountData, signer)) {
+    if (await signUser(address, signer)) {
       const val = !isLiked;
       let currVoteCount = voteCount;
       setVoteCount(val ? voteCount + 1 : voteCount - 1);
@@ -63,8 +63,6 @@ const IdeaCard = ({
         setVoteCount(currVoteCount);
         setIsLiked(isLiked);
       }
-    } else {
-      // TODO: fill this in
     }
   };
 

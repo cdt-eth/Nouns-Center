@@ -6,14 +6,13 @@ import Header from '../../components/Header';
 import Title from '../../components/Title';
 import PageHeader from '../../components/Layout/PageHeader';
 import PageContent from '../../components/Layout/PageContent';
-import AlertError from '../../components/common/AlertError';
 import AlertWarning from '../../components/common/AlertWarning';
+import WalletButton from '../../components/WalletButton/WalletButton';
 
 import { InformationCircleIcon } from '@heroicons/react/solid';
 
 import '@rainbow-me/rainbowkit/styles.css';
 
-import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useAccount, useSigner } from 'wagmi';
 import { useRouter } from 'next/router';
 
@@ -29,16 +28,16 @@ const Ideas = () => {
 
   const router = useRouter();
 
-  const { data: accountData } = useAccount();
+  const { address } = useAccount();
   const { data: signer } = useSigner();
 
   useEffect(() => {
-    if (!accountData?.address) {
+    if (!address) {
       setAuthError('Please connect your wallet to submit an idea');
     } else {
       setAuthError(undefined);
     }
-  }, [accountData]);
+  }, [address]);
 
   const handlePreviewBtn = async (event) => {
     event.preventDefault();
@@ -67,9 +66,6 @@ const Ideas = () => {
       const authData = await authResp.json();
       const eoa = authData?.address;
       if (!eoa) {
-        //
-        const address = accountData?.address;
-
         if (!address) return;
 
         const message = `${new Date().toDateString()} Nouns.Center`;
@@ -111,7 +107,6 @@ const Ideas = () => {
         },
       });
       const respData = await response.json();
-      console.log({ respData });
       setIsSubmitting(false);
       setSubmitText('Sign and Submit');
       router.push('/ideas');
@@ -302,12 +297,9 @@ const Ideas = () => {
       <PageContent>
         <div>
           <div>
-            {/* <h3 className="text-2xl pt-2 pb-4 text-nouns sm:text-center leading-6 font-medium text-black dark:xs:text-white dark:sm:text-black">
-              The Idea Garden
-            </h3> */}
             <div className="flex justify-between">
               <div className="self-end">
-                <ConnectButton showBalance={false} />
+                <WalletButton showBalance={false} />
               </div>
             </div>
 

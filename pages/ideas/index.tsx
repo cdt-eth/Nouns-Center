@@ -12,14 +12,14 @@ import { getAddressFromContext } from '../../lib/utils';
 
 import '@rainbow-me/rainbowkit/styles.css';
 
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import WalletButton from '../../components/WalletButton/WalletButton';
+
 import { useAccount } from 'wagmi';
 
 export async function getServerSideProps(context) {
   let address = await getAddressFromContext(context);
   if (!address) address = '';
-  const ideaData = await getIdeas(address);
-  const { ideas = [], ideas_likes = [] } = ideaData;
+  const { ideas = [], ideas_likes = [] } = { ...(await getIdeas(address)) };
 
   return {
     props: {
@@ -65,7 +65,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
           <div>
             <div className="flex justify-between">
               <div className="self-end">
-                <ConnectButton showBalance={false} />
+                <WalletButton showBalance={false} />
               </div>
               <Link href={'/ideas/create'}>
                 <a className="inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto">
