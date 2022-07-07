@@ -1,10 +1,8 @@
-export const signUser = async (accountData, signer) => {
+export const signUser = async (address, signer) => {
   try {
     const authResp = await fetch('/api/me');
     const authData = await authResp.json();
     if (!authData?.success) {
-      const address = accountData?.address;
-
       if (!address) return;
 
       const message = `${new Date().toDateString()} Nouns.Center`;

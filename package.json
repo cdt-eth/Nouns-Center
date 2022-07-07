@@ -14,14 +14,14 @@
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
     "@notionhq/client": "^1.0.4",
-    "@rainbow-me/rainbowkit": "^0.2.1",
+    "@rainbow-me/rainbowkit": "^0.4.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@types/jsonwebtoken": "^8.5.8",
     "algoliasearch": "^4.13.0",
     "axios": "^0.27.2",
     "cookie": "^0.5.0",
     "dotenv": "^11.0.0",
-    "ethers": "^5.6.8",
+    "ethers": "^5.6.9",
     "jsonwebtoken": "^8.5.1",
     "jszip": "^3.7.1",
     "next": "latest",
@@ -46,7 +46,7 @@
     "siwe": "^1.1.6",
     "uuid": "^8.3.2",
     "uuidv4": "^6.2.12",
-    "wagmi": "^0.4.5"
+    "wagmi": "^0.5.9"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.0",

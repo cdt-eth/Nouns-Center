@@ -27,7 +27,7 @@ export async function getServerSideProps(context) {
   };
 }
 const Idea = ({ idea }) => {
-  const { id, title, tldr, description, created_at, address } = idea;
+  const { id, title, tldr, description, address } = idea;
   const { data: ensName } = useEnsName({ address: address });
 
   return (
