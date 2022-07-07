@@ -30,7 +30,7 @@ export async function getServerSideProps(context) {
 }
 
 const Ideas = ({ ideas, ideas_likes }) => {
-  const { data: accountData } = useAccount();
+  const { address } = useAccount();
   const ideasLikedByIdeaId = ideas_likes.map((idea_liked) => {
     return idea_liked.idea_id;
   });
@@ -40,7 +40,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
   useEffect(() => {
     const getIdeaLikes = async () => {
       const likesByAddressResp = await fetch(
-        `/api/likes_by_address?address=${accountData.address}`
+        `/api/likes_by_address?address=${address}`
       );
       const likesByAddress = await likesByAddressResp.json();
       if (likesByAddress?.data?.length) {
@@ -48,10 +48,10 @@ const Ideas = ({ ideas, ideas_likes }) => {
       }
     };
 
-    if (accountData?.address) {
+    if (address) {
       getIdeaLikes();
     }
-  }, [accountData]);
+  }, [address]);
 
   return (
     <>
