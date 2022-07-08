@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import Link from 'next/link';
 import Header from '../../components/Header';
 
@@ -9,12 +9,11 @@ import PageContent from '../../components/Layout/PageContent';
 
 import { getIdeas } from '../../lib/db/hasura';
 import { getAddressFromContext } from '../../lib/utils';
-
-import '@rainbow-me/rainbowkit/styles.css';
+import { signUser } from '../../lib/signUser';
 
 import WalletButton from '../../components/WalletButton/WalletButton';
 
-import { useAccount } from 'wagmi';
+import { useAccount, useSigner } from 'wagmi';
 
 export async function getServerSideProps(context) {
   let address = await getAddressFromContext(context);
@@ -30,12 +29,27 @@ export async function getServerSideProps(context) {
 }
 
 const Ideas = ({ ideas, ideas_likes }) => {
-  const { address } = useAccount();
+  const { address, isDisconnected } = useAccount();
+  const { data: signer } = useSigner();
+
   const ideasLikedByIdeaId = ideas_likes.map((idea_liked) => {
     return idea_liked.idea_id;
   });
 
   const [ideasLiked, setIdeasLiked] = useState<number[]>(ideasLikedByIdeaId);
+  const [isAuthed, setIsAuthed] = useState<boolean>(false);
+  const [isAdmin, setIsAdmin] = useState<boolean>(false);
+
+  const verifyAuth = useCallback(async () => {
+    const authResp = await fetch(`/api/me?address=${address}`);
+    const authData = await authResp.json();
+    if (authData?.success) {
+      setIsAuthed(true);
+    }
+    if (authData?.admin) {
+      setIsAdmin(true);
+    }
+  }, [address]);
 
   useEffect(() => {
     const getIdeaLikes = async () => {
@@ -50,8 +64,30 @@ const Ideas = ({ ideas, ideas_likes }) => {
 
     if (address) {
       getIdeaLikes();
+      verifyAuth();
+    } else {
+      setIsAuthed(false);
+      setIsAdmin(false);
     }
-  }, [address]);
+  }, [address, verifyAuth]);
+
+  useEffect(() => {
+    const doLogout = async () => {
+      setIsAdmin(false);
+      setIsAuthed(false);
+    };
+    if (isDisconnected) {
+      doLogout();
+    }
+  }, [isDisconnected]);
+
+  const authUser = async () => {
+    if (await signUser(address, signer)) {
+      setIsAuthed(true);
+    } else {
+      setIsAuthed(false);
+    }
+  };
 
   return (
     <>
@@ -63,9 +99,19 @@ const Ideas = ({ ideas, ideas_likes }) => {
       <PageContent>
         <div>
           <div>
-            <div className="flex justify-between">
+            <div className="flex">
               <div className="self-end">
                 <WalletButton showBalance={false} />
+              </div>
+              <div className="ml-auto mr-2">
+                {address && !isAuthed && (
+                  <button
+                    onClick={authUser}
+                    className="inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto"
+                  >
+                    Sign to Auth
+                  </button>
+                )}
               </div>
               <Link href={'/ideas/create'}>
                 <a className="inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto">
