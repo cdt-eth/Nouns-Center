@@ -3,7 +3,7 @@ import React from "react";
 import Header from "../components/Header";
 import { v4 as uuidv4 } from "uuid";
 import Title from "../components/Title";
-import talent from "../api/talent.json";
+import talentFromJSON from "../api/talent.json";
 import {
   FaTwitter as TwitterIcon,
   FaDiscord as DiscordIcon,
@@ -13,8 +13,25 @@ import Subheader from "../components/Subheader";
 import PageContent from "../components/Layout/PageContent";
 import PageHeader from "../components/Layout/PageHeader";
 import Button from "../components/common/Button";
+import { fetchTalentFormData, TALENT_FORM_ID } from "../utils/talent-form-data-fetching";
 
-const Talent = () => {
+export const getServerSideProps = async (context) => {
+  let talentDataFromAPI = [];
+  try {
+	talentDataFromAPI = await fetchTalentFormData();
+  } catch(e) {
+    console.log(e);
+  }
+
+  return {
+      props: {talentFromServer: talentDataFromAPI}
+  };
+}
+
+const Talent = (props) => {
+  const {talentFromServer} = props;
+
+  const talent = talentFromJSON.concat(talentFromServer);
   return (
     <>
       <PageHeader>
@@ -24,7 +41,7 @@ const Talent = () => {
         <Subheader body="A place to connect with community members. You can view someone's skillset and easily connect with them. If you'd like to be added to this list, or are on it and would like to be removed, click the button to send a request." />
         <Button
           text="Add yourself"
-          link="https://www.addressform.io/form/2a1a3ad0-ba4b-4516-8667-e09ce558b132"
+          link={`https://www.addressform.io/form/${TALENT_FORM_ID}`}
         />
       </PageHeader>
 
