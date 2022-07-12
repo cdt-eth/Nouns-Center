@@ -20,7 +20,7 @@ export default async function me(req: NextApiRequest, res: NextApiResponse) {
     try {
       const jwtToken = req.cookies.nc;
       if (!jwtToken) {
-        res.status(403).send(respJson);
+        res.send(respJson);
       } else {
         const verifiedAddress = await verifyToken(jwtToken);
         if (verifiedAddress && verifiedAddress == address) {
@@ -29,10 +29,8 @@ export default async function me(req: NextApiRequest, res: NextApiResponse) {
           if (adminEOAList.includes(verifiedAddress)) {
             respJson.admin = true;
           }
-          res.send(respJson);
-        } else {
-          res.status(403).send(respJson);
         }
+        res.send(respJson);
       }
     } catch (error) {
       res.status(401);

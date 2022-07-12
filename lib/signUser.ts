@@ -1,9 +1,11 @@
 export const signUser = async (address, signer) => {
+  const authRespJson = { success: false, admin: false }
+
   try {
     const authResp = await fetch('/api/me');
     const authData = await authResp.json();
     if (!authData?.success) {
-      if (!address) return;
+      if (!address) return authRespJson;
 
       const message = `${new Date().toDateString()} Nouns.Center`;
       const signature = await signer.signMessage(message);
@@ -16,15 +18,17 @@ export const signUser = async (address, signer) => {
         },
         body: JSON.stringify({ message, signature, address }),
       });
-      if (loginResp.status == 200) {
-        return true;
+      const authData = await loginResp.json();
+      if (authData?.success) {
+          authRespJson.success = true;
       }
-      return false;
+      if (authData?.admin) {
+          authRespJson.admin = true;
+      }
     }
-
-    return true;
+    return authRespJson;
   } catch (error) {
     console.log({ error });
-    return false;
+    return authRespJson;
   }
 };
