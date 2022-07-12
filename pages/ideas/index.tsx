@@ -1,7 +1,11 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import Link from 'next/link';
-import Header from '../../components/Header';
 
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+import clsx from 'classnames';
+import { useAccount, useSigner } from 'wagmi';
+
+import Header from '../../components/Header';
 import IdeaCard from '../../components/ideas/IdeaCard';
 import Title from '../../components/Title';
 import PageHeader from '../../components/Layout/PageHeader';
@@ -10,10 +14,9 @@ import PageContent from '../../components/Layout/PageContent';
 import { getIdeas } from '../../lib/db/hasura';
 import { getAddressFromContext } from '../../lib/utils';
 import { signUser } from '../../lib/signUser';
+import { IDEA_HIDDEN } from '../../lib/constants';
 
 import WalletButton from '../../components/WalletButton/WalletButton';
-
-import { useAccount, useSigner } from 'wagmi';
 
 export async function getServerSideProps(context) {
   let address = await getAddressFromContext(context);
@@ -31,6 +34,7 @@ export async function getServerSideProps(context) {
 const Ideas = ({ ideas, ideas_likes }) => {
   const { address, isDisconnected } = useAccount();
   const { data: signer } = useSigner();
+  const router = useRouter();
 
   const ideasLikedByIdeaId = ideas_likes.map((idea_liked) => {
     return idea_liked.idea_id;
@@ -82,10 +86,31 @@ const Ideas = ({ ideas, ideas_likes }) => {
   }, [isDisconnected]);
 
   const authUser = async () => {
-    if (await signUser(address, signer)) {
+    const authResp = await signUser(address, signer);
+    if (authResp?.success) {
       setIsAuthed(true);
     } else {
       setIsAuthed(false);
+      setIsAdmin(false);
+    }
+    if (authResp?.admin) {
+      setIsAdmin(true);
+    }
+  };
+
+  const hideIdea = async (ideaId) => {
+    console.log(`idea ${ideaId} is hidden`);
+    const hideIdeaResp = await fetch('/api/ideas_state', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ ideaId, state: IDEA_HIDDEN }),
+    });
+    const hideIdeaData = await hideIdeaResp.json();
+    console.log({ hideIdeaData });
+    if (hideIdeaData?.success) {
+      router.push('/ideas');
     }
   };
 
@@ -104,14 +129,15 @@ const Ideas = ({ ideas, ideas_likes }) => {
                 <WalletButton showBalance={false} />
               </div>
               <div className="ml-auto mr-2">
-                {address && !isAuthed && (
-                  <button
-                    onClick={authUser}
-                    className="inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto"
-                  >
-                    Sign to Auth
-                  </button>
-                )}
+                <button
+                  onClick={authUser}
+                  className={clsx(
+                    'inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto',
+                    !address || (isAuthed && 'hidden')
+                  )}
+                >
+                  Sign to Auth
+                </button>
               </div>
               <Link href={'/ideas/create'}>
                 <a className="inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto">
@@ -132,6 +158,8 @@ const Ideas = ({ ideas, ideas_likes }) => {
                     date={idea.created_at}
                     liked={ideasLiked.includes(idea.id)}
                     votes={idea.ideas_liked_aggregate.aggregate.count}
+                    isAdmin={isAdmin}
+                    hideIdea={() => hideIdea(idea.id)}
                   />
                 ))
               ) : (

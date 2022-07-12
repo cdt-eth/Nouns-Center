@@ -9,6 +9,7 @@ import Heart from '../icons/heart-icon';
 import { useEnsName } from 'wagmi';
 import Link from 'next/link';
 
+type ButtonEvent = React.MouseEvent<HTMLButtonElement>;
 interface IdeaCardProps {
   id: number;
   title: string;
@@ -17,6 +18,8 @@ interface IdeaCardProps {
   date: string;
   votes: number;
   liked: boolean;
+  isAdmin: boolean;
+  hideIdea: () => void;
 }
 
 const IdeaCard = ({
@@ -27,6 +30,8 @@ const IdeaCard = ({
   date,
   votes,
   liked,
+  isAdmin,
+  hideIdea,
 }: IdeaCardProps) => {
   const [isLiked, setIsLiked] = useState(liked);
   const [voteCount, setVoteCount] = useState(votes);
@@ -87,7 +92,7 @@ const IdeaCard = ({
             </div>
           </div>
 
-          <div className="mt-4 sm:mt-0 sm:flex-shrink-0 justify-between  flex w-full">
+          <div className="mt-4 sm:mt-0 sm:flex-shrink-0 flex w-full">
             <div className="mt-1 text-sm text-gray-600 sm:flex flex-col">
               <div className="italic">
                 By:{' '}
@@ -103,6 +108,18 @@ const IdeaCard = ({
                   day: 'numeric',
                 })}
               </div>
+            </div>
+
+            <div className="ml-auto mr-3 self-center">
+              {isAdmin && (
+                <button
+                  onClick={hideIdea}
+                  type="button"
+                  className="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                  Hide Idea
+                </button>
+              )}
             </div>
 
             <Link href={`/ideas/${id}`}>
