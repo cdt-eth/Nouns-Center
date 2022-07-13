@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
 
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 import clsx from 'classnames';
 import { useAccount, useSigner } from 'wagmi';
@@ -34,7 +33,6 @@ export async function getServerSideProps(context) {
 const Ideas = ({ ideas, ideas_likes }) => {
   const { address, isDisconnected } = useAccount();
   const { data: signer } = useSigner();
-  const router = useRouter();
 
   const ideasLikedByIdeaId = ideas_likes.map((idea_liked) => {
     return idea_liked.idea_id;
@@ -43,6 +41,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
   const [ideasLiked, setIdeasLiked] = useState<number[]>(ideasLikedByIdeaId);
   const [isAuthed, setIsAuthed] = useState<boolean>(false);
   const [isAdmin, setIsAdmin] = useState<boolean>(false);
+  const [ideaList, setIdeas] = useState<any[]>(ideas);
 
   const verifyAuth = useCallback(async () => {
     const authResp = await fetch(`/api/me?address=${address}`);
@@ -99,7 +98,6 @@ const Ideas = ({ ideas, ideas_likes }) => {
   };
 
   const hideIdea = async (ideaId) => {
-    console.log(`idea ${ideaId} is hidden`);
     const hideIdeaResp = await fetch('/api/ideas_state', {
       method: 'POST',
       headers: {
@@ -108,9 +106,10 @@ const Ideas = ({ ideas, ideas_likes }) => {
       body: JSON.stringify({ ideaId, state: IDEA_HIDDEN }),
     });
     const hideIdeaData = await hideIdeaResp.json();
-    console.log({ hideIdeaData });
     if (hideIdeaData?.success) {
-      router.push('/ideas');
+      const removeIndex = ideaList.map((idea) => idea.id).indexOf(ideaId);
+      const tIdeas = ideaList.filter((el, idx) => idx != removeIndex);
+      setIdeas(tIdeas);
     }
   };
 
@@ -147,8 +146,8 @@ const Ideas = ({ ideas, ideas_likes }) => {
             </div>
 
             <div className="grid sm:grid-cols-1 gap-x-6">
-              {ideas?.length ? (
-                ideas.map((idea) => (
+              {ideaList?.length ? (
+                ideaList.map((idea) => (
                   <IdeaCard
                     key={idea.id}
                     id={idea.id}
