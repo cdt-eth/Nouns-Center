@@ -112,7 +112,7 @@ const IdeaForm = ({
               rows={15}
               name="description"
               className={clsx(
-                'text-nouns whitespace-pre-line text-2xl placeholder:text-xl shadow-sm block w-full rounded-xl',
+                'text-nouns whitespace-pre-line text-lg placeholder:text-xl shadow-sm block w-full rounded-xl',
                 formErrors.description ? formErrorCls : formNoErrorCls
               )}
               onChange={(evt) => onDescriptionChange(evt)}
