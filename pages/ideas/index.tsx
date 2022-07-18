@@ -42,7 +42,6 @@ const Ideas = ({ ideas, ideas_likes }) => {
   });
 
   const [ideasLiked, setIdeasLiked] = useState<number[]>(ideasLikedByIdeaId);
-  const [isAdmin, setIsAdmin] = useState<boolean>(false);
   const [ideaList, setIdeas] = useState<any[]>(ideas);
 
   useEffect(() => {

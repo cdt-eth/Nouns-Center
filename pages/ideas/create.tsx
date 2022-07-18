@@ -48,6 +48,7 @@ const Ideas = () => {
     try {
       if (!address?.length) {
         setAuthError('Please connect wallet to submit an idea');
+        setIsSubmitting(false);
         return;
       }
 
