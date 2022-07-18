@@ -45,6 +45,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
   const [ideaList, setIdeas] = useState<any[]>(ideas);
 
   useEffect(() => {
+    setIdeasLiked([]);
     const getIdeaLikes = async () => {
       const likesByAddressResp = await fetch(
         `/api/likes_by_address?address=${address}`
