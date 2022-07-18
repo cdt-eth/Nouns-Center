@@ -16,6 +16,8 @@ export default async function likes_by_address(
     }
     try {
       const likesByAddress = await getLikesForAddress(address as string);
+      console.log({ address });
+      console.log({ likesByAddress });
       let ids: number[] = [];
       if (likesByAddress?.length) {
         ids = likesByAddress.map((idea_liked) => {
@@ -23,7 +25,6 @@ export default async function likes_by_address(
         });
       }
       res.send({ success: true, data: ids });
-      return;
     } catch (error) {
       console.error('Error occurred in /likes_by_address', error);
       res.status(500).send({ done: false, error: error?.message });

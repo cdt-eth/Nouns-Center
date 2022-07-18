@@ -37,26 +37,11 @@ const Ideas = ({ ideas, ideas_likes }) => {
 
   const { user, mutate: userMutate } = useMe(address);
 
-  useEffect(() => {
-    if (user?.loggedIn) {
-      setIsAuthed(true);
-    } else {
-      setIsAuthed(false);
-    }
-
-    if (user?.admin) {
-      setIsAdmin(true);
-    } else {
-      setIsAdmin(false);
-    }
-  }, [user]);
-
   const ideasLikedByIdeaId = ideas_likes.map((idea_liked) => {
     return idea_liked.idea_id;
   });
 
   const [ideasLiked, setIdeasLiked] = useState<number[]>(ideasLikedByIdeaId);
-  const [isAuthed, setIsAuthed] = useState<boolean>(false);
   const [isAdmin, setIsAdmin] = useState<boolean>(false);
   const [ideaList, setIdeas] = useState<any[]>(ideas);
 
@@ -66,6 +51,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
         `/api/likes_by_address?address=${address}`
       );
       const likesByAddress = await likesByAddressResp.json();
+      console.log({ likesByAddress });
       if (likesByAddress?.data?.length) {
         setIdeasLiked(likesByAddress.data);
       }
@@ -80,26 +66,17 @@ const Ideas = ({ ideas, ideas_likes }) => {
 
   useEffect(() => {
     const doLogout = async () => {
-      setIsAdmin(false);
-      setIsAuthed(false);
+      userMutate();
+      setIdeasLiked([]);
     };
     if (isDisconnected) {
       doLogout();
     }
-  }, [isDisconnected]);
+  }, [isDisconnected, userMutate]);
 
   const authUser = async () => {
-    const authResp = await signUser(address, signer);
-    if (authResp?.success) {
-      setIsAuthed(true);
-    } else {
-      setIsAuthed(false);
-    }
-    if (authResp?.admin) {
-      setIsAdmin(true);
-    } else {
-      setIsAdmin(false);
-    }
+    await signUser(address, signer);
+    userMutate();
   };
 
   const hideIdea = async (ideaId) => {
@@ -118,6 +95,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
     }
   };
 
+  console.log({ user });
   return (
     <>
       <PageHeader>
@@ -137,7 +115,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
                   onClick={authUser}
                   className={clsx(
                     'inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto',
-                    { hidden: !address || isAuthed }
+                    { hidden: user?.loggedIn }
                   )}
                 >
                   Sign to Auth
@@ -162,7 +140,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
                     date={idea.created_at}
                     liked={ideasLiked.includes(idea.id)}
                     votes={idea.ideas_liked_aggregate.aggregate.count}
-                    isAdmin={isAdmin}
+                    isAdmin={user?.admin}
                     hideIdea={() => hideIdea(idea.id)}
                   />
                 ))

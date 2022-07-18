@@ -142,7 +142,7 @@ export async function getIdea(ideaId: string) {
 export async function getLikesForAddress(address: string) {
   const operationsDoc = `
     query getLikesForAddress($address: String!) {
-        ideas_likes(where: {liked: {_eq: true}, address: {_eq: $address}) {
+        ideas_likes(where: {liked: {_eq: true}, address: {_eq: $address}}) {
             idea_id
         }
     }
