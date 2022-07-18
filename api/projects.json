@@ -608,6 +608,14 @@
     "category": ["nfts"]
   },
   {
+    "title": "NounsNation",
+    "description": "NounsNation characters are derivaties of Nouns.",
+    "creator": ["fiveoceans_dev"],
+    "url": "https://nounsnation.com/",
+    "image": "nounsnation.gif",
+    "category": ["nfts"]
+  },
+  {
     "title": "Nounspedia",
     "description": "View all Noun heads by category.",
     "creator": ["12bnoun"],
@@ -616,11 +624,11 @@
     "category": ["nfts", "small-grants"]
   },
   {
-    "title": "NounsNation",
-    "description": "NounsNation characters are derivaties of Nouns.",
-    "creator": ["fiveoceans_dev"],
-    "url": "https://nounsnation.com/",
-    "image": "nounsnation.gif",
+    "title": "NounsTown",
+    "description": "NounsTown is a Metaverse environment for all Nouns.",
+    "creator": ["juanhernanx", "manofmissle"],
+    "url": "https://nounstown.wtf",
+    "image": "nounstown.png",
     "category": ["nfts"]
   },
   {
