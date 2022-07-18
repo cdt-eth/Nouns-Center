@@ -16,8 +16,6 @@ export default async function likes_by_address(
     }
     try {
       const likesByAddress = await getLikesForAddress(address as string);
-      console.log({ address });
-      console.log({ likesByAddress });
       let ids: number[] = [];
       if (likesByAddress?.length) {
         ids = likesByAddress.map((idea_liked) => {

@@ -51,7 +51,6 @@ const Ideas = ({ ideas, ideas_likes }) => {
         `/api/likes_by_address?address=${address}`
       );
       const likesByAddress = await likesByAddressResp.json();
-      console.log({ likesByAddress });
       if (likesByAddress?.data?.length) {
         setIdeasLiked(likesByAddress.data);
       }
@@ -95,7 +94,6 @@ const Ideas = ({ ideas, ideas_likes }) => {
     }
   };
 
-  console.log({ user });
   return (
     <>
       <PageHeader>
