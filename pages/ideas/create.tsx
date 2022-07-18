@@ -121,7 +121,7 @@ const Ideas = () => {
     } else {
       newFormErrors.tldr = false;
     }
-    if (description?.length <= 8) {
+    if (description?.length <= 50) {
       newFormErrors.description = true;
       isValid = false;
     } else {
