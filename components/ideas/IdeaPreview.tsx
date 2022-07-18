@@ -7,7 +7,6 @@ const IdeaPreview = ({
   tldr,
   description,
   isSubmitting,
-  submitText,
 }) => {
   return (
     <div className="mt-5">
@@ -47,7 +46,7 @@ const IdeaPreview = ({
             onClick={(evt) => handleSubmitIdea(evt)}
             disabled={isSubmitting}
           >
-            {isSubmitting ? 'Submitting...' : submitText}
+            {isSubmitting ? 'Submitting...' : 'Sign and Submit'}
           </button>
         </div>
       </div>

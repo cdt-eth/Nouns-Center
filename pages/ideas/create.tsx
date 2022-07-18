@@ -24,7 +24,6 @@ const Ideas = () => {
     description: false,
   });
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
-  const [submitText, setSubmitText] = useState<string>('Sign and Submit');
 
   const router = useRouter();
 
@@ -42,7 +41,6 @@ const Ideas = () => {
   const handleSubmitIdea = async (evt) => {
     evt.preventDefault();
     setIsSubmitting(true);
-    setSubmitText('Submitting...');
 
     // verify auth
     try {
@@ -73,7 +71,6 @@ const Ideas = () => {
       // set error
       setAuthError(error.message);
       setIsSubmitting(false);
-      setSubmitText('Sign and Submit');
 
       return;
     }
@@ -96,7 +93,6 @@ const Ideas = () => {
     } catch (err) {
       console.log({ err });
       setIsSubmitting(false);
-      setSubmitText('Sign and Submit');
     }
   };
 
@@ -184,7 +180,6 @@ const Ideas = () => {
                 title={title}
                 tldr={tldr}
                 description={description}
-                submitText={submitText}
                 isSubmitting={isSubmitting}
               />
             ) : (
