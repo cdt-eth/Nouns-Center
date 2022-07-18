@@ -21,7 +21,10 @@ const IdeaForm = ({
   return (
     <div className="mt-5">
       <form>
-        <label htmlFor="title" className="block text-xl font-md text-gray-700">
+        <label
+          htmlFor="title"
+          className="text-nouns block text-xl font-md text-gray-700"
+        >
           Title
         </label>
         <div className="mt-1">
@@ -46,7 +49,7 @@ const IdeaForm = ({
 
         <label
           htmlFor="tldr"
-          className="mt-6 block text-xl font-md text-gray-700"
+          className="text-nouns mt-6 block text-xl font-md text-gray-700"
         >
           tl;dr
         </label>
@@ -55,7 +58,7 @@ const IdeaForm = ({
             type="text"
             name="tldr"
             className={clsx(
-              'p-6 text-2xl placeholder:text-2xl shadow-sm block w-full rounded-xl',
+              'text-nouns p-6 text-2xl placeholder:text-xl shadow-sm block w-full rounded-xl',
               formErrors.tldr ? formErrorCls : formNoErrorCls
             )}
             onChange={(evt) => onTldrChange(evt)}
@@ -100,7 +103,7 @@ const IdeaForm = ({
         <div className="mt-6">
           <label
             htmlFor="Idea Description"
-            className="block text-xl font-md text-gray-700"
+            className="text-nouns block text-xl font-md text-gray-700"
           >
             Idea Description
           </label>
@@ -109,11 +112,12 @@ const IdeaForm = ({
               rows={15}
               name="description"
               className={clsx(
-                'whitespace-pre-line text-2xl placeholder:text-2xl shadow-sm block w-full rounded-xl',
+                'text-nouns whitespace-pre-line text-2xl placeholder:text-xl shadow-sm block w-full rounded-xl',
                 formErrors.description ? formErrorCls : formNoErrorCls
               )}
               onChange={(evt) => onDescriptionChange(evt)}
               value={description}
+              placeholder="give a description of your idea!"
             />
           </div>
           {formErrors.description ? (

@@ -9,8 +9,6 @@ import WalletButton from '../../components/WalletButton/WalletButton';
 import IdeaForm from '../../components/ideas/IdeaForm';
 import IdeaPreview from '../../components/ideas/IdeaPreview';
 
-import { useMe } from '../../lib/hooks/useMe';
-
 import { useAccount, useSigner } from 'wagmi';
 import { useRouter } from 'next/router';
 

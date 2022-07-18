@@ -22,14 +22,16 @@ const IdeaPreview = ({
         <div className="text-xl text-gray-700">{title}</div>
       </div>
       <div className="mt-3 pb-3 border-b border-gray-200 sm:items-center">
-        <h3 className="text-lg leading-6 font-medium text-gray-900">tldr</h3>
+        <h3 className="text-nouns text-lg leading-6 font-medium text-gray-900">
+          tldr
+        </h3>
         <div className="text-xl text-gray-700">{tldr}</div>
       </div>
       <div className="mt-3 pb-3 border-b border-gray-200 sm:items-center">
-        <h3 className="text-lg leading-6 font-medium text-gray-900">
+        <h3 className="text-lg leading-6 font-medium text-gray-900 text-nouns">
           Description
         </h3>
-        <ReactMarkdown className="mt-5 text-2xl">{description}</ReactMarkdown>
+        <ReactMarkdown className="mt-5 text-lg">{description}</ReactMarkdown>
       </div>
 
       <div className="flex">
