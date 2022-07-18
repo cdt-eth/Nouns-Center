@@ -1,8 +1,9 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { verifyToken } from '../../lib/utils';
+import { removeTokenCookie } from '../../lib/cookies';
 
 interface LoginRespJson {
-  success: boolean;
+  loggedIn: boolean;
   admin: boolean;
   address: boolean | string;
 }
@@ -13,7 +14,7 @@ export default async function me(req: NextApiRequest, res: NextApiResponse) {
     const { address } = req.query;
     const adminEOAList = ['0x80dEdf478Df0f8F89aD085799dF5A0aadCB56664'];
     const respJson: LoginRespJson = {
-      success: false,
+      loggedIn: false,
       admin: false,
       address: false,
     };
@@ -24,11 +25,13 @@ export default async function me(req: NextApiRequest, res: NextApiResponse) {
       } else {
         const verifiedAddress = await verifyToken(jwtToken);
         if (verifiedAddress && verifiedAddress == address) {
-          respJson.success = true;
+          respJson.loggedIn = true;
           respJson.address = verifiedAddress;
           if (adminEOAList.includes(verifiedAddress)) {
             respJson.admin = true;
           }
+        } else {
+          removeTokenCookie('nc', res);
         }
         res.send(respJson);
       }

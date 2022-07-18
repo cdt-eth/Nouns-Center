@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Link from 'next/link';
 import clsx from 'classnames';
@@ -10,6 +10,7 @@ import Title from '../../components/Title';
 import PageHeader from '../../components/Layout/PageHeader';
 import PageContent from '../../components/Layout/PageContent';
 
+import { useMe } from '../../lib/hooks/useMe';
 import { getIdeas } from '../../lib/db/hasura';
 import { getAddressFromContext } from '../../lib/utils';
 import { signUser } from '../../lib/signUser';
@@ -34,6 +35,22 @@ const Ideas = ({ ideas, ideas_likes }) => {
   const { address, isDisconnected } = useAccount();
   const { data: signer } = useSigner();
 
+  const { user, mutate: userMutate } = useMe(address);
+
+  useEffect(() => {
+    if (user?.loggedIn) {
+      setIsAuthed(true);
+    } else {
+      setIsAuthed(false);
+    }
+
+    if (user?.admin) {
+      setIsAdmin(true);
+    } else {
+      setIsAdmin(false);
+    }
+  }, [user]);
+
   const ideasLikedByIdeaId = ideas_likes.map((idea_liked) => {
     return idea_liked.idea_id;
   });
@@ -42,17 +59,6 @@ const Ideas = ({ ideas, ideas_likes }) => {
   const [isAuthed, setIsAuthed] = useState<boolean>(false);
   const [isAdmin, setIsAdmin] = useState<boolean>(false);
   const [ideaList, setIdeas] = useState<any[]>(ideas);
-
-  const verifyAuth = useCallback(async () => {
-    const authResp = await fetch(`/api/me?address=${address}`);
-    const authData = await authResp.json();
-    if (authData?.success) {
-      setIsAuthed(true);
-    }
-    if (authData?.admin) {
-      setIsAdmin(true);
-    }
-  }, [address]);
 
   useEffect(() => {
     const getIdeaLikes = async () => {
@@ -67,12 +73,10 @@ const Ideas = ({ ideas, ideas_likes }) => {
 
     if (address) {
       getIdeaLikes();
-      verifyAuth();
     } else {
-      setIsAuthed(false);
-      setIsAdmin(false);
+      userMutate();
     }
-  }, [address, verifyAuth]);
+  }, [address, userMutate]);
 
   useEffect(() => {
     const doLogout = async () => {
@@ -90,10 +94,11 @@ const Ideas = ({ ideas, ideas_likes }) => {
       setIsAuthed(true);
     } else {
       setIsAuthed(false);
-      setIsAdmin(false);
     }
     if (authResp?.admin) {
       setIsAdmin(true);
+    } else {
+      setIsAdmin(false);
     }
   };
 
@@ -132,7 +137,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
                   onClick={authUser}
                   className={clsx(
                     'inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto',
-                    !address || (isAuthed && 'hidden')
+                    { hidden: !address || isAuthed }
                   )}
                 >
                   Sign to Auth

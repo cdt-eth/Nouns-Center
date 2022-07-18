@@ -1,8 +1,8 @@
 export const signUser = async (address, signer) => {
-  const authRespJson = { success: false, admin: false }
+  const authRespJson = { success: false, admin: false };
 
   try {
-    const authResp = await fetch('/api/me');
+    const authResp = await fetch(`/api/me?address=${address}`);
     const authData = await authResp.json();
     if (!authData?.success) {
       if (!address) return authRespJson;
@@ -20,10 +20,10 @@ export const signUser = async (address, signer) => {
       });
       const authData = await loginResp.json();
       if (authData?.success) {
-          authRespJson.success = true;
+        authRespJson.success = true;
       }
       if (authData?.admin) {
-          authRespJson.admin = true;
+        authRespJson.admin = true;
       }
     }
     return authRespJson;

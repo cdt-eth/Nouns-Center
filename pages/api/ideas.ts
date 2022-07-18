@@ -13,9 +13,9 @@ export default async function ideas(req: NextApiRequest, res: NextApiResponse) {
       } else {
         const { title, tldr, description } = req.body;
         if (
-          title?.length >= 5 &&
-          tldr?.length >= 5 &&
-          description?.length >= 5
+          title?.length >= 8 &&
+          tldr?.length >= 8 &&
+          description?.length >= 50
         ) {
           const address = await verifyToken(token);
           // insert idea
