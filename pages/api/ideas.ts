@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { verifyToken } from '../../lib/utils';
 
-import { insertIdea, getIdeas } from '../../lib/db/hasura';
+import { insertIdea } from '../../lib/db/hasura';
 
 export default async function ideas(req: NextApiRequest, res: NextApiResponse) {
   const { method } = req;
@@ -33,7 +33,7 @@ export default async function ideas(req: NextApiRequest, res: NextApiResponse) {
             res.status(500).send({});
           }
         } else {
-          res.status(403).send({});
+          res.status(403).send({ success: false });
         }
       }
     } catch (error) {

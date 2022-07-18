@@ -125,6 +125,9 @@ export async function getIdea(ideaId: string) {
                 id
                 title
                 tldr
+                ideas_liked(where: {idea_id: {_eq: $ideaId}, liked: {_eq: true}}) {
+                    address
+                }
             }
      }
   `;

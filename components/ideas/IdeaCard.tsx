@@ -9,7 +9,6 @@ import Heart from '../icons/heart-icon';
 import { useEnsName } from 'wagmi';
 import Link from 'next/link';
 
-type ButtonEvent = React.MouseEvent<HTMLButtonElement>;
 interface IdeaCardProps {
   id: number;
   title: string;
