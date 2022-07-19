@@ -66,11 +66,6 @@ module.exports = {
         destination: "/notes",
         permanent: true,
       },
-      {
-        source: "/gif",
-        destination: "/gifs",
-        permanent: true,
-      },
     ];
   },
 };
