@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import { truncateEthAddress } from '../../lib/utils';
 import { signUser } from '../../lib/signUser';
+import { useMe } from '../../lib/hooks/useMe';
+
 import { useAccount, useSigner } from 'wagmi';
 
 import Heart from '../icons/heart-icon';
@@ -37,6 +39,8 @@ const IdeaCard = ({
 
   const { data: ensName } = useEnsName({ address: submittedBy });
   const { address } = useAccount();
+  const { user, mutate: userMutate } = useMe(address);
+
   const { data: signer } = useSigner();
 
   useEffect(() => {
@@ -57,7 +61,14 @@ const IdeaCard = ({
   };
 
   const handleToggleHeart = async () => {
-    if (await signUser(address, signer)) {
+    let signResp;
+    if (!user?.loggedIn) {
+      signResp = await signUser(address, signer);
+      if (signResp?.success) {
+        userMutate();
+      }
+    }
+    if (signResp?.success || user?.loggedIn) {
       const val = !isLiked;
       let currVoteCount = voteCount;
       setVoteCount(val ? voteCount + 1 : voteCount - 1);
