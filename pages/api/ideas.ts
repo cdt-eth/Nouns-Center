@@ -14,7 +14,9 @@ export default async function ideas(req: NextApiRequest, res: NextApiResponse) {
         const { title, tldr, description } = req.body;
         if (
           title?.length >= 8 &&
+          title?.length <= 80 &&
           tldr?.length >= 8 &&
+          tldr?.lenth <= 120 &&
           description?.length >= 50
         ) {
           const address = await verifyToken(token);
