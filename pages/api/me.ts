@@ -27,7 +27,7 @@ export default async function me(req: NextApiRequest, res: NextApiResponse) {
         if (verifiedAddress && verifiedAddress == address) {
           respJson.loggedIn = true;
           respJson.address = verifiedAddress;
-          if (adminEOAList.includes(verifiedAddress)) {
+          if (adminEOAList.includes(verifiedAddress.toLowerCase())) {
             respJson.admin = true;
           }
         } else {
