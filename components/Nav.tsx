@@ -5,6 +5,7 @@ import nav from "../api/nav2.json";
 import { v4 as uuidv4 } from "uuid";
 import Link from "next/link";
 import DarkModeToggle from "./DarkModeToggle";
+import { BiLinkExternal as ExternalIcon } from "react-icons/bi";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -85,9 +86,11 @@ const Nav = ({ setSidebarOpen }) => {
                               href={subItem.link}
                               target="_blank"
                               rel="noreferrer"
-                              className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-0.5 text-sm font-medium text-nouns-black hover:text-blue-base "
+                              className="focus:outline-none group w-full flex items-center pr-2 pl-2 py-0.5 text-sm font-medium text-nouns-black hover:text-blue-base gap-1"
                             >
                               {subItem.name}
+
+                              <ExternalIcon />
                             </Disclosure.Button>
                           ) : (
                             <Link href={subItem.link}>
