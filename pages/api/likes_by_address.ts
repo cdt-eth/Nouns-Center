@@ -23,7 +23,6 @@ export default async function likes_by_address(
         });
       }
       res.send({ success: true, data: ids });
-      return;
     } catch (error) {
       console.error('Error occurred in /likes_by_address', error);
       res.status(500).send({ done: false, error: error?.message });

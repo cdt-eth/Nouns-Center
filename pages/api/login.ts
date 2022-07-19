@@ -2,10 +2,12 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import jwt from 'jsonwebtoken';
 import { ethers } from 'ethers';
 import { isNewUser, createNewUser } from '../../lib/db/hasura';
+import { adminEOAList } from '../../lib/db/admins';
 
 import { setTokenCookie } from '../../lib/cookies';
 
 export default async function login(req: NextApiRequest, res: NextApiResponse) {
+  let loginRespJson = { success: false, admin: false }
   const { method } = req;
   if (method == 'POST') {
     try {
@@ -28,12 +30,16 @@ export default async function login(req: NextApiRequest, res: NextApiResponse) {
         const isNewUserQuery = await isNewUser(token, recoveredAddress);
         isNewUserQuery && (await createNewUser(token, recoveredAddress));
         setTokenCookie('nc', token, res);
-        res.json({ ok: true });
+        loginRespJson.success = true;
+        if (adminEOAList.includes(recoveredAddress)) {
+            loginRespJson.admin = true;
+        }
+        res.json(loginRespJson);
       } else {
-        res.status(403).send({ ok: 'invalid signature ' });
+        res.status(403).send(loginRespJson);
       }
     } catch (error) {
-      res.json({ ok: false });
+      res.json(loginRespJson);
     }
   } else {
     res.setHeader('Allow', ['POST']);
