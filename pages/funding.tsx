@@ -74,7 +74,7 @@ const funding = [
   },
   {
     source: "Proposals",
-    range: "10 - 600",
+    range: "10 - 1,000",
     totalEth: 3330,
     recipients: 67,
     recipientType: "props",
