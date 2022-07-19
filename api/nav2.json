@@ -110,11 +110,7 @@
         "link": "/notes",
         "external": false
       },
-      {
-        "name": "Gifs",
-        "link": "/gifs",
-        "external": false
-      },
+
       {
         "name": "Blog",
         "link": "https://nouns.blog/",
