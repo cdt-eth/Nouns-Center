@@ -68,7 +68,7 @@ const proposals = () => {
         <Title title="Funding: Proposals" />
 
         <Subheader
-          title="For Projects needing 10-600Ξ"
+          title="For Projects needing 10-1,000Ξ"
           body="Resources allocated for the long-term growth of the Nouns project. Larger in scope and undergo more scruntiny."
         />
       </PageHeader>
