@@ -64,11 +64,6 @@
         "external": false
       },
       {
-        "name": "Proposals",
-        "link": "/funding/proposals",
-        "external": false
-      },
-      {
         "name": "Small Grants",
         "link": "/funding/smallgrants",
         "external": false
@@ -76,6 +71,11 @@
       {
         "name": "Prop House",
         "link": "/funding/prophouse",
+        "external": false
+      },
+      {
+        "name": "Proposals",
+        "link": "/funding/proposals",
         "external": false
       }
     ]
