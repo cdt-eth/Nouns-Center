@@ -18,11 +18,12 @@ const Ideas = () => {
   const [description, setDescription] = useState<string>('');
   const [isPreview, setIsPreview] = useState<boolean>(false);
   const [authError, setAuthError] = useState<string>(undefined);
-  const [formErrors, setFormErrors] = useState({
-    title: false,
-    tldr: false,
-    description: false,
-  });
+
+  const [isFormValid, setIsFormValid] = useState<boolean>(false);
+  //   const [titleError, setTitleError] = useState<string>('');
+  //   const [tldrError, setTldrError] = useState<string>('');
+  //   const [descriptionError, setDescriptionError] = useState<string>('');
+
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   const router = useRouter();
@@ -99,7 +100,7 @@ const Ideas = () => {
   const togglePreviewMode = (evt) => {
     evt.preventDefault();
 
-    if (validateForm()) {
+    if (isFormValid) {
       setIsPreview(!isPreview);
     }
   };
@@ -107,28 +108,17 @@ const Ideas = () => {
   const validateForm = () => {
     let isValid = true;
 
-    let newFormErrors = { ...formErrors };
-
-    if (title?.length <= 8) {
-      newFormErrors.title = true;
+    if (title?.length < 8 || title?.length > 80) {
       isValid = false;
-    } else {
-      newFormErrors.title = false;
     }
-    if (tldr?.length <= 8) {
-      newFormErrors.tldr = true;
+    if (tldr?.length < 8 || tldr?.length > 120) {
       isValid = false;
-    } else {
-      newFormErrors.tldr = false;
     }
-    if (description?.length <= 50) {
-      newFormErrors.description = true;
+    if (description?.length < 50) {
       isValid = false;
-    } else {
-      newFormErrors.description = false;
     }
 
-    setFormErrors(newFormErrors);
+    setIsFormValid(isValid);
 
     return isValid;
   };
@@ -136,16 +126,19 @@ const Ideas = () => {
   const handleTitleChange = (evt) => {
     evt.preventDefault();
     setTitle(evt.target.value);
+    validateForm();
   };
 
   const handleTldrChange = (evt) => {
     evt.preventDefault();
     setTldr(evt.target.value);
+    validateForm();
   };
 
   const handleDescriptionChange = (evt) => {
     evt.preventDefault();
     setDescription(evt.target.value);
+    validateForm();
   };
 
   return (
@@ -191,7 +184,7 @@ const Ideas = () => {
                 onTitleChange={handleTitleChange}
                 onTldrChange={handleTldrChange}
                 onDescriptionChange={handleDescriptionChange}
-                formErrors={formErrors}
+                isFormValid={isFormValid}
               />
             )}
           </div>

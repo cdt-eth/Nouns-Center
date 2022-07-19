@@ -1,6 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { verifyToken } from '../../lib/utils';
 import { removeTokenCookie } from '../../lib/cookies';
+import { adminEOAList } from '../../lib/db/admins';
 
 interface LoginRespJson {
   loggedIn: boolean;
@@ -12,7 +13,6 @@ export default async function me(req: NextApiRequest, res: NextApiResponse) {
   const { method } = req;
   if (method == 'GET') {
     const { address } = req.query;
-    const adminEOAList = ['0x80dEdf478Df0f8F89aD085799dF5A0aadCB56664'];
     const respJson: LoginRespJson = {
       loggedIn: false,
       admin: false,
@@ -27,7 +27,7 @@ export default async function me(req: NextApiRequest, res: NextApiResponse) {
         if (verifiedAddress && verifiedAddress == address) {
           respJson.loggedIn = true;
           respJson.address = verifiedAddress;
-          if (adminEOAList.includes(verifiedAddress)) {
+          if (adminEOAList.includes(verifiedAddress.toLowerCase())) {
             respJson.admin = true;
           }
         } else {

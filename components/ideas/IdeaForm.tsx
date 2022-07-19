@@ -11,64 +11,104 @@ const IdeaForm = ({
   onTitleChange,
   onTldrChange,
   onDescriptionChange,
-  formErrors,
+  isFormValid,
 }) => {
   const formNoErrorCls =
     'focus:ring-indigo-500 focus:border-indigo-500 border-gray-300';
   const formErrorCls =
     'border-red-300 text-red-900 placeholder-red-300 focus:ring-red-500 focus:border-red-500';
 
+  const [titleError, setTitleError] = useState<string>('');
+  const [tldrError, setTldrError] = useState<string>('');
+  const [descriptionError, setDescriptionError] = useState<string>('');
+
+  const onTitleBlur = () => {
+    if (title?.length < 8) {
+      setTitleError('title should be at least 8 characters');
+    } else if (title?.length > 80) {
+      setTitleError('title should be no longer than 80 characters');
+    } else {
+      setTitleError('');
+    }
+  };
+
+  const onTldrBlur = () => {
+    if (tldr?.length < 8) {
+      setTldrError('tldr should be at least 8 characters');
+    } else if (tldr?.length > 120) {
+      setTldrError('tldr should be no longer than 120 characters');
+    } else {
+      setTldrError('');
+    }
+  };
+
+  const onDescriptionBlur = () => {
+    if (description?.length < 50) {
+      setDescriptionError('description should be at least 50 charcters');
+    } else {
+      setDescriptionError('');
+    }
+  };
+
   return (
     <div className="mt-5">
       <form>
-        <label
-          htmlFor="title"
-          className="text-nouns block text-xl font-md text-gray-700"
-        >
-          Title
-        </label>
+        <div className="flex justify-between">
+          <label
+            htmlFor="title"
+            className="text-nouns block text-xl font-md text-gray-700"
+          >
+            Title
+          </label>
+          <span>{title.length}/80</span>
+        </div>
         <div className="mt-1">
           <input
             type="text"
             name="title"
             className={clsx(
               'text-nouns p-6 text-2xl shadow-sm block w-full placeholder:text-xl rounded-xl',
-              formErrors.title ? formErrorCls : formNoErrorCls
+              titleError?.length ? formErrorCls : formNoErrorCls
             )}
             placeholder="Give your idea a name..."
             aria-describedby="title-description"
             onChange={(evt) => onTitleChange(evt)}
+            onBlur={onTitleBlur}
             value={title}
           />
-          {formErrors.title ? (
+          {titleError?.length ? (
             <p className="mt-2 text-sm text-red-600" id="title-error">
-              title must be at least 8 characters.
+              {titleError}
             </p>
           ) : null}
         </div>
 
-        <label
-          htmlFor="tldr"
-          className="text-nouns mt-6 block text-xl font-md text-gray-700"
-        >
-          tl;dr
-        </label>
+        <div className="flex justify-between mt-6">
+          <label
+            htmlFor="tldr"
+            className="text-nouns block text-xl font-md text-gray-700"
+          >
+            tl;dr
+          </label>
+          <span>{tldr.length}/120</span>
+        </div>
         <div className="mt-1">
           <input
             type="text"
             name="tldr"
             className={clsx(
               'text-nouns p-6 text-2xl placeholder:text-xl shadow-sm block w-full rounded-xl',
-              formErrors.tldr ? formErrorCls : formNoErrorCls
+              tldrError?.length ? formErrorCls : formNoErrorCls
             )}
             onChange={(evt) => onTldrChange(evt)}
+            onBlur={onTldrBlur}
             placeholder="simply explain your idea in one sentence..."
             aria-describedby="tldr-description"
             value={tldr}
           />
-          {formErrors.tldr ? (
+          {tldrError?.length ? (
             <p className="mt-2 text-sm text-red-600" id="tldr-error">
-              tldr must be at least 8 characters.
+              {tldrError}
             </p>
           ) : null}
         </div>
@@ -101,35 +141,39 @@ const IdeaForm = ({
         </div>
 
         <div className="mt-6">
-          <label
-            htmlFor="Idea Description"
-            className="text-nouns block text-xl font-md text-gray-700"
-          >
-            Idea Description
-          </label>
+          <div className="flex justify-between">
+            <label
+              htmlFor="Idea Description"
+              className="text-nouns block text-xl font-md text-gray-700"
+            >
+              Idea Description
+            </label>
+            <span>{description.length}</span>
+          </div>
           <div className="mt-1">
             <textarea
               rows={15}
               name="description"
               className={clsx(
                 'text-nouns whitespace-pre-line text-lg placeholder:text-xl shadow-sm block w-full rounded-xl',
-                formErrors.description ? formErrorCls : formNoErrorCls
+                descriptionError?.length ? formErrorCls : formNoErrorCls
               )}
               onChange={(evt) => onDescriptionChange(evt)}
+              onBlur={onDescriptionBlur}
               value={description}
               placeholder="give a description of your idea!"
             />
           </div>
-          {formErrors.description ? (
+          {descriptionError?.length ? (
             <p className="mt-2 text-sm text-red-600" id="tldr-error">
-              description must be at least 50 characters.
+              {descriptionError}
             </p>
           ) : null}
         </div>
 
         <div className="py-3 bg-gray-50">
           <button
-            // disabled={!isFormValid}
+            disabled={!isFormValid}
             className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-sky-600 disabled:bg-sky-300 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
             onClick={(evt) => handlePreviewToggle(evt)}
           >

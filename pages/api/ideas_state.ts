@@ -15,7 +15,10 @@ export default async function hide(req: NextApiRequest, res: NextApiResponse) {
       }
 
       const verifiedAddress = await verifyToken(jwtToken);
-      if (!verifiedAddress || !adminEOAList.includes(verifiedAddress)) {
+      if (
+        !verifiedAddress ||
+        !adminEOAList.includes(verifiedAddress.toLowerCase())
+      ) {
         return res.send(hideRespJson);
       }
 
