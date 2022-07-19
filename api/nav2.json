@@ -43,7 +43,7 @@
       },
       {
         "name": "Dev FAQ",
-        "link": "https://github.com/nounsDAO/nouns-monorepo/issues",
+        "link": "https://github.com/nounsDAO/nouns-monorepo/discussions",
         "external": true
       },
       {
@@ -64,18 +64,18 @@
         "external": false
       },
       {
-        "name": "Proposals",
-        "link": "/funding/proposals",
-        "external": false
-      },
-      {
-        "name": "Small Grants",
+        "name": "Small Grants Guide",
         "link": "/funding/smallgrants",
         "external": false
       },
       {
-        "name": "Prop House",
+        "name": "Prop House Guide",
         "link": "/funding/prophouse",
+        "external": false
+      },
+      {
+        "name": "Proposals Guide",
+        "link": "/funding/proposals",
         "external": false
       }
     ]
