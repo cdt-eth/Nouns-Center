@@ -32,6 +32,11 @@
     "defaultOpen": true,
     "children": [
       {
+        "name": "Ideas",
+        "link": "/ideas",
+        "external": false
+      },
+      {
         "name": "Assets",
         "link": "/assets",
         "external": false

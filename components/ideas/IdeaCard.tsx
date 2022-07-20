@@ -100,7 +100,7 @@ const IdeaCard = ({
                 {title}
               </ReactMarkdown>
 
-              <ReactMarkdown className="text-black pt-4 line-clamp-3 breakWords">
+              <ReactMarkdown className="text-black pt-4 line-clamp-3 lineClamp breakWords">
                 {description}
               </ReactMarkdown>
             </div>
