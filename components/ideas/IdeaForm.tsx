@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { InformationCircleIcon } from "@heroicons/react/solid";
-import Link from "next/link";
-import clsx from "classnames";
+import { useState } from 'react';
+import { InformationCircleIcon } from '@heroicons/react/solid';
+import Link from 'next/link';
+import clsx from 'classnames';
 
 const IdeaForm = ({
   title,
@@ -11,22 +11,21 @@ const IdeaForm = ({
   onTitleChange,
   // onTldrChange,
   onDescriptionChange,
-  isFormValid,
 }) => {
   const formNoErrorCls =
-    "focus:ring-indigo-500 focus:border-indigo-500 border-gray-300";
+    'focus:ring-indigo-500 focus:border-indigo-500 border-gray-300';
   const formErrorCls =
-    "border-red-300 text-red-900 placeholder-red-300 focus:ring-red-500 focus:border-red-500";
+    'border-red-300 text-red-900 placeholder-red-300 focus:ring-red-500 focus:border-red-500';
 
-  const [titleError, setTitleError] = useState<string>("");
+  const [titleError, setTitleError] = useState<string>('');
   // const [tldrError, setTldrError] = useState<string>("");
-  const [descriptionError, setDescriptionError] = useState<string>("");
+  const [descriptionError, setDescriptionError] = useState<string>('');
 
   const onTitleBlur = () => {
     if (0 < title?.length && title?.length < 8) {
-      setTitleError("Title should be at least 8 characters");
+      setTitleError('Title should be at least 8 characters');
     } else {
-      setTitleError("");
+      setTitleError('');
     }
   };
 
@@ -40,9 +39,9 @@ const IdeaForm = ({
 
   const onDescriptionBlur = () => {
     if (0 < description?.length && description?.length < 35) {
-      setDescriptionError("Description should be at least 35 charcters");
+      setDescriptionError('Description should be at least 35 charcters');
     } else {
-      setDescriptionError("");
+      setDescriptionError('');
     }
   };
 
@@ -91,7 +90,7 @@ const IdeaForm = ({
             name="title"
             maxLength={60}
             className={clsx(
-              "text-nouns p-4 text-lg shadow-sm block w-full placeholder:text-md rounded-xl placeholder:italic placeholder:text-black/40",
+              'text-nouns p-4 text-lg shadow-sm block w-full placeholder:text-md rounded-xl placeholder:italic placeholder:text-black/40',
               titleError?.length ? formErrorCls : formNoErrorCls
             )}
             placeholder="What's your idea"
@@ -153,7 +152,7 @@ const IdeaForm = ({
               rows={8}
               name="description"
               className={clsx(
-                "text-nouns whitespace-pre-line text-lg placeholder:text-md shadow-sm block w-full rounded-xl p-4  placeholder:italic placeholder:text-black/40 mb-2",
+                'text-nouns whitespace-pre-line text-lg placeholder:text-md shadow-sm block w-full rounded-xl p-4  placeholder:italic placeholder:text-black/40 mb-2',
                 descriptionError?.length ? formErrorCls : formNoErrorCls
               )}
               onChange={(evt) => onDescriptionChange(evt)}
@@ -171,7 +170,7 @@ const IdeaForm = ({
 
         <div className="py-3 bg-gray-50">
           <button
-            disabled={!isFormValid}
+            disabled={description?.length < 35 || title?.length < 8}
             className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-sky-600 disabled:bg-sky-300 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
             onClick={(evt) => handlePreviewToggle(evt)}
           >

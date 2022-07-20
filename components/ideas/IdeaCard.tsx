@@ -14,7 +14,7 @@ import Link from 'next/link';
 interface IdeaCardProps {
   id: number;
   title: string;
-  tldr: string;
+  description: string;
   submittedBy: string;
   date: string;
   votes: number;
@@ -26,7 +26,7 @@ interface IdeaCardProps {
 const IdeaCard = ({
   id,
   title,
-  tldr,
+  description,
   submittedBy,
   date,
   votes,
@@ -98,7 +98,7 @@ const IdeaCard = ({
                 {title}
               </div>
 
-              <div className="text-black pt-4 line-clamp-3">{tldr}</div>
+              <div className="text-black pt-4 line-clamp-3">{description}</div>
             </div>
           </div>
 
