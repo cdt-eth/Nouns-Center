@@ -34,7 +34,7 @@ export async function getServerSideProps(context) {
   };
 }
 const Idea = ({ idea }) => {
-  const { id, title, tldr, description, address } = idea;
+  const { id, title, description, address } = idea;
   const { data: ensName } = useEnsName({ address: address });
   const [isLiked, setIsLiked] = useState(false);
   const [voteCount, setVoteCount] = useState(idea?.ideas_liked?.length || 0);
@@ -138,14 +138,14 @@ const Idea = ({ idea }) => {
           </div>
           <div className="border-t border-gray-200">
             <dl>
-              <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+              {/* <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt className="text-nouns text-sm font-medium text-gray-500">
                   tldr
                 </dt>
                 <dd className="mt-1 text-xl text-gray-900 sm:mt-0 sm:col-span-2">
                   {tldr}
                 </dd>
-              </div>
+              </div> */}
 
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt className="text-nouns text-sm font-medium text-gray-500">
