@@ -484,3 +484,6 @@ h6 {
 .devNotion .notion-table .notion-td {
   overflow-wrap: break-word;
 }
+.breakWords {
+  word-break: break-word !important;
+}

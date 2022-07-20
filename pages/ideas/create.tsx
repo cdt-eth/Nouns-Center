@@ -1,24 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import Header from '../../components/Header';
-import Title from '../../components/Title';
-import PageHeader from '../../components/Layout/PageHeader';
-import PageContent from '../../components/Layout/PageContent';
-import AlertWarning from '../../components/common/AlertWarning';
-import WalletButton from '../../components/WalletButton/WalletButton';
-import IdeaForm from '../../components/ideas/IdeaForm';
-import IdeaPreview from '../../components/ideas/IdeaPreview';
+import Header from "../../components/Header";
+import Title from "../../components/Title";
+import PageHeader from "../../components/Layout/PageHeader";
+import PageContent from "../../components/Layout/PageContent";
+import AlertWarning from "../../components/common/AlertWarning";
+import WalletButton from "../../components/WalletButton/WalletButton";
+import IdeaForm from "../../components/ideas/IdeaForm";
+import IdeaPreview from "../../components/ideas/IdeaPreview";
 
-import { useAccount, useSigner } from 'wagmi';
-import { useRouter } from 'next/router';
-import Subheader from '../../components/Subheader';
+import { useAccount, useSigner } from "wagmi";
+import { useRouter } from "next/router";
+import Subheader from "../../components/Subheader";
+import Link from "next/link";
 
 export const DESCRIPTION_MIN_LENGTH = 35;
 export const TITLE_MIN_LENGTH = 8;
 
 const Ideas = () => {
-  const [title, setTitle] = useState<string>('');
-  const [description, setDescription] = useState<string>('');
+  const [title, setTitle] = useState<string>("");
+  const [description, setDescription] = useState<string>("");
   const [isPreview, setIsPreview] = useState<boolean>(false);
   const [authError, setAuthError] = useState<string>(undefined);
 
@@ -38,7 +39,7 @@ const Ideas = () => {
 
   useEffect(() => {
     if (!address) {
-      setAuthError('Please connect your wallet to submit an idea');
+      setAuthError("Please connect your wallet to submit an idea");
     } else {
       setAuthError(undefined);
     }
@@ -51,7 +52,7 @@ const Ideas = () => {
     // verify auth
     try {
       if (!address?.length) {
-        setAuthError('Please connect wallet to submit an idea');
+        setAuthError("Please connect wallet to submit an idea");
         setIsSubmitting(false);
         return;
       }
@@ -60,17 +61,17 @@ const Ideas = () => {
       const signature = await signer.signMessage(message);
 
       // verify signature
-      const loginResp = await fetch('/api/login', {
-        method: 'POST',
+      const loginResp = await fetch("/api/login", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ message, signature, address: address }),
       });
       const data = await loginResp.json();
       if (!data?.success) {
         setIsSubmitting(false);
-        setAuthError('There was an error during authentication');
+        setAuthError("There was an error during authentication");
         return;
       }
     } catch (error) {
@@ -82,19 +83,19 @@ const Ideas = () => {
     }
 
     try {
-      const response = await fetch('/api/ideas', {
-        method: 'POST',
+      const response = await fetch("/api/ideas", {
+        method: "POST",
         body: JSON.stringify({
           title,
           description,
         }),
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
       });
       await response.json();
       setIsSubmitting(false);
-      router.push('/ideas');
+      router.push("/ideas");
     } catch (err) {
       console.log({ err });
       setIsSubmitting(false);
@@ -131,10 +132,16 @@ const Ideas = () => {
       <PageContent>
         <div>
           <div>
-            <div className="flex justify-between">
-              <div className="self-end">
-                <WalletButton showBalance={false} />
-              </div>
+            <div className="flex mb-5">
+              {!isPreview && (
+                <Link href={`/ideas`}>
+                  <a className="inline-flex cursor-pointer items-center font-medium transition rounded-md text-blue-500 hover:text-gray-700 underline mr-10">
+                    Go back
+                  </a>
+                </Link>
+              )}
+
+              <WalletButton showBalance={false} />
             </div>
 
             {authError && <AlertWarning text={authError} />}
@@ -148,10 +155,10 @@ const Ideas = () => {
 
             {isPreview ? (
               <IdeaPreview
-                handlePreviewToggle={togglePreviewMode}
-                handleSubmitIdea={handleSubmitIdea}
                 title={title}
                 description={description}
+                handlePreviewToggle={togglePreviewMode}
+                handleSubmitIdea={handleSubmitIdea}
                 isSubmitting={isSubmitting}
               />
             ) : (
