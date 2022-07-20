@@ -112,7 +112,7 @@ const Idea = ({ idea }) => {
             <WalletButton showBalance={false} />
           </div>
         </div>
-        <div className="bg-white shadow overflow-hidden sm:rounded-lg">
+        <div className="bg-white shadow overflow-hidden sm:rounded-lg ideaCard">
           <div className="flex">
             <div
               className={clsx(

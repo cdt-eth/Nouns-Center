@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import ReactMarkdown from "react-markdown";
 import { truncateEthAddress } from "../../lib/utils";
 import { signUser } from "../../lib/signUser";
 import { useMe } from "../../lib/hooks/useMe";
@@ -84,7 +84,7 @@ const IdeaCard = ({
   return (
     <div className="">
       <div className="mt-5">
-        <div className="rounded-xl bg-gray-50 dark:bg-white px-6 py-5 min-h-[225px] sm:flex sm:items-start sm:justify-between flex-col">
+        <div className="rounded-xl bg-gray-50 dark:bg-white px-6 py-5 min-h-[225px] sm:flex sm:items-start sm:justify-between flex-col ideaCard">
           <div className="sm:flex sm:items-start gap-2">
             <div className="flex flex-col items-start cursor-pointer text-nouns-dark-grey hover:text-gray-300 transition">
               <div className="flex items-center flex-col">
@@ -96,13 +96,13 @@ const IdeaCard = ({
             </div>
 
             <div className="mt-3 sm:mt-0 sm:ml-4">
-              <div className="text-lg text-nouns tracking-wide breakWords font-medium text-gray-900 leading-none">
+              <ReactMarkdown className="text-lg text-nouns tracking-wide breakWords font-medium text-gray-900 leading-none">
                 {title}
-              </div>
+              </ReactMarkdown>
 
-              <div className="text-black pt-4 line-clamp-3 breakWords">
+              <ReactMarkdown className="text-black pt-4 line-clamp-3 breakWords">
                 {description}
-              </div>
+              </ReactMarkdown>
             </div>
           </div>
 
