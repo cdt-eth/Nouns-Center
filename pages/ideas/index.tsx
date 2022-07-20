@@ -44,6 +44,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
 
   const [ideasLiked, setIdeasLiked] = useState<number[]>(ideasLikedByIdeaId);
   const [ideaList, setIdeas] = useState<any[]>(ideas);
+  const [canAuth, setCanAuth] = useState<boolean>(false);
 
   useEffect(() => {
     setIdeasLiked([]);
@@ -73,6 +74,14 @@ const Ideas = ({ ideas, ideas_likes }) => {
       doLogout();
     }
   }, [isDisconnected, userMutate]);
+
+  useEffect(() => {
+    if (address && !user?.loggedIn) {
+      setCanAuth(true);
+    } else {
+      setCanAuth(false);
+    }
+  }, [user, address]);
 
   const authUser = async () => {
     await signUser(address, signer);
@@ -118,7 +127,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
                   onClick={authUser}
                   className={clsx(
                     'inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto',
-                    { hidden: !address || user?.loggedIn }
+                    { hidden: !canAuth }
                   )}
                 >
                   Sign to Auth
@@ -139,7 +148,6 @@ const Ideas = ({ ideas, ideas_likes }) => {
                     id={idea.id}
                     title={idea.title}
                     description={idea.description}
-                    // tldr={idea.tldr}
                     submittedBy={idea.address}
                     date={idea.created_at}
                     liked={ideasLiked.includes(idea.id)}

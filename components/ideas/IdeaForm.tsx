@@ -3,13 +3,16 @@ import { InformationCircleIcon } from '@heroicons/react/solid';
 import Link from 'next/link';
 import clsx from 'classnames';
 
+import {
+  DESCRIPTION_MIN_LENGTH,
+  TITLE_MIN_LENGTH,
+} from '../../pages/ideas/create';
+
 const IdeaForm = ({
   title,
-  // tldr,
   description,
   handlePreviewToggle,
   onTitleChange,
-  // onTldrChange,
   onDescriptionChange,
 }) => {
   const formNoErrorCls =
@@ -18,7 +21,6 @@ const IdeaForm = ({
     'border-red-300 text-red-900 placeholder-red-300 focus:ring-red-500 focus:border-red-500';
 
   const [titleError, setTitleError] = useState<string>('');
-  // const [tldrError, setTldrError] = useState<string>("");
   const [descriptionError, setDescriptionError] = useState<string>('');
 
   const onTitleBlur = () => {
@@ -29,16 +31,11 @@ const IdeaForm = ({
     }
   };
 
-  // const onTldrBlur = () => {
-  //   if (0 < tldr?.length && tldr?.length < 8) {
-  //     setTldrError("TLDR should be at least 8 characters");
-  //   } else {
-  //     setTldrError("");
-  //   }
-  // };
-
   const onDescriptionBlur = () => {
-    if (0 < description?.length && description?.length < 35) {
+    if (
+      0 < description?.length &&
+      description?.length < DESCRIPTION_MIN_LENGTH
+    ) {
       setDescriptionError('Description should be at least 35 charcters');
     } else {
       setDescriptionError('');
@@ -170,7 +167,10 @@ const IdeaForm = ({
 
         <div className="py-3 bg-gray-50">
           <button
-            disabled={description?.length < 35 || title?.length < 8}
+            disabled={
+              description?.length < DESCRIPTION_MIN_LENGTH ||
+              title?.length < TITLE_MIN_LENGTH
+            }
             className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-sky-600 disabled:bg-sky-300 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
             onClick={(evt) => handlePreviewToggle(evt)}
           >
