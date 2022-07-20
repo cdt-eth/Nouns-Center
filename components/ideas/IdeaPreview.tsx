@@ -1,10 +1,9 @@
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown from 'react-markdown';
 
 const IdeaPreview = ({
   handlePreviewToggle,
   handleSubmitIdea,
   title,
-  // tldr,
   description,
   isSubmitting,
 }) => {
@@ -50,7 +49,7 @@ const IdeaPreview = ({
             onClick={(evt) => handleSubmitIdea(evt)}
             disabled={isSubmitting}
           >
-            {isSubmitting ? "Submitting..." : "Sign and Submit"}
+            {isSubmitting ? 'Submitting...' : 'Sign and Submit'}
           </button>
         </div>
       </div>
