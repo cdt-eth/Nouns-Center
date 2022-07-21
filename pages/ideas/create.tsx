@@ -12,18 +12,16 @@ import IdeaPreview from "../../components/ideas/IdeaPreview";
 import { useAccount, useSigner } from "wagmi";
 import { useRouter } from "next/router";
 import Subheader from "../../components/Subheader";
+import Link from "next/link";
+
+export const DESCRIPTION_MIN_LENGTH = 35;
+export const TITLE_MIN_LENGTH = 8;
 
 const Ideas = () => {
   const [title, setTitle] = useState<string>("");
-  const [tldr, setTldr] = useState<string>("");
   const [description, setDescription] = useState<string>("");
   const [isPreview, setIsPreview] = useState<boolean>(false);
   const [authError, setAuthError] = useState<string>(undefined);
-
-  const [isFormValid, setIsFormValid] = useState<boolean>(false);
-  //   const [titleError, setTitleError] = useState<string>('');
-  //   const [tldrError, setTldrError] = useState<string>('');
-  //   const [descriptionError, setDescriptionError] = useState<string>('');
 
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
@@ -31,6 +29,13 @@ const Ideas = () => {
 
   const { address } = useAccount();
   const { data: signer } = useSigner();
+
+  const isFormValid = () => {
+    return (
+      description?.length >= DESCRIPTION_MIN_LENGTH &&
+      title?.length >= TITLE_MIN_LENGTH
+    );
+  };
 
   useEffect(() => {
     if (!address) {
@@ -82,7 +87,6 @@ const Ideas = () => {
         method: "POST",
         body: JSON.stringify({
           title,
-          tldr,
           description,
         }),
         headers: {
@@ -101,45 +105,17 @@ const Ideas = () => {
   const togglePreviewMode = (evt) => {
     evt.preventDefault();
 
-    if (isFormValid) {
-      setIsPreview(!isPreview);
-    }
-  };
-
-  const validateForm = () => {
-    let isValid = true;
-
-    if (title?.length < 8 || title?.length > 60) {
-      isValid = false;
-    }
-    // if (tldr?.length < 8 || tldr?.length > 120) {
-    //   isValid = false;
-    // }
-    if (description?.length < 34) {
-      isValid = false;
-    }
-
-    setIsFormValid(isValid);
-
-    return isValid;
+    if (isFormValid()) setIsPreview(!isPreview);
   };
 
   const handleTitleChange = (evt) => {
     evt.preventDefault();
     setTitle(evt.target.value);
-    validateForm();
   };
-
-  // const handleTldrChange = (evt) => {
-  //   evt.preventDefault();
-  //   setTldr(evt.target.value);
-  //   validateForm();
-  // };
 
   const handleDescriptionChange = (evt) => {
     evt.preventDefault();
     setDescription(evt.target.value);
-    validateForm();
   };
 
   return (
@@ -156,10 +132,16 @@ const Ideas = () => {
       <PageContent>
         <div>
           <div>
-            <div className="flex justify-between">
-              <div className="self-end">
-                <WalletButton showBalance={false} />
-              </div>
+            <div className="flex mb-5">
+              {!isPreview && (
+                <Link href={`/ideas`}>
+                  <a className="inline-flex cursor-pointer items-center font-medium transition rounded-md text-blue-500 hover:text-gray-700 underline mr-10">
+                    Go back
+                  </a>
+                </Link>
+              )}
+
+              <WalletButton showBalance={false} />
             </div>
 
             {authError && <AlertWarning text={authError} />}
@@ -173,23 +155,19 @@ const Ideas = () => {
 
             {isPreview ? (
               <IdeaPreview
+                title={title}
+                description={description}
                 handlePreviewToggle={togglePreviewMode}
                 handleSubmitIdea={handleSubmitIdea}
-                title={title}
-                // tldr={tldr}
-                description={description}
                 isSubmitting={isSubmitting}
               />
             ) : (
               <IdeaForm
                 title={title}
-                // tldr={tldr}
                 description={description}
                 handlePreviewToggle={togglePreviewMode}
                 onTitleChange={handleTitleChange}
-                // onTldrChange={handleTldrChange}
                 onDescriptionChange={handleDescriptionChange}
-                isFormValid={isFormValid}
               />
             )}
           </div>

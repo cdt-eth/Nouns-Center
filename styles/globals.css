@@ -484,3 +484,18 @@ h6 {
 .devNotion .notion-table .notion-td {
   overflow-wrap: break-word;
 }
+.breakWords {
+  word-break: break-word !important;
+}
+.lineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+}
+.lineClamp p {
+  display: inline;
+}

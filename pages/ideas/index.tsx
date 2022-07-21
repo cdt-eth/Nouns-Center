@@ -1,27 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import Link from "next/link";
-import clsx from "classnames";
-import { useAccount, useSigner } from "wagmi";
+import Link from 'next/link';
+import clsx from 'classnames';
+import { useAccount, useSigner } from 'wagmi';
 
-import Header from "../../components/Header";
-import IdeaCard from "../../components/ideas/IdeaCard";
-import Title from "../../components/Title";
-import PageHeader from "../../components/Layout/PageHeader";
-import PageContent from "../../components/Layout/PageContent";
+import Header from '../../components/Header';
+import IdeaCard from '../../components/ideas/IdeaCard';
+import Title from '../../components/Title';
+import PageHeader from '../../components/Layout/PageHeader';
+import PageContent from '../../components/Layout/PageContent';
 
-import { useMe } from "../../lib/hooks/useMe";
-import { getIdeas } from "../../lib/db/hasura";
-import { getAddressFromContext } from "../../lib/utils";
-import { signUser } from "../../lib/signUser";
-import { IDEA_HIDDEN } from "../../lib/constants";
+import { useMe } from '../../lib/hooks/useMe';
+import { getIdeas } from '../../lib/db/hasura';
+import { getAddressFromContext } from '../../lib/utils';
+import { signUser } from '../../lib/signUser';
+import { IDEA_HIDDEN } from '../../lib/constants';
 
-import WalletButton from "../../components/WalletButton/WalletButton";
-import Subheader from "../../components/Subheader";
+import WalletButton from '../../components/WalletButton/WalletButton';
+import Subheader from '../../components/Subheader';
 
 export async function getServerSideProps(context) {
   let address = await getAddressFromContext(context);
-  if (!address) address = "";
+  if (!address) address = '';
   const { ideas = [], ideas_likes = [] } = { ...(await getIdeas(address)) };
 
   return {
@@ -44,6 +44,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
 
   const [ideasLiked, setIdeasLiked] = useState<number[]>(ideasLikedByIdeaId);
   const [ideaList, setIdeas] = useState<any[]>(ideas);
+  const [canAuth, setCanAuth] = useState<boolean>(false);
 
   useEffect(() => {
     setIdeasLiked([]);
@@ -74,16 +75,24 @@ const Ideas = ({ ideas, ideas_likes }) => {
     }
   }, [isDisconnected, userMutate]);
 
+  useEffect(() => {
+    if (address && !user?.loggedIn) {
+      setCanAuth(true);
+    } else {
+      setCanAuth(false);
+    }
+  }, [user, address]);
+
   const authUser = async () => {
     await signUser(address, signer);
     userMutate();
   };
 
   const hideIdea = async (ideaId) => {
-    const hideIdeaResp = await fetch("/api/ideas_state", {
-      method: "POST",
+    const hideIdeaResp = await fetch('/api/ideas_state', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({ ideaId, state: IDEA_HIDDEN }),
     });
@@ -117,14 +126,14 @@ const Ideas = ({ ideas, ideas_likes }) => {
                 <button
                   onClick={authUser}
                   className={clsx(
-                    "inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto",
-                    { hidden: !address || user?.loggedIn }
+                    'inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto',
+                    { hidden: !canAuth }
                   )}
                 >
                   Sign to Auth
                 </button>
               </div>
-              <Link href={"/ideas/create"}>
+              <Link href={'/ideas/create'}>
                 <a className="inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto">
                   Submit Your Idea
                 </a>
@@ -138,7 +147,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
                     key={idea.id}
                     id={idea.id}
                     title={idea.title}
-                    tldr={idea.tldr}
+                    description={idea.description}
                     submittedBy={idea.address}
                     date={idea.created_at}
                     liked={ideasLiked.includes(idea.id)}
@@ -148,7 +157,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
                   />
                 ))
               ) : (
-                <Link passHref href={"/ideas/create"}>
+                <Link passHref href={'/ideas/create'}>
                   <button
                     type="button"
                     className="mt-4 relative block w-full border-2 border-gray-300 border-dashed rounded-lg p-12 text-center hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"

@@ -4,7 +4,6 @@ const IdeaPreview = ({
   handlePreviewToggle,
   handleSubmitIdea,
   title,
-  // tldr,
   description,
   isSubmitting,
 }) => {
@@ -17,7 +16,7 @@ const IdeaPreview = ({
         <h3 className="text-2xl pb-3 leading-6 font-medium text-gray-900 text-nouns">
           Title
         </h3>
-        <div className="text-xl text-gray-700">{title}</div>
+        <div className="text-xl text-gray-700 break-words">{title}</div>
       </div>
 
       {/* <div className="mt-3 pb-3 border-b border-gray-200 sm:items-center">
@@ -31,7 +30,9 @@ const IdeaPreview = ({
         <h3 className="text-2xl pb-3 leading-6 font-medium text-gray-900 text-nouns">
           Description
         </h3>
-        <ReactMarkdown className="mt-5 text-lg">{description}</ReactMarkdown>
+        <ReactMarkdown className="mt-5 text-lg break-words">
+          {description}
+        </ReactMarkdown>
       </div>
 
       <div className="flex">
