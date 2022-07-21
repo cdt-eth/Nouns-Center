@@ -23,11 +23,6 @@
         "name": "Discord Channels",
         "link": "/channels",
         "external": false
-      },
-      {
-        "name": "Nouners Intro",
-        "link": "/nouners",
-        "external": false
       }
     ]
   },
@@ -36,6 +31,11 @@
     "current": false,
     "defaultOpen": true,
     "children": [
+      {
+        "name": "Ideas",
+        "link": "/ideas",
+        "external": false
+      },
       {
         "name": "Assets",
         "link": "/assets",
@@ -48,7 +48,7 @@
       },
       {
         "name": "Dev FAQ",
-        "link": "https://github.com/nounsDAO/nouns-monorepo/issues",
+        "link": "https://github.com/nounsDAO/nouns-monorepo/discussions",
         "external": true
       },
       {
@@ -69,18 +69,18 @@
         "external": false
       },
       {
-        "name": "Proposals",
-        "link": "/funding/proposals",
-        "external": false
-      },
-      {
-        "name": "Small Grants",
+        "name": "Small Grants Guide",
         "link": "/funding/smallgrants",
         "external": false
       },
       {
-        "name": "Prop House",
+        "name": "Prop House Guide",
         "link": "/funding/prophouse",
+        "external": false
+      },
+      {
+        "name": "Proposals Guide",
+        "link": "/funding/proposals",
         "external": false
       }
     ]
@@ -110,11 +110,7 @@
         "link": "/notes",
         "external": false
       },
-      {
-        "name": "Gifs",
-        "link": "/gifs",
-        "external": false
-      },
+
       {
         "name": "Blog",
         "link": "https://nouns.blog/",

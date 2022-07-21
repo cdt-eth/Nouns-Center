@@ -1,3 +1,5 @@
+import { IDEA_HIDDEN, IDEA_ACTIVE } from '../constants';
+
 async function queryHasuraGQL(
   operationsDoc: string,
   operationName: string,
@@ -86,15 +88,13 @@ export async function isNewUser(token: string, address: string) {
 }
 
 export async function getIdeas(address: string) {
-  //   return response?.data?.ideas;
   const operationsDoc = `
     query getIdeas($address: String) {
-        ideas (order_by: {ideas_liked_aggregate: {count: desc}}) {
+        ideas (order_by: {ideas_liked_aggregate: {count: desc}}, where: {state: {_eq: ${IDEA_ACTIVE}}}) {
             address
                 created_at
                 description
                 title
-                tldr
                 id
                 ideas_liked_aggregate(where: {liked: {_eq: true}}) {
                     aggregate {
@@ -123,7 +123,9 @@ export async function getIdea(ideaId: string) {
                 description
                 id
                 title
-                tldr
+                ideas_liked(where: {idea_id: {_eq: $ideaId}, liked: {_eq: true}}) {
+                    address
+                }
             }
      }
   `;
@@ -138,7 +140,7 @@ export async function getIdea(ideaId: string) {
 export async function getLikesForAddress(address: string) {
   const operationsDoc = `
     query getLikesForAddress($address: String!) {
-        ideas_likes(where: {liked: {_eq: true}, address: {_eq: $address}) {
+        ideas_likes(where: {liked: {_eq: true}, address: {_eq: $address}}) {
             idea_id
         }
     }
@@ -155,10 +157,10 @@ export async function getLikesForAddress(address: string) {
   return response?.data?.ideas_likes;
 }
 
-export async function insertIdea(token, { address, title, tldr, description }) {
+export async function insertIdea(token, { address, title, description }) {
   const operationsDoc = `
-    mutation insertIdea($address: String!, $title: String!, $tldr: String!, $description: String!) {
-        insert_ideas_one(object: {address: $address, description: $description, title: $title, tldr: $tldr}) {
+    mutation insertIdea($address: String!, $title: String!, $description: String!) {
+        insert_ideas_one(object: {address: $address, description: $description, title: $title}) {
             created_at
             id
         }
@@ -167,7 +169,7 @@ export async function insertIdea(token, { address, title, tldr, description }) {
   return await queryHasuraGQL(
     operationsDoc,
     'insertIdea',
-    { address, title, tldr, description },
+    { address, title, description },
     token
   );
 }
@@ -256,4 +258,20 @@ export async function insertLikedForIdeaAndAddress(
   );
 
   return response?.data;
+}
+
+export async function setIdeaState(ideaId: number, state: number) {
+  const operationsDoc = `
+    mutation setIdeaState($ideaId: bigint!, $state: Int!) {
+        update_ideas_by_pk(pk_columns: {id: $ideaId}, _set: {state: $state}) {
+            id
+          }
+    }
+`;
+  const response = await adminQueryHasuraGQL(operationsDoc, 'setIdeaState', {
+    ideaId,
+    state,
+  });
+
+  return response?.data?.update_ideas_by_pk;
 }
