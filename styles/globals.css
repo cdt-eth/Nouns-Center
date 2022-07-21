@@ -496,3 +496,6 @@ h6 {
   overflow: hidden;
   text-align: left;
 }
+.lineClamp p {
+  display: inline;
+}
