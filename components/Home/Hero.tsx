@@ -3,17 +3,19 @@ import React from "react";
 import algoliasearch from "algoliasearch/lite";
 import { autocomplete, getAlgoliaResults } from "@algolia/autocomplete-js";
 import "@algolia/autocomplete-theme-classic";
-import NounishButton from "./NounishButton";
 import Footer from "../Footer";
+import NavSection from "./NavSection";
+import nav from "../../api/nav2.json";
+import NavCard from "./NavCard";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const searchClient = algoliasearch(
-  "PGIH0KF5F5",
-  "faf1987de1d83c02e82fbf9bfd7ca5a9"
-);
+// const searchClient = algoliasearch(
+//   "PGIH0KF5F5",
+//   "faf1987de1d83c02e82fbf9bfd7ca5a9"
+// );
 
 // autocomplete({
 //   container: "#autocomplete",
@@ -26,53 +28,41 @@ const action = () => {
 const Hero = () => {
   return (
     <>
-      <div className="relative overflow-hidden flex justify-around tracking-wider pt-10">
-        <div className="relative pb-16 sm:pb-24 ">
-          <main className="mx-auto sm:px-4 tracking-wider text-black ">
-            <div className="text-center flex flex-col justify-between h-full xs:px-6 sm:px-0">
-              <h1 className=" font-extrabold text-5xl md:text-6xl text-nouns tracking-wider flex gap-4 justify-center">
-                Welcome to Nouns Center
-              </h1>
+      <div className="pt-10">
+        <main className="mx-auto tracking-wider text-black xs:px-4">
+          <div className="text-center flex flex-col justify-between h-full sm:px-0 mb-12 sm:mb-28">
+            <img
+              className="m-auto w-1/3 sm:w-52	 "
+              src="/home/noggles.png"
+              alt="noggles"
+            />
+            <h1 className="font-extrabold text-3xl sm:text-5xl md:text-[80px] text-nouns tracking-wider w-full xs:pt-6 sm:pt-12 xs:pb-3 sm:pb-6">
+              Welcome to Nouns Center
+            </h1>
+            <p className="text-black m-auto font-semibold xs:text-[14px] sm:text-2xl text-center w-full sm:w-[800px]">
+              The knowledge center &#38; resource hub for Nouns DAO. Learn about
+              the project, the community and ways to get involved and funded.
+            </p>
 
-              <div className="mt-6 sm:mb-14" id="autocomplete"></div>
+            {/* <div className="mt-6 sm:mb-14" id="autocomplete"></div> */}
+          </div>
 
-              <div className="mt-5 sm:mx-auto grid grid-cols-2 xs:gap-3 sm:gap-8 sm:justify-center md:mt-8 lg:grid-flow-col">
-                <NounishButton
-                  text="Intro to Nouns"
-                  image="intro.png"
-                  buttonId={"one"}
-                  buttonAction={action}
-                  path="intro"
-                  color="bg-[#E5284A]"
+          {nav.map((section) => (
+            <NavSection
+              key={section.name}
+              title={section.title}
+              body={section.description}
+              cards={section.children.map((page, i) => (
+                <NavCard
+                  path={page.link}
+                  key={i}
+                  text={page.name}
+                  i={page.link}
                 />
-                <NounishButton
-                  text="View Traits"
-                  image="traits.png"
-                  buttonId={"two"}
-                  buttonAction={action}
-                  path="traits"
-                  color="bg-[#028940]"
-                />
-                <NounishButton
-                  text="Get Funding"
-                  image="funding.png"
-                  buttonId={"three"}
-                  buttonAction={action}
-                  path="funding"
-                  color="bg-[#A734A3]"
-                />
-                <NounishButton
-                  text="Nounish Projects"
-                  image="projects.jpeg"
-                  buttonId={"four"}
-                  buttonAction={action}
-                  path="projects"
-                  color="bg-blue-base"
-                />
-              </div>
-            </div>
-          </main>
-        </div>
+              ))}
+            />
+          ))}
+        </main>
       </div>
 
       <Footer />

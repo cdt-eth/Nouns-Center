@@ -1,6 +1,8 @@
 [
   {
     "name": "About Nouns",
+    "title": "Learn about Nouns",
+    "description": "Learn about the Nouns project, the ecosystem and community.",
     "defaultOpen": true,
     "current": false,
     "children": [
@@ -28,6 +30,8 @@
   },
   {
     "name": "For Builders",
+    "title": "Build with Nouns",
+    "description": "Access design assets, codebase and more resources.",
     "current": false,
     "defaultOpen": true,
     "children": [
@@ -60,6 +64,8 @@
   },
   {
     "name": "Get Funding",
+    "title": "Get Funded",
+    "description": "Learn about getting funded by Nouns and apply.",
     "current": false,
     "defaultOpen": true,
     "children": [
@@ -69,17 +75,17 @@
         "external": false
       },
       {
-        "name": "Small Grants Guide",
+        "name": "Small Grants",
         "link": "/funding/smallgrants",
         "external": false
       },
       {
-        "name": "Prop House Guide",
+        "name": "Prop House",
         "link": "/funding/prophouse",
         "external": false
       },
       {
-        "name": "Proposals Guide",
+        "name": "Proposals",
         "link": "/funding/proposals",
         "external": false
       }
@@ -87,6 +93,8 @@
   },
   {
     "name": "Community",
+    "title": "Community",
+    "description": "Meet the growing list of projects and members of the Nouns ecosystem.",
     "current": false,
     "defaultOpen": true,
     "children": [

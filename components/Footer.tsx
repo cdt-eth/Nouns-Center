@@ -6,7 +6,7 @@ const Footer = () => {
   const { asPath } = router;
 
   return (
-    <div className="relative xs:px-6 sm:px-0 text-black font-medium gap-2 items-center w-full flex flex-col text-center">
+    <div className="relative xs:px-6 sm:px-0 text-black font-medium gap-2 items-center w-full flex flex-col text-center pb-6">
       {asPath === "/" && (
         <p>
           Nouns Center serves as the knowledge center &#38; resource hub for
