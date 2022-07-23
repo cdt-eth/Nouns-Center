@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Button from "../common/Button";
@@ -8,6 +7,7 @@ import Mobile from "./Mobile";
 import { Fragment, useState } from "react";
 import Link from "next/link";
 import { ChevronDownIcon } from "@heroicons/react/solid";
+import { BiLinkExternal as ExternalIcon } from "react-icons/bi";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -39,7 +39,7 @@ const NewNav = () => {
                 {/* <Disclosure.Panel>
                   {({ close }) => ( */}
                 <div
-                  className="flex-shrink-0 flex items-center"
+                  className="flex-shrink-0 flex items-center cursor-pointer"
                   onClick={() => close()}
                 >
                   <Link passHref href="/">
@@ -55,44 +55,19 @@ const NewNav = () => {
 
                 {/* DESKTOP NAV ITEMS */}
                 <div className="hidden md:ml-6 sm:flex md:space-x-8 gap-4">
-                  {/* Current: "border-indigo-500 text-gray-900", Default:
-            "border-transparent text-gray-500 hover:border-gray-300
-            hover:text-gray-700" */}
-                  {/* {nav.map((section) => (
-                    <a
-                      href="#"
-                      key={section.name}
-                      className="active:border-b-2 active:border-b-blue-base text-black inline-flex items-center px-1 pt-1t hover:border-b-black/50 text-sm font-medium border-y-2 border-transparent"
-                    >
-                      {section.name}
-                    </a>
-                  ))} */}
-
                   {nav.map((section) => (
                     <Menu
                       as="div"
-                      className="relative flex text-left"
-                      // inline-flex
-
-                      // className="relative flex text-black items-center px-1 pt-1t m-auto w-[125px] hover:border-b-black/50 text-sm font-medium border-y-2 border-transparent h-full"
-
-                      // className="relative flex active:border-b-2 active:border-b-blue-base text-black items-center px-1 pt-1t hover:border-b-black/50 text-sm font-medium border-y-2 border-transparent"
+                      className="relative flex text-left hover:text-blue-base"
                       key={section.name}
                     >
-                      {/* <div> */}
-                      <Menu.Button
-                        // border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500 shadow-sm
-                        className="
-                        inline-flex justify-center items-center h-full m-auto
-                        "
-                      >
+                      <Menu.Button className="inline-flex justify-center items-center h-full m-auto">
                         {section.name}
                         <ChevronDownIcon
                           className="-mr-1 ml-2 h-5 w-5"
                           aria-hidden="true"
                         />
                       </Menu.Button>
-                      {/* </div> */}
 
                       <Transition
                         as={Fragment}
@@ -109,15 +84,22 @@ const NewNav = () => {
                               <Menu.Item key={subItem.name}>
                                 {({ active }) => (
                                   <a
-                                    href="#"
+                                    href={subItem.link}
                                     className={classNames(
                                       active
                                         ? "bg-gray-100 text-gray-900"
                                         : "text-gray-700",
-                                      "block px-4 py-2 text-sm"
+                                      "block px-4 py-2 text-sm",
+                                      subItem.external &&
+                                        "flex items-center gap-2"
                                     )}
+                                    target={
+                                      subItem.external ? "_blank" : "_self"
+                                    }
+                                    rel="noreferrer"
                                   >
                                     {subItem.name}
+                                    {subItem.external && <ExternalIcon />}
                                   </a>
                                 )}
                               </Menu.Item>
@@ -131,12 +113,7 @@ const NewNav = () => {
 
                 {/* GO TO NOUNS BUTTON */}
                 <div className="flex items-center flex-shrink-0">
-                  <Button
-                    link="https://nouns.wtf/"
-                    text="nouns.wtf"
-                    // text="go to nouns.wtf"
-                    small
-                  />
+                  <Button link="https://nouns.wtf/" text="nouns.wtf" small />
                 </div>
               </div>
             </div>

@@ -50,7 +50,9 @@ const Hero = () => {
           {nav.map((section) => (
             <NavSection
               key={section.name}
+              // @ts-ignore
               title={section.title}
+              // @ts-ignore
               body={section.description}
               cards={section.children.map((page, i) => (
                 <NavCard
