@@ -1,11 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Button from "../common/Button";
 import nav from "../../api/nav2.json";
 import Mobile from "./Mobile";
-import { useState } from "react";
+import { Fragment, useState } from "react";
+import Link from "next/link";
+import { ChevronDownIcon } from "@heroicons/react/solid";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -21,61 +23,118 @@ const NewNav = () => {
           <>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
               <div className="flex justify-between h-16">
-                <div className="flex">
-                  {/* MOBILE EXPAND ICON */}
-                  <div className="-ml-2 mr-2 flex items-center sm:hidden">
-                    <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                      <span className="sr-only">Open main menu</span>
-                      {open ? (
-                        <XIcon className="block h-6 w-6" aria-hidden="true" />
-                      ) : (
-                        <MenuIcon
-                          className="block h-6 w-6"
-                          aria-hidden="true"
-                        />
-                      )}
-                    </Disclosure.Button>
-                  </div>
+                {/* MOBILE EXPAND ICON */}
+                <div className="flex items-center sm:hidden">
+                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <span className="sr-only">Open main menu</span>
+                    {open ? (
+                      <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    ) : (
+                      <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    )}
+                  </Disclosure.Button>
+                </div>
 
-                  {/* EARTH LOGO */}
-                  <div className="flex-shrink-0 flex items-center ">
+                {/* EARTH LOGO */}
+                {/* <Disclosure.Panel>
+                  {({ close }) => ( */}
+                <div
+                  className="flex-shrink-0 flex items-center"
+                  onClick={() => close()}
+                >
+                  <Link passHref href="/">
                     <img
-                      className="block lg:hidden h-8 w-auto"
+                      className="block h-10 w-auto"
                       src="/earth.gif"
-                      // src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                       alt="Workflow"
                     />
-                    <img
-                      className="hidden lg:block h-8 w-auto"
-                      src="/earth.gif"
-                      // src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
-                      alt="Workflow"
-                    />
-                  </div>
+                  </Link>
+                </div>
+                {/* )}
+                 </Disclosure.Panel> */}
 
-                  {/* DESKTOP NAV ITEMS */}
-                  <div className="hidden md:ml-6 sm:flex md:space-x-8">
-                    {/* Current: "border-indigo-500 text-gray-900", Default:
+                {/* DESKTOP NAV ITEMS */}
+                <div className="hidden md:ml-6 sm:flex md:space-x-8 gap-4">
+                  {/* Current: "border-indigo-500 text-gray-900", Default:
             "border-transparent text-gray-500 hover:border-gray-300
             hover:text-gray-700" */}
+                  {/* {nav.map((section) => (
+                    <a
+                      href="#"
+                      key={section.name}
+                      className="active:border-b-2 active:border-b-blue-base text-black inline-flex items-center px-1 pt-1t hover:border-b-black/50 text-sm font-medium border-y-2 border-transparent"
+                    >
+                      {section.name}
+                    </a>
+                  ))} */}
 
-                    {nav.map((section) => (
-                      <a
-                        href="#"
-                        key={section.name}
-                        className="active:border-b-2 active:border-b-blue-base text-black inline-flex items-center px-1 pt-1 border-2 border-transparent hover:border-b-black/50 text-sm font-medium"
+                  {nav.map((section) => (
+                    <Menu
+                      as="div"
+                      className="relative flex text-left"
+                      // inline-flex
+
+                      // className="relative flex text-black items-center px-1 pt-1t m-auto w-[125px] hover:border-b-black/50 text-sm font-medium border-y-2 border-transparent h-full"
+
+                      // className="relative flex active:border-b-2 active:border-b-blue-base text-black items-center px-1 pt-1t hover:border-b-black/50 text-sm font-medium border-y-2 border-transparent"
+                      key={section.name}
+                    >
+                      {/* <div> */}
+                      <Menu.Button
+                        // border border-gray-300 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500 shadow-sm
+                        className="
+                        inline-flex justify-center items-center h-full m-auto
+                        "
                       >
                         {section.name}
-                      </a>
-                    ))}
-                  </div>
+                        <ChevronDownIcon
+                          className="-mr-1 ml-2 h-5 w-5"
+                          aria-hidden="true"
+                        />
+                      </Menu.Button>
+                      {/* </div> */}
+
+                      <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-100"
+                        enterFrom="transform opacity-0 scale-95"
+                        enterTo="transform opacity-100 scale-100"
+                        leave="transition ease-in duration-75"
+                        leaveFrom="transform opacity-100 scale-100"
+                        leaveTo="transform opacity-0 scale-95"
+                      >
+                        <Menu.Items className="origin-top-right absolute right-0 mt-12	w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                          <div className="py-1">
+                            {section.children.map((subItem) => (
+                              <Menu.Item key={subItem.name}>
+                                {({ active }) => (
+                                  <a
+                                    href="#"
+                                    className={classNames(
+                                      active
+                                        ? "bg-gray-100 text-gray-900"
+                                        : "text-gray-700",
+                                      "block px-4 py-2 text-sm"
+                                    )}
+                                  >
+                                    {subItem.name}
+                                  </a>
+                                )}
+                              </Menu.Item>
+                            ))}
+                          </div>
+                        </Menu.Items>
+                      </Transition>
+                    </Menu>
+                  ))}
                 </div>
 
                 {/* GO TO NOUNS BUTTON */}
                 <div className="flex items-center flex-shrink-0">
                   <Button
                     link="https://nouns.wtf/"
-                    text="go to nouns.wtf"
+                    text="nouns.wtf"
+                    // text="go to nouns.wtf"
                     small
                   />
                 </div>
