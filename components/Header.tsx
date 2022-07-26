@@ -26,7 +26,7 @@ const Header = ({ title }: HeaderProps) => {
         property="og:description"
         content="The knowledge center and resource hub for Nouns DAO. Learn about the project, the community and ways to get involved and funded."
       />
-      <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+      <meta property="og:image" content="https://nouns.center/og-image.png" />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
