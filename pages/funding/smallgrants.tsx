@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Header from "../../components/Header";
 import PageContent from "../../components/Layout/PageContent";
@@ -37,7 +38,6 @@ export async function getStaticProps() {
 }
 
 const smallgrants = ({ grantsData }) => {
-  console.log("grants", grantsData);
   return grantsData ? (
     <>
       <PageHeader>
@@ -133,7 +133,6 @@ const smallgrants = ({ grantsData }) => {
             </li>
           </ul>
 
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="border-2 mt-3 rounded-xl p-2 bg-white shadow-md"
             src="/funding/discourseSG.png"
