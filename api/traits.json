@@ -1,6 +1,5 @@
 {
-  "heads": [
-    {
+  "heads": [{
       "name": "35mm Film",
       "image": "film-35mm"
     },
@@ -137,6 +136,11 @@
       "image": "cannedham"
     },
     {
+      "name": "Capybara",
+      "image": "capybara"
+    },
+
+    {
       "name": "Car",
       "image": "car"
     },
@@ -235,6 +239,10 @@
     {
       "name": "Cotton Ball",
       "image": "cottonball"
+    },
+    {
+      "name": "Couch",
+      "image": "couch"
     },
     {
       "name": "Cow",
@@ -397,6 +405,10 @@
       "image": "hair"
     },
     {
+      "name": "Hanger",
+      "image": "hanger"
+    },
+    {
       "name": "Handheld Console",
       "image": "console-handheld"
     },
@@ -439,6 +451,10 @@
     {
       "name": "Igloo",
       "image": "igloo"
+    },
+    {
+      "name": "Index Card",
+      "image": "index-card"
     },
     {
       "name": "Island",
@@ -769,6 +785,10 @@
       "image": "snowglobe"
     },
     {
+      "name": "Snowman",
+      "image": "snowman"
+    },
+    {
       "name": "Snowmobile",
       "image": "snowmobile"
     },
@@ -841,6 +861,10 @@
       "image": "trashcan"
     },
     {
+      "name": "Treasure Chest",
+      "image": "treasurechest"
+    },
+    {
       "name": "Triangular Ruler ",
       "image": "ruler-triangular"
     },
@@ -859,6 +883,10 @@
     {
       "name": "Unicorn",
       "image": "unicorn"
+    },
+    {
+      "name": "Vending Machine",
+      "image": "vending-machine"
     },
     {
       "name": "Vent",
@@ -925,6 +953,10 @@
       "image": "wine"
     },
     {
+      "name": "Wine Barrel",
+      "image": "wine-barrel"
+    },
+    {
       "name": "Wizard Hat",
       "image": "wizardhat"
     },
@@ -937,8 +969,7 @@
       "image": "zebra"
     }
   ],
-  "glasses": [
-    {
+  "glasses": [{
       "name": "Black w/ Red Eyes",
       "image": "black-eyes-red"
     },
@@ -955,6 +986,10 @@
       "image": "blue-med-saturated"
     },
     {
+      "name": "Deep Teal",
+      "image": "deep-teal"
+    },
+    {
       "name": "Frog Green",
       "image": "frog-green"
     },
@@ -965,6 +1000,10 @@
     {
       "name": "Green & Blue",
       "image": "green-blue-multi"
+    },
+    {
+      "name": "Grass",
+      "image": "grass"
     },
     {
       "name": "Grey",
@@ -1019,8 +1058,7 @@
       "image": "yellow-saturated"
     }
   ],
-  "bodies": [
-    {
+  "bodies": [{
       "name": "Beige",
       "image": "bege-bsod"
     },
@@ -1141,8 +1179,7 @@
       "image": "yellow"
     }
   ],
-  "accessories": [
-    {
+  "accessories": [{
       "name": "1n",
       "image": "1n"
     },
@@ -1391,6 +1428,10 @@
       "image": "bling-gold-ingot"
     },
     {
+      "name": "Grease",
+      "image": "grease"
+    },
+    {
       "name": "Heart",
       "image": "heart"
     },
@@ -1591,6 +1632,10 @@
       "image": "sunset"
     },
     {
+      "name": "Tatewaku",
+      "image": "tatewaku"
+    },
+    {
       "name": "Taxi",
       "image": "taxi-checkers"
     },
@@ -1603,8 +1648,12 @@
       "image": "tie-dye"
     },
     {
-      "name": "Text",
+      "name": "a2 + b2",
       "image": "txt-a2+b2"
+    },
+    {
+      "name": "Uroko",
+      "image": "uroko"
     },
     {
       "name": "We",
