@@ -82,7 +82,7 @@ const funding = [
     link: "/funding/proposals",
     linkText: "Learn more",
     tagline:
-      "Resources allocated for the long-term growth of the Nouns project. Larger in scope and undergo more scruntiny.",
+      "Resources allocated for the long-term growth of the Nouns project. Larger in scope and undergo more scrutiny.",
     textColor: "text-[#E5284A]",
     bgColor: "bg-[#E5284A]",
     img: "lg.png",
