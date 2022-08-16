@@ -23,7 +23,7 @@ const props = [
       name: "Brian",
       href: "https://twitter.com/pbrianandj",
       imageUrl:
-        "https://pbs.twimg.com/profile_images/1439973770643443714/GW7Vf9qj_400x400.png",
+        "https://pbs.twimg.com/profile_images/1556491192480608256/HdVUUIeg_400x400.png",
     },
   },
 
@@ -37,7 +37,7 @@ const props = [
       name: "Jacob",
       href: "https://twitter.com/js_horne",
       imageUrl:
-        "https://pbs.twimg.com/profile_images/1534610987755642881/sPGI-poF_400x400.jpg",
+        "https://pbs.twimg.com/profile_images/1558913916486426625/lgv0PBh__400x400.jpg",
     },
   },
   {
