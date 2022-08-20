@@ -12,6 +12,7 @@ import PageHeader from "../components/Layout/PageHeader";
 import Button from "../components/common/Button";
 import { fetchProjectFormData } from "../utils/project-form-data-fetching";
 
+
 export const getStaticProps = async (context) => {
 
   const projects = await fetchProjectFormData();
@@ -182,7 +183,7 @@ const Projects = (props) => {
                     <li key={project.title} className="py-4 flex">
                       <img
                         className="h-24 w-full max-w-[6rem] object-cover rounded-md"
-                        src={`/projects/${project.image}`}
+                        src={!project.image.startsWith("http") ?  `/projects/${project.image}` : project.image}
                         alt={project.image}
                       />
                       <div className="ml-3">
