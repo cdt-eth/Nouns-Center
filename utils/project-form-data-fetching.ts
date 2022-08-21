@@ -14,7 +14,7 @@ const validateOrReplaceImageURL = (imageUrl: string | undefined) => {
 }
 
 const postProcessProjectApiResponse = (rawProjectResponse: AddressFormAPIResponse) => {
-    return rawProjectResponse.responses.map(async (data) => {
+    return rawProjectResponse.responses.map((data) => {
       const responseData = data.response_data;
       return {
         title: fetchFieldByString(responseData, "title"),
