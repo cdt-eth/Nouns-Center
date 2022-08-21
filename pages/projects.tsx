@@ -10,9 +10,25 @@ import Link from "next/link";
 import PageContent from "../components/Layout/PageContent";
 import PageHeader from "../components/Layout/PageHeader";
 import Button from "../components/common/Button";
+import { fetchProjectFormData } from "../utils/project-form-data-fetching";
 
-const Projects = () => {
-  const [filteredProjects, setFilteredProjects] = useState(projects);
+
+export const getStaticProps = async (context) => {
+
+  const projects = await fetchProjectFormData();
+
+  return {
+    props: {
+      projects
+    },
+    revalidate: 60
+  }
+
+};
+
+
+const Projects = (props) => {
+  const [filteredProjects, setFilteredProjects] = useState(projects.concat(props.projects));
   const [projectsText, setProjectsText] = useState("projects and counting!");
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
@@ -167,7 +183,7 @@ const Projects = () => {
                     <li key={project.title} className="py-4 flex">
                       <img
                         className="h-24 w-full max-w-[6rem] object-cover rounded-md"
-                        src={`/projects/${project.image}`}
+                        src={!project.image.startsWith("http") ?  `/projects/${project.image}` : project.image}
                         alt={project.image}
                       />
                       <div className="ml-3">
