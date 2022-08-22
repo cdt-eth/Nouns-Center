@@ -6,8 +6,8 @@ import { v4 as uuidv4 } from "uuid";
 import traits from "../api/traits.json";
 
 import Subheader from "../components/Subheader";
-// import Link from "next/link";
 import Link from "../components/Link";
+
 import PageHeader from "../components/Layout/PageHeader";
 import PageContent from "../components/Layout/PageContent";
 import Button from "../components/common/Button";
@@ -43,7 +43,10 @@ const Traits = () => {
 
       <PageContent>
         <div className="bg-grey-base py-6 xs:px-1 sm:px-4 rounded-xl mb-8">
-          <h1 className="text-5xl text-nouns mb-6 text-center text-black">
+          <h1
+            id="heads"
+            className="text-5xl text-nouns mb-6 text-center text-black"
+          >
             Heads
           </h1>
           <div className="grid xs:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-6 gap-2 ">
@@ -63,7 +66,10 @@ const Traits = () => {
         </div>
 
         <div className="bg-grey-base py-6 xs:px-1 sm:px-4 rounded-xl  mb-8">
-          <h1 className="text-5xl text-nouns mb-6 text-center text-black">
+          <h1
+            id="glasses"
+            className="text-5xl text-nouns mb-6 text-center text-black"
+          >
             Glasses
           </h1>
           <div className="grid xs:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-6 gap-2 ">
@@ -83,7 +89,10 @@ const Traits = () => {
         </div>
 
         <div className="bg-grey-base py-6 xs:px-1 sm:px-4 rounded-xl  mb-8">
-          <h1 className="text-5xl text-nouns mb-6 text-center text-black">
+          <h1
+            id="bodies"
+            className="text-5xl text-nouns mb-6 text-center text-black"
+          >
             Bodies
           </h1>
           <div className="grid xs:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-6 gap-2 ">
@@ -103,7 +112,10 @@ const Traits = () => {
         </div>
 
         <div className="bg-grey-base py-6 xs:px-1 sm:px-4 rounded-xl  mb-8">
-          <h1 className="text-5xl text-nouns mb-6 text-center text-black">
+          <h1
+            id="accessories"
+            className="text-5xl text-nouns mb-6 text-center text-black"
+          >
             Accessories
           </h1>
           <div className="grid xs:grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 xl:grid-cols-6 gap-2 ">
