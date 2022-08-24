@@ -264,6 +264,14 @@
     "category": ["proposal"]
   },
   {
+    "title": "FOODNOUNS",
+    "description": "A Food focused fork of NounsDAO.",
+    "creator": ["foodnouns"],
+    "url": "https://www.foodnouns.wtf/",
+    "image": "foodnouns.png",
+    "category": ["nfts"]
+  },
+  {
     "title": "Footy Nouns",
     "description": "Nouns that like football.",
     "creator": ["footynouns"],
