@@ -2,7 +2,15 @@ import React from "react";
 
 const Podcasts = () => {
   return (
-    <div className=" overflow-hidden divide-y divide-gray-200 sm:divide-y-0 sm:grid xs:grid-cols-1 sm:grid-cols-2 sm:gap-3">
+    <div className="overflow-hidden divide-y divide-gray-200 sm:divide-y-0 sm:grid xs:grid-cols-1 sm:grid-cols-2 sm:gap-3">
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/9dfbbdf2-bb13-45e7-ad21-77ae09efc946/bcf14043-7edf-4fee-8f92-8ade0772c257"
+      ></iframe>
       <iframe
         height="200px"
         width="100%"
