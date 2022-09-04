@@ -66,6 +66,11 @@ module.exports = {
         destination: "/notes",
         permanent: true,
       },
+      {
+        source: "/subdaos",
+        destination: "/subdao",
+        permanent: true,
+      },
     ];
   },
 };
