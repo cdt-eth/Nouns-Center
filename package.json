@@ -25,6 +25,7 @@
     "ethers": "^5.6.9",
     "jsonwebtoken": "^8.5.1",
     "jszip": "^3.7.1",
+    "markdown-to-jsx": "^7.1.7",
     "next": "latest",
     "notion-client": "^4.13.0",
     "notion-types": "^4.10.0",
