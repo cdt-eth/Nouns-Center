@@ -499,3 +499,24 @@ h6 {
 .lineClamp p {
   display: inline;
 }
+
+.subdaos strong {
+  font-weight: bold;
+}
+.subdaos a {
+  color: #3e64ff;
+  font-family: "Londrina solid";
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.subdaos a:hover {
+  color: #1d4ed8;
+}
+.subdaos img {
+  border-radius: 18px;
+}
