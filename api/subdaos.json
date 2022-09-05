@@ -25,10 +25,16 @@
         "platform": "Notion",
         "link": "https://blowned.notion.site/db990658e6ab4cf19121b22642645032"
       }
+    ],
+    "stats": [
+      { "label": "founded", "value": 2022 },
+      { "label": "members", "value": "2,050" },
+      { "label": "treasury", "value": 955 },
+      { "label": "proposals", "value": 44 }
     ]
   },
   {
-    "name": "Gnars",
+    "name": "Gnars DAO",
     "img": "https://blowned.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F26463e77-699f-47c4-b1e7-fea3f236674b%2FUntitled.png?table=block&id=3660ae40-f354-439d-af83-438259b7a9d9&spaceId=545c4470-75bd-4138-985a-d0ab2b639a8e&width=2000&userId=&cache=v2",
     "overview": "<p><a href=\"https://gna.rs/\">Gnars DAO</a> is a Nounish subDAO of <strong>One Gnar, less often, forever.</strong> In this sense, Gnars DAO is one of the only subDAOs with a changing cadence. Now at a 10 minute auction length per Gnar, this will increase to 20, 40, and beyond in the future. Gnars' mission is to support aspiring <strong>CC0 artists</strong> and <strong>extreme sports athletes</strong> in their respective journeys. There are few other subDAOs with such a targeted vision. So far, Gnars DAO has funded several athletes, including the likes of Joe Atkinson, Dave Bachinsky, and Kevin Kowalski.</p>",
     "join": "<p>Buy your first Gnar at <a href=\"https://gnars.wtf/\">their website</a> today! Join their <a href=\"https://discord.gg/THxR8ECVjj\">Discord</a> and get in touch with the Gnars community.</p>",
@@ -49,6 +55,12 @@
         "platform": "Dune Dashboard",
         "link": "https://dune.com/skateordao/Gnars"
       }
+    ],
+    "stats": [
+      { "label": "founded", "value": 2022 },
+      { "label": "members", "value": 213 },
+      { "label": "treasury", "value": 82 },
+      { "label": "proposals", "value": 1 }
     ]
   },
   {
@@ -77,6 +89,12 @@
         "platform": "Wallet",
         "link": "https://etherscan.io/address/0xAe7f458667f1B30746354aBC3157907d9F6FD15E"
       }
+    ],
+    "stats": [
+      { "label": "founded", "value": 2021 },
+      { "label": "members", "value": 872 },
+      { "label": "treasury", "value": 53 },
+      { "label": "proposals", "value": 53 }
     ]
   },
   {
@@ -101,6 +119,38 @@
         "platform": "NFTX Vault",
         "link": "https://nftx.io/vault/0x5c484894fe1aaae696662943abc6cd7dd50807d3/buy/"
       }
+    ],
+    "stats": [
+      { "label": "founded", "value": 2021 },
+      { "label": "members", "value": "2,300" },
+      { "label": "treasury", "value": 9 },
+      { "label": "proposals", "value": 10 }
+    ]
+  },
+  {
+    "name": "FOODNOUNS DAO",
+    "img": "https://blowned.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F593b300d-66df-46ed-b266-98971a82b073%2FUntitled.png?table=block&id=53c5b43e-b620-43f6-9575-4420c23a0608&spaceId=545c4470-75bd-4138-985a-d0ab2b639a8e&width=2000&userId=&cache=v2",
+    "overview": "<p><a href=\"https://www.foodnouns.wtf/\">FOODNOUNS</a> is a Nounish subDAO of <strong>one FOODNOUN, every breakfast, lunch &amp; dinner forever.</strong> As implied from its name, FOODNOUNS are Nouns derivatives with only “Food” traits. Moreover, the subDAO has a 6-hour cadence. Their mission is to fund Nounish proposals related to food production, F&amp;B wellness and education, among others in the food industry. This subDAO also splits auction funds four-ways, to the treasury, Nouns DAO, FOODNOUNDERS, and Kitchen Nouncillors. FOODNOUNS is the first subDAO to adopt such a fund-allocation model. As FOODNOUNS is still relatively new, they have yet to pass any proposals.</p>",
+    "join": "<p>Buy your first FOODNOUN at <a href=\"https://www.foodnouns.wtf/\">their website</a> today! Join their <a href=\"https://discord.gg/hzPTxKYdVu\">Discord</a> and get in touch with the FOODNOUNS community.</p>",
+    "links": [
+      {
+        "platform": "Website",
+        "link": "https://www.foodnouns.wtf/"
+      },
+      {
+        "platform": "Twitter",
+        "link": "https://twitter.com/foodnouns"
+      },
+      {
+        "platform": "Discord",
+        "link": "https://discord.gg/hzPTxKYdVu"
+      }
+    ],
+    "stats": [
+      { "label": "founded", "value": 2022 },
+      { "label": "members", "value": 37 },
+      { "label": "treasury", "value": 4 },
+      { "label": "proposals", "value": 0 }
     ]
   }
 ]

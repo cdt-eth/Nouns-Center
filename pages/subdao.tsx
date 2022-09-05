@@ -119,12 +119,12 @@ const Subdao = () => {
 
               <div className="mb-20 flex">
                 <dl className="grid grid-cols-2 gap-x-4 gap-y-4 w-1/3">
-                  {stats.map((stat) => (
+                  {s.stats.map((stat) => (
                     <div
                       key={stat.label}
                       className="border-t-2 border-gray-100 pt-6"
                     >
-                      <dt className="text-base font-medium text-gray-500">
+                      <dt className="text-base capitalize font-medium text-gray-500">
                         {stat.label}
                       </dt>
                       <dd className="text-2xl font-bold tracking-tight text-gray-900">
