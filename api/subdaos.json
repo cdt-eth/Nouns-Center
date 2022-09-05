@@ -6,19 +6,24 @@
     "join": "<p>Buy your first Lil Noun at <a href=\"https://lilnouns.wtf/\">their website</a> today! Join their <a href=\"https://discord.gg/WcHFtyJ3RA\">Discord</a> and get in touch with the Lil Nouns community.</p>",
     "links": [
       {
+        "platform": "Website",
+        "link": "https://lilnouns.wtf/"
+      },
+      {
         "platform": "Twitter",
-        "link": "https://twitter.com/lilnounsdao",
-        "img": ""
+        "link": "https://twitter.com/lilnounsdao"
+      },
+      {
+        "platform": "Discord",
+        "link": "https://discord.gg/WcHFtyJ3RA"
       },
       {
         "platform": "Discourse",
-        "link": "https://discourse.lilnouns.wtf/",
-        "img": ""
+        "link": "https://discourse.lilnouns.wtf/"
       },
       {
         "platform": "Notion",
-        "link": "https://blowned.notion.site/db990658e6ab4cf19121b22642645032",
-        "img": ""
+        "link": "https://blowned.notion.site/db990658e6ab4cf19121b22642645032"
       }
     ]
   },
@@ -29,19 +34,20 @@
     "join": "<p>Buy your first Gnar at <a href=\"https://gnars.wtf/\">their website</a> today! Join their <a href=\"https://discord.gg/THxR8ECVjj\">Discord</a> and get in touch with the Gnars community.</p>",
     "links": [
       {
-        "platform": "Twitter",
-        "link": "https://twitter.com/gnars_dao",
-        "img": ""
+        "platform": "Website",
+        "link": "https://gnars.com/"
       },
       {
-        "platform": "Website",
-        "link": "https://gnars.com/",
-        "img": ""
+        "platform": "Twitter",
+        "link": "https://twitter.com/gnars_dao"
+      },
+      {
+        "platform": "Discord",
+        "link": "https://discord.gg/THxR8ECVjj"
       },
       {
         "platform": "Dune Dashboard",
-        "link": "https://dune.com/skateordao/Gnars",
-        "img": ""
+        "link": "https://dune.com/skateordao/Gnars"
       }
     ]
   },
@@ -52,19 +58,24 @@
     "join": "<p>Follow Shark DAO's <a href=\"https://app.otterspace.xyz/onboarding_overview/1641723620621x716200186443409800\">onboarding guide</a> to walkthrough the joining process! Join their <a href=\"https://discord.gg/5vDnksAy2a\">Discord</a> and get in touch with the Shark DAO community.</p>",
     "links": [
       {
+        "platform": "Website",
+        "link": "https://sharks.wtf/"
+      },
+      {
         "platform": "Twitter",
-        "link": "https://twitter.com/sharkdao",
-        "img": ""
+        "link": "https://twitter.com/sharkdao"
+      },
+      {
+        "platform": "Discord",
+        "link": "https://discord.gg/5vDnksAy2a"
       },
       {
         "platform": "Snapshot",
-        "link": "https://snapshot.org/#/sharkdao.eth",
-        "img": ""
+        "link": "https://snapshot.org/#/sharkdao.eth"
       },
       {
         "platform": "Wallet",
-        "link": "https://etherscan.io/address/0xAe7f458667f1B30746354aBC3157907d9F6FD15E",
-        "img": ""
+        "link": "https://etherscan.io/address/0xAe7f458667f1B30746354aBC3157907d9F6FD15E"
       }
     ]
   },
@@ -76,18 +87,19 @@
     "links": [
       {
         "platform": "Twitter",
-        "link": "https://twitter.com/goopdao",
-        "img": ""
+        "link": "https://twitter.com/goopdao"
+      },
+      {
+        "platform": "Discord",
+        "link": "https://discord.gg/JfJMdeXK9c"
       },
       {
         "platform": "Gnosis",
-        "link": "https://gnosis-safe.io/app/eth:0xFb216FAf1b1650c26B0cFDf879379Ba46C3DA66b/balances",
-        "img": ""
+        "link": "https://gnosis-safe.io/app/eth:0xFb216FAf1b1650c26B0cFDf879379Ba46C3DA66b/balances"
       },
       {
         "platform": "NFTX Vault",
-        "link": "https://nftx.io/vault/0x5c484894fe1aaae696662943abc6cd7dd50807d3/buy/",
-        "img": ""
+        "link": "https://nftx.io/vault/0x5c484894fe1aaae696662943abc6cd7dd50807d3/buy/"
       }
     ]
   }

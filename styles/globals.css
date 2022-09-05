@@ -514,6 +514,14 @@ h6 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.subdaos .links a {
+  color: black !important;
+}
+
+.subdaos a svg {
+  height: 24px;
+  width: 24px;
+}
 .subdaos a:hover {
   color: #1d4ed8;
 }
