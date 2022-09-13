@@ -101,6 +101,11 @@
         "external": false
       },
       {
+        "name": "Subdaos",
+        "link": "/subdaos",
+        "external": false
+      },
+      {
         "name": "Podcasts",
         "link": "/podcasts",
         "external": false

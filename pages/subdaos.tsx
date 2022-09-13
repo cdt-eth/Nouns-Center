@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 import { TbWorld as WebsiteIcon } from "react-icons/tb";
 
-const Subdao = () => {
+const Subdaos = () => {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
@@ -117,7 +117,7 @@ const Subdao = () => {
                 </Markdown>
               </div>
 
-              <div className="mb-20 flex">
+              {/* <div className="mb-20 flex">
                 <dl className="grid grid-cols-2 gap-x-4 gap-y-4 w-1/3">
                   {s.stats.map((stat) => (
                     <div
@@ -133,7 +133,7 @@ const Subdao = () => {
                     </div>
                   ))}
                 </dl>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
@@ -142,4 +142,4 @@ const Subdao = () => {
   );
 };
 
-export default Subdao;
+export default Subdaos;

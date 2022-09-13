@@ -67,8 +67,8 @@ module.exports = {
         permanent: true,
       },
       {
-        source: "/subdaos",
-        destination: "/subdao",
+        source: "/subdao",
+        destination: "/subdaos",
         permanent: true,
       },
     ];
