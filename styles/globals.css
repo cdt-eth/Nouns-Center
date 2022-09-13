@@ -528,3 +528,18 @@ h6 {
 .subdaos img {
   border-radius: 18px;
 }
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 14px;
+  position: absolute;
+}
