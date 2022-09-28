@@ -8,7 +8,8 @@ import Table from "../../components/nouners/Table";
 import Subheader from "../../components/Subheader";
 import Title from "../../components/Title";
 
-const twentytwoNotionPage = "ac22114a6c004bafa500e2d824e32dc3";
+// const twentytwoNotionPage = "ac22114a6c004bafa500e2d824e32dc3";
+const twentytwoNotionPage = "68f80b714b8e49b29c43527fd5ebe0e8";
 
 export async function getStaticProps() {
   let data = [];
@@ -37,7 +38,6 @@ export async function getStaticProps() {
 }
 
 const smallgrants = ({ grantsData }) => {
-  console.log("grants", grantsData);
   return grantsData ? (
     <>
       <PageHeader>
@@ -52,40 +52,44 @@ const smallgrants = ({ grantsData }) => {
       </PageHeader>
 
       <PageContent>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          className="xs:h-32 sm:h-60 w-full object-cover rounded-xl"
-          src="https://pbs.twimg.com/media/FUMnGDgUYAMS2V4?format=jpg&name=large"
-          alt="noadz"
-        />
+        <div className="flex gap-6 xs:flex-col-reverse sm:flex-row">
+          <TextContent title="Overview">
+            <p>
+              The Small Grants Committee was created by{" "}
+              <Link
+                text="Nouns proposal 13"
+                url="https://nouns.wtf/vote/13"
+                leavesPage={true}
+              />
+              . It&apos;s run by a group of Nouners to be a &quot;flexible pool
+              of capital&quot; that can be deployed when either the project is
+              time sensitive, the ask is too small for an official proposal, or
+              retroactive funding is merited because the work is already done.
+              If you have questions you can ask in the{" "}
+              <Link
+                text="#grants-and-retro-funding"
+                url="https://discord.com/channels/849745721544146955/903077530502828092"
+                leavesPage={true}
+              />{" "}
+              channel in the{" "}
+              <Link
+                text="Nouns Discord"
+                url="https://discord.com/invite/nouns"
+                leavesPage={true}
+              />
+              .
+            </p>
+          </TextContent>
 
-        <TextContent title="Overview">
-          <p>
-            The Small Grants Committee was created by{" "}
-            <Link
-              text="Nouns proposal 13"
-              url="https://nouns.wtf/vote/13"
-              leavesPage={true}
-            />
-            . It&apos;s run by a group of Nouners to be a &quot;flexible pool of
-            capital&quot; that can be deployed when either the project is time
-            sensitive, the ask is too small for an official proposal, or
-            retroactive funding is merited because the work is already done. If
-            you have questions you can ask in the{" "}
-            <Link
-              text="#grants-and-retro-funding"
-              url="https://discord.com/channels/849745721544146955/903077530502828092"
-              leavesPage={true}
-            />{" "}
-            channel in the{" "}
-            <Link
-              text="Nouns Discord"
-              url="https://discord.com/invite/nouns"
-              leavesPage={true}
-            />
-            .
-          </p>
-        </TextContent>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            className="sm:h-auto xs:h-full xs:w-1/3 sm:w-1/3 object-cover rounded-xl"
+            // className="xs:h-32 sm:h-60 w-full object-cover rounded-xl border border-black"
+            src="https://maty-eth.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa61df176-9f25-4d75-bc0f-318278eb7adb%2Fnouns_strategic_funding_works.png?table=collection&id=176c243f-abab-4a7f-a61a-bde21802eba1&spaceId=0795e0f5-4ec7-4c3f-a326-bc9f3d012577&width=2000&userId=&cache=v2"
+            // src="https://pbs.twimg.com/media/FUMnGDgUYAMS2V4?format=jpg&name=large"
+            alt="nsfw"
+          />
+        </div>
 
         <TextContent title="Small Grant vs. retro funding">
           <p>

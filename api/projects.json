@@ -253,7 +253,7 @@
     "creator": ["profwerder"],
     "url": "https://www.florinouns.xyz/",
     "image": "florinouns.jpeg",
-    "category": ["nfts", "small-grants", "merch"]
+    "category": ["nfts", "small-grants"]
   },
   {
     "title": "Fomo Nouns",
@@ -262,6 +262,14 @@
     "url": "https://fomonouns.wtf/",
     "image": "fomo.jpeg",
     "category": ["proposal"]
+  },
+  {
+    "title": "FOODNOUNS",
+    "description": "A Food focused fork of NounsDAO.",
+    "creator": ["foodnouns"],
+    "url": "https://www.foodnouns.wtf/",
+    "image": "foodnouns.png",
+    "category": ["nfts"]
   },
   {
     "title": "Footy Nouns",
@@ -318,6 +326,14 @@
     "url": "https://www.tally.xyz/governance/eip155:1:0x6f3E6272A167e8AcCb32072d08E0957F9c79223d",
     "image": "tally.png",
     "category": ["stats"]
+  },
+  {
+    "title": "Greta Mash-up Club",
+    "description": "Hand drawn 1/1 ERC721 token CC0 projects mashed together. On going project where each artwork is unique.",
+    "creator": ["greta_gremplin"],
+    "url": "https://opensea.io/collection/greta-mash-up-club",
+    "image": "greta.png",
+    "category": ["nfts"]
   },
   {
     "title": "Grinderz",
@@ -624,6 +640,14 @@
     "category": ["nfts", "small-grants"]
   },
   {
+    "title": "Nounsmols",
+    "description": "Noun 119 a.k.a Apenoun travelled to Smolville to meet a female Smol Brain. When he arrived he realised that he had been tricked to extract his Nounish essence and create clones out of him. Some Nouns tried to save him... and now they all look very smol. CC0, just vibes.",
+    "creator": ["apeblond"],
+    "url": "http://nounsmols.com/",
+    "image": "nounsmols.png",
+    "category": ["nfts"]
+  },
+  {
     "title": "NounsTown",
     "description": "NounsTown is a Metaverse environment for all Nouns.",
     "creator": ["juanhernanx", "manofmissle"],
@@ -662,6 +686,14 @@
     "url": "https://www.youtube.com/watch?v=KrUdKqpqvCc",
     "image": "song.png",
     "category": ["proposal"]
+  },
+  {
+    "title": "Noun Dust",
+    "description": "Noun Dust is an appetizing mix of sweet, salty, and smokey that's been spicing nouns like beef, pork, chicken, and fish, with real flavor, since 2022. This is sure to please even the seasoned smoker. What started as an experiment inspired by CC0 and @NounsDAO. Funded by Small Grants. From seasoning to smoking, grilling to stewing, Noun Dust delights the tastebuds of those in the web3 world.",
+    "creator": ["byrekola", "noundust"],
+    "url": "https://noundust.wtf/",
+    "image": "noundust.webp",
+    "category": ["small-grants"]
   },
   {
     "title": "Noun Pics",
@@ -758,6 +790,14 @@
     "url": "https://shred.wtf/",
     "image": "nounsathletes.jpeg",
     "category": ["small-grants"]
+  },
+  {
+    "title": "Nouns Auction Tracker",
+    "description": "Nouns Auction Tracker allows you to watch & bid on your favorite Nounish auctions in one dashboard.",
+    "creator": ["juanhernanx", "manofmissle"],
+    "url": "http://auctions.wtf/",
+    "image": "auctionswtf.png",
+    "category": ["stats"]
   },
   {
     "title": "Nouns Automations (Integromat & Zapier)",
@@ -971,6 +1011,14 @@
     "category": ["prop-house"]
   },
   {
+    "title": "Shiny Club",
+    "description": "Shiny Club is your forever pfp. Ownable, customizable identity for the web3 age. On-chain and CC0 art.",
+    "creator": ["shinycreator"],
+    "url": "https://shiny.club/",
+    "image": "shiny.png",
+    "category": ["nfts"]
+  },
+  {
     "title": "Sidenoun",
     "description": "Funky, cute, but mostly highly suspicious looking squads of four nouns released everyday, forever.",
     "creator": ["sidenoun"],
@@ -1091,6 +1139,22 @@
     "category": ["nfts"]
   },
   {
+    "title": "The Noggle Factory",
+    "description": "A celebration of Nouns Glasses. A new pair of Noggles created for each block on Ethereum.",
+    "creator": ["nogglefactory", "ripe0x"],
+    "url": "https://www.nogglefactory.wtf/",
+    "image": "nogglefactory.png",
+    "category": ["nfts"]
+  },
+  {
+    "title": "The Nouneys",
+    "description": "A collection of 690 unique characters paying tribute to the artists that have shaped CC0 culture.",
+    "creator": ["mattdowney", "thenouneys"],
+    "url": "https://thenouneys.com/",
+    "image": "nouneys.jpeg",
+    "category": ["nfts"]
+  },
+  {
     "title": "The Nouns Museum",
     "description": "The first ever Nouns museum in Cryptovoxels.",
     "creator": ["tortitatrades"],
@@ -1192,6 +1256,14 @@
     "creator": ["xcopynouns"],
     "url": "https://opensea.io/collection/xcopynouns",
     "image": "xcopynouns.gif",
+    "category": ["nfts"]
+  },
+  {
+    "title": "YOLO Nouns",
+    "description": "YOLO Nouns is an experimental social project for the Nouns community. In between each Noun that is selected daily, there are “ghost” Nouns that appear with every block and are lost into the ether. Until now. With YOLO Nouns you can capture each Noun and each moment on-chain, block by block.",
+    "creator": ["juanhernanx", "manofmissle"],
+    "url": "https://yolonouns.wtf/",
+    "image": "yolonouns.png",
     "category": ["nfts"]
   }
 ]

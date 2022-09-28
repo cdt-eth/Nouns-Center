@@ -2,14 +2,14 @@ import React from "react";
 
 const Podcasts = () => {
   return (
-    <div className=" overflow-hidden divide-y divide-gray-200 sm:divide-y-0 sm:grid xs:grid-cols-1 sm:grid-cols-2 sm:gap-3">
+    <div className="overflow-hidden divide-y divide-gray-200 sm:divide-y-0 sm:grid xs:grid-cols-1 sm:grid-cols-2 sm:gap-3">
       <iframe
         height="200px"
         width="100%"
         frameBorder="no"
         scrolling="no"
         seamless
-        src="https://player.cohostpodcasting.com/a4dcf765-2eff-4bec-bc86-b766fe430d69/84b99b75-d611-4d35-a71d-40ecf7cb1887"
+        src="https://player.cohostpodcasting.com/9dfbbdf2-bb13-45e7-ad21-77ae09efc946/bcf14043-7edf-4fee-8f92-8ade0772c257"
       ></iframe>
       <iframe
         height="200px"
@@ -17,7 +17,7 @@ const Podcasts = () => {
         frameBorder="no"
         scrolling="no"
         seamless
-        src="https://player.cohostpodcasting.com/f69f5281-3825-4dd8-93c5-037acd205177/f89b374a-f537-4cf0-b010-f28fc3da5387"
+        src="https://player.cohostpodcasting.com/523eef81-3e8f-4cdf-9a24-fa79093d35d5/958e6b93-5fc0-42d4-80f8-d1938deab3ad"
       ></iframe>
       <iframe
         height="200px"
@@ -25,7 +25,7 @@ const Podcasts = () => {
         frameBorder="no"
         scrolling="no"
         seamless
-        src="https://player.cohostpodcasting.com/747c911d-2e91-4094-9f23-7d5b24aa133c/964caa51-b47e-49d1-b808-6b792b6544ea"
+        src="https://player.cohostpodcasting.com/0e45aa6e-1bb5-42dc-bdc0-15858dc33e91/b8974178-4fe9-4dcc-8a83-bd5443b5a07e"
       ></iframe>
       <iframe
         height="200px"
@@ -33,87 +33,7 @@ const Podcasts = () => {
         frameBorder="no"
         scrolling="no"
         seamless
-        src="https://player.cohostpodcasting.com/45158e61-a849-4109-90f9-363067090d4a/bf37be38-6ad8-4cc3-a520-7f56d43bdbb6"
-      ></iframe>
-      <iframe
-        height="200px"
-        width="100%"
-        frameBorder="no"
-        scrolling="no"
-        seamless
-        src="https://player.cohostpodcasting.com/d73b7244-9daa-49a6-b6a7-c2e881c6107b/5136f1bd-caa0-44d5-ac85-ac7ac7eded5c"
-      ></iframe>
-      <iframe
-        height="200px"
-        width="100%"
-        frameBorder="no"
-        scrolling="no"
-        seamless
-        src="https://player.cohostpodcasting.com/d6e19728-6bef-4471-8b8e-74f63d7a5ba9/e90ccfca-1af5-4bbf-989f-50c2a3f2f1c6"
-      ></iframe>
-      <iframe
-        height="200px"
-        width="100%"
-        frameBorder="no"
-        scrolling="no"
-        seamless
-        src="https://player.cohostpodcasting.com/52f7f77d-1560-4ee4-995a-af3bb9fa916d/a11c73d3-b187-4351-856d-dcce11f6a4e0"
-      ></iframe>
-      <iframe
-        height="200px"
-        width="100%"
-        frameBorder="no"
-        scrolling="no"
-        seamless
-        src="https://player.cohostpodcasting.com/26dbba20-e6a1-4b05-8674-71abe6cc92e1/e7acaefc-0a31-4d6a-9485-0a49b6527e73"
-      ></iframe>
-      <iframe
-        height="200px"
-        width="100%"
-        frameBorder="no"
-        scrolling="no"
-        seamless
-        src="https://player.cohostpodcasting.com/5230ee9d-23f0-4040-bcbf-616ae600293a/435ddab0-9901-42fe-b18e-d1b2a46a1187"
-      ></iframe>
-      <iframe
-        height="200px"
-        width="100%"
-        frameBorder="no"
-        scrolling="no"
-        seamless
-        src="https://player.cohostpodcasting.com/1921c7ae-da93-446b-a949-1fa46a7924ee/df5e52ff-e87e-4ef8-ba1b-0f9d354daf5d"
-      ></iframe>
-      <iframe
-        height="200px"
-        width="100%"
-        frameBorder="no"
-        scrolling="no"
-        seamless
-        src="https://player.cohostpodcasting.com/588480fb-1c00-4250-b331-966e66039b1d/c76aa9e1-1532-4499-8aec-f69efcfe3427"
-      ></iframe>
-      <iframe
-        height="200px"
-        width="100%"
-        frameBorder="no"
-        scrolling="no"
-        seamless
-        src="https://player.cohostpodcasting.com/70a3d3df-fa48-4a51-90bf-2360eb12db0e/3d0b2811-5022-46c5-98d8-399b781e6887"
-      ></iframe>
-      <iframe
-        height="200px"
-        width="100%"
-        frameBorder="no"
-        scrolling="no"
-        seamless
-        src="https://player.cohostpodcasting.com/269b6b54-159e-4520-b45f-40d788f04ab6/56c797f6-96a0-46ae-ab8a-6cf7b7ce3a10"
-      ></iframe>
-      <iframe
-        height="200px"
-        width="100%"
-        frameBorder="no"
-        scrolling="no"
-        seamless
-        src="https://player.cohostpodcasting.com/324e4910-ea2e-42a1-8193-46a68bd71d76/cb538344-bef4-46d7-b7f9-b3f281bc6773"
+        src="https://player.cohostpodcasting.com/9b5ca9e6-47fc-4de5-9be9-57e4fe0b5e55/f295e0ff-ab76-4b60-965c-7e3cd20a0a6e"
       ></iframe>
       <iframe
         height="200px"
@@ -129,7 +49,111 @@ const Podcasts = () => {
         frameBorder="no"
         scrolling="no"
         seamless
-        src="https://player.cohostpodcasting.com/9b5ca9e6-47fc-4de5-9be9-57e4fe0b5e55/f295e0ff-ab76-4b60-965c-7e3cd20a0a6e"
+        src="https://player.cohostpodcasting.com/324e4910-ea2e-42a1-8193-46a68bd71d76/cb538344-bef4-46d7-b7f9-b3f281bc6773"
+      ></iframe>{" "}
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/269b6b54-159e-4520-b45f-40d788f04ab6/56c797f6-96a0-46ae-ab8a-6cf7b7ce3a10"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/70a3d3df-fa48-4a51-90bf-2360eb12db0e/3d0b2811-5022-46c5-98d8-399b781e6887"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/588480fb-1c00-4250-b331-966e66039b1d/c76aa9e1-1532-4499-8aec-f69efcfe3427"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/1921c7ae-da93-446b-a949-1fa46a7924ee/df5e52ff-e87e-4ef8-ba1b-0f9d354daf5d"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/5230ee9d-23f0-4040-bcbf-616ae600293a/435ddab0-9901-42fe-b18e-d1b2a46a1187"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/26dbba20-e6a1-4b05-8674-71abe6cc92e1/e7acaefc-0a31-4d6a-9485-0a49b6527e73"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/52f7f77d-1560-4ee4-995a-af3bb9fa916d/a11c73d3-b187-4351-856d-dcce11f6a4e0"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/d6e19728-6bef-4471-8b8e-74f63d7a5ba9/e90ccfca-1af5-4bbf-989f-50c2a3f2f1c6"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/d73b7244-9daa-49a6-b6a7-c2e881c6107b/5136f1bd-caa0-44d5-ac85-ac7ac7eded5c"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/45158e61-a849-4109-90f9-363067090d4a/bf37be38-6ad8-4cc3-a520-7f56d43bdbb6"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/747c911d-2e91-4094-9f23-7d5b24aa133c/964caa51-b47e-49d1-b808-6b792b6544ea"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/f69f5281-3825-4dd8-93c5-037acd205177/f89b374a-f537-4cf0-b010-f28fc3da5387"
+      ></iframe>
+      <iframe
+        height="200px"
+        width="100%"
+        frameBorder="no"
+        scrolling="no"
+        seamless
+        src="https://player.cohostpodcasting.com/a4dcf765-2eff-4bec-bc86-b766fe430d69/84b99b75-d611-4d35-a71d-40ecf7cb1887"
       ></iframe>
     </div>
   );

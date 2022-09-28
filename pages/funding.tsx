@@ -13,7 +13,9 @@ import { BigNumber } from "ethers";
  *
  * Set the proposals where DAO staked ETH in Lido, for example
  */
-const excludedProposals = [13, 18, 22, 30, 31, 43, 44, 49, 52, 85];
+const excludedProposals = [
+  13, 18, 22, 30, 31, 43, 44, 49, 52, 85, 107, 114, 125,
+];
 
 const twentytwoNotionPage = "ac22114a6c004bafa500e2d824e32dc3";
 export async function getStaticProps() {
@@ -44,7 +46,7 @@ export async function getStaticProps() {
 const funding = [
   {
     source: "Small Grants",
-    range: "0.1 - 10",
+    range: "0.1 - 25",
     totalEth: 167,
     recipients: 84,
     recipientType: "projects",
@@ -59,9 +61,9 @@ const funding = [
   },
   {
     source: "Prop House",
-    range: "2 - 10",
-    totalEth: 71,
-    recipients: 23,
+    range: "2 - 25",
+    totalEth: 220,
+    recipients: 107,
     recipientType: "winners",
     distributed: "awarded to ",
     link: "/funding/prophouse",
@@ -82,7 +84,7 @@ const funding = [
     link: "/funding/proposals",
     linkText: "Learn more",
     tagline:
-      "Resources allocated for the long-term growth of the Nouns project. Larger in scope and undergo more scruntiny.",
+      "Resources allocated for the long-term growth of the Nouns project. Larger in scope and undergo more scrutiny.",
     textColor: "text-[#E5284A]",
     bgColor: "bg-[#E5284A]",
     img: "lg.png",

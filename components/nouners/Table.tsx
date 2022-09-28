@@ -2,9 +2,13 @@ import React from "react";
 
 interface GrantProps {
   id: string;
-  ETH: string;
-  Cause: string;
-  Recipient: string;
+  Status: string;
+  "Funding (ETH)": number;
+  "Team ": string[];
+  "Product/Outcome": string;
+  Date: string;
+  Category: string[];
+  Name: string;
 }
 
 interface Grants {
@@ -28,7 +32,8 @@ const Table = ({ grants }: Grants) => {
                 scope="col"
                 className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
               >
-                Recipient
+                {/* Recipient */}
+                Category
               </th>
               <th
                 scope="col"
@@ -53,27 +58,32 @@ const Table = ({ grants }: Grants) => {
               grants.map((grant) => (
                 <tr key={grant.id}>
                   <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-6">
-                    {grant.Cause}
+                    {grant.Name}
+                    {/* mobile */}
                     <dl className="font-normal lg:hidden">
                       <dt className="sr-only">Title</dt>
                       <dd className="mt-1 truncate text-gray-700">
-                        {grant.Recipient}
+                        {/* {grant.Recipient} */}
+                        {/* {grant.Team} */}
                       </dd>
                       <dt className="sr-only sm:hidden">Email</dt>
                       {/* <dd className="mt-1 truncate text-gray-500 sm:hidden">
                       {grant.Recipient}
                     </dd> */}
+                      {grant.Category.join(", ")}
                     </dl>
                   </td>
 
                   <td className="hidden px-3 py-4 text-sm text-gray-500 lg:table-cell">
-                    {grant.Recipient}
+                    {/* {grant.Recipient} */}
+                    {/* {grant["Team "]} */}
+                    {grant.Category.join(", ")}
                   </td>
                   {/* <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell">
                   jiejoj{grant.ETH}
                 </td> */}
                   <td className="px-3 py-4 text-sm text-gray-500">
-                    {grant.ETH}
+                    Ξ {grant["Funding (ETH)"]}
                   </td>
                   {/* <td className="py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
                   <a href="#" className="text-indigo-600 hover:text-indigo-900">

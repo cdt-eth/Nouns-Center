@@ -22,6 +22,11 @@
         "external": false
       },
       {
+        "name": "Press",
+        "link": "/press",
+        "external": false
+      },
+      {
         "name": "Discord Channels",
         "link": "/channels",
         "external": false
@@ -109,9 +114,19 @@
         "external": false
       },
       {
-        "name": "Podcasts",
-        "link": "/podcasts",
+        "name": "Subdaos",
+        "link": "/subdaos",
         "external": false
+      },
+      {
+        "name": "Learn",
+        "link": "/learn",
+        "external": false
+      },
+      {
+        "name": "Podcast",
+        "link": "http://nounotalk.com/",
+        "external": true
       },
       {
         "name": "Notes",
