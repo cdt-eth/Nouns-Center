@@ -6,10 +6,7 @@ interface JwtPayload {
 
 export async function verifyToken(token) {
   if (token) {
-    const decodedToken = jwt.verify(
-      token,
-      process.env.JWT_SECRET
-    ) as JwtPayload;
+    const decodedToken = jwt.verify(token, process.env.JWT_SECRET) as JwtPayload;
 
     return decodedToken?.eoa;
   }

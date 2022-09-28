@@ -1,5 +1,5 @@
 // build-search.js
-const dotenv = require("dotenv");
+const dotenv = require('dotenv');
 
 (async function () {
   // initialize environment variables

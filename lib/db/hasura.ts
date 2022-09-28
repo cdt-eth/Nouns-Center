@@ -4,7 +4,7 @@ async function queryHasuraGQL(
   operationsDoc: string,
   operationName: string,
   variables: Record<string, any>,
-  token: string
+  token: string,
 ) {
   const result = await fetch(process.env.NEXT_PUBLIC_HASURA_ADMIN_URL, {
     method: 'POST',
@@ -25,7 +25,7 @@ async function queryHasuraGQL(
 async function adminQueryHasuraGQL(
   operationsDoc: string,
   operationName: string,
-  variables: Record<string, any>
+  variables: Record<string, any>,
 ) {
   const result = await fetch(process.env.NEXT_PUBLIC_HASURA_ADMIN_URL, {
     method: 'POST',
@@ -59,7 +59,7 @@ export async function createNewUser(token: string, address: string) {
     {
       address,
     },
-    token
+    token,
   );
 
   return response?.data?.ideas;
@@ -81,7 +81,7 @@ export async function isNewUser(token: string, address: string) {
     {
       address,
     },
-    token
+    token,
   );
 
   return response?.data?.users?.length === 0;
@@ -146,13 +146,9 @@ export async function getLikesForAddress(address: string) {
     }
 `;
 
-  const response = await adminQueryHasuraGQL(
-    operationsDoc,
-    'getLikesForAddress',
-    {
-      address,
-    }
-  );
+  const response = await adminQueryHasuraGQL(operationsDoc, 'getLikesForAddress', {
+    address,
+  });
 
   return response?.data?.ideas_likes;
 }
@@ -166,19 +162,10 @@ export async function insertIdea(token, { address, title, description }) {
         }
     }
 `;
-  return await queryHasuraGQL(
-    operationsDoc,
-    'insertIdea',
-    { address, title, description },
-    token
-  );
+  return await queryHasuraGQL(operationsDoc, 'insertIdea', { address, title, description }, token);
 }
 
-export async function isLikedForIdeaAndAddress(
-  token: string,
-  ideaId: string,
-  address: string
-) {
+export async function isLikedForIdeaAndAddress(token: string, ideaId: string, address: string) {
   const operationsDoc = `
     query isLikedForIdeaAndAddress($address: String!, $ideaId: bigint!) {
         ideas_likes(where: {address: {_eq: $address}, idea_id: {_eq: $ideaId}}) {
@@ -195,7 +182,7 @@ export async function isLikedForIdeaAndAddress(
       address,
       ideaId,
     },
-    token
+    token,
   );
 
   return response?.data?.ideas_likes?.length > 0;
@@ -205,7 +192,7 @@ export async function updateLikedForIdeaAndAddress(
   token: string,
   ideaId: string,
   address: string,
-  liked: boolean
+  liked: boolean,
 ) {
   const operationsDoc = `
     mutation updateLikedForIdeaAndAddress($address: String!, $ideaId: bigint!, $liked: Boolean!) {
@@ -226,17 +213,13 @@ export async function updateLikedForIdeaAndAddress(
       ideaId,
       liked,
     },
-    token
+    token,
   );
 
   return response?.data;
 }
 
-export async function insertLikedForIdeaAndAddress(
-  token: string,
-  ideaId: string,
-  address: string
-) {
+export async function insertLikedForIdeaAndAddress(token: string, ideaId: string, address: string) {
   const operationsDoc = `
   mutation insertLikedForIdeaAndAddress($address: String!, $ideaId: bigint!) {
     insert_ideas_likes_one(object: {address: $address, idea_id: $ideaId, liked: true}) {
@@ -254,7 +237,7 @@ export async function insertLikedForIdeaAndAddress(
       address,
       ideaId,
     },
-    token
+    token,
   );
 
   return response?.data;

@@ -5,7 +5,8 @@
     "build": "next build",
     "postbuild": "node ./scripts/build-search.js",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.ts\" \"**/*.js\""
   },
   "dependencies": {
     "@algolia/autocomplete-js": "^1.6.3",

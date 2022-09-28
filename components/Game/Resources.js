@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import React from 'react';
 
 class Recources extends React.Component {
   render() {

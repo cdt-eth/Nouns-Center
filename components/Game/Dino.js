@@ -1,21 +1,21 @@
-import React from "react";
+import React from 'react';
 
-import Resources from "./Resources.js";
-import DinoScript from "../../api/DinoScript.js";
-import DinoStyle from "../../api/DinoStyle";
-import "./Dino.module.css";
+import Resources from './Resources.js';
+import DinoScript from '../../api/DinoScript.js';
+import DinoStyle from '../../api/DinoStyle';
+import './Dino.module.css';
 
 class ChromeDinoComponent extends React.Component {
   appendDinoScript() {
-    let dinoScriptContainer = document.createElement("script");
+    let dinoScriptContainer = document.createElement('script');
     dinoScriptContainer.appendChild(document.createTextNode(DinoScript));
     this.startDiv.appendChild(dinoScriptContainer);
   }
 
   appendRunnerScript() {
-    let runnerScriptContainer = document.createElement("script");
+    let runnerScriptContainer = document.createElement('script');
     runnerScriptContainer.appendChild(
-      document.createTextNode(`new Runner('.interstitial-wrapper');`)
+      document.createTextNode(`new Runner('.interstitial-wrapper');`),
     );
 
     this.endDiv.appendChild(runnerScriptContainer);
@@ -29,12 +29,12 @@ class ChromeDinoComponent extends React.Component {
 
   render() {
     return (
-      <div ref={(el) => (this.startDiv = el)}>
+      <div ref={el => (this.startDiv = el)}>
         <style>{DinoStyle}</style>
 
         <div id="main-frame-error" className="interstitial-wrapper">
           <Resources />
-          <div ref={(el) => (this.endDiv = el)}></div>
+          <div ref={el => (this.endDiv = el)}></div>
         </div>
       </div>
     );
