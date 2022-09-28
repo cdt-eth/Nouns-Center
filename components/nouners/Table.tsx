@@ -9,6 +9,7 @@ interface GrantProps {
   Date: string;
   Category: string[];
   Name: string;
+  ETH: string;
 }
 
 interface Grants {
