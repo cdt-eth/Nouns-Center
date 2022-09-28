@@ -500,6 +500,50 @@ h6 {
   display: inline;
 }
 
+.subdaos strong {
+  font-weight: bold;
+}
+.subdaos a {
+  color: #3e64ff;
+  font-family: "Londrina solid";
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.subdaos .links a {
+  color: black !important;
+}
+
+.subdaos a svg {
+  height: 24px;
+  width: 24px;
+}
+.subdaos a:hover {
+  color: #1d4ed8;
+}
+.subdaos img {
+  border-radius: 18px;
+}
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 14px;
+  position: absolute;
+}
+
 /* carousel cards */
 .break-out {
   width: 100vw;
