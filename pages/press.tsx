@@ -103,7 +103,7 @@ const Press = () => {
             <div>
               <p className="mt-5 text-nouns tracking-wider text-lg font-medium leading-6 text-gray-900">
                 {" "}
-                Bagu Haunto
+                Bagu Hanto
               </p>
               <p>
                 - <a className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider" href="mailto:bagu@nounspresscorps.wtf" target="_blank" rel="noreferrer">Bagu@nounspresscorps.wtf</a>
