@@ -13,6 +13,7 @@ import {
   FaDiscourse as DiscourseIcon,
 } from "react-icons/fa";
 import { TbWorld as WebsiteIcon } from "react-icons/tb";
+import Button from "../components/common/Button";
 
 const Subdaos = () => {
   function classNames(...classes) {
@@ -37,10 +38,15 @@ const Subdaos = () => {
   return (
     <>
       <PageHeader>
-        <Header title="Subdao | Nouns Center" />
-        <Title title="Subdao" />
+        <Header title="SubDAOs | Nouns Center" />
+        <Title title="SubDAOs" />
 
-        <Subheader title="Nounish Subdaos" />
+        <Subheader title="Nounish subDAOs &amp; Coummunities" body="A summary of all subDAOs in the NounsDAO Ecosystem. Find out what each subDAOs is about, how to join them, and where to get started building in subDAOs. Click the button below to add a Nounish subDAOs not yet on this page."/>
+
+        <Button
+          text="Add community"
+          link="https://www.addressform.io/f/subdaos"
+        />
       </PageHeader>
 
       <PageContent>
@@ -53,11 +59,11 @@ const Subdaos = () => {
                 </p>
                 <p className="font-bold text-2xl">{" • "}</p>
 
-                <div className="flex gap-3 ">
+                <div className="flex gap-3">
                   {s.links.map((link) => (
                     <div key={link.link}>
                       <a
-                        className="w-12  "
+                        className="w-12"
                         href={link.link}
                         target="_blank"
                         rel="noreferrer"
@@ -110,7 +116,7 @@ const Subdaos = () => {
                 </Markdown>
               </div>
 
-              {/* <div className="mb-20 flex">
+              <div className="mb-20 flex">
                 <dl className="grid grid-cols-2 gap-x-4 gap-y-4 w-1/3">
                   {s.stats.map((stat) => (
                     <div
@@ -126,7 +132,7 @@ const Subdaos = () => {
                     </div>
                   ))}
                 </dl>
-              </div> */}
+              </div>
             </div>
           ))}
         </div>
