@@ -13,10 +13,8 @@ import Subheader from "../components/Subheader";
 import Loading from "../components/Loading";
 import PageContent from "../components/Layout/PageContent";
 import PageHeader from "../components/Layout/PageHeader";
-import Button from "../components/common/Button";
 
 const oniNotionTable = "e29fc3a9-2c4a-44c9-8210-f5142b751502";
-const rootNotionPageId = "e29fc3a92c4a44c98210f5142b751502"; // collection
 
 export async function getStaticProps() {
   let ids = [];
@@ -40,6 +38,7 @@ export async function getStaticProps() {
   return {
     props: {
       tableIds: ids,
+      mostRecentPostId: ids[0]?.id
     },
   };
 }
@@ -48,22 +47,10 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Notes = ({ tableIds }) => {
-  const [currentPostId, setCurrentPostId] = useState(rootNotionPageId);
+const Notes = ({ tableIds, mostRecentPostId }) => {
+  const [currentPostId, setCurrentPostId] = useState(mostRecentPostId);
   const [postData, setPostData] = useState(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
-
-  useEffect(() => {
-    tableIds &&
-      tableIds.map((post, idx) => {
-        if (idx === 0) {
-          setCurrentPostId(post.id);
-          return { ...post, current: true };
-        } else {
-          return { ...post, current: false };
-        }
-      });
-  }, []);
 
   useEffect(() => {
     setIsLoading(true);
