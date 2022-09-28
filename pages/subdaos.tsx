@@ -27,13 +27,6 @@ const Subdaos = () => {
     <a {...props}>{children}</a>
   );
 
-  const stats = [
-    { label: "Founded", value: "2021" },
-    { label: "Members", value: "592" },
-    { label: "Treasury", value: "Ξ 250" },
-    { label: "Proposals", value: "3" },
-  ];
-
   interface SubdaoProps {
     name: "string";
     overview: "string";

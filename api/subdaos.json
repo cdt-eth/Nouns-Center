@@ -28,9 +28,7 @@
     ],
     "stats": [
       { "label": "founded", "value": 2022 },
-      { "label": "members", "value": "2,050" },
-      { "label": "treasury", "value": 955 },
-      { "label": "proposals", "value": 44 }
+      { "label": "highestSale", "value": "Ξ 4.41" }
     ]
   },
   {
@@ -58,9 +56,7 @@
     ],
     "stats": [
       { "label": "founded", "value": 2022 },
-      { "label": "members", "value": 213 },
-      { "label": "treasury", "value": 82 },
-      { "label": "proposals", "value": 1 }
+      { "label": "highestSale", "value": "Ξ 1.08" }
     ]
   },
   {
@@ -92,9 +88,7 @@
     ],
     "stats": [
       { "label": "founded", "value": 2021 },
-      { "label": "members", "value": 872 },
-      { "label": "treasury", "value": 53 },
-      { "label": "proposals", "value": 53 }
+      { "label": "highestSale", "value": "$0.012/SHARK" }
     ]
   },
   {
@@ -122,9 +116,7 @@
     ],
     "stats": [
       { "label": "founded", "value": 2021 },
-      { "label": "members", "value": "2,300" },
-      { "label": "treasury", "value": 9 },
-      { "label": "proposals", "value": 10 }
+      { "label": "highestSale", "value": "Ξ 3.33" }
     ]
   },
   {
