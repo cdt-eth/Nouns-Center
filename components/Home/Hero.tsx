@@ -30,9 +30,9 @@ const Hero = () => {
     <>
       <div className="pt-10">
         <main className="mx-auto tracking-wider text-black xs:px-4">
-          <div className="text-center flex flex-col justify-between h-full sm:px-0 mb-12 sm:mb-28">
+          <div className="text-center flex flex-col justify-between h-full">
             <img
-              className="m-auto w-1/3 sm:w-52	 "
+              className="m-auto mt-5 w-1/3 sm:w-52	 "
               src="/home/noggles.png"
               alt="noggles"
             />

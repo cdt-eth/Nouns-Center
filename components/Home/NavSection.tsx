@@ -13,8 +13,6 @@ const NavSection = ({ title, body, cards }: NavSectionProps) => {
         {title}
       </h1>
       <p className="xs:text-sm sm:text-lg font-medium mt-2 sm:mb-8">{body}</p>
-
-      {/* <div className="flex gap-10">{cards}</div> */}
       <div className="flex gap-10 carousel break-out">{cards}</div>
     </div>
   );
