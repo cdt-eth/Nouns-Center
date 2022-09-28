@@ -9,6 +9,7 @@ interface GrantProps {
   Date: string;
   Category: string[];
   Name: string;
+  ETH: string;
 }
 
 interface Grants {
@@ -58,38 +59,22 @@ const Table = ({ grants }: Grants) => {
               grants.map((grant) => (
                 <tr key={grant.id}>
                   <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-6">
-                    {grant.Name}
+                    {grant.Name || "-"}
                     {/* mobile */}
                     <dl className="font-normal lg:hidden">
                       <dt className="sr-only">Title</dt>
-                      <dd className="mt-1 truncate text-gray-700">
-                        {/* {grant.Recipient} */}
-                        {/* {grant.Team} */}
-                      </dd>
+                        <dd className="mt-1 truncate text-gray-700"></dd>
                       <dt className="sr-only sm:hidden">Email</dt>
-                      {/* <dd className="mt-1 truncate text-gray-500 sm:hidden">
-                      {grant.Recipient}
-                    </dd> */}
-                      {grant.Category.join(", ")}
+                      {grant.Category?.join(", ")}
                     </dl>
                   </td>
 
                   <td className="hidden px-3 py-4 text-sm text-gray-500 lg:table-cell">
-                    {/* {grant.Recipient} */}
-                    {/* {grant["Team "]} */}
-                    {grant.Category.join(", ")}
+                    {grant.Category?.join(", ") || "-"}
                   </td>
-                  {/* <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell">
-                  jiejoj{grant.ETH}
-                </td> */}
                   <td className="px-3 py-4 text-sm text-gray-500">
-                    Ξ {grant["Funding (ETH)"]}
+                    Ξ {grant.ETH} {grant['USD value'] ? `($${Number(grant['USD value']).toLocaleString()})` : ""}
                   </td>
-                  {/* <td className="py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                  <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                    Edit<span className="sr-only">, {grant.ETH}</span>
-                  </a>
-                </td> */}
                 </tr>
               ))}
           </tbody>
