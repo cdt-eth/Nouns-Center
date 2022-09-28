@@ -140,9 +140,55 @@
     ],
     "stats": [
       { "label": "founded", "value": 2022 },
-      { "label": "members", "value": 37 },
-      { "label": "treasury", "value": 4 },
-      { "label": "proposals", "value": 0 }
+      { "label": "highestSale", "value": "Ξ 0.35" }
+    ]
+  },
+  {
+    "name": "SZNouns DAO",
+    "img": "https://blowned.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F50038f60-2350-498c-a8a1-45d89b657489%2FUntitled.png?table=block&id=8d04daef-8118-4a94-8040-31230d475f2b&spaceId=545c4470-75bd-4138-985a-d0ab2b639a8e&width=2000&userId=&cache=v2",
+    "overview": "<p><a href=\"https://www.sznouns.wtf/\">SZNouns DAO</a> is a Nounish subDAO of <strong>SZNouns, every day forever!</strong> They have a distinct round noggles <strong>◐-◐¬</strong> feature, and have a varied cadence depending on the time of year (seasonal).SZNouns DAO champions increased experimentation in governance, hoping to bring a suite of tools such as “Albums” to the Nouns ecosystem. So far, the team behind SZNouns (SZNS) has implemented NFT fractionalization solutions with other notable DAOs such as Divine DAO and Meebits DAO.</p>",
+    "join": "<p>Buy your first SZNoun at <a href=\"https://www.sznouns.wtf/\">their website</a> today! Join their <a href=\"https://discord.gg/RhTBWbsRrT\">Discord</a> and get in touch with the SZNouns community.</p>",
+    "links": [
+      {
+        "platform": "Website",
+        "link": "https://www.sznouns.wtf/"
+      },
+      {
+        "platform": "Twitter",
+        "link": "https://twitter.com/sznounsdao"
+      },
+      {
+        "platform": "Discord",
+        "link": "https://discord.gg/RhTBWbsRrT"
+      }
+    ],
+    "stats": [
+      { "label": "founded", "value": 2022 },
+      { "label": "highestSale", "value": "Ξ 1" }
+    ]
+  },
+  {
+    "name": "nuNouns DAO",
+    "img": "https://blowned.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe32c92ba-5fc3-482f-9e0a-3b0fa9183f92%2FUntitled.png?table=block&id=ed83a277-9754-422e-9d31-179904fac013&spaceId=545c4470-75bd-4138-985a-d0ab2b639a8e&width=2000&userId=&cache=v2",
+    "overview": "<p><a href=\"https://nunoun.wtf/\">nuNouns DAO</a> is a Nounish subDAO of <strong>1 nuNoun, every 180 minutes, forever</strong>. You may instantly recognize that nuNouns are all kids, which symbolizes the “inner child” in all of us. Aside from the art and cadence, everything else follows Nouns DAO. nuNouns DAO was launched by the founders of <a href=\"https://twitter.com/NounPunks\">NounPunks</a> and <a href=\"https://twitter.com/superBLOXvx\">SuperBlox</a>, which are earlier extensions of Nouns. nuNouns however, is their first subDAO. As nuNouns DAO is relatively new, they have yet to pass any proposals.</p>",
+    "join": "<p>Buy your first nuNoun at <a href=\"https://nunoun.wtf/\">their website</a> today! Join their <a href=\"https://discord.gg/mcJcExcD5b\">Discord</a> and get in touch with the SZNouns community.</p>",
+    "links": [
+      {
+        "platform": "Website",
+        "link": "https://nunoun.wtf/"
+      },
+      {
+        "platform": "Twitter",
+        "link": "https://twitter.com/nuNounsdao"
+      },
+      {
+        "platform": "Discord",
+        "link": "https://discord.gg/mcJcExcD5b"
+      }
+    ],
+    "stats": [
+      { "label": "founded", "value": 2022 },
+      { "label": "highestSale", "value": "Ξ 0.69" }
     ]
   }
 ]
