@@ -7,7 +7,7 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write \"**/*.ts\" \"**/*.js\"",
-    "check-format": "prettier --check \"**/*.ts\" \"**/*.js\""
+    "format-check": "prettier --check \"**/*.ts\" \"**/*.js\""
   },
   "dependencies": {
     "@algolia/autocomplete-js": "^1.6.3",
