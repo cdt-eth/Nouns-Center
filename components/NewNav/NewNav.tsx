@@ -42,9 +42,9 @@ const NewNav = () => {
                   className="flex-shrink-0 flex items-center cursor-pointer"
                   onClick={() => close()}
                 >
-                  <Link passHref href="/">
+                  <a href="/">
                     <img className="block h-10 w-auto" src="/earth.gif" alt="Workflow" />
-                  </Link>
+                  </a>
                 </div>
                 {/* )}
                  </Disclosure.Panel> */}
