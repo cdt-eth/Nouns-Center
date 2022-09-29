@@ -88,24 +88,38 @@ const Press = () => {
           <div className="sm:flex gap-20">
             <div>
               <p className="mt-5 text-nouns tracking-wider text-lg font-medium leading-6 text-gray-900">
-                {" "}
+                {' '}
                 Michael Rekola
               </p>
               <p>
-                - <a className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider" href="mailto:mike@nounspresscorps.wtf" target="_blank" rel="noreferrer">mike@nounspresscorps.wtf</a>
-
+                -{' '}
+                <a
+                  className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider"
+                  href="mailto:mike@nounspresscorps.wtf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  mike@nounspresscorps.wtf
+                </a>
               </p>
               <p>- Team Lead | Doxxed</p>
             </div>
 
             <div>
               <p className="mt-5 text-nouns tracking-wider text-lg font-medium leading-6 text-gray-900">
-                {" "}
+                {' '}
                 Bagu Hanto
               </p>
               <p>
-                - <a className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider" href="mailto:bagu@nounspresscorps.wtf" target="_blank" rel="noreferrer">Bagu@nounspresscorps.wtf</a>
-
+                -{' '}
+                <a
+                  className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider"
+                  href="mailto:bagu@nounspresscorps.wtf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Bagu@nounspresscorps.wtf
+                </a>
               </p>
               <p>- Team Member</p>
             </div>
