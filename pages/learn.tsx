@@ -40,6 +40,11 @@ const Learn = () => {
             description="Lonis from Dework.xyz presenting a demo of their product - Web3-native project management with token payments, credentialing, bounties."
             embedId="ZRgXjMB94ck"
           />
+          <YoutubeVideo
+            title="Otterspace"
+            description="Emily from Otterspace presenting a demo of their product - non-transferable badges in DAOs."
+            embedId="o3l16driF_c"
+          />
         </div>
       </PageContent>
     </>

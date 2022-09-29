@@ -19,19 +19,19 @@ const Press = () => {
     {
       name: 'A Journalist...',
       description:
-        '<p>seeking a comment from the Nouns\' community or a particular project, please email <a className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider" href="mailto:email@example.com" target="_blank">NounsPressCorps@gmail.com</a>.<br/><br/> <span className="italic">Please include: if you are on a deadline or not. We are also openly setting off-the-record and on-background virtual networking coffees if you would like one.</span></p>',
+        '<p>seeking a comment from the Nouns\' community or a particular project, please email <a className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider" href="mailto:mike@nounspresscorps.wtf" target="_blank">Mike@nounspresscorps.wtf</a>.<br/><br/> <span className="italic">Please include: if you are on a deadline or not. We are also openly setting off-the-record and on-background virtual networking coffees if you would like one.</span></p>',
       icon: BiNews,
     },
     {
       name: 'A Noun Project Builder...',
       description:
-        'seeking support to promote your project via the Nouns Press Corps please email <a className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider" href="mailto:email@example.com" target="_blank">NounsPressCorps@gmail.com</a>.',
+        'seeking support to promote your project via the Nouns Press Corps please email <a className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider" href="mailto:bagu@nounspresscorps.wtf" target="_blank">Bagu@nounspresscorps.wtf</a>.',
       icon: BiWrench,
     },
     {
       name: 'Want To Join Us?',
       description:
-        'Reach out, we\'re a team of four and still growing we could use the help! <a className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider" href="mailto:email@example.com" target="_blank">NounsPressCorps@gmail.com</a>. ',
+        'Reach out, we\'re a team of four and still growing we could use the help! <a className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider" href="mailto:hi@nounspresscorps.wtf" target="_blank">hi@nounspresscorps.wtf</a>. ',
       icon: BiUser,
     },
   ];
@@ -47,8 +47,6 @@ const Press = () => {
         />
       </PageHeader>
       <PageContent>
-        {/* <h2 className="">A better way to send money.</h2> */}
-
         <dl className="space-y-10 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
           {features.map(feature => (
             <div key={feature.name}>
@@ -60,6 +58,7 @@ const Press = () => {
                   {feature.name}
                 </p>
               </dt>
+
               <Markdown
                 options={{
                   overrides: {
@@ -75,12 +74,43 @@ const Press = () => {
               >
                 {feature.description}
               </Markdown>
-              {/* <dd className="mt-2 text-base text-gray-500">
-                {feature.description}
-              </dd> */}
             </div>
           ))}
         </dl>
+
+        <hr className="my-12" />
+
+        <div>
+          <p className="mt-5 text-nouns tracking-wider text-2xl font-medium leading-6 text-gray-900">
+            Nouns Press Corps Team:
+          </p>
+
+          <div className="sm:flex gap-20">
+            <div>
+              <p className="mt-5 text-nouns tracking-wider text-lg font-medium leading-6 text-gray-900">
+                {" "}
+                Michael Rekola
+              </p>
+              <p>
+                - <a className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider" href="mailto:mike@nounspresscorps.wtf" target="_blank" rel="noreferrer">mike@nounspresscorps.wtf</a>
+
+              </p>
+              <p>- Team Lead | Doxxed</p>
+            </div>
+
+            <div>
+              <p className="mt-5 text-nouns tracking-wider text-lg font-medium leading-6 text-gray-900">
+                {" "}
+                Bagu Hanto
+              </p>
+              <p>
+                - <a className="text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider" href="mailto:bagu@nounspresscorps.wtf" target="_blank" rel="noreferrer">Bagu@nounspresscorps.wtf</a>
+
+              </p>
+              <p>- Team Member</p>
+            </div>
+          </div>
+        </div>
       </PageContent>
     </>
   );
