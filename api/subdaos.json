@@ -190,5 +190,31 @@
       { "label": "founded", "value": 2022 },
       { "label": "highestSale", "value": "Ξ 0.69" }
     ]
+  },
+  {
+    "name": "Wizards DAO",
+    "img": "/subdaos/wiz.jpg",
+    "overview": "<p>The first fork of Nouns. Began with 5 auctions per day and reduced to 1 per day over time. Has a supply cap of 2000. Completely different art than Nouns - 19x19 pixel art with the common theme among each being the Wizard's Hat (Wizard's version of Noggles). The DAO owns 1 Noun and a variety of other NFTs. Wizard members are active in a variety of other nounish DAOs including Lil Nouns, Gnars, GOOP TROOP, etc.</p>",
+
+    
+    "join": "<p>Daily auction on their <a href=\"https://wizards.wtf/\">their website</a> or purchase from secondary markets.<p>",
+    "links": [
+      {
+        "platform": "Website",
+        "link": "https://wizards.wtf/"
+      },
+      {
+        "platform": "Twitter",
+        "link": "https://twitter.com/wizardsdao"
+      },
+      {
+        "platform": "Discord",
+        "link": "discord.gg/wizardsdao"
+      }
+    ],
+    "stats": [
+      { "label": "founded", "value": 2022 },
+      { "label": "highestSale", "value": "Ξ 7.69" }
+    ]
   }
 ]
