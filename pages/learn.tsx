@@ -1,11 +1,11 @@
-import React from "react";
-import Header from "../components/Header";
-import Title from "../components/Title";
-import PageHeader from "../components/Layout/PageHeader";
-import PageContent from "../components/Layout/PageContent";
-import YoutubeVideo from "../components/YoutubeVideo";
-import Subheader from "../components/Subheader";
-import Button from "../components/common/Button";
+import React from 'react';
+import Header from '../components/Header';
+import Title from '../components/Title';
+import PageHeader from '../components/Layout/PageHeader';
+import PageContent from '../components/Layout/PageContent';
+import YoutubeVideo from '../components/YoutubeVideo';
+import Subheader from '../components/Subheader';
+import Button from '../components/common/Button';
 
 const Learn = () => {
   return (

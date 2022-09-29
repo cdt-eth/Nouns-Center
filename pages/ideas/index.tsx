@@ -38,7 +38,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
 
   const { user, mutate: userMutate } = useMe(address);
 
-  const ideasLikedByIdeaId = ideas_likes.map((idea_liked) => {
+  const ideasLikedByIdeaId = ideas_likes.map(idea_liked => {
     return idea_liked.idea_id;
   });
 
@@ -49,9 +49,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
   useEffect(() => {
     setIdeasLiked([]);
     const getIdeaLikes = async () => {
-      const likesByAddressResp = await fetch(
-        `/api/likes_by_address?address=${address}`
-      );
+      const likesByAddressResp = await fetch(`/api/likes_by_address?address=${address}`);
       const likesByAddress = await likesByAddressResp.json();
       if (likesByAddress?.data?.length) {
         setIdeasLiked(likesByAddress.data);
@@ -88,7 +86,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
     userMutate();
   };
 
-  const hideIdea = async (ideaId) => {
+  const hideIdea = async ideaId => {
     const hideIdeaResp = await fetch('/api/ideas_state', {
       method: 'POST',
       headers: {
@@ -98,7 +96,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
     });
     const hideIdeaData = await hideIdeaResp.json();
     if (hideIdeaData?.success) {
-      const removeIndex = ideaList.map((idea) => idea.id).indexOf(ideaId);
+      const removeIndex = ideaList.map(idea => idea.id).indexOf(ideaId);
       const tIdeas = ideaList.filter((el, idx) => idx != removeIndex);
       setIdeas(tIdeas);
     }
@@ -127,7 +125,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
                   onClick={authUser}
                   className={clsx(
                     'inline-flex capitalize items-center justify-center rounded-xl border border-transparent text-white  bg-blue-base focus:ring-gray-200 hover:bg-opacity-80 dark:bg-nouns-bg-blue dark:hover:bg-blue-700 dark:focus:ring-nouns-bg-blue px-4 py-3 text-sm font-medium shadow-sm transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto',
-                    { hidden: !canAuth }
+                    { hidden: !canAuth },
                   )}
                 >
                   Sign to Auth
@@ -142,7 +140,7 @@ const Ideas = ({ ideas, ideas_likes }) => {
 
             <div className="grid sm:grid-cols-1 gap-x-6">
               {ideaList?.length ? (
-                ideaList.map((idea) => (
+                ideaList.map(idea => (
                   <IdeaCard
                     key={idea.id}
                     id={idea.id}

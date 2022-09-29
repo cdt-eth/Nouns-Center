@@ -12,11 +12,7 @@ interface Particle {
   direction: number;
 }
 
-const validateEventPosition = (
-  mouseX: number,
-  mouseY: number,
-  rect?: DOMRect
-) => {
+const validateEventPosition = (mouseX: number, mouseY: number, rect?: DOMRect) => {
   if (!rect) return;
   return (
     mouseX > rect.x &&
@@ -197,9 +193,7 @@ class Fountain {
     this.variants = Glasses.mixed;
     this.addHandlers();
     this.loop();
-    this.rect = document
-      ?.getElementById(props.buttonId)
-      ?.getBoundingClientRect();
+    this.rect = document?.getElementById(props.buttonId)?.getBoundingClientRect();
   }
 
   loop() {
@@ -217,30 +211,27 @@ class Fountain {
   }
 
   addHandlers() {
-    const isTouchInteraction =
-      "ontouchstart" in window || navigator.maxTouchPoints;
+    const isTouchInteraction = 'ontouchstart' in window || navigator.maxTouchPoints;
 
-    const tap = isTouchInteraction ? "touchstart" : "mousedown";
-    const tapCancel = isTouchInteraction ? "touchcancel" : "contextmenu";
-    const tapEnd = isTouchInteraction ? "touchend" : "mouseup";
-    const move = isTouchInteraction ? "touchmove" : "mousemove";
+    const tap = isTouchInteraction ? 'touchstart' : 'mousedown';
+    const tapCancel = isTouchInteraction ? 'touchcancel' : 'contextmenu';
+    const tapEnd = isTouchInteraction ? 'touchend' : 'mouseup';
+    const move = isTouchInteraction ? 'touchmove' : 'mousemove';
 
     document?.getElementById(this.buttonId)?.addEventListener(
       move,
-      (e) => {
+      e => {
         this.mouseX = e instanceof MouseEvent ? e.pageX : e.touches[0].pageX;
         this.mouseY = e instanceof MouseEvent ? e.pageY : e.touches[0].pageY;
       },
-      { passive: false }
+      { passive: false },
     );
 
-    document
-      ?.getElementById(this.buttonId)
-      ?.addEventListener(tap, (e: MouseEvent | TouchEvent) => {
-        this.mouseX = e instanceof MouseEvent ? e.pageX : e.touches[0].pageX;
-        this.mouseY = e instanceof MouseEvent ? e.pageY : e.touches[0].pageY;
-        this.autoAddParticle = true;
-      });
+    document?.getElementById(this.buttonId)?.addEventListener(tap, (e: MouseEvent | TouchEvent) => {
+      this.mouseX = e instanceof MouseEvent ? e.pageX : e.touches[0].pageX;
+      this.mouseY = e instanceof MouseEvent ? e.pageY : e.touches[0].pageY;
+      this.autoAddParticle = true;
+    });
 
     document.addEventListener(tapCancel, () => {
       this.autoAddParticle = false;
@@ -250,7 +241,7 @@ class Fountain {
       this.autoAddParticle = false;
     });
 
-    document.addEventListener("mouseleave", () => {
+    document.addEventListener('mouseleave', () => {
       this.autoAddParticle = false;
     });
   }
@@ -265,13 +256,12 @@ class Fountain {
     const left = this.mouseX - size;
     const direction = Math.random() <= 0.5 ? -1 : 1;
 
-    const particle = document.createElement("span");
-    particle.innerHTML =
-      this.variants[Math.floor(Math.random() * this.variants.length)];
-    particle.classList.add("particle");
+    const particle = document.createElement('span');
+    particle.innerHTML = this.variants[Math.floor(Math.random() * this.variants.length)];
+    particle.classList.add('particle');
 
     particle.setAttribute(
-      "style",
+      'style',
       `
       -webkit-user-select: none;
       font-size: ${size}px;
@@ -281,7 +271,7 @@ class Fountain {
       top: ${top}px;
       overflow: hidden;
       transform: rotate(${spinVal}deg);
-    `
+    `,
     );
 
     document?.documentElement?.appendChild(particle);
@@ -300,19 +290,19 @@ class Fountain {
   }
 
   updateParticles() {
-    this.particles.forEach((p) => {
+    this.particles.forEach(p => {
       p.left = p.left - p.speedHorz * p.direction;
       p.top = p.top - p.speedUp;
       p.speedUp = Math.min(p.size, p.speedUp - 1);
       p.spinVal = p.spinVal + p.spinSpeed;
 
       if (p.top > this.height - p.size) {
-        this.particles = this.particles.filter((o) => o !== p);
+        this.particles = this.particles.filter(o => o !== p);
         p.element.remove();
       }
 
       p.element.setAttribute(
-        "style",
+        'style',
         `
         -webkit-user-select: none;
         font-size: ${p.size}px;
@@ -321,7 +311,7 @@ class Fountain {
         position: fixed;
         top: ${p.top}px;
         transform: rotate(${p.spinVal}deg);
-      `
+      `,
       );
     });
   }

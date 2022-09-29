@@ -13,18 +13,12 @@ export default async function likes(req: NextApiRequest, res: NextApiResponse) {
     try {
       const jwtToken = req.cookies.nc;
       if (!jwtToken) {
-        res
-          .status(403)
-          .send({ success: false, message: 'missing auth cookie' });
+        res.status(403).send({ success: false, message: 'missing auth cookie' });
       } else {
         const address = await verifyToken(jwtToken);
         if (address) {
           const { ideaId, liked } = req.body;
-          const likeExists = await isLikedForIdeaAndAddress(
-            jwtToken,
-            ideaId,
-            address
-          );
+          const likeExists = await isLikedForIdeaAndAddress(jwtToken, ideaId, address);
 
           if (likeExists) {
             // update
@@ -32,7 +26,7 @@ export default async function likes(req: NextApiRequest, res: NextApiResponse) {
               jwtToken,
               ideaId,
               address,
-              liked
+              liked,
             );
             res.send({
               success: true,
@@ -40,20 +34,14 @@ export default async function likes(req: NextApiRequest, res: NextApiResponse) {
             });
           } else {
             // insert
-            const insertResponse = await insertLikedForIdeaAndAddress(
-              jwtToken,
-              ideaId,
-              address
-            );
+            const insertResponse = await insertLikedForIdeaAndAddress(jwtToken, ideaId, address);
             res.send({
               success: true,
               data: insertResponse.insert_ideas_likes_one,
             });
           }
         } else {
-          res
-            .status(403)
-            .send({ success: false, message: 'invalid address in cookie' });
+          res.status(403).send({ success: false, message: 'invalid address in cookie' });
         }
       }
     } catch (error) {

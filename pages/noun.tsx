@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import Header from "../components/Header";
-import Title from "../components/Title";
-import Subheader from "../components/Subheader";
-import PageHeader from "../components/Layout/PageHeader";
-import PageContent from "../components/Layout/PageContent";
+import React from 'react';
+import Header from '../components/Header';
+import Title from '../components/Title';
+import Subheader from '../components/Subheader';
+import PageHeader from '../components/Layout/PageHeader';
+import PageContent from '../components/Layout/PageContent';
 
 const Noun = () => {
   return (

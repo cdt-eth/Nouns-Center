@@ -2,10 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 import { getLikesForAddress } from '../../lib/db/hasura';
 
-export default async function likes_by_address(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+export default async function likes_by_address(req: NextApiRequest, res: NextApiResponse) {
   const { method } = req;
 
   if (method == 'GET') {
@@ -18,7 +15,7 @@ export default async function likes_by_address(
       const likesByAddress = await getLikesForAddress(address as string);
       let ids: number[] = [];
       if (likesByAddress?.length) {
-        ids = likesByAddress.map((idea_liked) => {
+        ids = likesByAddress.map(idea_liked => {
           return idea_liked.idea_id;
         });
       }

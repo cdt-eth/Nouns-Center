@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Newsletter = () => {
   return (
@@ -9,8 +9,7 @@ const Newsletter = () => {
             className="text-xl font-extrabold tracking-tight text-black sm:text-lg"
             id="newsletter-headline"
           >
-            Sign up for the{" "}
-            <span className="text-nouns tracking-wider">Nounsletter</span>
+            Sign up for the <span className="text-nouns tracking-wider">Nounsletter</span>
           </h2>
           {/* <p className="mt-3 max-w-3xl text-lg leading-6 text-gray-300">
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui

@@ -9,10 +9,7 @@ import { publicProvider } from 'wagmi/providers/public';
 
 import { chain, configureChains, createClient, WagmiConfig } from 'wagmi';
 
-const { chains, provider } = configureChains(
-  [chain.mainnet],
-  [publicProvider()]
-);
+const { chains, provider } = configureChains([chain.mainnet], [publicProvider()]);
 
 const { connectors } = getDefaultWallets({
   appName: 'Nouns Center',

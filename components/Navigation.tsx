@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { Fragment, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Nav from "./Nav";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { DocSearch } from "@docsearch/react";
-import "@docsearch/css";
-import DarkModeToggle from "./DarkModeToggle";
+import React, { Fragment, useState } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import Nav from './Nav';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { DocSearch } from '@docsearch/react';
+import '@docsearch/css';
+import DarkModeToggle from './DarkModeToggle';
 
 const Navigation = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -19,11 +19,7 @@ const Navigation = () => {
     <div>
       {/* Mobile Menu */}
       <Transition.Root show={sidebarOpen} as={Fragment}>
-        <Dialog
-          as="div"
-          className="fixed inset-0 flex z-40 "
-          onClose={setSidebarOpen}
-        >
+        <Dialog as="div" className="fixed inset-0 flex z-40 " onClose={setSidebarOpen}>
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
@@ -82,7 +78,7 @@ const Navigation = () => {
             <button
               type="button"
               className={`-mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-900  hover:text-gray-500 focus:outline-none ${
-                asPath === "/" && "text-black "
+                asPath === '/' && 'text-black '
               } `}
               onClick={() => setSidebarOpen(true)}
             >

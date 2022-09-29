@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 interface GrantProps {
   id: string;
   Status: string;
-  "Funding (ETH)": number;
-  "Team ": string[];
-  "Product/Outcome": string;
+  'Funding (ETH)': number;
+  'Team ': string[];
+  'Product/Outcome': string;
   Date: string;
   Category: string[];
   Name: string;
@@ -56,24 +56,25 @@ const Table = ({ grants }: Grants) => {
 
           <tbody className="divide-y divide-gray-200 bg-white">
             {grants &&
-              grants.map((grant) => (
+              grants.map(grant => (
                 <tr key={grant.id}>
                   <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-6">
-                    {grant.Name || "-"}
+                    {grant.Name || '-'}
                     {/* mobile */}
                     <dl className="font-normal lg:hidden">
                       <dt className="sr-only">Title</dt>
-                        <dd className="mt-1 truncate text-gray-700"></dd>
+                      <dd className="mt-1 truncate text-gray-700"></dd>
                       <dt className="sr-only sm:hidden">Email</dt>
-                      {grant.Category?.join(", ")}
+                      {grant.Category?.join(', ')}
                     </dl>
                   </td>
 
                   <td className="hidden px-3 py-4 text-sm text-gray-500 lg:table-cell">
-                    {grant.Category?.join(", ") || "-"}
+                    {grant.Category?.join(', ') || '-'}
                   </td>
                   <td className="px-3 py-4 text-sm text-gray-500">
-                    Ξ {grant.ETH} {grant['USD value'] ? `($${Number(grant['USD value']).toLocaleString()})` : ""}
+                    Ξ {grant.ETH}{' '}
+                    {grant['USD value'] ? `($${Number(grant['USD value']).toLocaleString()})` : ''}
                   </td>
                 </tr>
               ))}

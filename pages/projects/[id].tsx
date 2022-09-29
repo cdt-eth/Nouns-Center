@@ -1,17 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 // import openseaIcon from "../../public/icons/opensea.svg";
-import projects from "../../api/projects.json";
-import PageContent from "../../components/Layout/PageContent";
+import projects from '../../api/projects.json';
+import PageContent from '../../components/Layout/PageContent';
 
-export const getStaticProps = async (context) => {
+export const getStaticProps = async context => {
   const id = context.params.id;
-  console.log("id", id);
+  console.log('id', id);
 
   const p = projects.filter(
-    (p) => p.title.replace(/\s+/g, "-").toLowerCase() === id
+    p => p.title.replace(/\s+/g, '-').toLowerCase() === id,
     // (p) => p.title.replace(/\s+/g, "-").toLowerCase() === id
   );
 
@@ -23,8 +23,8 @@ export const getStaticProps = async (context) => {
 };
 
 export const getStaticPaths = async () => {
-  const paths = projects.map((project) => ({
-    params: { id: project.title.replace(/\s+/g, "-").toLowerCase() },
+  const paths = projects.map(project => ({
+    params: { id: project.title.replace(/\s+/g, '-').toLowerCase() },
   }));
 
   return {
@@ -35,20 +35,20 @@ export const getStaticPaths = async () => {
 
 const getProjectsText = (category: string) => {
   switch (category) {
-    case "nfts":
-      return "NFTs";
-    case "proposal":
-      return "Proposals";
-    case "prop-pouse":
-      return "Prop House";
-    case "small-grants":
-      return "Small Grants";
-    case "merch":
-      return "Merch";
-    case "stats":
-      return "Stats";
-    case "misc":
-      return "Miscellaneous";
+    case 'nfts':
+      return 'NFTs';
+    case 'proposal':
+      return 'Proposals';
+    case 'prop-pouse':
+      return 'Prop House';
+    case 'small-grants':
+      return 'Small Grants';
+    case 'merch':
+      return 'Merch';
+    case 'stats':
+      return 'Stats';
+    case 'misc':
+      return 'Miscellaneous';
     default:
       return category;
   }
@@ -71,7 +71,7 @@ const ProjectDetails = ({ projectData }) => {
                 {/* {category.length <= 1
                   ? category
                   : category.map((c) => <span key={category}>{category}</span>)} */}
-                {category.join(", ")}
+                {category.join(', ')}
               </span>
             </div>
 
@@ -173,10 +173,7 @@ const ProjectDetails = ({ projectData }) => {
           </div>
 
           <div className="mt-6 sm:hidden">
-            <a
-              href="#"
-              className="block text-sm font-semibold text-blue-base hover:text-blue-base"
-            >
+            <a href="#" className="block text-sm font-semibold text-blue-base hover:text-blue-base">
               Browse all categories<span aria-hidden="true"> &rarr;</span>
             </a>
           </div>

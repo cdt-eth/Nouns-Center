@@ -25,7 +25,7 @@ export default async function login(req: NextApiRequest, res: NextApiResponse) {
               'x-hasura-user-id': `${address}`,
             },
           },
-          process.env.JWT_SECRET
+          process.env.JWT_SECRET,
         );
         const isNewUserQuery = await isNewUser(token, recoveredAddress);
         isNewUserQuery && (await createNewUser(token, recoveredAddress));

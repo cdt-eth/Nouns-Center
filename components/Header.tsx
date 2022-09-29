@@ -1,5 +1,5 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 
 interface HeaderProps {
   title: string;
@@ -8,7 +8,7 @@ interface HeaderProps {
 const Header = ({ title }: HeaderProps) => {
   return (
     <Head>
-      <title>{title || "Nouns Center"}</title>
+      <title>{title || 'Nouns Center'}</title>
       <link rel="icon" href="/favicon.ico" />
 
       {/* Primary Meta Tags */}
@@ -36,10 +36,7 @@ const Header = ({ title }: HeaderProps) => {
         property="twitter:description"
         content="The knowledge center and resource hub for Nouns DAO. Learn about the project, the community and ways to get involved and funded."
       />
-      <meta
-        property="twitter:image"
-        content="https://nouns.center/og-image.png"
-      />
+      <meta property="twitter:image" content="https://nouns.center/og-image.png" />
     </Head>
   );
 };
