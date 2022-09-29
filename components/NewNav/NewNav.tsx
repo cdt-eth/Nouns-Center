@@ -4,7 +4,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Button from '../common/Button';
 import nav from '../../api/nav2.json';
 import Mobile from './Mobile';
-import { Fragment, useState } from 'react';
+import { Fragment } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import { BiLinkExternal as ExternalIcon } from 'react-icons/bi';
 
@@ -13,8 +13,6 @@ function classNames(...classes) {
 }
 
 const NewNav = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
   return (
     <>
       <Disclosure as="nav" className="bg-white shadow sm:sticky sm:top-0 sm:z-10	">

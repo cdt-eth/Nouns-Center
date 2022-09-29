@@ -19,8 +19,6 @@ const twentytwoNotionPage = 'ac22114a6c004bafa500e2d824e32dc3';
 export async function getStaticProps() {
   let data = [];
 
-  let error = '';
-
   try {
     const res = await fetch(`https://notion-api.splitbee.io/v1/table/${twentytwoNotionPage}`);
     if (res.status !== 200)
@@ -29,9 +27,7 @@ export async function getStaticProps() {
 
     if (!data) throw String('No data was found!');
     data = JSON.parse(JSON.stringify(data));
-  } catch (e) {
-    error = e.toString();
-  }
+  } catch (e) {}
 
   return {
     props: {
@@ -86,10 +82,8 @@ const funding = [
     img: 'lg.png',
   },
 ];
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
-const Funding = ({ grantsData }) => {
+
+const Funding = () => {
   const [totalProposalEthSpent, setTotalProposalEthSpent] = useState(undefined);
   const [totalProposals, setTotalProposals] = useState(undefined);
 

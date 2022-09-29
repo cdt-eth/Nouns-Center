@@ -12,7 +12,6 @@ const twentytwoNotionPage = '68f80b714b8e49b29c43527fd5ebe0e8';
 
 export async function getStaticProps() {
   let data = [];
-  let error = '';
 
   try {
     const res = await fetch(`https://notion-api.splitbee.io/v1/table/${twentytwoNotionPage}`);
@@ -22,9 +21,7 @@ export async function getStaticProps() {
 
     if (!data) throw String('No data was found!');
     data = JSON.parse(JSON.stringify(data));
-  } catch (e) {
-    error = e.toString();
-  }
+  } catch (e) {}
 
   return {
     props: {

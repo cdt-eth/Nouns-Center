@@ -8,12 +8,8 @@ import PageContent from '../../components/Layout/PageContent';
 
 export const getStaticProps = async context => {
   const id = context.params.id;
-  console.log('id', id);
-
   const p = guides.filter(p => p.name.replace(/\s+/g, '-').toLowerCase() === id);
-
   let data = [];
-  let error = '';
 
   try {
     const res = await fetch(`https://notion-api.splitbee.io/v1/page/${p[0].notionId}`);
@@ -23,9 +19,7 @@ export const getStaticProps = async context => {
 
     if (!data) throw String('No data was found!');
     data = JSON.parse(JSON.stringify(data));
-  } catch (e) {
-    error = e.toString();
-  }
+  } catch (e) {}
 
   return {
     props: {

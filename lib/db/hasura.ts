@@ -1,4 +1,4 @@
-import { IDEA_HIDDEN, IDEA_ACTIVE } from '../constants';
+import { IDEA_ACTIVE } from '../constants';
 
 async function queryHasuraGQL(
   operationsDoc: string,

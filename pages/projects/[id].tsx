@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import React from 'react';
-
-// import openseaIcon from "../../public/icons/opensea.svg";
 import projects from '../../api/projects.json';
 import PageContent from '../../components/Layout/PageContent';
 
@@ -10,10 +8,7 @@ export const getStaticProps = async context => {
   const id = context.params.id;
   console.log('id', id);
 
-  const p = projects.filter(
-    p => p.title.replace(/\s+/g, '-').toLowerCase() === id,
-    // (p) => p.title.replace(/\s+/g, "-").toLowerCase() === id
-  );
+  const p = projects.filter(p => p.title.replace(/\s+/g, '-').toLowerCase() === id);
 
   return {
     props: {
@@ -33,29 +28,29 @@ export const getStaticPaths = async () => {
   };
 };
 
-const getProjectsText = (category: string) => {
-  switch (category) {
-    case 'nfts':
-      return 'NFTs';
-    case 'proposal':
-      return 'Proposals';
-    case 'prop-pouse':
-      return 'Prop House';
-    case 'small-grants':
-      return 'Small Grants';
-    case 'merch':
-      return 'Merch';
-    case 'stats':
-      return 'Stats';
-    case 'misc':
-      return 'Miscellaneous';
-    default:
-      return category;
-  }
-};
+// const getProjectsText = (category: string) => {
+//   switch (category) {
+//     case 'nfts':
+//       return 'NFTs';
+//     case 'proposal':
+//       return 'Proposals';
+//     case 'prop-pouse':
+//       return 'Prop House';
+//     case 'small-grants':
+//       return 'Small Grants';
+//     case 'merch':
+//       return 'Merch';
+//     case 'stats':
+//       return 'Stats';
+//     case 'misc':
+//       return 'Miscellaneous';
+//     default:
+//       return category;
+//   }
+// };
 
 const ProjectDetails = ({ projectData }) => {
-  const { title, description, creator, url, image, category } = projectData;
+  const { title, description, /*creator,*/ url, image, category } = projectData;
 
   return (
     <PageContent>

@@ -3,11 +3,10 @@ import React, { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Nav from './Nav';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { DocSearch } from '@docsearch/react';
 import '@docsearch/css';
-import DarkModeToggle from './DarkModeToggle';
+// import { DocSearch } from '@docsearch/react';
+// import DarkModeToggle from './DarkModeToggle';
 
 const Navigation = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);

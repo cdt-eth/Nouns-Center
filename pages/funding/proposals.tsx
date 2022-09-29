@@ -53,9 +53,6 @@ const props = [
   },
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
 const proposals = () => {
   return (
     <>
