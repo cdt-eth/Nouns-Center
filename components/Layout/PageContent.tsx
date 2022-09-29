@@ -9,7 +9,6 @@ const PageContent = ({ children }) => {
   const { asPath } = router;
 
   return (
-
     <div className="xs:py-6 xs:px-6 xl:px-0 sm:py-6 bg-grey-lightest">
       {children}
 
