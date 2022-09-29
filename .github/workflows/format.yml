@@ -1,7 +1,6 @@
 name: Prettier & Lint Checker
 
 on:
-  push:
   pull_request:
 
 jobs:
