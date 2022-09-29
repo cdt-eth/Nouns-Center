@@ -1,16 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import algoliasearch from 'algoliasearch/lite';
-import { autocomplete, getAlgoliaResults } from '@algolia/autocomplete-js';
-import '@algolia/autocomplete-theme-classic';
 import Footer from '../Footer';
 import NavSection from './NavSection';
 import nav from '../../api/nav2.json';
 import NavCard from './NavCard';
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
+import '@algolia/autocomplete-theme-classic';
+// import algoliasearch from 'algoliasearch/lite';
+// import { autocomplete, getAlgoliaResults } from '@algolia/autocomplete-js';
 
 // const searchClient = algoliasearch(
 //   "PGIH0KF5F5",
@@ -21,9 +17,6 @@ function classNames(...classes) {
 //   container: "#autocomplete",
 //   placeholder: "Search the Nouniverse",
 // });
-const action = () => {
-  //on click action to pass to button
-};
 
 const Hero = () => {
   return (

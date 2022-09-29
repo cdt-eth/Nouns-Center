@@ -11,11 +11,6 @@ const Newsletter = () => {
           >
             Sign up for the <span className="text-nouns tracking-wider">Nounsletter</span>
           </h2>
-          {/* <p className="mt-3 max-w-3xl text-lg leading-6 text-gray-300">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat.
-          </p> */}
         </div>
         <iframe
           src="https://nouns.substack.com/embed"

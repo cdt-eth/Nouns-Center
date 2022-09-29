@@ -6,13 +6,12 @@ import XSmall from '../components/Project/XSmall';
 import Title from '../components/Title';
 import Subheader from '../components/Subheader';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 import PageContent from '../components/Layout/PageContent';
 import PageHeader from '../components/Layout/PageHeader';
 import Button from '../components/common/Button';
 import { fetchProjectFormData } from '../utils/project-form-data-fetching';
 
-export const getStaticProps = async context => {
+export const getStaticProps = async () => {
   const projects = await fetchProjectFormData();
 
   return {
@@ -132,7 +131,6 @@ const Projects = props => {
           </fieldset>
         </div>
 
-        {/* <div className="grid grid-cols-2 gap-x-4 gap-y-8 xs:grid-cols-3  sm:grid-cols-4 sm:gap-x-6 lg:grid-cols-6 xl:gap-x-8"> */}
         <div className="">
           <>
             {isLoading ? (
@@ -150,14 +148,6 @@ const Projects = props => {
             ) : (
               <ul role="list" className="grid sm:hidden rounded-xl divide-y divide-gray-200 ">
                 {filteredProjects.map(project => (
-                  // <Link
-                  //   href={
-                  //     "/projects/" +
-                  //     project.title.replace(/\s+/g, "-").toLowerCase()
-                  //   }
-                  //   passHref
-                  //   key={project.title}
-                  // >
                   <a key={project.title} href={project.url} target="_blank" rel="noreferrer">
                     <li key={project.title} className="py-4 flex">
                       <img
@@ -173,16 +163,10 @@ const Projects = props => {
                         <p className="text-lg font-medium text-gray-900  text-nouns tracking-wide">
                           {project.title}
                         </p>
-
-                        {/* <p className="text-sm text-gray-500 w-1/3">
-                    {project.category.join(" • ")}
-                  </p> */}
-
                         <p className="text-gray-500 text-sm line-clamp-3">{project.description}</p>
                       </div>
                     </li>
                   </a>
-                  // </Link>
                 ))}
               </ul>
             )}

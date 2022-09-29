@@ -9,10 +9,6 @@ import PageContent from '../components/Layout/PageContent';
 import Button from '../components/common/Button';
 
 const Podcast = () => {
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(' ');
-  }
-
   return (
     <>
       <PageHeader>

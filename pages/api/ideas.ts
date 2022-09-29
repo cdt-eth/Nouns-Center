@@ -1,6 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { verifyToken } from '../../lib/utils';
-
 import { insertIdea } from '../../lib/db/hasura';
 
 export default async function ideas(req: NextApiRequest, res: NextApiResponse) {
@@ -11,7 +10,7 @@ export default async function ideas(req: NextApiRequest, res: NextApiResponse) {
       if (!token) {
         res.status(403).send({});
       } else {
-        const { title, tldr, description } = req.body;
+        const { title, description } = req.body;
         if (title?.length >= 8 && description?.length >= 50) {
           const address = await verifyToken(token);
           // insert idea

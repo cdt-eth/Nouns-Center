@@ -8,13 +8,10 @@ import Table from '../../components/nouners/Table';
 import Subheader from '../../components/Subheader';
 import Title from '../../components/Title';
 
-// const twentytwoNotionPage = "ac22114a6c004bafa500e2d824e32dc3";
 const twentytwoNotionPage = '68f80b714b8e49b29c43527fd5ebe0e8';
 
 export async function getStaticProps() {
   let data = [];
-
-  let error = '';
 
   try {
     const res = await fetch(`https://notion-api.splitbee.io/v1/table/${twentytwoNotionPage}`);
@@ -24,9 +21,7 @@ export async function getStaticProps() {
 
     if (!data) throw String('No data was found!');
     data = JSON.parse(JSON.stringify(data));
-  } catch (e) {
-    error = e.toString();
-  }
+  } catch (e) {}
 
   return {
     props: {
@@ -43,8 +38,7 @@ const smallgrants = ({ grantsData }) => {
         <Title title="Funding: Small Grants" />
 
         <Subheader
-          title="For projects needing 0.1-10Ξ
-"
+          title="For projects needing 0.1-10Ξ"
           body="Creators who have either been given a grant from NounsDAO or received retroactive funding for proliferating Nouns."
         />
       </PageHeader>
@@ -73,9 +67,7 @@ const smallgrants = ({ grantsData }) => {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="sm:h-auto xs:h-full xs:w-1/3 sm:w-1/3 object-cover rounded-xl"
-            // className="xs:h-32 sm:h-60 w-full object-cover rounded-xl border border-black"
             src="https://maty-eth.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa61df176-9f25-4d75-bc0f-318278eb7adb%2Fnouns_strategic_funding_works.png?table=collection&id=176c243f-abab-4a7f-a61a-bde21802eba1&spaceId=0795e0f5-4ec7-4c3f-a326-bc9f3d012577&width=2000&userId=&cache=v2"
-            // src="https://pbs.twimg.com/media/FUMnGDgUYAMS2V4?format=jpg&name=large"
             alt="nsfw"
           />
         </div>

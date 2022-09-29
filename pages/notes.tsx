@@ -18,7 +18,6 @@ const oniNotionTable = 'e29fc3a9-2c4a-44c9-8210-f5142b751502';
 
 export async function getStaticProps() {
   let ids = [];
-  let error = '';
 
   try {
     const res = await fetch(`https://notion-api.splitbee.io/v1/table/${oniNotionTable}`);
@@ -29,9 +28,7 @@ export async function getStaticProps() {
 
     if (!ids) throw String('No data was found!');
     ids = JSON.parse(JSON.stringify(ids));
-  } catch (e) {
-    error = e.toString();
-  }
+  } catch (e) {}
 
   return {
     props: {
@@ -52,7 +49,7 @@ const Notes = ({ tableIds, mostRecentPostId }) => {
 
   useEffect(() => {
     setIsLoading(true);
-    const data = fetch(`https://notion-api.splitbee.io/v1/page/${currentPostId}`)
+    fetch(`https://notion-api.splitbee.io/v1/page/${currentPostId}`)
       .then(res => res.json())
       .then(data => {
         setPostData(data);

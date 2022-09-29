@@ -12,7 +12,7 @@ import PageHeader from '../components/Layout/PageHeader';
 import Button from '../components/common/Button';
 import { fetchTalentFormData, TALENT_FORM_ID } from '../utils/talent-form-data-fetching';
 
-export const getServerSideProps = async context => {
+export const getServerSideProps = async () => {
   let talentDataFromAPI = [];
   try {
     talentDataFromAPI = await fetchTalentFormData();

@@ -15,7 +15,7 @@ const Footer = () => {
         {/* Twitter */}
         <a href="https://twitter.com/nounsdao" target="_blank" rel="noreferrer">
           <svg
-            className="w-6 h-8 fill-black  hover:fill-gray-400 transition cursor-pointer"
+            className="w-6 h-8 fill-black hover:fill-gray-400 transition cursor-pointer"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -26,7 +26,7 @@ const Footer = () => {
         {/* Discord */}
         <a href="https://discord.gg/nouns" target="_blank" rel="noreferrer">
           <svg
-            className="h-8 w-7 fill-black  hover:fill-gray-400 transition cursor-pointer"
+            className="h-8 w-7 fill-black hover:fill-gray-400 transition cursor-pointer"
             viewBox="0 0 100 100"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"

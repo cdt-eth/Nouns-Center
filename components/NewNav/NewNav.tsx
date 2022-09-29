@@ -4,8 +4,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Button from '../common/Button';
 import nav from '../../api/nav2.json';
 import Mobile from './Mobile';
-import { Fragment, useState } from 'react';
-import Link from 'next/link';
+import { Fragment } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import { BiLinkExternal as ExternalIcon } from 'react-icons/bi';
 
@@ -14,8 +13,6 @@ function classNames(...classes) {
 }
 
 const NewNav = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
   return (
     <>
       <Disclosure as="nav" className="bg-white shadow sm:sticky sm:top-0 sm:z-10	">
@@ -35,9 +32,6 @@ const NewNav = () => {
                   </Disclosure.Button>
                 </div>
 
-                {/* EARTH LOGO */}
-                {/* <Disclosure.Panel>
-                  {({ close }) => ( */}
                 <div
                   className="flex-shrink-0 flex items-center cursor-pointer"
                   onClick={() => close()}
@@ -48,10 +42,8 @@ const NewNav = () => {
                     <img className="block h-10 w-auto" src="/earth.gif" alt="Workflow" />
                   </a>
                 </div>
-                {/* )}
-                 </Disclosure.Panel> */}
 
-                {/* DESKTOP NAV ITEMS */}
+                {/* DESKTOP MENU */}
                 <div className="hidden md:ml-6 sm:flex md:space-x-8 gap-4">
                   {nav.map(section => (
                     <Menu
@@ -101,7 +93,6 @@ const NewNav = () => {
                   ))}
                 </div>
 
-                {/* GO TO NOUNS BUTTON */}
                 <div className="flex items-center flex-shrink-0">
                   <Button link="https://nouns.wtf/" text="nouns.wtf" small />
                 </div>

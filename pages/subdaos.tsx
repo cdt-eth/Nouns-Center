@@ -16,9 +16,6 @@ import { TbWorld as WebsiteIcon } from 'react-icons/tb';
 import Button from '../components/common/Button';
 
 const Subdaos = () => {
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(' ');
-  }
   interface OpenInNewTabProps {
     children: React.ReactNode;
   }
@@ -26,12 +23,12 @@ const Subdaos = () => {
   // overrides an <a> tag that doesn't have target="_blank" and adds it
   const OpenInNewTab = ({ children, ...props }: OpenInNewTabProps) => <a {...props}>{children}</a>;
 
-  interface SubdaoProps {
-    name: 'string';
-    overview: 'string';
-    join: 'string';
-    links: [platform: 'string', link: 'string'];
-  }
+  // interface SubdaoProps {
+  //   name: 'string';
+  //   overview: 'string';
+  //   join: 'string';
+  //   links: [platform: 'string', link: 'string'];
+  // }
 
   return (
     <>
