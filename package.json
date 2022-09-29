@@ -6,8 +6,8 @@
     "postbuild": "node ./scripts/build-search.js",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"**/*.ts\" \"**/*.js\"",
-    "format-check": "prettier --check \"**/*.ts\" \"**/*.js\""
+    "format": "prettier --write \"**/*.ts\" \"**/*.tsx\" \"**/*.js\"",
+    "format-check": "prettier --check \"**/*.ts\" \"**/*.tsx\" \"**/*.js\""
   },
   "dependencies": {
     "@algolia/autocomplete-js": "^1.6.3",
