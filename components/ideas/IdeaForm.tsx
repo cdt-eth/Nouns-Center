@@ -3,10 +3,7 @@ import { InformationCircleIcon } from '@heroicons/react/solid';
 import Link from 'next/link';
 import clsx from 'classnames';
 
-import {
-  DESCRIPTION_MIN_LENGTH,
-  TITLE_MIN_LENGTH,
-} from '../../pages/ideas/create';
+import { DESCRIPTION_MIN_LENGTH, TITLE_MIN_LENGTH } from '../../pages/ideas/create';
 
 const IdeaForm = ({
   title,
@@ -15,8 +12,7 @@ const IdeaForm = ({
   onTitleChange,
   onDescriptionChange,
 }) => {
-  const formNoErrorCls =
-    'focus:ring-indigo-500 focus:border-indigo-500 border-gray-300';
+  const formNoErrorCls = 'focus:ring-indigo-500 focus:border-indigo-500 border-gray-300';
   const formErrorCls =
     'border-red-300 text-red-900 placeholder-red-300 focus:ring-red-500 focus:border-red-500';
 
@@ -32,10 +28,7 @@ const IdeaForm = ({
   };
 
   const onDescriptionBlur = () => {
-    if (
-      0 < description?.length &&
-      description?.length < DESCRIPTION_MIN_LENGTH
-    ) {
+    if (0 < description?.length && description?.length < DESCRIPTION_MIN_LENGTH) {
       setDescriptionError('Description should be at least 35 charcters');
     } else {
       setDescriptionError('');
@@ -47,10 +40,7 @@ const IdeaForm = ({
       <div className="rounded-md bg-blue-100 p-4 mb-6">
         <div className="flex">
           <div className="flex-shrink-0 self-center">
-            <InformationCircleIcon
-              className="h-5 w-5 text-blue-400"
-              aria-hidden="true"
-            />
+            <InformationCircleIcon className="h-5 w-5 text-blue-400" aria-hidden="true" />
           </div>
           <div className="ml-3 flex-1 md:flex md:justify-between">
             <p className="text-md text-blue-700">
@@ -73,10 +63,7 @@ const IdeaForm = ({
 
       <form>
         <div className="flex justify-between">
-          <label
-            htmlFor="title"
-            className="text-nouns block text-2xl font-md text-gray-700"
-          >
+          <label htmlFor="title" className="text-nouns block text-2xl font-md text-gray-700">
             Title
           </label>
           <span>{title.length}/60</span>
@@ -88,11 +75,11 @@ const IdeaForm = ({
             maxLength={60}
             className={clsx(
               'text-nouns p-4 text-lg shadow-sm block w-full placeholder:text-md rounded-xl placeholder:italic placeholder:text-black/40',
-              titleError?.length ? formErrorCls : formNoErrorCls
+              titleError?.length ? formErrorCls : formNoErrorCls,
             )}
             placeholder="What's your idea"
             aria-describedby="title-description"
-            onChange={(evt) => onTitleChange(evt)}
+            onChange={evt => onTitleChange(evt)}
             onBlur={onTitleBlur}
             value={title}
           />
@@ -150,9 +137,9 @@ const IdeaForm = ({
               name="description"
               className={clsx(
                 'text-nouns whitespace-pre-line text-lg placeholder:text-md shadow-sm block w-full rounded-xl p-4  placeholder:italic placeholder:text-black/40 mb-2',
-                descriptionError?.length ? formErrorCls : formNoErrorCls
+                descriptionError?.length ? formErrorCls : formNoErrorCls,
               )}
-              onChange={(evt) => onDescriptionChange(evt)}
+              onChange={evt => onDescriptionChange(evt)}
               onBlur={onDescriptionBlur}
               value={description}
               placeholder="Describe your idea"
@@ -168,11 +155,10 @@ const IdeaForm = ({
         <div className="py-3 bg-gray-50">
           <button
             disabled={
-              description?.length < DESCRIPTION_MIN_LENGTH ||
-              title?.length < TITLE_MIN_LENGTH
+              description?.length < DESCRIPTION_MIN_LENGTH || title?.length < TITLE_MIN_LENGTH
             }
             className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-sky-600 disabled:bg-sky-300 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
-            onClick={(evt) => handlePreviewToggle(evt)}
+            onClick={evt => handlePreviewToggle(evt)}
           >
             Preview
           </button>

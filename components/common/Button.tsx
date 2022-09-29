@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface ButtonProps {
   link: string;
@@ -13,7 +13,7 @@ const Button = ({ link, text, download, self, small }: ButtonProps) => {
     <a
       download={download && download}
       href={link}
-      target={self ? "_self" : "_blank"}
+      target={self ? '_self' : '_blank'}
       rel="noreferrer"
       className={`
         inline-flex
@@ -30,8 +30,8 @@ const Button = ({ link, text, download, self, small }: ButtonProps) => {
       dark:bg-nouns-bg-blue
       dark:hover:bg-blue-700
       dark:focus:ring-nouns-bg-blue
-        ${small ? "px-3 py-2" : "px-4 py-3"} 
-        ${small ? "text-xs" : "text-sm"} 
+        ${small ? 'px-3 py-2' : 'px-4 py-3'} 
+        ${small ? 'text-xs' : 'text-sm'} 
         font-medium
         shadow-sm
         transition

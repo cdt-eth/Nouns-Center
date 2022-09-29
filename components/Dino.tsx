@@ -1,3 +1,3 @@
-import Dino from "./Game/Dino";
+import Dino from './Game/Dino';
 
 export default Dino;

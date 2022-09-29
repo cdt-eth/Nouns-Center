@@ -1,11 +1,11 @@
-import React from "react";
-import Header from "../components/Header";
-import Title from "../components/Title";
-import Timeline from "../components/Timeline/Timeline";
-import Subheader from "../components/Subheader";
-import PageHeader from "../components/Layout/PageHeader";
-import PageContent from "../components/Layout/PageContent";
-import Button from "../components/common/Button";
+import React from 'react';
+import Header from '../components/Header';
+import Title from '../components/Title';
+import Timeline from '../components/Timeline/Timeline';
+import Subheader from '../components/Subheader';
+import PageHeader from '../components/Layout/PageHeader';
+import PageContent from '../components/Layout/PageContent';
+import Button from '../components/common/Button';
 
 const History = () => {
   return (

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 const XSmall = ({ project }) => {
   return project ? (
@@ -18,7 +18,7 @@ const XSmall = ({ project }) => {
           </div>
           <img
             className="object-cover w-full h-full"
-            src={!project.image.startsWith("http") ?  `/projects/${project.image}` : project.image}
+            src={!project.image.startsWith('http') ? `/projects/${project.image}` : project.image}
             alt={project.image}
           />
         </a>

@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import Header from "../../components/Header";
-import Title from "../../components/Title";
-import PageHeader from "../../components/Layout/PageHeader";
-import PageContent from "../../components/Layout/PageContent";
-import AlertWarning from "../../components/common/AlertWarning";
-import WalletButton from "../../components/WalletButton/WalletButton";
-import IdeaForm from "../../components/ideas/IdeaForm";
-import IdeaPreview from "../../components/ideas/IdeaPreview";
+import Header from '../../components/Header';
+import Title from '../../components/Title';
+import PageHeader from '../../components/Layout/PageHeader';
+import PageContent from '../../components/Layout/PageContent';
+import AlertWarning from '../../components/common/AlertWarning';
+import WalletButton from '../../components/WalletButton/WalletButton';
+import IdeaForm from '../../components/ideas/IdeaForm';
+import IdeaPreview from '../../components/ideas/IdeaPreview';
 
-import { useAccount, useSigner } from "wagmi";
-import { useRouter } from "next/router";
-import Subheader from "../../components/Subheader";
-import Link from "next/link";
+import { useAccount, useSigner } from 'wagmi';
+import { useRouter } from 'next/router';
+import Subheader from '../../components/Subheader';
+import Link from 'next/link';
 
 export const DESCRIPTION_MIN_LENGTH = 35;
 export const TITLE_MIN_LENGTH = 8;
 
 const Ideas = () => {
-  const [title, setTitle] = useState<string>("");
-  const [description, setDescription] = useState<string>("");
+  const [title, setTitle] = useState<string>('');
+  const [description, setDescription] = useState<string>('');
   const [isPreview, setIsPreview] = useState<boolean>(false);
   const [authError, setAuthError] = useState<string>(undefined);
 
@@ -31,28 +31,25 @@ const Ideas = () => {
   const { data: signer } = useSigner();
 
   const isFormValid = () => {
-    return (
-      description?.length >= DESCRIPTION_MIN_LENGTH &&
-      title?.length >= TITLE_MIN_LENGTH
-    );
+    return description?.length >= DESCRIPTION_MIN_LENGTH && title?.length >= TITLE_MIN_LENGTH;
   };
 
   useEffect(() => {
     if (!address) {
-      setAuthError("Please connect your wallet to submit an idea");
+      setAuthError('Please connect your wallet to submit an idea');
     } else {
       setAuthError(undefined);
     }
   }, [address]);
 
-  const handleSubmitIdea = async (evt) => {
+  const handleSubmitIdea = async evt => {
     evt.preventDefault();
     setIsSubmitting(true);
 
     // verify auth
     try {
       if (!address?.length) {
-        setAuthError("Please connect wallet to submit an idea");
+        setAuthError('Please connect wallet to submit an idea');
         setIsSubmitting(false);
         return;
       }
@@ -61,17 +58,17 @@ const Ideas = () => {
       const signature = await signer.signMessage(message);
 
       // verify signature
-      const loginResp = await fetch("/api/login", {
-        method: "POST",
+      const loginResp = await fetch('/api/login', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify({ message, signature, address: address }),
       });
       const data = await loginResp.json();
       if (!data?.success) {
         setIsSubmitting(false);
-        setAuthError("There was an error during authentication");
+        setAuthError('There was an error during authentication');
         return;
       }
     } catch (error) {
@@ -83,37 +80,37 @@ const Ideas = () => {
     }
 
     try {
-      const response = await fetch("/api/ideas", {
-        method: "POST",
+      const response = await fetch('/api/ideas', {
+        method: 'POST',
         body: JSON.stringify({
           title,
           description,
         }),
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
       });
       await response.json();
       setIsSubmitting(false);
-      router.push("/ideas");
+      router.push('/ideas');
     } catch (err) {
       console.log({ err });
       setIsSubmitting(false);
     }
   };
 
-  const togglePreviewMode = (evt) => {
+  const togglePreviewMode = evt => {
     evt.preventDefault();
 
     if (isFormValid()) setIsPreview(!isPreview);
   };
 
-  const handleTitleChange = (evt) => {
+  const handleTitleChange = evt => {
     evt.preventDefault();
     setTitle(evt.target.value);
   };
 
-  const handleDescriptionChange = (evt) => {
+  const handleDescriptionChange = evt => {
     evt.preventDefault();
     setDescription(evt.target.value);
   };

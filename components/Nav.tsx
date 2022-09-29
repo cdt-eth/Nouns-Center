@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import { Disclosure } from "@headlessui/react";
-import nav from "../api/nav2.json";
-import { v4 as uuidv4 } from "uuid";
-import Link from "next/link";
-import DarkModeToggle from "./DarkModeToggle";
-import { BiLinkExternal as ExternalIcon } from "react-icons/bi";
+import React from 'react';
+import { Disclosure } from '@headlessui/react';
+import nav from '../api/nav2.json';
+import { v4 as uuidv4 } from 'uuid';
+import Link from 'next/link';
+import DarkModeToggle from './DarkModeToggle';
+import { BiLinkExternal as ExternalIcon } from 'react-icons/bi';
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(' ');
 }
 
 const Nav = ({ setSidebarOpen }) => {
@@ -41,28 +41,23 @@ const Nav = ({ setSidebarOpen }) => {
               />
             </Link>
 
-            {nav.map((item) => (
-              <Disclosure
-                as="div"
-                defaultOpen
-                key={item.name}
-                className="space-y-1 mb-4"
-              >
+            {nav.map(item => (
+              <Disclosure as="div" defaultOpen key={item.name} className="space-y-1 mb-4">
                 {({ open }) => (
                   <>
                     <Disclosure.Button
                       as="button"
                       className={classNames(
                         item.current
-                          ? "bg-grey-base text-black focus:outline-none"
-                          : "bg-grey-base text-black hover:bg-opacity-80  hover:text-blue-base",
-                        "group w-full flex items-center text-nouns tracking-wide text-left xs:text-lg sm:text-lg font-medium rounded-md focus:outline-none transition duration-150"
+                          ? 'bg-grey-base text-black focus:outline-none'
+                          : 'bg-grey-base text-black hover:bg-opacity-80  hover:text-blue-base',
+                        'group w-full flex items-center text-nouns tracking-wide text-left xs:text-lg sm:text-lg font-medium rounded-md focus:outline-none transition duration-150',
                       )}
                     >
                       <svg
                         className={classNames(
-                          open ? "text-black rotate-90" : "text-black",
-                          "flex-shrink-0 h-5 w-5 transform group-hover:text-blue-base transition duration-150"
+                          open ? 'text-black rotate-90' : 'text-black',
+                          'flex-shrink-0 h-5 w-5 transform group-hover:text-blue-base transition duration-150',
                         )}
                         viewBox="0 0 20 20"
                         aria-hidden="true"
@@ -74,7 +69,7 @@ const Nav = ({ setSidebarOpen }) => {
                     </Disclosure.Button>
 
                     <Disclosure.Panel className="space-y-1">
-                      {item.children.map((subItem) => (
+                      {item.children.map(subItem => (
                         <div
                           key={uuidv4()}
                           className="flex ml-3 px-1 items-center rounded-md"

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface LinkProps {
   text: string;
@@ -11,7 +11,7 @@ const Link = ({ text, url, leavesPage, classes }: LinkProps) => {
   return (
     <a
       href={url}
-      target={leavesPage ? "_blank" : "_self"}
+      target={leavesPage ? '_blank' : '_self'}
       rel="noreferrer"
       className={`text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider ${
         classes && classes

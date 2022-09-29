@@ -1,16 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Button from "../common/Button";
-import nav from "../../api/nav2.json";
-import Mobile from "./Mobile";
-import { Fragment, useState } from "react";
-import Link from "next/link";
-import { ChevronDownIcon } from "@heroicons/react/solid";
-import { BiLinkExternal as ExternalIcon } from "react-icons/bi";
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import Button from '../common/Button';
+import nav from '../../api/nav2.json';
+import Mobile from './Mobile';
+import { Fragment, useState } from 'react';
+import Link from 'next/link';
+import { ChevronDownIcon } from '@heroicons/react/solid';
+import { BiLinkExternal as ExternalIcon } from 'react-icons/bi';
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
+  return classes.filter(Boolean).join(' ');
 }
 
 const NewNav = () => {
@@ -18,10 +18,7 @@ const NewNav = () => {
 
   return (
     <>
-      <Disclosure
-        as="nav"
-        className="bg-white shadow sm:sticky sm:top-0 sm:z-10	"
-      >
+      <Disclosure as="nav" className="bg-white shadow sm:sticky sm:top-0 sm:z-10	">
         {({ open }) => (
           <>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
@@ -46,11 +43,7 @@ const NewNav = () => {
                   onClick={() => close()}
                 >
                   <Link passHref href="/">
-                    <img
-                      className="block h-10 w-auto"
-                      src="/earth.gif"
-                      alt="Workflow"
-                    />
+                    <img className="block h-10 w-auto" src="/earth.gif" alt="Workflow" />
                   </Link>
                 </div>
                 {/* )}
@@ -58,7 +51,7 @@ const NewNav = () => {
 
                 {/* DESKTOP NAV ITEMS */}
                 <div className="hidden md:ml-6 sm:flex md:space-x-8 gap-4">
-                  {nav.map((section) => (
+                  {nav.map(section => (
                     <Menu
                       as="div"
                       className="relative flex text-left hover:text-blue-base"
@@ -66,10 +59,7 @@ const NewNav = () => {
                     >
                       <Menu.Button className="inline-flex justify-center items-center h-full m-auto">
                         {section.name}
-                        <ChevronDownIcon
-                          className="-mr-1 ml-2 h-5 w-5"
-                          aria-hidden="true"
-                        />
+                        <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
                       </Menu.Button>
 
                       <Transition
@@ -83,22 +73,17 @@ const NewNav = () => {
                       >
                         <Menu.Items className="origin-top-right absolute right-0 mt-12	w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                           <div className="py-1">
-                            {section.children.map((subItem) => (
+                            {section.children.map(subItem => (
                               <Menu.Item key={subItem.name}>
                                 {({ active }) => (
                                   <a
                                     href={subItem.link}
                                     className={classNames(
-                                      active
-                                        ? "bg-gray-100 text-gray-900"
-                                        : "text-gray-700",
-                                      "block px-4 py-2 text-sm",
-                                      subItem.external &&
-                                        "flex items-center gap-2"
+                                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                      'block px-4 py-2 text-sm',
+                                      subItem.external && 'flex items-center gap-2',
                                     )}
-                                    target={
-                                      subItem.external ? "_blank" : "_self"
-                                    }
+                                    target={subItem.external ? '_blank' : '_self'}
                                     rel="noreferrer"
                                   >
                                     {subItem.name}

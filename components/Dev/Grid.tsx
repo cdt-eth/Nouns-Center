@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import devResources from "../../api/devResources.json";
+import React from 'react';
+import devResources from '../../api/devResources.json';
 
 interface ResourceProps {
   name: string;
@@ -23,9 +23,7 @@ const Grid = () => {
           >
             {devResources.map((resource: ResourceProps) => (
               <li key={resource.name} className="sm:py-8">
-                <h3 className="text-nouns leading-6 font-medium text-3xl mb-6">
-                  {resource.name}
-                </h3>
+                <h3 className="text-nouns leading-6 font-medium text-3xl mb-6">{resource.name}</h3>
 
                 <div className="w-full flex gap-6 xs:flex-col sm:flex-row">
                   <img
@@ -43,11 +41,10 @@ const Grid = () => {
                   <a
                     href={
                       resource.notion
-                        ? "/dev/" +
-                          resource.name.replace(/\s+/g, "-").toLowerCase()
+                        ? '/dev/' + resource.name.replace(/\s+/g, '-').toLowerCase()
                         : resource.url
                     }
-                    target={resource.notion ? "_self" : "_blank"}
+                    target={resource.notion ? '_self' : '_blank'}
                     rel="noreferrer"
                     key={resource.name}
                     className="inline-flex capitalize items-center justify-center rounded-md border border-transparent  px-4 py-2  mt-2 text-sm font-medium shadow-sm  transition duration-100 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto  bg-blue-base text-white focus:ring-gray-200 hover:bg-opacity-80"

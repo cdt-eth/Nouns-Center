@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from "next/link";
-import { getRandomNounPic } from "../../utils";
+import Link from 'next/link';
+import { getRandomNounPic } from '../../utils';
 
 export const NavCard: React.FC<{
   text: string;
@@ -15,11 +15,7 @@ export const NavCard: React.FC<{
             {text}
           </div>
 
-          <img
-            className="object-cover w-full h-full"
-            src={getRandomNounPic(i)}
-            alt={text}
-          />
+          <img className="object-cover w-full h-full" src={getRandomNounPic(i)} alt={text} />
         </button>
       </div>
     </Link>

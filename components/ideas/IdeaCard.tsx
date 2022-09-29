@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import ReactMarkdown from "react-markdown";
-import { truncateEthAddress } from "../../lib/utils";
-import { signUser } from "../../lib/signUser";
-import { useMe } from "../../lib/hooks/useMe";
+import React, { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
+import { truncateEthAddress } from '../../lib/utils';
+import { signUser } from '../../lib/signUser';
+import { useMe } from '../../lib/hooks/useMe';
 
-import { useAccount, useSigner } from "wagmi";
+import { useAccount, useSigner } from 'wagmi';
 
-import Heart from "../icons/heart-icon";
+import Heart from '../icons/heart-icon';
 
-import { useEnsName } from "wagmi";
-import Link from "next/link";
+import { useEnsName } from 'wagmi';
+import Link from 'next/link';
 
 interface IdeaCardProps {
   id: number;
@@ -48,14 +48,14 @@ const IdeaCard = ({
   }, [liked]);
 
   const runLikesService = async (val: boolean) => {
-    return await fetch("/api/likes", {
-      method: "POST",
+    return await fetch('/api/likes', {
+      method: 'POST',
       body: JSON.stringify({
         liked: val,
         ideaId: id,
       }),
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
     });
   };
@@ -109,17 +109,14 @@ const IdeaCard = ({
           <div className="mt-4 sm:mt-0 sm:flex-shrink-0 flex w-full justify-between">
             <div className="mt-1 text-sm text-gray-600 sm:flex flex-col">
               <div className="italic">
-                By:{" "}
-                <span className="">
-                  {ensName ? ensName : truncateEthAddress(submittedBy)}
-                </span>
+                By: <span className="">{ensName ? ensName : truncateEthAddress(submittedBy)}</span>
               </div>
 
               <div className="mt-1 sm:mt-0">
-                {new Date(date).toLocaleDateString("en-us", {
-                  year: "numeric",
-                  month: "short",
-                  day: "numeric",
+                {new Date(date).toLocaleDateString('en-us', {
+                  year: 'numeric',
+                  month: 'short',
+                  day: 'numeric',
                 })}
               </div>
             </div>

@@ -1,5 +1,5 @@
-import React from "react";
-import Subheader from "../Subheader";
+import React from 'react';
+import Subheader from '../Subheader';
 
 const TextContent = ({ title, children }) => {
   return (

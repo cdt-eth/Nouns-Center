@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Podcasts = () => {
   return (
@@ -50,7 +50,7 @@ const Podcasts = () => {
         scrolling="no"
         seamless
         src="https://player.cohostpodcasting.com/324e4910-ea2e-42a1-8193-46a68bd71d76/cb538344-bef4-46d7-b7f9-b3f281bc6773"
-      ></iframe>{" "}
+      ></iframe>{' '}
       <iframe
         height="200px"
         width="100%"
