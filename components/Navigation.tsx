@@ -66,9 +66,8 @@ const Navigation = () => {
             </div>
           </Transition.Child>
 
-          <div className="flex-shrink-0 w-14">
-            {/* Force sidebar to shrink to fit close icon */}
-          </div>
+          {/* Force sidebar to shrink to fit close icon */}
+          <div className="flex-shrink-0 w-14"></div>
         </Dialog>
       </Transition.Root>
 
@@ -86,17 +85,6 @@ const Navigation = () => {
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-
-          {/* <Link passHref href="/">
-            <div className="flex self-center  items-center cursor-pointer text-nouns  transition text-blue-base hover:text-nouns-bg-blue  dark:hover:text-blue-base xs:text-xl sm:text-3xl gap-2">
-               eslint-disable-next-line @next/next/no-img-element 
-              <img
-                src="/earth.gif"
-                alt="earth"
-                className="h-12 w-12 flex self-center"
-              />
-            </div>
-          </Link> */}
 
           <div className="w-1/3 flex items-center justify-end gap-3">
             {/* <DocSearch

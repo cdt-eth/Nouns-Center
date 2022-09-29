@@ -9,20 +9,10 @@ const IdeaPreview = ({
 }) => {
   return (
     <div className="mt-10">
-      {/* <ReactMarkdown className="text-2xl">{title}</ReactMarkdown>
-          <ReactMarkdown className="mt-5 text-2xl">{tldr}</ReactMarkdown> */}
-
       <div className="pb-3 border-b border-gray-200 sm:items-center">
         <h3 className="text-2xl pb-3 leading-6 font-medium text-gray-900 text-nouns">Title</h3>
         <div className="text-xl text-gray-700 break-words">{title}</div>
       </div>
-
-      {/* <div className="mt-3 pb-3 border-b border-gray-200 sm:items-center">
-        <h3 className="text-nouns text-lg leading-6 font-medium text-gray-900">
-          tldr
-        </h3>
-        <div className="text-xl text-gray-700">{tldr}</div>
-      </div> */}
 
       <div className="mt-8 pb-3 border-b border-gray-200 sm:items-center">
         <h3 className="text-2xl pb-3 leading-6 font-medium text-gray-900 text-nouns">

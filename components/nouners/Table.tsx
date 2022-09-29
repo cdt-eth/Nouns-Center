@@ -33,7 +33,6 @@ const Table = ({ grants }: Grants) => {
                 scope="col"
                 className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
               >
-                {/* Recipient */}
                 Category
               </th>
               <th
@@ -48,9 +47,6 @@ const Table = ({ grants }: Grants) => {
               >
                 Amount
               </th>
-              {/* <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
-                <span className="sr-only">Edit</span>
-              </th> */}
             </tr>
           </thead>
 

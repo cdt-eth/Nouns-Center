@@ -143,13 +143,6 @@ const Ideas = () => {
 
             {authError && <AlertWarning text={authError} />}
 
-            {/* <div className="border-t-4 border-grey-500 my-8"></div> */}
-            {/* <div className="flex-1 min-w-0 mt-4">
-              <h2 className="text-2xl text-nouns font-bold leading-7 text-gray-500 sm:text-3xl sm:truncate">
-                Create an Idea!
-              </h2>
-            </div> */}
-
             {isPreview ? (
               <IdeaPreview
                 title={title}

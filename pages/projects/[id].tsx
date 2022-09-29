@@ -67,12 +67,7 @@ const ProjectDetails = ({ projectData }) => {
                 {title}
               </span>
 
-              <span className="">
-                {/* {category.length <= 1
-                  ? category
-                  : category.map((c) => <span key={category}>{category}</span>)} */}
-                {category.join(', ')}
-              </span>
+              <span className="">{category.join(', ')}</span>
             </div>
 
             <Link passHref href="/projects">
@@ -181,35 +176,6 @@ const ProjectDetails = ({ projectData }) => {
           <div className="text-black font-medium pt-12">{description}</div>
         </div>
       </div>
-
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/* <div className={`bg-cover bg-center ${getBgImg(image)}`}></div> */}
-
-      {/* <img
-        className="bg-cover bg-center relative"
-        src={`/projects/${image}`}
-        alt={image}
-      />
-      <div className="">
-        <div>{title}</div>
-        <div>{description}</div>
-        <div>{creator}</div>
-        <div>{url}</div>
-        <div>{category}</div>
-        <a href={url} target="_blank" rel="noreferrer">
-          View
-        </a>
-      </div> */}
     </PageContent>
   );
 };

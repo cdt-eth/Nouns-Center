@@ -31,7 +31,6 @@ const Nav = ({ setSidebarOpen }) => {
           aria-label="Sidebar"
         >
           <div>
-            {/* No SubNav */}
             <Link passHref href="/">
               <img
                 onClick={() => setSidebarOpen(false)}
@@ -103,9 +102,9 @@ const Nav = ({ setSidebarOpen }) => {
             ))}
           </div>
 
-          {/* <div className="px-2 pb-2 hidden">
+          <div className="px-2 pb-2">
             <DarkModeToggle />
-          </div> */}
+          </div>
         </nav>
       </div>
     </div>
