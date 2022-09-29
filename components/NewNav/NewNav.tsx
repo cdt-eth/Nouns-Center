@@ -42,6 +42,8 @@ const NewNav = () => {
                   className="flex-shrink-0 flex items-center cursor-pointer"
                   onClick={() => close()}
                 >
+                  {/* eslint-disable @next/next/no-html-link-for-pages */}
+                  {/* Doing this so the link closes the mobile nav bar */}
                   <a href="/">
                     <img className="block h-10 w-auto" src="/earth.gif" alt="Workflow" />
                   </a>
