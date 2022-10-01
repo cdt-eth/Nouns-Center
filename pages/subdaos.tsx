@@ -49,7 +49,7 @@ const Subdaos = () => {
           {subdaos.map((s: any) => (
             <div key={s.description} className="pb-8">
               <div className="flex items-center gap-3">
-                <p className="font-bold text-3xl tracking-wider text-nouns">{s.name}</p>
+                <p className="font-bold text-xl sm:text-3xl tracking-wider text-nouns">{s.name}</p>
                 <p className="font-bold text-2xl">{' • '}</p>
 
                 <div className="flex gap-3">
@@ -104,8 +104,8 @@ const Subdaos = () => {
                 </Markdown>
               </div>
 
-              <div className="mb-20 flex">
-                <dl className="grid grid-cols-2 gap-x-4 gap-y-4 w-1/3">
+              <div className="mb-12 sm:mb-20 flex">
+                <dl className="grid grid-cols-2 gap-x-4 gap-y-4 w-1/2 sm:w-1/3">
                   {s.stats.map(stat => (
                     <div key={stat.label} className="border-t-2 border-gray-100 pt-6">
                       <dt className="text-base capitalize font-medium text-gray-500">
