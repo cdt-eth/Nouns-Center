@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import Header from '../components/Header';
-import Title from '../components/Title';
-import Subheader from '../components/Subheader';
-import PageHeader from '../components/Layout/PageHeader';
-import PageContent from '../components/Layout/PageContent';
-import subdaos from '../api/subdaos.json';
+import Header from '../../components/Header';
+import Title from '../../components/Title';
+import Subheader from '../../components/Subheader';
+import PageHeader from '../../components/Layout/PageHeader';
+import PageContent from '../../components/Layout/PageContent';
+import subdaos from './subdaos.json';
 import Markdown from 'markdown-to-jsx';
 import {
   FaTwitter as TwitterIcon,
@@ -13,7 +13,7 @@ import {
   FaDiscourse as DiscourseIcon,
 } from 'react-icons/fa';
 import { TbWorld as WebsiteIcon } from 'react-icons/tb';
-import Button from '../components/common/Button';
+import Button from '../../components/common/Button';
 
 const Subdaos = () => {
   interface OpenInNewTabProps {

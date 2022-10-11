@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import React from 'react';
-import projects from '../../api/projects.json';
+import projects from './projects.json';
 import PageContent from '../../components/Layout/PageContent';
 
 export const getStaticProps = async context => {

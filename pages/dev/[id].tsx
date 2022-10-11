@@ -3,7 +3,7 @@
 import React from 'react';
 import { NotionRenderer } from 'react-notion';
 
-import guides from '../../api/devResources.json';
+import guides from './resources.json';
 import PageContent from '../../components/Layout/PageContent';
 
 export const getStaticProps = async context => {

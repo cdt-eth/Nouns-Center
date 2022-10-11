@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
-import projects from '../api/projects.json';
-import XSmall from '../components/Project/XSmall';
-import Title from '../components/Title';
-import Subheader from '../components/Subheader';
+import Header from '../../components/Header';
+import projects from './projects.json';
+import XSmall from '../../components/Project/XSmall';
+import Title from '../../components/Title';
+import Subheader from '../../components/Subheader';
 import { useRouter } from 'next/router';
-import PageContent from '../components/Layout/PageContent';
-import PageHeader from '../components/Layout/PageHeader';
-import Button from '../components/common/Button';
-import { fetchProjectFormData } from '../utils/project-form-data-fetching';
+import PageContent from '../../components/Layout/PageContent';
+import PageHeader from '../../components/Layout/PageHeader';
+import Button from '../../components/common/Button';
+import { fetchProjectFormData } from '../../utils/project-form-data-fetching';
 
 export const getStaticProps = async () => {
   const projects = await fetchProjectFormData();
