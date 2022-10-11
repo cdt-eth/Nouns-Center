@@ -3,7 +3,7 @@ import React from 'react';
 import { BiLinkExternal as ExternalIcon } from 'react-icons/bi';
 import { v4 as uuidv4 } from 'uuid';
 import { Disclosure } from '@headlessui/react';
-import nav from '../../api/nav2.json';
+import navigationData from './navigation.json';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -16,7 +16,7 @@ const Mobile = () => {
         <Disclosure.Panel>
           {({ close }) => (
             <div>
-              {nav.map(item => (
+              {navigationData.map(item => (
                 <Disclosure as="div" defaultOpen key={item.name} className="space-y-1 mb-4">
                   {({ open: open2 }) => (
                     <>

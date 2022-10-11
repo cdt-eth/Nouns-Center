@@ -2,7 +2,7 @@
 import React from 'react';
 import Footer from '../Footer';
 import NavSection from './NavSection';
-import nav from '../../api/nav2.json';
+import navigationData from '../Navigation/navigation.json';
 import NavCard from './NavCard';
 import '@algolia/autocomplete-theme-classic';
 // import algoliasearch from 'algoliasearch/lite';
@@ -36,7 +36,7 @@ const Hero = () => {
             {/* <div className="mt-6 sm:mb-14" id="autocomplete"></div> */}
           </div>
 
-          {nav.map(section => (
+          {navigationData.map(section => (
             <NavSection
               key={section.name}
               // @ts-ignore

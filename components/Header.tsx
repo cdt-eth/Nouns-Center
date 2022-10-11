@@ -37,6 +37,21 @@ const Header = ({ title }: HeaderProps) => {
         content="The knowledge center and resource hub for Nouns DAO. Learn about the project, the community and ways to get involved and funded."
       />
       <meta property="twitter:image" content="https://nouns.center/og-image.png" />
+
+      {process.env.GA_TRACKING_ID ? (
+        <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TRACKING_ID}`}></script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', '${process.env.GA_TRACKING_ID}');
+          `}
+        </script>
+        </>
+      ) : null}
     </Head>
   );
 };
