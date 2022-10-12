@@ -2,8 +2,8 @@
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Button from '../common/Button';
-import nav from '../../api/nav2.json';
-import Mobile from './Mobile';
+import navigationData from './navigation.json';
+import MobileNavigation from './Mobile';
 import { Fragment } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import { BiLinkExternal as ExternalIcon } from 'react-icons/bi';
@@ -12,7 +12,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-const NewNav = () => {
+const Web = () => {
   return (
     <>
       <Disclosure as="nav" className="bg-white shadow sm:sticky sm:top-0 sm:z-10	">
@@ -45,7 +45,7 @@ const NewNav = () => {
 
                 {/* DESKTOP MENU */}
                 <div className="hidden md:ml-6 sm:flex md:space-x-8 gap-4">
-                  {nav.map(section => (
+                  {navigationData.map(section => (
                     <Menu
                       as="div"
                       className="relative flex text-left hover:text-blue-base"
@@ -100,7 +100,7 @@ const NewNav = () => {
             </div>
 
             {/* MOBILE MENU */}
-            <Mobile />
+            <MobileNavigation />
           </>
         )}
       </Disclosure>
@@ -108,4 +108,4 @@ const NewNav = () => {
   );
 };
 
-export default NewNav;
+export default Web;

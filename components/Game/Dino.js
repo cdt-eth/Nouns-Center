@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Resources from './Resources.js';
-import DinoScript from '../../api/DinoScript.js';
-import DinoStyle from '../../api/DinoStyle';
+import DinoScript from './DinoScript.js';
+import DinoStyle from './DinoStyle';
 import './Dino.module.css';
 
 class ChromeDinoComponent extends React.Component {

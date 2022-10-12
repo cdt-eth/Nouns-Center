@@ -3,7 +3,9 @@ import { v4 as uuidv4 } from 'uuid';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Event from './Event';
-import events from '../../api/timeline.json';
+import events from '../../pages/history/history.json';
+
+// TODO: Get events out of this component
 
 const Timeline = () => {
   return (

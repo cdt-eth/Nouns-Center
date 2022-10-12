@@ -1,16 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import Header from '../components/Header';
+import Header from '../../components/Header';
 import { v4 as uuidv4 } from 'uuid';
-import Title from '../components/Title';
-import talentFromJSON from '../api/talent.json';
+import Title from '../../components/Title';
+import talentFromJSON from './talent.json';
 import { FaTwitter as TwitterIcon, FaDiscord as DiscordIcon } from 'react-icons/fa';
-import { getRandomNounPic } from '../utils';
-import Subheader from '../components/Subheader';
-import PageContent from '../components/Layout/PageContent';
-import PageHeader from '../components/Layout/PageHeader';
-import Button from '../components/common/Button';
-import { fetchTalentFormData, TALENT_FORM_ID } from '../utils/talent-form-data-fetching';
+import { getRandomNounPic } from '../../utils';
+import Subheader from '../../components/Subheader';
+import PageContent from '../../components/Layout/PageContent';
+import PageHeader from '../../components/Layout/PageHeader';
+import Button from '../../components/common/Button';
+import { fetchTalentFormData, TALENT_FORM_ID } from '../../utils/talent-form-data-fetching';
 
 export const getServerSideProps = async () => {
   let talentDataFromAPI = [];

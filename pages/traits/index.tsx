@@ -1,16 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import Header from '../components/Header';
-import Title from '../components/Title';
+import Header from '../../components/Header';
+import Title from '../../components/Title';
 import { v4 as uuidv4 } from 'uuid';
-import traits from '../api/traits.json';
+import traits from './traits.json';
 
-import Subheader from '../components/Subheader';
-import Link from '../components/Link';
+import Subheader from '../../components/Subheader';
+import Link from '../../components/Link';
 
-import PageHeader from '../components/Layout/PageHeader';
-import PageContent from '../components/Layout/PageContent';
-import Button from '../components/common/Button';
+import PageHeader from '../../components/Layout/PageHeader';
+import PageContent from '../../components/Layout/PageContent';
+import Button from '../../components/common/Button';
 
 const Traits = () => {
   const heads = traits.heads;
