@@ -124,12 +124,6 @@
         "external": true
       },
       {
-        "name": "Notes",
-        "link": "/notes",
-        "external": false
-      },
-
-      {
         "name": "Blog",
         "link": "https://nouns.blog/",
         "external": true

@@ -18,9 +18,7 @@
   .notion li {
     @apply text-black whitespace-pre-wrap;
   }
-  .notionNotes .notion li {
-    @apply text-black;
-  }
+  
   .introNouns {
     @apply text-black;
   }
@@ -266,33 +264,6 @@ h6 {
   color: #1d4ed8;
 }
 
-.nouners .notion-h2 {
-  font-family: "PTRootUI" !important;
-  text-decoration: underline !important;
-  font-size: 1.5rem !important;
-  font-weight: 700 !important;
-  margin-top: 25px !important;
-}
-.nouners .notion-h3 {
-  font-family: "PTRootUI" !important;
-  color: #3e64ff !important;
-  font-weight: 700 !important;
-  margin-bottom: 5px !important;
-  margin-top: 25px !important;
-  max-width: fit-content !important;
-  font-size: 1.35em !important;
-}
-
-.nouners .notion-asset-wrapper {
-  display: none;
-}
-
-.nouners .notion-text:first-of-type {
-  display: none;
-}
-.nouners .notion-h1:first-of-type {
-  margin-top: 0px !important;
-}
 .devGrid ul li:nth-child(4n) {
   border: none;
 }
