@@ -558,3 +558,10 @@ h6 {
     padding-left: calc((100vw - 992px) / 2 + 0px);
   }
 }
+
+/* groups table */
+.groupsDiscord svg {    
+  margin: auto !important;
+  height: 25px !important;
+  width: 25px !important;
+}

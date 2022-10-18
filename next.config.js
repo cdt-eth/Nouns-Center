@@ -62,8 +62,8 @@ module.exports = {
         permanent: true,
       },
       {
-        source: '/note',
-        destination: '/notes',
+        source: '/group',
+        destination: '/groups',
         permanent: true,
       },
       {
