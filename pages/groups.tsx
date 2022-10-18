@@ -45,9 +45,9 @@ const Groups = ({groups}) => {
 
         <Subheader
           title="Looking for a community?"
-          body="A list of all the groups in the Nouns universe including their description and Discord invite link. Don't see your group here? Add it via the button, and we'll get it up as soon as possbile."
+          body="A list of all the groups in the Nouns universe including their description and Discord invite link. Don't see your group here? DM me  via the button, and we'll get it up as soon as possbile."
         />
-        
+        <Button text='Add your group' link="https://twitter.com/cdt_eth/" />
       </PageHeader>
 
       <PageContent>
