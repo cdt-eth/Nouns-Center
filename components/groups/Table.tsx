@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+// import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { FaTwitter as TwitterIcon, FaDiscord as DiscordIcon } from 'react-icons/fa';
 
@@ -39,6 +40,7 @@ const Table = ({ groups }: Groups) => {
 
   //   return memberCount;
   // };
+
   useEffect(() => {
     setFilteredGroups(groups.sort(() => Math.random() - 0.5));
   }, []);
@@ -51,7 +53,7 @@ const Table = ({ groups }: Groups) => {
 
       <div className="mt-8 flex flex-col">
         <div className="-my-2 -mx-4  sm:-mx-6 lg:-mx-8">
-          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+          <div className="inline-block min-w-full py-2 align-middle">
             <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 rounded-lg">
               <table className="min-w-full divide-y divide-gray-300 ">
                 <thead className="bg-gray-50">
@@ -85,7 +87,6 @@ const Table = ({ groups }: Groups) => {
 
                 <tbody className="divide-y divide-gray-200 bg-white">
                   {filteredGroups.map(group => {
-                    console.log('g', group);
                     return (
                       <tr key={group.id}>
                         <td className=" py-4 pl-4 pr-3 text-sm sm:pl-6">
@@ -104,14 +105,15 @@ const Table = ({ groups }: Groups) => {
                                   {group.Name ? group.Name : '-'}
                                 </div>
                                 <div className="font-medium text-nouns tracking-wider text-gray-900">
-                                  {group.Topics.map(topic => (
-                                    <span
-                                      key={topic}
-                                      className="flex-shrink-0 ml-1.5 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full lowercase text"
-                                    >
-                                      {topic}
-                                    </span>
-                                  ))}
+                                  {group.Topics &&
+                                    group.Topics.map(topic => (
+                                      <span
+                                        key={topic}
+                                        className="flex-shrink-0 ml-1.5 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full lowercase text"
+                                      >
+                                        {topic}
+                                      </span>
+                                    ))}
                                 </div>
                               </div>
 
