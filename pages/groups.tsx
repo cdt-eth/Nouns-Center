@@ -3,10 +3,8 @@ import Header from '../components/Header';
 import Title from '../components/Title';
 import PageHeader from '../components/Layout/PageHeader';
 import PageContent from '../components/Layout/PageContent';
-import YoutubeVideo from '../components/YoutubeVideo';
 import Subheader from '../components/Subheader';
 import Button from '../components/common/Button';
-import TextContent from '../components/Layout/TextContent';
 import Table from '../components/groups/Table';
 
 
@@ -34,8 +32,6 @@ export async function getStaticProps() {
 
 
 const Groups = ({groups}) => {
-
-  console.log('g',groups);
   
   return (
     <>
@@ -51,9 +47,8 @@ const Groups = ({groups}) => {
       </PageHeader>
 
       <PageContent>
-      {/* <TextContent title=""> */}
-          <Table groups={groups} />
-        {/* </TextContent> */}
+          {/* <Table groups={randomlySortedGroups} /> */}
+           <Table groups={groups} />
       </PageContent>
     </>
   );

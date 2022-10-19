@@ -13,6 +13,7 @@ interface GroupsProps {
   'Platform': string[];
   Description?:string;
   'Twitter'?:string;
+  Logo:any;
 }
 
 interface Groups {
@@ -21,6 +22,8 @@ interface Groups {
 
 
 const Table = ({ groups }: Groups) => {
+
+    
   return (
     <div className="px-4 sm:px-6 lg:px-8 ">
       <div className="sm:flex sm:items-center">
@@ -47,11 +50,12 @@ const Table = ({ groups }: Groups) => {
               <table className="min-w-full divide-y divide-gray-300 ">
                 <thead className="bg-gray-50">
                   <tr>
+                    
                     <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
-                      Name
+                      Community
                     </th>
-                    <th scope="col" className="px-3 py-3.5 text-center text-sm font-semibold text-gray-900">
-                      Discord
+                    <th scope="col" className="px-12 py-3.5 text-center text-sm font-semibold text-gray-900">
+                      Join
                     </th>
                     {/* <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                       Twitter
@@ -66,33 +70,51 @@ const Table = ({ groups }: Groups) => {
                 </thead>
 
                 <tbody className="divide-y divide-gray-200 bg-white">
-                  {groups.map((group, i) => (
+                  
+                  {groups.map((group, i) => {
+                    
+                    return(
                     <tr key={group.id}>
                       <td className=" py-4 pl-4 pr-3 text-sm sm:pl-6">
                         <div className="flex items-center">
-                          <div className="h-10 w-10 flex-shrink-0">
-
-                            <img className="h-10 w-10 rounded-full" src={getRandomNounPic(i)} alt="" />
+                          <div className="h-14 w-14 flex-shrink-0">
+                            
+                            <img className="h-14 w-14 rounded-full" src={group.Logo[0].url} alt={group.Logo[0].name} />
+                            
+                            
                           </div>
+                          
                           <div className="ml-4">
                             <div className="font-medium text-nouns tracking-wider text-gray-900">{group.Name}</div>
                             <div className="text-gray-500">{group.Description}</div>
                           </div>
                         </div>
                       </td>
+
                       {/* <td className=" px-3 py-4 text-sm text-gray-500"> */}
                         {/* <div className="text-gray-900">{group.Description}</div> */}
                         {/* <div className="text-gray-500">{group.department}</div> */}
                       {/* </td> */}
 
-                      <td className=" px-3 py-4 text-center text-sm text-blue-base  groupsDiscord">
-                                {group['Discord Invite'] ? 
-                                <>
+                      <td className=" px-12 py-4 text-center text-sm text-blue-base groupsDiscord">
+                        {group['Discord Invite'] 
+                            ? 
+                            <>
                             <a href={group['Discord Invite']} target="_blank" className='hover:opacity-70 transition duration-100'>
                                 <DiscordIcon />
-                                </a>
-                                </>
-                                :'-'}
+                            </a>
+                        </>
+                            
+                            : group['Twitter'] 
+                               
+                        ? 
+                        <>
+                        <a href={group['Twitter']} target="_blank" className='hover:opacity-70 transition duration-100'>
+                            <TwitterIcon />
+                        </a>
+                    </>
+                        : '-'
+                        }
                       </td>
                       
                       {/* <td className=" px-3 py-4 text-sm text-gray-500">
@@ -106,8 +128,8 @@ const Table = ({ groups }: Groups) => {
                           Edit<span className="sr-only">, {group.name}</span>
                         </a>
                       </td> */}
-                    </tr>
-                  ))}
+                    </tr>)
+                  })}
                 </tbody>
               </table>
             </div>
