@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaTwitter as TwitterIcon, FaDiscord as DiscordIcon } from 'react-icons/fa';
 
 interface GroupsProps {
@@ -19,6 +19,7 @@ interface Groups {
 }
 
 const Table = ({ groups }: Groups) => {
+  const [filteredGroups, setFilteredGroups] = useState([]);
   // const fetchMemberCount = async (inviteID: string) => {
   //   const apiResult = await axios({
   //     method: 'get',
@@ -38,6 +39,9 @@ const Table = ({ groups }: Groups) => {
 
   //   return memberCount;
   // };
+  useEffect(() => {
+    setFilteredGroups(groups.sort(() => Math.random() - 0.5));
+  }, []);
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 ">
@@ -80,7 +84,7 @@ const Table = ({ groups }: Groups) => {
                 </thead>
 
                 <tbody className="divide-y divide-gray-200 bg-white">
-                  {groups.map(group => {
+                  {filteredGroups.map(group => {
                     console.log('g', group);
                     return (
                       <tr key={group.id}>
