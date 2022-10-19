@@ -7,8 +7,7 @@ import Subheader from '../components/Subheader';
 import Button from '../components/common/Button';
 import Table from '../components/groups/Table';
 
-
-const communitiesNotionLink='aebc0a4fb69a48a1bb6001bf356014ae';
+const communitiesNotionLink = 'aebc0a4fb69a48a1bb6001bf356014ae';
 
 export async function getStaticProps() {
   let data = [];
@@ -30,9 +29,7 @@ export async function getStaticProps() {
   };
 }
 
-
-const Groups = ({groups}) => {
-  
+const Groups = ({ groups }) => {
   return (
     <>
       <PageHeader>
@@ -41,14 +38,13 @@ const Groups = ({groups}) => {
 
         <Subheader
           title="Looking for a community?"
-          body="A list of all the groups in the Nouns universe including their description and Discord invite link. Don't see your group here? DM me  via the button, and we'll get it up as soon as possbile."
+          body="A list of all the groups in the Nouns universe including their description and Discord invite link. Don't see your group here? Add it to the backlog, and we'll get it up as soon as possbile."
         />
-        <Button text='Add your group' link="https://twitter.com/cdt_eth/" />
+        <Button text="Add your group" link="https://www.addressform.io/f/groups" />
       </PageHeader>
 
       <PageContent>
-          {/* <Table groups={randomlySortedGroups} /> */}
-           <Table groups={groups} />
+        <Table groups={groups} />
       </PageContent>
     </>
   );

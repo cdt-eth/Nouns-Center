@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,6 @@
   .ideaCard a {
     @apply text-blue-base hover:text-black dark:text-nouns-bg-blue dark:hover:text-blue-700 transition duration-100 underline text-nouns tracking-wider;
   }
-
 
   .notion {
     @apply text-black  caret-black;
@@ -18,7 +17,7 @@
   .notion li {
     @apply text-black whitespace-pre-wrap;
   }
-  
+
   .introNouns {
     @apply text-black;
   }
@@ -46,47 +45,47 @@
   background: rgba(255, 255, 255, 0.9) !important;
 }
 @font-face {
-  font-family: "CalSans";
-  src: local("CalSans"), url("/fonts/CalSans.woff2") format("woff2");
+  font-family: 'CalSans';
+  src: local('CalSans'), url('/fonts/CalSans.woff2') format('woff2');
 }
 @font-face {
-  font-family: "PTRootUI";
-  src: url("/fonts/PTRootUI/PT-Root-UI_Light.woff2") format("woff2");
+  font-family: 'PTRootUI';
+  src: url('/fonts/PTRootUI/PT-Root-UI_Light.woff2') format('woff2');
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
-  font-family: "PTRootUI";
-  src: url("/fonts/PTRootUI/PT-Root-UI_Regular.woff2") format("woff2");
+  font-family: 'PTRootUI';
+  src: url('/fonts/PTRootUI/PT-Root-UI_Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "PTRootUI";
-  src: url("/fonts/PTRootUI/PT-Root-UI_Medium.woff2") format("woff2");
+  font-family: 'PTRootUI';
+  src: url('/fonts/PTRootUI/PT-Root-UI_Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "PTRootUI";
-  src: url("/fonts/PTRootUI/PT-Root-UI_Bold.woff2") format("woff2");
+  font-family: 'PTRootUI';
+  src: url('/fonts/PTRootUI/PT-Root-UI_Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "PTRootUI";
-  src: url("/fonts/PTRootUI/PT-Root-UI_VF.woff2") format("woff2");
+  font-family: 'PTRootUI';
+  src: url('/fonts/PTRootUI/PT-Root-UI_VF.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @tailwind utilities;
 
 .text-nouns {
-  font-family: "Londrina Solid", sans-serif;
+  font-family: 'Londrina Solid', sans-serif;
 }
 
 .text-pt {
-  font-family: "PTRootUI";
+  font-family: 'PTRootUI';
 }
 
 .darkMode {
@@ -133,16 +132,8 @@ h6 {
   background-image: linear-gradient(0deg, rgb(0 0 0 / 70%), transparent);
 }
 .gradient2 {
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.58141193977591037) 0%,
-    rgba(0, 0, 0, 0) 93%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.5) 5%,
-    rgba(0, 0, 0, 0.05) 50%
-  );
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.58141193977591037) 0%, rgba(0, 0, 0, 0) 93%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0.05) 50%);
 }
 
 .gradient:hover {
@@ -159,7 +150,7 @@ h6 {
 
 .notion-text {
   font-size: 28px;
-  font-family: "Londrina Solid", sans-serif;
+  font-family: 'Londrina Solid', sans-serif;
   letter-spacing: 0.07rem;
   text-decoration: underline;
 }
@@ -212,12 +203,12 @@ h6 {
 .introNouns .notion-h1,
 .notion-h2,
 .notion-h3 {
-  font-family: "Londrina Solid";
+  font-family: 'Londrina Solid';
   font-size: 1.875em !important;
 }
 .introNouns .notion-text {
   font-size: 18px !important;
-  font-family: "PTRootUI" !important;
+  font-family: 'PTRootUI' !important;
   text-decoration: none !important;
   letter-spacing: normal !important;
 }
@@ -251,12 +242,11 @@ h6 {
 
 .introNouns .notion-link {
   color: #3e64ff;
-  font-family: "Londrina solid";
+  font-family: 'Londrina solid';
   letter-spacing: 0.05em;
   text-decoration: underline;
-  transition-property: color, background-color, border-color,
-    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
-    backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -285,11 +275,7 @@ h6 {
   min-width: 100%;
   min-height: 100%;
   opacity: 95%;
-  background: linear-gradient(
-      -53deg,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0) 90.71%
-    ),
+  background: linear-gradient(-53deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 90.71%),
     linear-gradient(127deg, rgba(0, 0, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }
@@ -323,11 +309,7 @@ h6 {
   opacity: 50%;
   background: #151515;
   background: linear-gradient(to top, #000000, #151515, #151515);
-  background-image: radial-gradient(
-    farthest-side at 100% 21%,
-    transparent,
-    #151515
-  );
+  background-image: radial-gradient(farthest-side at 100% 21%, transparent, #151515);
   background: linear-gradient(
     0deg,
     transparent,
@@ -436,8 +418,7 @@ h6 {
   flex-grow: 1;
   flex-shrink: 1;
   text-align: left;
-  font-family: SFMono-Regular, Menlo, Consolas, "PT Mono", "Liberation Mono",
-    Courier, monospace;
+  font-family: SFMono-Regular, Menlo, Consolas, 'PT Mono', 'Liberation Mono', Courier, monospace;
   font-size: 85%;
   tab-size: 2;
   min-height: 1em;
@@ -477,12 +458,11 @@ h6 {
 }
 .subdaos a {
   color: #3e64ff;
-  font-family: "Londrina solid";
+  font-family: 'Londrina solid';
   letter-spacing: 0.05em;
   text-decoration: underline;
-  transition-property: color, background-color, border-color,
-    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
-    backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -560,7 +540,7 @@ h6 {
 }
 
 /* groups table */
-.groupsDiscord svg {    
+.groupsDiscord svg {
   margin: auto !important;
   height: 25px !important;
   width: 25px !important;
