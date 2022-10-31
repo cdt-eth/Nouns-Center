@@ -43,7 +43,7 @@ const Table = ({ groups }: Groups) => {
 
   useEffect(() => {
     setFilteredGroups(groups.sort(() => Math.random() - 0.5));
-  }, []);
+  }, [groups]);
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 ">
@@ -76,12 +76,6 @@ const Table = ({ groups }: Groups) => {
                     >
                       Join
                     </th>
-                    {/* <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                      Role
-                    </th> */}
-                    {/* <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
-                      <span className="sr-only">Edit</span>
-                    </th> */}
                   </tr>
                 </thead>
 
@@ -157,18 +151,6 @@ const Table = ({ groups }: Groups) => {
                             '-'
                           )}
                         </td>
-
-                        {/* <td className=" px-3 py-4 text-sm text-gray-500">
-                        <span className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
-                        {group['Twitter'] ? <TwitterIcon />:'-'}
-                        </span>
-                      </td> */}
-
-                        {/* <td className="relative  py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                        <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                          Edit<span className="sr-only">, {group.name}</span>
-                        </a>
-                      </td> */}
                       </tr>
                     );
                   })}
