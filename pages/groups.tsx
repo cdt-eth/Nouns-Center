@@ -18,7 +18,7 @@ export async function getStaticProps() {
       throw String(`Invalid server response: ${res.status} ${res.statusText}`);
     data = await res.json();
 
-    if (!data) throw String('No data was found!');
+    if (!data) throw String('No groups was found!');
     data = JSON.parse(JSON.stringify(data));
   } catch (e) {}
 
