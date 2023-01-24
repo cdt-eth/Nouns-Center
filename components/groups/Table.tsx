@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-// import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { FaTwitter as TwitterIcon, FaDiscord as DiscordIcon } from 'react-icons/fa';
 
@@ -21,25 +20,6 @@ interface Groups {
 
 const Table = ({ groups }: Groups) => {
   const [filteredGroups, setFilteredGroups] = useState([]);
-  // const fetchMemberCount = async (inviteID: string) => {
-  //   const apiResult = await axios({
-  //     method: 'get',
-  //     url: `https://discord.com/api/v9/invites/${inviteID}?with_counts=true&with_expiration=true`,
-  //   });
-
-  //   const members = apiResult.data.approximate_presence_count;
-
-  //   return members ? members : '-';
-  // };
-
-  // const getNumberOfDiscordMembers = (group: GroupsProps) => {
-  //   if (!group.Discord) return '-';
-  //   const inviteID = group.Discord.split('gg/')[1];
-
-  //   const memberCount = fetchMemberCount(inviteID);
-
-  //   return memberCount;
-  // };
 
   useEffect(() => {
     setFilteredGroups(groups.sort(() => Math.random() - 0.5));
@@ -64,12 +44,7 @@ const Table = ({ groups }: Groups) => {
                     >
                       Community
                     </th>
-                    {/* <th
-                      scope="col"
-                      className="px-3 py-3.5 text-center text-sm font-semibold text-gray-900"
-                    >
-                      Members
-                    </th> */}
+
                     <th
                       scope="col"
                       className="px-4 sm:px-12 py-3.5 text-center text-sm font-semibold text-gray-900"
@@ -117,12 +92,6 @@ const Table = ({ groups }: Groups) => {
                             </div>
                           </div>
                         </td>
-
-                        {/* <td className=" px-3 py-4 text-sm text-gray-500">
-                          <div className="text-gray-900 text-center">
-                            {getNumberOfDiscordMembers(group)}
-                          </div>
-                        </td> */}
 
                         <td className="px-4 sm:px-12 py-4 text-center text-sm text-blue-base groupsDiscord">
                           {group.Discord ? (
